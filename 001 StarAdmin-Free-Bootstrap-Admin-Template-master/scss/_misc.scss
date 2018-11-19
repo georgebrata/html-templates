@@ -1,0 +1,25 @@
+.content-wrapper {
+  background: color(white-smoke);
+  margin-left: $sidebar-width-lg;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  transition: all .8s ease;
+  width: calc(100% - #{$sidebar-width-lg});
+  @media (max-width: 991px) {
+    margin-left: 0;
+    width: 100%;
+  }
+  &.full-page-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.container-scroller {
+  height: 100vh;
+  position: relative;
+}
+pre {
+  background: color(gray-light)er;
+  padding: 15px;
+  font-size: 14px;
+}
