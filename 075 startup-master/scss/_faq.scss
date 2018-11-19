@@ -1,0 +1,69 @@
+
+.faq { 
+    padding:0;
+    .faq-cont{
+      background: $primary-y;
+      padding:15% 70px;
+      height: 100vh;
+      .faq-heading h3 {
+        font-size: 29px;
+        color:#fff;
+        font-size: 33px;
+        @include text-font;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+        @media (max-width: 991px) {
+          font-size:20px;
+        }
+      }
+  
+      .card {
+        border:0;
+        background:transparent;
+        color:$white; 
+
+        .card-header {
+            background: #f7dc09;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+            h5 {
+            box-shadow: none;
+            font-weight:700;
+            font-size: 20px;
+            text-decoration:none;
+            div {
+              cursor: pointer;
+              text-align: left;
+              color:$white;
+              width: 100%;
+              background:transparent;
+              border:none;
+              }
+            }
+        }
+
+        .card-body {
+          font-size:16px;
+          color:$white;
+        }
+
+        .panel-body {
+          margin-bottom: 15px;
+          color:$white;
+        }
+      }
+
+      @media (max-width:991px) {
+        padding:5% 5px;
+        height:100%;
+      }
+}
+
+  .bg-faq-img {
+    background-image: url('../img/bg-faq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 250px;
+  }
+}

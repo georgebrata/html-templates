@@ -1,0 +1,17 @@
+/* Fonts */
+
+//PT_Sans
+@font-face {
+  font-family: 'pt-sans-regular';
+  src: url('../fonts/PT_Sans/PTSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/PT_Sans/PTSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/PT_Sans/PTSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/PT_Sans/PTSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'pt-sans-bold';
+  src: url('../fonts/PT_Sans/PTSans-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/PT_Sans/PTSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/PT_Sans/PTSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/PT_Sans/PTSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}

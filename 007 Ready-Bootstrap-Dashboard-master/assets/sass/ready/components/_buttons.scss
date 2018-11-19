@@ -1,0 +1,266 @@
+/*    Button    */
+
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  opacity: 0.9;
+  border-radius: 3px;
+  &:hover, &:focus {
+    opacity: 1;
+  }
+}
+
+.btn-lg {
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-weight: $font-weight-normal;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding: 7px 13px;
+}
+
+.btn-xs {
+  font-size: 11px;
+  padding: 5px 9px;
+}
+
+.btn {
+  &.disabled:hover, &:hover:disabled {
+    opacity: 0.65;
+  }
+}
+
+.btn-default {
+  background: $default-color !important;
+  color: $white-color !important;
+  &:hover, &:focus, &:disabled {
+    background: $default-color !important;
+    color: $white-color !important;
+  }
+}
+
+.btn-primary {
+  background: $primary-color !important;
+  border-color: $primary-color !important;
+  &:hover, &:focus, &:disabled {
+    background: $primary-color !important;
+    border-color: $primary-color !important;
+  }
+}
+
+.btn-info {
+  background: $info-color !important;
+  border-color: $info-color !important;
+  &:hover, &:focus, &:disabled {
+    background: $info-color !important;
+    border-color: $info-color !important;
+  }
+}
+
+.btn-success {
+  background: $success-color !important;
+  border-color: $success-color !important;
+  &:hover, &:focus, &:disabled {
+    background: $success-color !important;
+    border-color: $success-color !important;
+  }
+}
+
+.btn-warning {
+  background: $warning-color !important;
+  border-color: $warning-color !important;
+  color: $white-color !important;
+  &:hover, &:focus, &:disabled {
+    background: $warning-color !important;
+    border-color: $warning-color !important;
+    color: $white-color !important;
+  }
+}
+
+.btn-danger {
+  background: $danger-color !important;
+  border-color: $danger-color !important;
+  &:hover, &:focus, &:disabled {
+    background: $danger-color !important;
+    border-color: $danger-color !important;
+  }
+}
+
+.btn-border {
+  background: $transparent-bg !important;
+  font-weight: $font-weight-bold !important;
+  &:hover, &:focus {
+    background: $transparent-bg !important;
+    font-weight: $font-weight-bold !important;
+  }
+}
+
+.btn-default.btn-border {
+  color: $default-color !important;
+  border: 2px solid $default-color !important;
+}
+
+.btn-primary.btn-border {
+  color: $primary-color !important;
+  border: 2px solid $primary-color !important;
+}
+
+.btn-info.btn-border {
+  color: $info-color !important;
+  border: 2px solid $info-color !important;
+}
+
+.btn-success.btn-border {
+  color: $success-color !important;
+  border: 2px solid $success-color !important;
+}
+
+.btn-warning.btn-border {
+  color: $warning-color !important;
+  border: 2px solid $warning-color !important;
+}
+
+.btn-danger.btn-border {
+  color: $danger-color  !important;
+  border: 2px solid $danger-color !important;
+}
+
+.btn-round {
+  border-radius: 100px !important;
+}
+
+.btn-link {
+  border: 0 !important;
+  background: $transparent-bg !important;
+  &:hover, &:focus {
+    text-decoration: underline !important;
+    background: $transparent-bg !important;
+    border: 0 !important;
+  }
+}
+
+.btn-default.btn-link {
+  color: $default-color !important;
+  &:hover {
+    color: $default-color !important;
+  }
+}
+
+.btn-primary.btn-link {
+  color: $primary-color !important;
+  &:hover {
+    color: $primary-color !important;
+  }
+}
+
+.btn-info.btn-link {
+  color: $info-color !important;
+  &:hover {
+    color: $info-color !important;
+  }
+}
+
+.btn-success.btn-link {
+  color: $success-color !important;
+  &:hover {
+    color: $success-color !important;
+  }
+}
+
+.btn-warning.btn-link {
+  color: $warning-color !important;
+  &:hover {
+    color: $warning-color !important;
+  }
+}
+
+.btn-danger.btn-link {
+  color: $danger-color !important;
+  &:hover {
+    color: $danger-color !important;
+  }
+}
+
+.toggle-on.btn {
+  color: $white-color !important;
+}
+
+.toggle-handle {
+  background: $white-color !important;
+  &:hover {
+    background: $white-color !important;
+  }
+}
+
+.btn-round .toggle-handle {
+  border-radius: 50px;
+}
+
+.btn-rounded {
+  border-radius: 60px !important;
+}
+
+.btn-simple-default {
+  color: $default-color;
+  text-decoration: none;
+  &:hover {
+    color: $default-color;
+    text-decoration: none;
+  }
+}
+
+.btn-simple-primary {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
+
+.btn-simple-info {
+  color: $info-color;
+  text-decoration: none;
+  &:hover {
+    color: $info-color;
+    text-decoration: none;
+  }
+}
+
+.btn-simple-danger {
+  color: $danger-color;
+  text-decoration: none;
+  &:hover {
+    color: $danger-color;
+    text-decoration: none;
+  }
+}
+
+.btn-simple-warning {
+  color: $warning-color;
+  text-decoration: none;
+  &:hover {
+    color: $warning-color;
+    text-decoration: none;
+  }
+}
+
+.btn-simple-success {
+  color: $success-color;
+  text-decoration: none;
+  &:hover {
+    color: $success-color;
+    text-decoration: none;
+  }
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-no-radius {
+  border-radius: 0px;
+}

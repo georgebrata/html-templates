@@ -1,0 +1,159 @@
+/* Portfolio filter */
+
+.filter {
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 70px;
+}
+
+.filter > li {
+	display: inline-block;
+	padding: 0 0 10px;
+	margin: 0 25px;
+}
+
+/* Portfolio grid */
+
+.works-grid {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.works-grid.works-grid-gut {
+	margin: 0 0 0 -10px;
+}
+
+.works-grid.works-grid-gut .work-item {
+	padding: 0 0 10px 10px;
+}
+
+.work-item {
+	width: 50%;
+	float: left;
+	margin: 0;
+}
+
+.works-grid-3 .work-item {
+	width: 33.3333%;
+}
+
+.container .works-grid-3 .work-item {
+	width: 33.2%;
+}
+
+.works-grid-4 .work-item {
+	width: 25%;
+}
+
+.works-grid-5 .work-item {
+	width: 20%;
+}
+
+.work-item > a {
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+.work-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.work-image img {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+
+.work-image:after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.work-caption {
+	width: 100%;
+	padding: 0 20px;
+	opacity: 0;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+.work-title {
+	font-size: 14px;
+	color: #fff;
+	margin: 0 0 6px;
+}
+
+.work-descr {
+	color: #aaa;
+}
+
+.work-item:hover .work-image:after {
+	background: rgba(0, 0, 0, .6);
+}
+
+.work-item:hover .work-image > img {
+	-webkit-transform: scale(1.1) rotate(2deg);
+	-moz-transform: scale(1.1) rotate(2deg);
+	-ms-transform: scale(1.1) rotate(2deg);
+	-o-transform: scale(1.1) rotate(2deg);
+	transform: scale(1.1) rotate(2deg);
+}
+
+.work-item:hover .work-caption {
+	bottom: 50%;
+	opacity: 1;
+	z-index: 3;
+	-webkit-transform: translateY(50%);
+	-moz-transform: translateY(50%);
+	transform: translateY(50%);
+}
+
+/* Work item white background*/
+
+.works-grid.works-hover-w .work-title {
+	color: #111;
+}
+
+.works-grid.works-hover-w .work-item:hover .work-image:after {
+	background: rgba(255, 255, 255, .8);
+}
+
+/* Work item gradien background*/
+
+.works-grid.works-hover-g .work-image:after {
+	opacity: 0;
+}
+
+.works-grid.works-hover-g .work-descr {
+	color: #fff;
+}
+
+.works-grid.works-hover-g .work-item:hover .work-image:after {
+	background: rgb(111,226,158);
+	background: -moz-linear-gradient(-45deg, rgba(111,226,158,0.8) 0%, rgba(91,218,209,0.8) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(111,226,158,0.8)), color-stop(100%,rgba(91,218,209,0.8)));
+	background: -webkit-linear-gradient(-45deg, rgba(111,226,158,0.8) 0%,rgba(91,218,209,0.8) 100%);
+	background: -o-linear-gradient(-45deg, rgba(111,226,158,0.8) 0%,rgba(91,218,209,0.8) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(111,226,158,0.8) 0%,rgba(91,218,209,0.8) 100%);
+	background: linear-gradient(135deg, rgba(111,226,158,0.8) 0%,rgba(91,218,209,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fe29e', endColorstr='#5bdad1',GradientType=1 );
+	opacity: 1;
+}
+
+.sliding-portfolio {
+	.work-item {
+		width: 100%;
+	}
+}

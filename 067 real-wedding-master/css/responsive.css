@@ -1,0 +1,70 @@
+/* only small desktops */
+/* tablets */
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+	.top-header .navbar .navbar-collapse ul li a{
+		padding: 5px 15px;
+	}
+	.about-img{
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	.gallery-box ul li{
+		width: 33.33%;
+	}
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+	.navbar-brand{
+		margin-left: 15px;
+	}
+	.top-header .navbar .navbar-collapse ul li a{
+		padding: 5px 15px;
+	}
+	.lbox-details h1{
+		font-size: 24px;
+	}
+	.lbox-details h2{
+		font-size: 18px;
+	}
+	.lbox-details p strong{
+		font-size: 20px;
+	}
+	.lbox-details a.btn{
+		display: none;
+	}
+	.title-box h2{
+		font-size: 28px;
+	}
+	.about-main-info h2{
+		font-size: 24px;
+	}
+	.about-img{
+		margin-bottom: 30px;
+	}
+	.main-timeline-box .separline::before{
+		left: 15px !important;
+	}
+	.main-timeline-box .iconBackground{
+		left: 15px !important;
+	}
+	.main-timeline-box .timeline-text-content{
+		margin-left: 0px;
+	}
+	.main-timeline-box .reverse .timeline-text-content{
+		margin-right: 0px;
+	}
+	.main-timeline-box .time-line-date-content{
+		margin-right: 0px;
+	}
+	.main-timeline-box .time-line-date-content p{
+		float: left;
+	}
+	.main-timeline-box .timeline-element{
+		padding: 0px 15px;
+	}
+	.gallery-box ul li{
+		width: 50%;
+	}
+}

@@ -1,0 +1,27 @@
+.testimonial:before {
+	background: rgba(2, 2, 2, 0.4);
+}
+
+.testimonials-slider {
+	position: relative;
+}
+
+.testimonial-text {
+	text-align: center;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.testimonial-caption {
+	text-align: center;
+	padding: 10px 0 0;
+}
+
+.testimonial-title {
+	font-size: 14px;
+}
+
+.testimonial-descr {
+	color: rgba(255, 255, 255, .5);
+	font-size: 11px;
+}

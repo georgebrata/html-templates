@@ -1,0 +1,131 @@
+// Styling for the About section
+
+/*====================================================
+                        ABOUT
+======================================================*/
+
+    .app-about {
+
+        .row.first {
+            margin-bottom: 100px;
+        }
+
+        img.first {
+            margin-top: 50px;
+            box-shadow:2px 3px 14px 0px rgba(70, 68, 68, 0.45);
+            margin-left: 150px;
+            opacity: 0.6;
+            width: 80%;
+            border-radius:10px;
+        }
+
+        img.second {
+            position: absolute; 
+            top: 0;
+            width: 80%;
+            box-shadow:4px 4px 10px 2px rgba(70, 68, 68, 0.58);
+            border-radius:10px;
+        }
+
+        .app-about-cont {
+            margin-left: 150px;
+
+            i {
+                font-size: 20px;
+                margin-bottom: 15px;
+                border:1px solid $gray-300;
+                border-radius:50%;
+                height: 38px;
+                width: 38px;
+                line-height: 38px;
+                text-align:center;
+                box-shadow:0px 0px 14px -1px rgba(101, 99, 99, 0.35);
+                color:$primary-col;
+            }
+
+            h3 {
+                color:$gray-600;
+            }
+
+            p {
+                color: $gray-500;
+            }
+        }
+
+        img.third {
+            margin-top: 50px;
+            box-shadow:2px 3px 14px 0px rgba(70, 68, 68, 0.45);
+            margin-left: -100px;
+            opacity: 0.6;
+            width: 80%;
+            border-radius:10px;
+        }
+
+        img.fourth {
+            position: absolute; 
+            top: 0;
+            margin-left: -150px;
+            width: 80%;
+            box-shadow:4px 4px 10px 2px rgba(70, 68, 68, 0.58);
+            border-radius:10px;
+        }
+
+        .app-about-cont.right {
+            margin-left: 0;
+            margin-right: 150px;
+            text-align: right; 
+        }
+
+        @media (max-width:767px) {
+            .row.first {
+                margin-bottom: 0px;
+            }
+
+            img.first {
+                margin-top: 30px;
+                margin-left: 35%;
+                box-shadow:2px 3px 14px 0px rgba(70, 68, 68, 0.45);
+                opacity: 0.6;
+                width: 50%;
+                border-radius:10px;
+            }
+
+            img.second {
+                position: absolute; 
+                top: 0;
+                left: 15%;
+                width: 50%;
+                box-shadow:4px 4px 10px 2px rgba(70, 68, 68, 0.58);
+                border-radius:10px;
+            }            
+
+            .app-about-cont {
+                margin:80px auto;
+            }    
+
+            .app-about-cont.right {
+                margin-left: 0;
+                margin:50px auto;
+                text-align: right; 
+            }
+
+            img.third {
+                margin-top: 50px;
+                box-shadow:2px 3px 14px 0px rgba(70, 68, 68, 0.45);
+                margin-left: 20%;
+                opacity: 0.6;
+                width: 50%;
+                border-radius:10px;
+            }
+
+            img.fourth {
+                position: absolute; 
+                top: 0;
+                margin-left: -25%;
+                width: 50%;
+                box-shadow:4px 4px 10px 2px rgba(70, 68, 68, 0.58);
+                border-radius:10px;
+            }
+        }
+    }
+

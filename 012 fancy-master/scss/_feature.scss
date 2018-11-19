@@ -1,0 +1,196 @@
+/* Creative Feature Area css
+============================================================================================ */
+.creative_feature_area{
+    background: #f7f7f7;
+}
+.c_feature_box{
+    box-shadow: 0px 25px 49px 0px rgba(58, 74, 88, 0.1);
+    border-radius: 2px;
+    background: #fff;
+    padding: 45px 0px;
+    margin-top: -100px;
+    z-index: 22;
+    position: relative;
+    .col-lg-4{
+        &:last-child{
+            .c_box_item{
+                &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.c_box_item{
+    padding: 0px 35px 0px 40px;
+    position: relative;
+    &:before{
+        content: "";
+        background: #e5e5e5;
+        height: 145px;
+        width: 1px;
+        position: absolute;
+        right: -15px;
+        top: 0px;
+    }
+    h4{
+        font-size: 20px;
+        color: $dip;
+        font-family: $pop;
+        font-weight: 500;
+        line-height: 36px;
+        padding-bottom: 10px;
+        @include transition;
+        i{
+            padding-right: 10px;
+            color: $baseColor;
+        }
+        &:hover{
+            color: $baseColor;
+        }
+    }
+    p{
+        font-size: 14px;
+        line-height: 26px;
+        color: $pfont;
+        font-family: $pop;
+    }
+}
+.digital_feature{
+    
+}
+.d_feature_text{
+    .main_title{
+        padding-bottom: 20px;
+    }
+    p{
+        font-size: 14px;
+        color: $pfont;
+        font-family: $pop;
+        line-height: 26px;
+        padding-bottom: 12px;
+        & + p{
+            padding-bottom: 0px;
+        }
+    }
+    .read_btn{
+        margin-top: 34px;
+    }
+}
+
+.d_feature_img{
+    padding-left: 70px;
+}
+/* End Creative Feature Area css
+============================================================================================ */
+
+/* Industries Area css
+============================================================================================ */
+.industries_area{
+    overflow: hidden;
+    padding-top: 100px;
+    display: flex;
+}
+.left_indus{
+    width: calc(50% + 85px);
+    float: left;
+    text-align: right;
+    overflow: hidden;
+    display: flex;
+}
+.right_indus{
+    width: calc(50% - 85px);
+    float: right;
+}
+.indus_img{
+    text-align: right;
+    padding-right: 85px;
+    flex: 1;
+    align-self: center;
+    img{
+        max-width: 100%;
+    }
+}
+.indus_text{
+    max-width: 500px;
+    @media(min-width: 1500px){
+        padding-top: 80px;
+    }
+    .read_btn{
+        width: 180px;
+        margin-top: 60px;
+    }
+}
+
+.our_skill_inner{
+    margin-top: 45px;
+    .single_skill{
+        margin-bottom: 30px;
+        h3{
+            color: $dip;
+            font-family: $pop;
+            font-weight: 500;
+            font-size: 14px;
+            padding-bottom: 6px;
+        }
+        .progress{
+            height: 8px;
+            border-radius: 0px;
+            background: #e5e5e5;
+            overflow: visible;
+            .progress-bar{
+                background-image: -webkit-linear-gradient( 180deg, rgb(32,212,151) 0%, rgb(116,79,255) 100%);
+                background-image: -moz-linear-gradient( 180deg, rgb(32,212,151) 0%, rgb(116,79,255) 100%);
+                background-image: -ms-linear-gradient( 180deg, rgb(32,212,151) 0%, rgb(116,79,255) 100%);
+                position: relative;
+                overflow: visible;
+                background-color: transparent;
+                .progress_parcent{
+                    position: absolute;
+                    right: 0px;
+                    top: -25px;
+                    color: $dip;
+                    font-size: 14px;
+                    font-family: $pop;
+                    font-weight: 500;
+                }
+            }
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.progress-bar{
+    
+}
+/* End Industries Area css
+============================================================================================ */
+
+/* Project Area css
+============================================================================================ */
+.project_area{
+    background: url(../img/project-bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    padding: 115px 0px;
+    &:before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        z-index: -1;
+        background: rgba(4, 8, 29, .70)
+    }
+}
+.project_inner{
+    .tp_btn{
+        margin-top: 5px;
+    }
+}
+/* End Project Area css
+============================================================================================ */

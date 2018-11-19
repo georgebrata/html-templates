@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Ionicons";
+  src: url("../fonts/ionicons/fonts/ionicons.eot?v=2.0.0");
+  src: url("../fonts/ionicons/fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("../fonts/ionicons/fonts/ionicons.ttf?v=2.0.0") format("truetype"), url("../fonts/ionicons/fonts/ionicons.woff?v=2.0.0") format("woff"), url("../fonts/ionicons/fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome/fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+a {
+  color: #000; }
+
+.pb_navbar .navbar-brand .light {
+  display: block; }
+
+.pb_navbar .navbar-brand .dark {
+  display: none; }
+
+.pb_navbar ul li a {
+  font-size: 13px !important;
+  border-bottom: none; }
+
+.pb_navbar .logo-center a {
+  margin-top: -10px; }
+  .pb_navbar .logo-center a .light {
+    display: block; }
+  .pb_navbar .logo-center a .dark {
+    display: none; }
+
+.pb_navbar.scrolled.pb_scrolled-light .navbar-brand .light {
+  display: none; }
+
+.pb_navbar.scrolled.pb_scrolled-light .navbar-brand .dark {
+  display: block;
+  height: 30px; }
+
+.pb_navbar.scrolled.pb_scrolled-light .logo-center a {
+  margin-top: -5px; }
+  .pb_navbar.scrolled.pb_scrolled-light .logo-center a .light {
+    display: none; }
+  .pb_navbar.scrolled.pb_scrolled-light .logo-center a .dark {
+    display: block;
+    height: 30px; }
+
+.pb_food-menu li {
+  margin-bottom: 30px;
+  position: relative; }
+  .pb_food-menu li .price {
+    color: #000; }
+
+.pb_tab_v1 {
+  margin-bottom: 70px; }
+  @media (max-width: 767px) {
+    .pb_tab_v1 .nav-item {
+      display: block;
+      width: 100%; } }
+  .pb_tab_v1 .nav-item a {
+    color: #495057;
+    border: 1px solid #e9ecef;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .2em; }
+    @media (max-width: 767px) {
+      .pb_tab_v1 .nav-item a {
+        display: block;
+        margin: 0 0 10px 0; } }
+    .pb_tab_v1 .nav-item a.active {
+      border: 1px solid #000;
+      color: #000; }

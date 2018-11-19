@@ -1,0 +1,149 @@
+.btn {
+	border-radius: 0;
+	font-family: "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 11px;
+	padding: 8px 37px;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+	outline: 0;
+}
+
+.btn.btn-round {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.btn.btn-circle {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.btn.btn-w {
+	background: rgba(255, 255, 255, .8);
+	color: #111;
+}
+
+.btn.btn-w:hover,
+.btn.btn-w:focus {
+	background: rgba(255, 255, 255, 1);
+	color: #111;
+}
+
+.btn.btn-g {
+	background: #e5e5e5;
+	color: #111;
+}
+
+.btn.btn-g:hover,
+.btn.btn-g:focus {
+	background: #d8d8d8;
+	color: #111;
+}
+
+.btn.btn-border-w {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, .75);
+	color: #fff;
+}
+
+.btn.btn-border-w:hover,
+.btn.btn-border-w:focus {
+	background: #fff;
+	border-color: transparent;
+	color: #111;
+}
+
+.btn.btn-d {
+	background: rgba(17, 17, 17, .8);
+	color: #fff;
+}
+
+.btn.btn-d:hover,
+.btn.btn-d:focus {
+	background: rgba(17, 17, 17, 1);
+}
+
+.btn.btn-b {
+	background: rgba(17, 17, 17, 1);
+	color: #fff;
+}
+
+.btn.btn-b:hover,
+.btn.btn-b:focus {
+	background: rgba(17, 17, 17, .8);
+}
+
+.btn-border-d {
+	background: transparent;
+	border: 1px solid rgba(17, 17, 17, 1);
+	color: #111;
+}
+
+.btn.btn-border-d:hover,
+.btn.btn-border-d:focus {
+	background: rgba(17, 17, 17, 1);
+	color: #fff;
+}
+
+
+.btn.btn-font-w {
+	background: rgba(255, 255, 255, .8);
+	color: #fff;
+}
+.btn.btn-font-w:hover {
+	background: #fff;
+	color: #111;
+}
+
+/* Buttons size */
+
+.btn.btn-lg {
+	padding: 12px 45px;
+	font-size: 13px;
+}
+
+.btn.btn-sm {
+	padding: 6px 25px;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+.btn.btn-xs {
+	padding: 4px 19px;
+	font-size: 10px;
+	letter-spacing: 0;
+}
+
+.btn-list .btn {
+	margin: 5px 0;
+}
+
+.search-btn {
+	position: absolute;
+	background: transparent;
+	border: none;
+	overflow: hidden;
+	top: 50%;
+	right: 1px;
+	width: 42px;
+	height: 40px;
+	line-height: 38px;
+	font-size: 14px;
+	outline: none;
+	color: #999;
+	margin-top: -20px;
+}
+
+.image-button {
+	margin: 0px 5px;
+}

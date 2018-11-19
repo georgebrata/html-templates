@@ -1,0 +1,146 @@
+.home-section {
+	position: relative;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	z-index: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.titan-title-size-1 {
+	letter-spacing: 4px;
+	font-size: 15px;
+}
+
+.titan-title-size-2 {
+	line-height: 1.3;
+	letter-spacing: 3px;
+	font-size: 18px;
+	opacity: .8;
+}
+
+.titan-title-size-3 {
+	letter-spacing: 16px;
+	font-size: 46px;
+}
+
+.titan-title-size-4 {
+	letter-spacing: 24px;
+	font-weight: 400;
+	font-size: 48px;
+}
+
+/* Agency Page Header */
+
+.agency-page-header:before {
+	background: rgba(0, 0, 0, 0);
+}
+
+/* About us Page Header */
+
+.about-page-header:before {
+	background: rgba(2, 2, 2, 0.2);
+}
+
+/* Service Page Header */
+.service-page-header:before {
+	background: rgba(2, 2, 2, 0.1);
+}
+
+/* Pricing Page Header */
+
+.pricing-page-header {
+	background-position: 40% 14%;
+	background-repeat: no-repeat;
+
+	&:before {
+		background: rgba(2, 2, 2, 0.6);
+	}
+}
+
+/* Gallery Page Header */
+
+.gallery-page-header {
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+
+	&:before {
+		background: rgba(2, 2, 2, 0.2);
+	}
+}
+
+/* Contact Page Header */
+
+.contact-page-header {
+	background-position: 13% 45%;
+	background-repeat: no-repeat;
+
+	&:before {
+		background: rgba(2, 2, 2, 0.5);
+	}
+}
+
+/* FAQ Page Header */
+
+.faq-page-header:before {
+		background: rgba(2, 2, 2, 0.15);
+}
+
+/* Blog Page Header */
+
+.blog-page-header {
+	background-position: 50% 24%;
+	background-repeat: no-repeat;
+
+	&:before {
+		background: rgba(2, 2, 2, 0.3);
+	}
+}
+
+/* Restaurant menu Page Header */
+
+.restaurant-menu-bg:before {
+	background: rgba(2, 2, 2, 0.4);
+}
+
+.restaurant-page-header:before {
+	background: rgba(0, 0, 0, 0.45);
+}
+
+.restaurant-image-overlay:before {
+	background-color: rgba(2, 2, 2, 0.25);
+}
+
+/* Portfolio Page Header */
+
+.portfolio-page-header {
+	background-position: 50% 50%;
+
+	&:before {
+		background: rgba(45, 45, 45, 0.45);
+	}
+}
+
+/* Landing Page Header */
+
+.landing-header:before {
+	position: absolute;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(119, 47, 109, 0.52) 95%, rgba(115, 35, 105, 0.58) 100%);
+	content: " ";
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.banner-img {
+	margin-top: -145px;
+}
+
+.shop-page-header:before {
+	background: rgba(34, 34, 34, 0.3);
+}

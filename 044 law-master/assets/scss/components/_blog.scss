@@ -1,0 +1,26 @@
+.pb_blog_v1 {
+	float: left;
+	width: 100%;
+	.card-title {
+		font-size: 30px;
+	}
+	.card-meta {
+		font-size: 14px;
+		color: $gray-400;
+		a {
+			color: $gray-400;
+			&:hover, &:focus, &:active {
+				color: $gray-900;
+			}
+		}
+	}
+}
+.pb_cards {
+	> .card {
+		border-radius: 0;
+		padding: 30px;
+		@include media-breakpoint-down(md) {
+			padding: 15px;
+		}
+	}
+}

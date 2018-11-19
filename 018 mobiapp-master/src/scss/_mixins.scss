@@ -1,0 +1,30 @@
+// Mixins
+
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Font Mixins
+@mixin body-font {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin text-font {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin text-roboto-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin heading-font {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin heading-roboto-font {
+  font-family: 'Roboto', sans-serif;
+}

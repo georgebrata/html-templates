@@ -1,0 +1,55 @@
+// Styling for the Button
+
+/*====================================================
+                  BUTTON (Generic)
+======================================================*/
+    
+    .btn-general {
+        background-color: transparent;
+        text-align: center;
+        border-width: 1px;
+        font-size: 16px;
+        padding: 10px 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        @include text-font;
+    } 
+
+    .btn-white {
+        border-color: $primary-col;
+        background-color: $primary-col;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color: $primary-col;
+            cursor: pointer;            
+        }
+    } 
+
+    .btn-greenish-blue {
+        border-color: $primary-col;
+        color: $primary-col;
+
+        &:hover,
+        &:focus {
+            background-color: $primary-col;
+            color: $white;
+            cursor: pointer;
+        }        
+    }
+
+    .heading-border {
+        width: 100px;
+        height: 5px;
+        background-color: $primary-col;
+        margin: 0 auto 20px auto;
+    }
+
+    .heading-border-light {
+        width: 30px;
+        height: 5px;
+        background-color: $primary-col;
+        margin: 0 0 20px 0;
+    }

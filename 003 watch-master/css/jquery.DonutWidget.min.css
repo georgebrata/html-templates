@@ -1,0 +1,605 @@
+.giant.donut-widget span.donut-caption,
+.giant.donut-widget span.donut-filling,
+.jumbo.donut-widget span.donut-caption,
+.jumbo.donut-widget span.donut-filling,
+.large.donut-widget span.donut-caption,
+.large.donut-widget span.donut-filling,
+.normal.donut-widget span.donut-filling,
+.small.donut-widget span.donut-caption,
+.small.donut-widget span.donut-filling,
+.tiny.donut-widget span.donut-caption,
+.tiny.donut-widget span.donut-filling {
+    display: block;
+    text-align: center;
+    font-family: "Open Sans";
+    color: #616161;
+    cursor: default
+}
+
+.tiny.donut-widget {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative
+}
+
+.tiny.donut-widget div.donut-hole {
+    height: 46.8px;
+    width: 46.8px;
+    background-color: #fff;
+    z-index: 20;
+    position: absolute;
+    top: 6.6px;
+    left: 6.6px;
+    border-radius: 46.8px;
+    line-height: 15px
+}
+
+.tiny.donut-widget span.donut-filling {
+    position: absolute;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 14.67px;
+    top: 50%;
+    margin-top: -7.5px;
+    width: 46.8px;
+    height: 15px;
+    overflow: none
+}
+
+.tiny.donut-widget div.donut-caption-wrapper {
+    width: 60px;
+    align-content: center;
+    position: relative;
+    top: 73.33px
+}
+
+.tiny.donut-widget span.donut-caption {
+    font-size: 5.78px;
+    font-weight: 600;
+    margin: 0 auto
+}
+
+.tiny.donut-widget .donut-bite {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    overflow: hidden;
+    top: 0;
+    left: 30.5px;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+.tiny.donut-widget .donut-bite.large {
+    width: 60px;
+    height: 60px;
+    left: 0;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform-origin: center center
+}
+
+.tiny.donut-widget .donut-bite.large:AFTER,
+.tiny.donut-widget .donut-bite:BEFORE {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 60px
+}
+
+.tiny.donut-widget .donut-bite:BEFORE {
+    top: 0;
+    left: -30px;
+    border-radius: 30px 0 0 30px;
+    -moz-transform-origin: right center;
+    -ms-transform-origin: right center;
+    -o-transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform-origin: right center
+}
+
+.tiny.donut-widget .donut-bite.large:BEFORE {
+    left: 0
+}
+
+.tiny.donut-widget .donut-bite.large:AFTER {
+    left: 30px;
+    border-radius: 0 30px 30px 0
+}
+
+.small.donut-widget div[chart-type*=donut] {
+    width: 85px;
+    height: 85px;
+    display: block;
+    position: relative
+}
+
+.small.donut-widget div.donut-hole {
+    height: 66.3px;
+    width: 66.3px;
+    background-color: #fff;
+    z-index: 20;
+    position: absolute;
+    top: 9.35px;
+    left: 9.35px;
+    border-radius: 66.3px;
+    line-height: 21.25px
+}
+
+.small.donut-widget span.donut-filling {
+    position: absolute;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 20.78px;
+    top: 50%;
+    margin-top: -10.63px;
+    width: 66.3px;
+    height: 21.25px;
+    overflow: none
+}
+
+.small.donut-widget div.donut-caption-wrapper {
+    width: 85px;
+    align-content: center;
+    position: relative;
+    top: 103.89px
+}
+
+.small.donut-widget span.donut-caption {
+    font-size: 8.19px;
+    font-weight: 600;
+    margin: 0 auto
+}
+
+.small.donut-widget .donut-bite {
+    position: absolute;
+    width: 42.5px;
+    height: 85px;
+    overflow: hidden;
+    top: 0;
+    left: 43px;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+.small.donut-widget .donut-bite.large {
+    width: 85px;
+    height: 85px;
+    left: 0;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform-origin: center center
+}
+
+.small.donut-widget .donut-bite.large:AFTER,
+.small.donut-widget .donut-bite:BEFORE {
+    content: "";
+    position: absolute;
+    width: 42.5px;
+    height: 85px
+}
+
+.small.donut-widget .donut-bite:BEFORE {
+    top: 0;
+    left: -42.5px;
+    border-radius: 42.5px 0 0 42.5px;
+    -moz-transform-origin: right center;
+    -ms-transform-origin: right center;
+    -o-transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform-origin: right center
+}
+
+.small.donut-widget .donut-bite.large:BEFORE {
+    left: 0
+}
+
+.small.donut-widget .donut-bite.large:AFTER {
+    left: 42.5px;
+    border-radius: 0 42.5px 42.5px 0
+}
+
+.normal.donut-widget {
+    width: 110px;
+    height: 110px;
+    display: block;
+    position: relative
+}
+
+.normal.donut-widget div.donut-hole {
+    height: 85.8px;
+    width: 85.8px;
+    background-color: #fff;
+    z-index: 20;
+    position: absolute;
+    top: 12.1px;
+    left: 12.1px;
+    border-radius: 85.8px;
+    line-height: 27.5px
+}
+
+.normal.donut-widget span.donut-filling {
+    position: absolute;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 26.89px;
+    top: 50%;
+    margin-top: -13.75px;
+    width: 85.8px;
+    height: 27.5px;
+    overflow: none
+}
+
+.normal.donut-widget div.donut-caption-wrapper {
+    width: 110px;
+    align-content: center;
+    position: relative;
+    top: 134.44px
+}
+
+.normal.donut-widget span.donut-caption {
+    display: block;
+    text-align: center;
+    font-family: "Open Sans";
+    color: #616161;
+    font-size: 10.59px;
+    font-weight: 600;
+    cursor: default;
+    margin: 0 auto
+}
+
+.normal.donut-widget .donut-bite {
+    position: absolute;
+    width: 55px;
+    height: 110px;
+    overflow: hidden;
+    top: 0;
+    left: 55.5px;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+.normal.donut-widget .donut-bite.large {
+    width: 110px;
+    height: 110px;
+    left: 0;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform-origin: center center
+}
+
+.normal.donut-widget .donut-bite:BEFORE {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 110px;
+    top: 0;
+    left: -55px;
+    border-radius: 55px 0 0 55px;
+    -moz-transform-origin: right center;
+    -ms-transform-origin: right center;
+    -o-transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform-origin: right center
+}
+
+.normal.donut-widget .donut-bite.large:BEFORE {
+    left: 0
+}
+
+.normal.donut-widget .donut-bite.large:AFTER {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 110px;
+    left: 55px;
+    border-radius: 0 55px 55px 0
+}
+
+.large.donut-widget {
+    width: 135px;
+    height: 135px;
+    display: block;
+    position: relative
+}
+
+.large.donut-widget div.donut-hole {
+    height: 114.3px;
+    width: 117.3px;
+    background-color: #000;
+    z-index: 2;
+    position: absolute;
+    top: 10.85px;
+    left: 8.85px;
+    border-radius: 105.3px;
+    line-height: 33.75px;
+}
+
+.large.donut-widget span.donut-filling {
+    position: absolute;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 20px;
+    top: 50%;
+    color:#fff;
+    margin-top: -16.88px;
+    width: 115.3px;
+    height: 33.75px;
+    overflow: none
+}
+
+.large.donut-widget div.donut-caption-wrapper {
+    width: 135px;
+    align-content: center;
+    position: relative;
+    top: 165px
+}
+
+.large.donut-widget span.donut-caption {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 auto
+}
+
+.large.donut-widget .donut-bite {
+    position: absolute;
+    width: 67.5px;
+    height: 135px;
+    overflow: hidden;
+    top: 0;
+    left: 68px;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+.large.donut-widget .donut-bite.large {
+    width: 135px;
+    height: 135px;
+    left: 0;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform-origin: center center
+}
+
+.large.donut-widget .donut-bite.large:AFTER,
+.large.donut-widget .donut-bite:BEFORE {
+    content: "";
+    position: absolute;
+    width: 67.5px;
+    height: 135px
+}
+
+.large.donut-widget .donut-bite:BEFORE {
+    top: 0;
+    left: -67.5px;
+    border-radius: 67.5px 0 0 67.5px;
+    -moz-transform-origin: right center;
+    -ms-transform-origin: right center;
+    -o-transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform-origin: right center
+}
+
+.large.donut-widget .donut-bite.large:BEFORE {
+    left: 0
+}
+
+.large.donut-widget .donut-bite.large:AFTER {
+    left: 67.5px;
+    border-radius: 0 67.5px 67.5px 0
+}
+
+.jumbo.donut-widget {
+    width: 160px;
+    height: 160px;
+    display: block;
+    position: relative
+}
+
+.jumbo.donut-widget div.donut-hole {
+    height: 96px;
+    width: 96px;
+    background-color: #fff;
+    z-index: 20;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    border-radius: 96px;
+    line-height: 40px
+}
+
+.jumbo.donut-widget span.donut-filling {
+    position: absolute;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 39.11px;
+    top: 50%;
+    margin-top: -20px;
+    width: 96px;
+    height: 40px;
+    overflow: none
+}
+
+.jumbo.donut-widget div.donut-caption-wrapper {
+    width: 160px;
+    align-content: center;
+    position: relative;
+    top: 195.56px
+}
+
+.jumbo.donut-widget span.donut-caption {
+    font-size: 15.41px;
+    font-weight: 600;
+    margin: 0 auto
+}
+
+.jumbo.donut-widget .donut-bite {
+    position: absolute;
+    width: 80px;
+    height: 160px;
+    overflow: hidden;
+    top: 0;
+    left: 80.5px;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+.jumbo.donut-widget .donut-bite.large {
+    width: 160px;
+    height: 160px;
+    left: 0;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform-origin: center center
+}
+
+.jumbo.donut-widget .donut-bite.large:AFTER,
+.jumbo.donut-widget .donut-bite:BEFORE {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 160px
+}
+
+.jumbo.donut-widget .donut-bite:BEFORE {
+    top: 0;
+    left: -80px;
+    border-radius: 80px 0 0 80px;
+    -moz-transform-origin: right center;
+    -ms-transform-origin: right center;
+    -o-transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform-origin: right center
+}
+
+.jumbo.donut-widget .donut-bite.large:BEFORE {
+    left: 0
+}
+
+.jumbo.donut-widget .donut-bite.large:AFTER {
+    left: 80px;
+    border-radius: 0 80px 80px 0
+}
+
+.giant.donut-widget {
+    width: 350px;
+    height: 350px;
+    display: block;
+    position: relative
+}
+
+.giant.donut-widget div.donut-hole {
+    height: 140px;
+    width: 140px;
+    background-color: #fff;
+    z-index: 20;
+    position: absolute;
+    top: 105px;
+    left: 105px;
+    border-radius: 140px;
+    line-height: 87.5px
+}
+
+.giant.donut-widget span.donut-filling {
+    position: absolute;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 85.55px;
+    top: 50%;
+    margin-top: -43.75px;
+    width: 140px;
+    height: 87.5px;
+    overflow: none
+}
+
+.giant.donut-widget div.donut-caption-wrapper {
+    width: 350px;
+    align-content: center;
+    position: relative;
+    top: 427.78px
+}
+
+.giant.donut-widget span.donut-caption {
+    font-size: 33.7px;
+    font-weight: 600;
+    margin: 0 auto
+}
+
+.giant.donut-widget .donut-bite {
+    position: absolute;
+    width: 175px;
+    height: 350px;
+    overflow: hidden;
+    top: 0;
+    left: 175.5px;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+.giant.donut-widget .donut-bite.large {
+    width: 350px;
+    height: 350px;
+    left: 0;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    -webkit-transform-origin: center center;
+    transform-origin: center center
+}
+
+.giant.donut-widget .donut-bite.large:AFTER,
+.giant.donut-widget .donut-bite:BEFORE {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 350px
+}
+
+.giant.donut-widget .donut-bite:BEFORE {
+    top: 0;
+    left: -175px;
+    border-radius: 175px 0 0 175px;
+    -moz-transform-origin: right center;
+    -ms-transform-origin: right center;
+    -o-transform-origin: right center;
+    -webkit-transform-origin: right center;
+    transform-origin: right center
+}
+
+.giant.donut-widget .donut-bite.large:BEFORE {
+    left: 0
+}
+
+.giant.donut-widget .donut-bite.large:AFTER {
+    left: 175px;
+    border-radius: 0 175px 175px 0
+}

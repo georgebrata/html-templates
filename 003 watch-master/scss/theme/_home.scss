@@ -1,0 +1,645 @@
+
+.section-gap {
+	padding: 120px 0;
+}
+.section-title {
+	padding-bottom: 30px;
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 0;
+		@include media-breakpoint-down (md) {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+
+
+.p1-gradient-bg {
+  background-image: -moz-linear-gradient( 0deg, rgb(35,94,231) 0%, rgb(74,231,250) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(35,94,231) 0%, rgb(74,231,250) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(35,94,231) 0%, rgb(74,231,250) 100%);
+}
+
+.p1-gradient-color {
+  background: -moz-linear-gradient( 0deg, rgb(35,94,231) 0%, rgb(74,231,250) 100%);
+  background: -webkit-linear-gradient( 0deg, rgb(35,94,231) 0%, rgb(74,231,250) 100%);
+  background: -ms-linear-gradient( 0deg, rgb(35,94,231) 0%, rgb(74,231,250) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-btn {
+	@extend .p1-gradient-bg;
+	line-height: 36px;
+	padding-left: 30px;
+	padding-right: 60px;
+	border-radius: 25px;
+	border:none;
+	color: $white;
+	display: inline-block;
+	font-weight: 500;
+	position: relative;
+	@include transition();
+	cursor: pointer;
+	text-transform: uppercase;
+	position: relative;
+	&:focus {
+		outline: none;
+	}
+	span {
+		color: $white;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-60%);
+		right: 30px;
+		@include transition();
+	}
+	&:hover {
+		color: $white;
+		span {
+			color: $white;
+			right: 20px;
+		}
+	}
+	&.white {
+		border: 1px solid $white;
+		color: $white;
+		span {
+			color: $white;
+		}
+		&:hover {
+			background: $white;
+			color: $primary-color;
+			span {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+//--------- Start Banner Area -------------//
+
+.banner-area {
+	background:url(../img/header-bg.png) center;
+	background-size:cover;
+	.fullscreen {
+		@include media-breakpoint-down (lg) {
+			height: 800px !important;
+		}
+	}
+}
+.banner-content {
+	margin-top:-250px;
+	text-align:center;
+	h1{
+		color:$white;
+		font-size: 72px;
+		font-weight: 700;
+		line-height: 1em;
+		margin-top:20px;
+		span{
+			font-weight:700;
+		}
+		@include media-breakpoint-down(md) {
+			font-size: 36px;
+		}
+		br {
+			@include media-breakpoint-down (md) {
+				display: none;
+			}
+		}
+
+		@include media-breakpoint-down (lg) {
+			font-size:45px;
+		}	
+
+		@media ( max-width:414px ) {
+			font-size:40px;
+		}
+	}
+	h5{
+		font-weight:400;
+		letter-spacing: 3px;
+	}
+	@media(max-width:1280px){
+		br{
+			display:none;
+		}
+	}
+}
+
+.primary-btn{
+	background:$white;
+	border:1px solid transparent;
+	color:$black;
+	padding-left: 40px;
+	padding-right: 40px;	
+	border-radius:50px;
+	&:hover{
+		border:1px solid $white;
+		background:transparent;
+		color:$white;
+	}
+}
+
+
+//--------- End Banner Area -------------//
+
+
+//--------- Start video-sec-area  Area -------------//
+
+
+.video-left{
+	.primary-btn{
+		background-color:$black;
+		color:$white;
+		border:1px solid transparent;
+		@include transition();
+		&:hover{
+			border:1px solid $black;
+			background-color:transparent;
+			color:$black;
+		}
+	}
+	h6{
+		text-transform:uppercase;
+		letter-spacing:2px;
+		color:$primary-color;
+		font-size:12px;
+		font-weight:300;
+	}
+	h1{
+		padding-bottom:20px;
+	}
+	p{
+		span{
+			color:#000;		
+			font-weight:400;
+		}
+	}
+	@media(max-width:960px){
+		margin-bottom:30px;
+	}
+}
+
+.video-right{
+	background:url(../img/video-bg.png) no-repeat center;
+	background-size:cover;
+	height:350px;
+	.overlay-bg{
+		background-color:rgba(#000, .78);
+	}
+	.play-btn{
+		z-index: 2;
+	}
+	@media(max-width:800px){
+		margin-top:100px;
+	}
+}
+
+//--------- End video-sec-area  Area -------------//
+
+
+//--------- Start top-course Area -------------//
+
+.top-course-area{
+	background-color:$offwhite;
+}
+.course-right,.course-left{
+	.lnr{
+		color:$primary-color;
+		font-size:30px;
+	}
+	h4{
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+}
+
+.single-course{
+	margin-bottom:40px;
+}
+
+//--------- End top-course Area -------------//
+
+
+//--------- Start home-about Area -------------//
+
+.home-about-area{
+
+	.home-about-right{
+		padding-right:20%;
+		padding-left:4%;
+		h1{
+			margin-bottom:20px;
+		}
+		p{
+			span{
+				font-weight:500;
+			}
+		}
+		.primary-btn{
+			@extend .p1-gradient-bg;
+			color:$white;
+			border:1px solid $white;
+			@include transition();
+			&:hover{
+				background:transparent;
+				color:$primary-color;
+				border-color:$primary-color; 
+			}
+		}
+	}
+	@media(max-width:1366px){
+		.home-about-right{
+			padding-right:5%;
+			padding-left:4%;
+		}
+	}
+	@media(max-width:800px){
+		.home-about-right{
+			margin-top: 40px;
+		}
+	}
+
+}
+
+//--------- End home-about Area -------------//
+
+
+//--------- Start service Area -------------//
+
+.service-area{
+	.header-text{
+		text-align:center;
+		h1{
+			margin-bottom:20px;
+		}	
+	}
+}
+
+
+.single-service {
+	background-color:$offwhite;
+	padding:30px;
+	margin-bottom:30px;
+	border-radius: 10px;
+	@include transition();
+	&:hover{
+		box-shadow: 0px 20px 30px 0px rgba(35, 94, 231, 0.2);
+		cursor:pointer;
+		h4{
+			color:$primary-color;
+		}
+	}
+	h4{
+		@include transition();
+		margin-top:20px;
+		margin-bottom:20px;
+		.lnr{
+			margin-right:15px;
+		}
+	}
+}
+
+
+//--------- End service Area -------------//
+
+
+//--------- Start unique-feature Area -------------//
+
+.unique-feature-area{
+	background-color:#04091e;
+}
+
+.single-unique-product{
+	background-color:$white;
+	text-align:center;
+	border-radius:10px;
+	margin-bottom:30px;
+	@include transition();
+	img{
+		padding:40px 0px;
+	}
+	h6{
+		color:$primary-color;
+		margin-top:20px;
+		margin-bottom:10px;
+	}
+	.desc{
+		background-color:#f9f9ff;
+		padding:20px 0;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.primary-btn{
+		background-color:$black;
+		color:$white;
+		border:1px solid $white;
+		@include transition();
+	}
+	&:hover{
+		.primary-btn{
+			@extend .p1-gradient-bg;
+		}
+	}
+}
+
+//--------- End unique-feature Area -------------//
+
+
+//--------- Start Review Area -------------//
+
+.single-review{
+	text-align:center;
+	background-color:$offwhite;
+	padding:30px;
+	margin-bottom:30px;
+    border-radius: 10px;
+    @include transition();
+	p{
+		margin-top:20px;
+	}
+	.star{
+		.checked {
+		    color: orange;
+		}
+	}
+	&:hover{
+	  cursor:pointer;
+	  background-color: rgb(255, 255, 255);
+	  box-shadow: 0px 20px 30px 0px rgba(35, 94, 231, 0.2);
+	}
+}
+
+
+//--------- End Review Area -------------//
+
+//--------- start faq area  -------------//
+
+.faq-area{
+	background:url(../img/faq-bg.jpg) center;
+	background-size:cover;
+}
+
+.faq-left{
+	.card{
+		border:none;
+		background:transparent;
+		border-radius:0!important;
+		margin-bottom:10px;
+	}
+	.card-header{
+		padding: 5px;
+		border-radius:0!important;
+		border-bottom: none;
+		@extend .p1-gradient-bg;
+		.btn-link{
+			border-radius:0!important;
+			color:$white;
+			text-decoration:none;
+			@media(max-width:414px){
+				font-size:12px;
+			}
+		}
+	}
+
+
+
+
+}
+
+
+//--------- End faq Area -------------//
+
+//--------- start footer Area -------------//
+
+	.footer-area{
+		padding-top:100px;
+		background-color:#04091e;
+	}
+	h6{
+		color:#fff;
+		margin-bottom:25px;
+		font-size:18px;
+		font-weight:600;
+	}
+	
+	.copy-right-text{
+		i,a{
+			color:$primary-color;
+		}
+	}
+
+
+
+
+	.footer-social{
+		a{
+			padding-right:25px;
+			@include transition();
+			&:hover{
+			
+				i{
+						@extend .p1-gradient-color;
+				}
+			}
+		}
+		
+		i{
+			color:#cccccc;
+			@include transition();
+
+		}
+		@include media-breakpoint-down(md) {
+			text-align:left;
+		}
+	}
+
+
+	.single-footer-widget {
+		input {
+			border: none;
+			width:80%!important;
+			font-weight: 300;
+			background: #191919;
+			color:#777;
+			padding-left:20px;
+			border-radius: 0;
+			font-size: 14px;
+			padding: 10px 18px;
+			&:focus {
+    			background-color: #191919;
+			}
+		}
+
+		.bb-btn{
+			@extend .p1-gradient-color;
+			color:#fff;
+			font-weight:300;
+			border-radius:0;
+			z-index:9999;
+			cursor:pointer;
+		}
+
+		.info {
+				position:absolute;
+				margin-top:20%;
+				color: #fff;
+				font-size: 12px;
+				&.valid {
+					color: green;
+				}
+				&.error {
+					color: red;
+				}
+		}
+
+		.click-btn{
+			@extend .p1-gradient-bg;
+			color: #fff;
+			border-radius: 0;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			padding: 8px 12px;
+			border:0;
+		}
+
+		::-moz-selection { /* Code for Firefox */
+	  	 	 background-color: #191919!important;
+	  		 color: $text-color;
+		}
+		::selection {
+		    background-color: #191919!important;
+		    color: $text-color;
+		}
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		    color:    $text-color;
+		    font-weight: 300;
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		   color:    $text-color;
+		   opacity:  1;
+		   font-weight: 300;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   color:    $text-color;
+		   opacity:  1;
+		   font-weight: 300;
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		   color:    $text-color;
+		   font-weight: 300;
+		}
+		::-ms-input-placeholder { /* Microsoft Edge */
+		   color:    $text-color;
+		   font-weight: 300;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin-bottom:30px;
+		}
+	}
+		
+
+
+		@media(max-width:800px){
+			.social-widget{
+				margin-top:30px;
+			}			
+		}
+		
+
+	.footer-text{
+		padding-top:20px;
+		a,i{
+			color:$primary-color;
+		}
+	}
+
+//--------- end footer Area -------------//
+
+//----------- Start Generic Page -------------//
+
+.whole-wrap{
+	background-color:$white;
+}
+
+
+.generic-banner {
+	@extend .p1-gradient-bg;
+	text-align:center;
+	.height {
+		height: 600px;
+		@include media-breakpoint-down (sm) {
+			height: 400px;
+		}
+	}
+	.generic-banner-content {
+		h2 {
+			line-height: 1.2em;
+			margin-bottom: 20px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+		p {
+			text-align:center;
+			font-size: 16px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.generic-content{
+	h1{
+		font-weight:600;	
+	}
+}
+
+
+.about-generic-area {
+	background: $white;
+	.border-top-generic {
+
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}
+.white-bg {
+	background: $white;
+}
+.section-top-border {
+	padding: 70px 0;
+	border-top: 1px dotted #eee;
+}
+.switch-wrap {
+	margin-bottom: 10px;
+	p {
+		margin: 0;
+	}
+}
+//----------- End Generic Page -------------//

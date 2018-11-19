@@ -1,0 +1,77 @@
+
+
+
+/*=======================================
+Template Design By MarkUps	
+Author URI : http://www.markups.io/
+========================================*/
+
+
+
+.mu-primary-btn:hover,
+.mu-primary-btn:focus,
+.mu-copy-right a:hover,
+.mu-copy-right a:focus,
+.mu-send-msg-btn:hover,
+.mu-send-msg-btn:focus,
+.mu-apple-btn:hover,
+.mu-google-btn:hover,
+.mu-windows-btn:hover,
+.mu-apple-btn:focus,
+.mu-google-btn:focus,
+.mu-windows-btn:focus,
+.mu-feature-content-right .media:hover .media-heading,
+.mu-apps-screenshot-slider .slick-next::before,
+.mu-apps-screenshot-slider .slick-prev::before,
+.mu-faq-content .panel-title a:hover,
+.mu-faq-content .panel-title a:focus,
+.mu-faq-content .panel-title a[aria-expanded="true"],
+.mu-faq-content .panel-title a>span,
+.mu-menu ul li a:hover,
+.mu-menu ul li a:focus {
+	color: #ff871c;
+}
+
+.mu-social-media a:hover,
+.mu-social-media a:focus,
+.mu-contact-right-single .mu-icon {
+	border: 1px solid #ff871c;
+	color: #ff871c;
+}
+
+.mu-contact-form .form-control:focus {
+	border: 1px solid #ff871c;    
+} 
+
+.mu-send-msg-btn {
+	border: 1px solid #ff871c;
+	background-color: #ff871c;
+}
+
+.mu-header-overlay,
+.mu-menu-btn,
+.mu-title-dot,
+.mu-title-dot::before,
+.mu-title-dot::after,
+.mu-feature-btn,
+.mu-video-overlay {
+	background-color: #ff871c;
+}
+.mu-feature-content-right .media:hover {
+	border-bottom: 1px solid #ff871c;
+}
+
+.mu-apps-screenshot-slider .slick-next,
+.mu-apps-screenshot-slider .slick-prev {
+	border: 2px solid #ff871c;
+	color: #ff871c;
+}
+
+.mu-faq-content .panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-color: #ff871c;
+
+}
+
+
+
+

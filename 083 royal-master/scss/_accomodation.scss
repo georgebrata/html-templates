@@ -1,0 +1,137 @@
+.accomodation_area{
+}
+.accomodation_item{
+    margin-bottom: 30px;
+    .hotel_img{
+        position: relative;
+        margin-bottom: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        img{
+            transition: all 0.4s linear;
+        }
+        .theme_btn{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 5px 25px;
+            max-width: 128px;
+        }
+        &:hover{
+            img{
+                transform: scale(1.19);
+            }
+        }
+    }
+    h5{
+        font-size: 24px;
+        line-height: 28px;
+        color: $light_blue;
+        font-weight: 600;
+        margin-bottom: 0px;
+        small{
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+}
+.sec_h4{
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 600;
+    color: $dark;
+    margin-bottom: 0px;
+}
+
+.accomodation_two{
+    margin-bottom: -40px;
+    .accomodation_item{
+        margin-bottom: 45px;
+    }
+}
+
+/*=========== Start facilities_area css =============*/
+.facilities_area{
+    position: relative;
+    z-index: 1;
+    background: #04091e;
+    overflow: hidden;
+    .bg-parallax{
+        background: url("../image/facilites_bg.jpg") no-repeat scroll center 0 / cover;
+        opacity: 0.15;
+    }
+}
+.facilities_item{
+    border:1px solid #777777;
+    border-radius: 10px;
+    background-color: rgba(249, 249, 255, 0.102);
+    padding: 31px 40px 37px;
+    color: #fff;
+    margin-bottom: 30px;
+    .sec_h4{
+        padding-bottom: 18px;
+        color: #fff;
+        i{
+            color: $yellow;
+            font-size: 24px;
+            line-height: 38px;
+            display: inline-block;
+            vertical-align: bottom;
+            padding-right: 20px;
+        }
+    }
+    p{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+}
+/*=========== End facilities_area css =============*/
+
+/*=========== Start about_history_area css =============*/
+.about_content{
+    padding-right: 60px;
+    p{
+        padding: 18px 0px 30px;
+    }
+}
+/*=========== End about_history_area css =============*/
+
+
+.gallery_item{
+    margin-bottom: 30px;
+    img{
+        max-width: 100%;
+    }
+	.gallery_img{
+		position: relative;
+		.hover{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			background: rgba(0, 0, 0, .5);
+			width: 100%;
+			text-align: center;
+			font-size: 24px;
+			height: 100%;
+			color: #fff;
+			transition: all 300ms ease;
+			opacity: 0;
+			i{
+				position: absolute;
+				left: 0px;
+				top: 50%;
+				width: 100%;
+				text-align: center;
+				transform: translateY(-50%);
+				color: #fff;
+			}
+		}
+		&:hover{
+			.hover{
+				opacity: 1;
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+/*     Navbar     */
+
+.navbar .navbar-nav .nav-item .nav-link {
+  display: inline-block;
+  vertical-align: middle;
+  color: #666;
+  line-height: 55px;
+  letter-spacing: 0.04em;
+  padding: 0 20px 0 0;
+  position: relative;
+  font-size: 14px;
+  font-weight: $font-weight-mediumbold;
+  text-align: center;
+  i {
+    font-size: 22px;
+    width: 30px;
+    vertical-align: middle;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.dropdown-item {
+  font-size: 14px;
+}
+
+.navbar .navbar-nav .notification {
+  position: absolute;
+  background-color: $danger-color;
+  text-align: center;
+  border-radius: 10px;
+  min-width: 17px;
+  height: 17px;
+  font-size: 11px;
+  color: $white-color;
+  font-weight: bold;
+  line-height: 17px;
+  top: 11px;
+  right: 12px;
+}
+
+.navbar-header {
+  padding: 0px 15px;
+  .dropdown-toggle {
+    line-height: 55px;
+    &::after {
+      margin-left: 0;
+    }
+  }
+}
+
+.profile-pic {
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+.navbar-header .dropdown-toggle::after {
+  vertical-align: middle;
+  color: #555;
+}
+
+.hidden-caret .dropdown-toggle::after {
+  display: none !important;
+}
+
+.profile-pic {
+  .img-circle {
+    border-radius: 50%;
+  }
+  span {
+    font-size: 14px;
+    font-weight: $font-weight-bold;
+    padding: 0 10px;
+    color: #555;
+  }
+}

@@ -1,0 +1,47 @@
+/* Forms */
+
+.input-group-addon {
+  background: color(white);
+  color: $input-placeholder-color;
+  width: auto;
+  padding: $input-btn-padding-y .75rem;
+  border-color: $border-color;
+}
+.form-control {
+  border: 1px solid $border-color;
+  font-family: $type1-regular;
+  font-size: $input-font-size;
+  padding: $input-btn-padding-y .75rem;
+  line-height: 14px;
+  &.form-control-lg {
+    padding: $input-btn-padding-y-lg .75rem;
+  }
+  &.form-control-sm {
+    padding: $input-btn-padding-y-sm .75rem;
+  }
+}
+
+select {
+  &.form-control {
+    padding: .4375rem .75rem;
+  }
+}
+.form-group {
+  label {
+    font-size: $default-font-size;
+    line-height: 1;
+    vertical-align: top;
+  }
+  &.has-danger {
+    .form-control {
+      border-color: theme-color(danger);
+    }
+  }
+  .file-upload-default {
+    visibility: hidden;
+    position: absolute;
+  }
+  .file-upload-info {
+    background: transparent;
+  }
+}

@@ -1,0 +1,222 @@
+/* Footer Area css
+============================================================================================ */
+.footer_area{
+    
+}
+.footer_widgets_area{
+    background: #131627;
+    overflow: hidden;
+    padding: 80px 0px;
+}
+.f_widgets_inner{}
+.f_widget{}
+.f_w_title{
+    padding-bottom: 25px;
+    h3{
+        color: #fff;
+        font-family: $pop;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+.subscribe_widget{
+    p{
+        font-size: 14px;
+        line-height: 26px;
+        color: #b5aec4;
+        font-weight: 300;
+        font-family: $pop;
+        padding-bottom: 20px;
+    }
+    .input-group{
+        input{
+            background: #2b2e3d;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            height: 40px;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #b5aec4;
+            font-family: $pop;
+            padding: 0px 15px;
+            @include placeholder{
+                font-size: 12px;
+                color: #b5aec4;
+                font-family: $pop;
+            }
+        }
+        .input-group-btn{
+            .btn-secondary{
+                
+            }
+        }
+    }
+    ul{
+        padding-top: 30px;
+        li{
+            display: inline-block;
+            margin-right: 32px;
+            a{
+                font-size: 14px;
+                color: #b5aec4;
+                @include transition;
+            }
+            &:hover{
+                a{
+                    color: #2bc0a4;
+                }
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+}
+.twitter_widget{
+    margin-left: 55px;
+    .tweets_feed{
+        ul{
+            .owl-item{
+                .tw_content{
+                    .tweet_text{
+                        i{
+                            padding-right: 5px;
+                            color: #2bc0a4;
+                        }
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #b5aec4;
+                        font-family: $pop;
+                        a{
+                            font-size: 14px;
+                            line-height: 26px;
+                            color: #b5aec4;
+                            font-family: $pop;
+                            @include transition;
+                            &:hover{
+                                color: #2bc0a4;
+                            }
+                        }
+                    }
+                    .tweet_date{
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #b5aec4;
+                        font-family: $pop;
+                        padding-top: 15px;
+                    }
+                }
+                .footer{
+                    .tweet_time.fright{
+                        a{
+                            font-size: 14px;
+                            line-height: 26px;
+                            color: #2bc0a4;
+                            font-family: $pop;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.categories_widget{
+    margin-left: 70px;
+    ul{
+        width: calc(100% / 2);
+        float: left;
+        margin-top: -4px;
+        li{
+            a{
+                position: relative;
+                font-size: 14px;
+                color: #b5aec4;
+                font-family: $pop;
+                line-height: 36px;
+                @include transition;
+                i{
+                    position: absolute;
+                    left: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    opacity: 0;
+                    @include transition;
+                }    
+            }
+            &:hover{
+                a{
+                    padding-left: 15px;
+                    color: #2bc0a4;
+                    i{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.contact_widget{
+    margin-left: 50px;
+    a, p, h6{
+        font-size: 14px;
+        color: #b5aec4;
+        font-family: $pop;
+        @include transition;
+        &:hover{
+            color: #2bc0a4;
+        }
+    }
+    p{
+        padding: 23px 0px;
+    }
+    h6{
+        
+    }
+}
+.copy_right_area{
+    background: #04081d;
+    overflow: hidden;
+    .float-md-left{
+        h5{
+            color: #51545f;
+            font-size: 14px;
+            font-family: $pop;
+            line-height: 50px;
+            a{
+                @include transition;
+                color: #51545f;
+                font-size: 14px;
+                font-family: $pop;
+                line-height: 50px;
+                &:hover{
+                    color: #2bc0a4;
+                }
+            }
+        }
+    }
+    .float-md-right{
+        .nav{
+            li{
+                margin-right: 35px;
+                a{
+                    padding: 0px;
+                    line-height: 50px;
+                    font-size: 14px;
+                    color: #51545f;
+                    @include transition;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover{
+                    a{
+                        color: #2bc0a4;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Footer Area css
+============================================================================================ */

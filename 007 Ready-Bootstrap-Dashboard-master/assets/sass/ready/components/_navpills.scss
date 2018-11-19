@@ -1,0 +1,71 @@
+/*     Nav Pill     */
+
+.nav-pills > li {
+  &:first-child > a {
+    border-radius: 4px 0 0 4px !important;
+  }
+  &:last-child > a {
+    border-radius: 0 4px 4px 0 !important;
+  }
+}
+
+.nav-link.disabled {
+  color: #6c757d !important;
+}
+
+.nav-pills {
+  > li > a {
+    margin-left: -1px;
+    border-radius: 0 !important;
+    &.active {
+      background: $primary-color;
+    }
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    &:hover {
+      background: #fafafa;
+    }
+  }
+  &.nav-default > li > a {
+    &.active {
+      background: $default-color;
+    }
+    border: 1px solid $default-color;
+    color: $default-color;
+  }
+  &.nav-primary > li > a {
+    &.active {
+      background: $primary-color;
+    }
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+  &.nav-info > li > a {
+    &.active {
+      background: $info-color;
+    }
+    border: 1px solid $info-color;
+    color: $info-color;
+  }
+  &.nav-success > li > a {
+    &.active {
+      background: $success-color;
+    }
+    border: 1px solid $success-color;
+    color: $success-color;
+  }
+  &.nav-warning > li > a {
+    &.active {
+      background: $warning-color;
+    }
+    border: 1px solid $warning-color;
+    color: $warning-color;
+  }
+  &.nav-danger > li > a {
+    &.active {
+      background: $danger-color;
+    }
+    border: 1px solid $danger-color;
+    color: $danger-color;
+  }
+}

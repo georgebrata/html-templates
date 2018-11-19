@@ -1,0 +1,342 @@
+/*------------------------------------------------------------------
+    File Name: versions.css
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+    [Table of contents]
+
+    1. CLINIC VERSION
+ 
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+    1. CLINIC VERSION
+-------------------------------------------------------------------*/
+
+body.clinic_version {
+    font-family: 'Roboto', sans-serif;
+}
+
+body.clinic_version .footer-links li:hover a,
+body.clinic_version .widget-title small,
+body.clinic_version .customwidget li i,
+body.clinic_version .navbar-nav span {
+    color: #1d86df !important;
+}
+
+body.clinic_version .testimonial h4,
+body.clinic_version .lead strong,
+body.clinic_version .icon-wrapper:hover a,
+body.clinic_version a:hover,
+body.clinic_version a:focus {
+    color: #39b49a
+}
+
+
+/**************************************
+GRADIENTS 
+**************************************/
+
+body.clinic_version .hc.colon2,
+body.clinic_version .btn-buy:hover,
+body.clinic_version .cac:hover,
+body.clinic_version .icon_wrap:hover,
+body.clinic_version .nav-pills > li.active > a,
+body.clinic_version .nav-pills > li.active > a:focus,
+body.clinic_version .nav-pills > li.active > a:hover,
+body.clinic_version .icon-wrapper:hover i,
+body.clinic_version .grd1 {
+    color: #ffffff;
+    background: #39b49a;
+    border: #39b49a;
+    background: -moz-linear-gradient(left, #39b49a 0%, #1d86df 100%);
+    background: -webkit-linear-gradient(left, #39b49a 0%, #1d86df 100%);
+    background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#39b49a', endColorstr='#1d86df', GradientType=1);
+}
+
+body.clinic_version .dev-list .widget h3,
+body.clinic_version .icon_wrap,
+body.clinic_version .dmtop:hover,
+body.clinic_version .features-right li:hover i,
+body.clinic_version .features-left li:hover i,
+body.clinic_version .nav-pills > li:hover > a,
+body.clinic_version .nav-pills > li:focus > a,
+body.clinic_version .nav-pills > li.active > a,
+body.clinic_version .nav-pills > li.active > a:focus,
+body.clinic_version .nav-pills > li.active > a:hover,
+body.clinic_version .divider-bar,
+body.clinic_version .owl-next:hover i,
+body.clinic_version .owl-prev:hover i,
+body.clinic_version .icon-wrapper:hover i:hover,
+body.clinic_version .grd1:hover,
+body.clinic_version .grd1:focus {
+    background-position: 100px;
+    color: #ffffff;
+    background: #1d86df;
+    background: -moz-linear-gradient(left, #1d86df 0%, #39b49a 100%);
+    background: -webkit-linear-gradient(left, #1d86df 0%, #39b49a 100%);
+    background: linear-gradient(to right, #1d86df 0%, #39b49a 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1d86df', endColorstr='#39b49a', GradientType=1);
+}
+
+body.clinic_version .navbar-nav span {
+    color: #1d86df !important;
+}
+
+body.clinic_version .affix {
+    background-color: #ffffff !important;
+}
+
+body.clinic_version .header_style_01 {
+    position: relative;
+    background-color: #ffffff;
+}
+
+body.clinic_version .header_style_01 .navbar-default .navbar-nav > li > a {
+    color: #1f1f1f !important;
+}
+
+body.clinic_version .header_style_01 .navbar-default .navbar-right > li > a {
+    color: #ffffff !important;
+    opacity: 1;
+}
+
+body.clinic_version .app_iphone_01 {
+    position: absolute;
+    right: 5%;
+    z-index: 2;
+    bottom: 0%;
+}
+
+body.clinic_version .app_iphone_02 {
+    position: absolute;
+    right: 25%;
+    bottom: -8%;
+    z-index: 1;
+}
+
+body.clinic_version .app_iphone_03 {
+    position: absolute;
+    right: 0%;
+    bottom: -8%;
+    z-index: 1;
+}
+
+body.clinic_version .first-section {
+    padding: 11em 0 10em;
+}
+
+body.clinic_version .first-section h2 {
+    color: #1f1f1f;
+    padding-top: 30px;
+    text-transform: capitalize;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+body.clinic_version .first-section .lead {
+    color: #999999;
+}
+
+body.clinic_version .how-its-work .hc {
+    padding: 60px;
+    width: 33.3333%;
+    color: #ffffff;
+    float: left;
+}
+
+body.clinic_version .how-its-work .hc h2 {
+    font-size: 54px;
+    display: block;
+    padding: 0;
+    margin: 0 0 15px;
+    line-height: 1 !important;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+body.clinic_version .how-its-work .hc p {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff !important;
+}
+
+body.clinic_version .how-its-work .hc p.lead {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff !important;
+}
+
+body.clinic_version .message-box h2 {
+    font-weight: bold;
+    font-size: 34px;
+}
+
+body.clinic_version .effect-1:after {
+    box-shadow: 0 0 0 2px #39b49a;
+}
+
+body.clinic_version .section-title h3 {
+    font-size: 34px;
+    padding: 10px 0 0;
+    font-weight: bold;
+    line-height: 1 !important;
+}
+
+body.clinic_version .section-title small {
+    font-size: 16px;
+}
+
+body.clinic_version .section-title hr {
+    width: 80px;
+    margin: 0 auto 0 !important;
+    padding: 1px;
+    background-color: #111;
+}
+
+body.clinic_version .section {
+    padding: 90px 0;
+}
+
+body.clinic_version .nopad {
+    padding: 0 !important;
+}
+
+body.clinic_version .nav-pills {
+    text-align: left !important;
+    border-radius: 0;
+}
+
+body.clinic_version .nav-pills > li > a {
+    background-color: #f2f3f5;
+    border-radius: 0 !important;
+    text-align: left;
+}
+
+body.clinic_version .nav-pills > li {
+    text-align: left !important;
+    float: none;
+    margin: 0 !important;
+    padding: 5px;
+    width: 100%;
+}
+
+body.clinic_version .tab-pane p {
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+
+body.clinic_version .db .section-title small {
+    color: #ffffff;
+}
+
+body.clinic_version .dev-list .widget {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+body.clinic_version .dev-list .widget h3 {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1 !important;
+    margin: 0 !important;
+    padding: 4px 10px;
+    position: relative;
+    top: -12px;
+}
+
+body.clinic_version .dev-list .widget small {
+    display: block;
+    margin: -10px 0 5px;
+}
+
+body.clinic_version .footer-social {
+    display: block;
+    margin-top: 15px;
+}
+
+body.clinic_version .desc {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ededed;
+}
+
+body.clinic_version .desc:after,
+body.clinic_version .desc:before {
+    top: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+body.clinic_version .desc:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #fff;
+    border-width: 15px;
+    margin-left: -15px;
+}
+
+body.clinic_version .desc:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-top-color: #ededed;
+    border-width: 16px;
+    margin-left: -16px;
+}
+
+body.clinic_version .testimonial small {
+    font-size: 13px;
+}
+
+body.clinic_version .working-time {
+    padding: 0;
+    list-style: none;
+}
+
+body.clinic_version .working-time li {
+    padding: 5px 0;
+    position: relative;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+}
+
+body.clinic_version .working-time li span {
+    position: absolute;
+    right: 0;
+}
+
+body.clinic_version .working-time li:first-child {
+    border-top: 1px dashed rgba(255, 255, 255, 0.4);
+}
+
+body.clinic_version .testimonial h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 10px;
+}
+
+body.clinic_version .desc h3 i {
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+}
+
+body.clinic_version .footer {
+    background-color: #ffffff;
+}
+
+body.clinic_version .footer .widget-title h3 {
+    color: #1f1f1f;
+}
+
+body.clinic_version .footer-links li {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1)
+}
+
+body.clinic_version .footer-links i {
+    border-right: 1px dashed rgba(0, 0, 0, 0.1)
+}

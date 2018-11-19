@@ -1,0 +1,35 @@
+.about {
+	.about-cont {
+		padding: 3px 0 10px 0;
+		box-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+		background:$gray-100;
+		border-radius: 0 0 5px 5px;
+		border-top: 3px solid $primary-b;
+		&.second {
+			border-color: $primary-y;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		p {
+			margin-bottom: 0;
+			padding:10px;
+			color:$gray-600;
+		}
+
+		a {
+			margin:0 10px;
+			color:$primary-b;
+			text-decoration: none;
+		}
+
+		@media (max-width:767px) {
+			margin-top: 30px;
+		}
+	}
+	@media (max-width: 575px) {
+		padding:50px 0;
+	}
+}

@@ -1,0 +1,67 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+/*====================================================
+                    FAQ
+======================================================*/
+
+    #faq-p1{
+      padding:100px 0;
+    } 
+    
+      .toggle .toggle-title {
+        position: relative;
+        display: block;
+        border-bottom: 1px solid #dddddd;
+        margin-bottom: 6px;
+      }
+      .toggle .toggle-title h3 {
+        font-size: 20px;
+        margin: 0px;
+        line-height: 25px;
+        cursor: pointer;
+        font-weight: 200;
+      }
+      .toggle .toggle-inner {
+        padding: 7px 25px 10px 25px;
+        display: none;
+        margin: -7px 0 6px;
+      }
+      .toggle .toggle-inner div {
+        max-width: 100%;
+      }
+      .toggle .toggle-title .title-name {
+        display: block;
+        padding: 25px 25px 14px;
+      }
+      .toggle .toggle-title a i {
+        font-size: 22px;
+        margin-right: 5px;
+      }
+      .toggle .toggle-title i {
+        position: absolute;
+        background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+        width: 24px;
+        height: 24px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        margin: 20px;
+        right: 0;
+      }
+      .toggle .toggle-title.active i {
+        background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px no-repeat;
+      }
+
+      @media (max-width: 575px){
+        .toggle .toggle-title i { 
+          margin: 20px 0 20px 20px;
+          right: 0;
+        }
+      }

@@ -1,0 +1,136 @@
+a {
+	color: #111;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #aaa;
+	outline: 0;
+}
+
+.bg-dark a {
+	color: #aaa;
+}
+
+.bg-dark a:hover, .bg-dark a:focus {
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.4;
+	font-weight: 400;
+}
+
+p, ol, ul, blockquote {
+	margin: 0 0 20px;
+}
+
+blockquote {
+	border: 0;
+	font-style: italic;
+	font-size: 15px;
+	padding: 0;
+}
+
+.font-alt {
+	font-family: "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.font-serif {
+	font-family: Volkhov, "Times New Roman", sans-serif;
+	font-style: italic;
+}
+
+.large-text {
+	font-size: 24px !important;
+}
+
+.rotate {
+	text-shadow: none !important;
+}
+
+.module-title {
+	position: relative;
+	letter-spacing: 4px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 30px;
+	color: #111;
+	margin: 0 0 70px;
+}
+
+.module-subtitle {
+	text-align: center;
+	font-size: 16px;
+	color: #111;
+	margin-bottom: 70px;
+}
+
+.module-icon {
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.module-title + .module-subtitle {
+	margin-top: -35px;
+}
+
+/* Restaurant module header */
+
+.alt-module-subtitle {
+	display: table;
+}
+
+.alt-module-subtitle h5 {
+	display: table-cell;
+	white-space: pre;
+	padding: 0 8px;
+	color: #111;
+}
+
+/* Finance case study header */
+.finance-image-content {
+	border: 1px solid #e5e5e5;
+	padding: 60px 0px;
+
+	.module-title {
+		margin-bottom: 20px;
+	}
+
+	.alt-features-item {
+		margin-top: 40px;
+	}
+}
+
+/* Landing Page */
+
+.landing-reason {
+	.module-title {
+		color: #e6af4b;
+	}
+	.module-title + .module-subtitle {
+		margin-top: -60px;
+		margin-bottom: 40px;
+	}
+}
+
+.free-trial {
+	background-color: rgba(88, 20, 158, 0.9);
+	color: #FFFFFF;
+
+	.color-golden {
+		color: #e6af4b;
+	}
+}
+
+/*  Special Portfolio Page  */
+
+.special-portfolio-header-title {
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	font-size: 50px;
+	padding: 40px 0px;
+	letter-spacing: 8px;
+}

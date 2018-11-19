@@ -1,0 +1,769 @@
+// ============= Start Aboutus Page Styles  =============  //
+
+
+//--------- Start Aboutus Area style -------------//
+
+.link-nav{
+	margin-top:10px;
+}
+
+.about-content{
+	padding: 150px 0px;	
+	text-align:center;
+	h1{
+		font-size: 48px;
+		font-weight:300;
+	}
+	a{
+		color:$white;
+		font-weight:300;
+		font-size:14px;
+	}
+	.lnr{
+		margin:0px 10px;
+		font-weight:600;
+	}	
+}
+
+//--------- End Aboutus Area style -------------//
+
+//--------- Start feature Area -------------//
+
+.feature-area{
+	background-color:$black;
+}
+
+
+.feat-img img{
+	width:100%;
+}
+
+.feat-txt{
+	h6{
+		font-weight:100;
+		letter-spacing:2px;
+	}
+	h1{
+		@extend .p1-gradient-color;
+		padding:15px 0;
+	}
+	padding:0px 70px;
+	@media(max-width:1280px){
+		h1{
+			font-size:30px;
+		}
+		padding:0px 12px;
+	}
+	@media(max-width:1024px){
+		h6,p{
+			font-size:12px;
+		}
+		p{
+			margin:0;
+			padding:0;
+		}
+		h1{
+			font-size:24px;
+			padding:5px 0;
+		}
+	}
+	@media(max-width:960px){
+
+			padding-top:40px;
+			padding-bottom:40px;
+
+	}
+}
+
+//--------- End feature Area -------------//
+
+//--------- Start service Area -------------//
+
+.service-area{
+	.header-text{
+		text-align:center;
+		h1{
+			margin-bottom:20px;
+		}	
+	}
+}
+
+
+.single-service {
+	background-color:$offwhite;
+	padding:30px;
+	margin-bottom:30px;
+	@include transition();
+	&:hover{
+		box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.5);
+		cursor:pointer;
+		@extend .p1-gradient-bg;
+		h4,p,.lnr{
+			color:$white;
+		}
+	}
+	p{
+		@include transition();
+	}
+	h4{
+		@include transition();
+		margin-top:20px;
+		margin-bottom:20px;
+		.lnr{
+			margin-right:15px;
+		}
+	}
+}
+
+
+//--------- End service Area -------------//
+
+//--------- start team Area -------------//
+
+.team-area{	
+	.single-team{
+
+	}
+	.thumb {
+	    position: relative;
+	}
+
+	.thumb div {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	   	background-color:rgba(#8168ff,.8);
+	    color: #fff;
+	    opacity: 0;
+	    transition: opacity 0.5s;
+	    i{
+	    	color:#fff;
+	    	font-size:20px;
+			padding:10px;
+			z-index:9999;
+	    }
+	}
+	.thumb img {
+	    display: block;
+	    width:100%
+	}
+
+	.thumb div span{
+	    display: block;
+	    position: absolute;
+	    bottom: 30px;
+	    left: 20px;
+	    text-transform:uppercase;
+	    font-size:18px;
+	    font-weight:600;
+	    letter-spacing:3px;
+	}
+
+	.thumb div p{
+	    display: block;
+	    position: absolute;
+	    bottom: 10px;
+	    left: 20px;
+	    font-weight:100;
+	    @media( max-width:768px){
+			bottom:-15px;
+	    }
+	}
+
+	.thumb:hover div {
+	    cursor:pointer;
+	    opacity:1;
+	}
+
+
+}
+
+//--------- end team Area -------------//
+
+
+// ============= End Aboutus Page Styles  =============  //
+
+
+// ============= Start Single Page Styles  =============  //
+
+.single-title{
+	margin-bottom:20px;
+}
+
+.job-experience{
+	ul{
+		li {
+		    color: $primary-color;
+		    margin-bottom:30px;
+		}
+		li span {
+		    color: black;
+		}
+	}
+}
+
+// ============= End Single Page Styles  =============  //
+
+
+// ============= Start Single Page Styles  =============  //
+
+
+.search-page-top{
+	padding:250px 0px;
+	a,.lnr{
+		color:$white;
+	}
+	.lnr{
+		font-weight: 700;
+		margin:0px 10px;
+	}
+
+}
+
+
+// ============= End Single Page Styles  =============  //
+
+
+// ============= Start pricing plan Styles  =============  //
+
+
+//--------- start price Area -------------//
+
+.single-price{
+	text-align:center;
+	border:1px solid rgb(238, 238, 238);
+	.price-top{
+		background-color:#fbfcff;
+		border-bottom: 1px solid rgb(238, 238, 238);
+		padding: 30px 0px;
+		h4{
+			font-weight:500;
+		} 		
+	}
+	.price-bottom{
+		background-color:$offwhite;
+		margin: 0 45px 45px 45px;
+		padding: 35px;
+		@include transition();		
+		h1{
+			font-size: 60px;
+			font-weight: 300;
+		}
+		.price{
+			font-size: 25px;
+			margin-top: 10px;
+			color:$black;
+		}
+		.time{
+			font-size:12px;
+			text-align:left;
+			margin-top:15px;
+			margin-left:10px;
+		}		
+		.primary-btn{
+			border-radius:0;
+			margin-top:20px;
+			background:$primary-color;
+			color:$white;
+			text-transform:capitalize;
+			@include transition();
+			&:hover{
+				border:1px solid transparent;
+			}
+		}
+		@media(max-width:1280px){
+			margin:0;
+		}
+		@media(max-width:1024px){
+			.primary-btn{
+				padding-left: 22px;
+				padding-right: 22px;
+			}
+		}
+	}
+	p{
+		padding:30px 0px;
+	}
+	.lists{
+		padding:40px 0 20px 0;
+		li{
+			margin-bottom:20px;
+		}
+	}
+	&:hover{
+		cursor:pointer;
+		.price-bottom{
+			background-color:$primary-color;
+			h1,.price,.time{
+				color:$white;
+			}
+		}
+	}
+	@media(max-width:960px){
+		margin-bottom:50px;
+	}
+}
+
+//--------- end price Area -------------//
+
+//--------- start price Area -------------//
+
+.submit-right,.submit-left{
+	h4{
+		color:$white;
+	}
+	p{
+		padding:20px 0;
+	}
+	color:$white;
+	@extend .p1-gradient-bg;
+	text-align:center;
+	padding:50px 30px;
+}
+
+
+//--------- end price Area -------------//
+
+
+// ============= End pricing plan Styles  =============  //
+
+
+// ============= Start Contactus Styles  =============  //
+
+.map-wrap{
+	margin-bottom:120px;
+}
+
+.contact-btns{
+	font-size:18px;
+	font-weight:600;
+	text-align:center;
+	padding:40px;
+	color:$white;
+	@extend .p1-gradient-bg;
+	margin-bottom:30px;
+	&:hover{
+		color:$white;
+	}
+}
+
+.form-area{
+	input{
+		padding: 15px;		
+	}
+	input,textarea{
+		border-radius:0;
+		font-size:12px;
+	}
+	textarea{
+		height: 180px;
+		margin-top: 0px;
+	}
+
+	.primary-btn{
+		@extend .p1-gradient-bg;
+		@include transition();
+		&:hover{
+			border:1px solid $primary-color;
+			color:$primary-color!important;
+		}
+	}
+}
+
+
+// ============= End Contactus Styles  =============  //
+
+
+
+/*
+################
+               Start Blog Home  Page style
+################
+*/
+
+
+
+//--------- Start Blog Banner Area Style-------------//
+
+.blog-banner-area{
+	background:url(../img/elements/blog/blog-banner.jpg) center;
+	background-size:cover;
+	.overlay-bg{
+		background:rgba(#000,.55);
+	}
+}
+
+.blog-banner-wrap{
+	text-align:center;
+}
+
+
+//--------- End Blog Banner Area Style-------------//
+
+
+//--------- Start Blog Post Area Style-------------//
+
+.blog-posts-area{
+	
+}
+
+.blog-post-list{
+	.single-post{
+		background:transparent;
+		padding:0px 30px;
+	}
+}
+
+
+.single-post{
+	margin-bottom:30px;
+	.tags{
+		margin-top:40px;	
+		li{
+			display:inline-block;
+			a{
+				color:$black;	
+			}
+			&:hover{
+				a{
+					color:$primary-color;
+				}
+			}
+		}
+	}
+	h1{
+		margin-top:20px;
+		margin-bottom:20px;	
+	}
+
+	.title{
+		// margin-left:20px;
+		h4{
+			margin-bottom:10px;
+		}
+	}
+
+	.comment-wrap,.social-wrap{
+		ul li{
+			display:inline-block;
+			margin-right:15px;
+		}
+		@media(max-width: 414px){
+			margin-top:10px;
+		}
+	}
+	.comment-wrap{
+		ul li a{
+			color:$text-color;
+		}
+	}
+	.social-wrap{
+		ul{
+			text-align:right;
+			li a i{
+				color:$text-color;
+				&:hover{
+					color:$black;
+				}
+			}		
+			@media(max-width: 768px){
+				text-align:left;
+			}
+		}
+
+	}
+}
+
+
+//--------- End Blog Post Area Style-------------//
+
+
+//--------- Start sidebar Area Style-------------//
+
+.single-widget{
+	border:1px solid #eee;
+	padding:40px 30px; 
+	margin-bottom:30px;
+	.title{
+		font-weight:600;
+		margin-bottom:30px;
+	}	
+}
+
+
+.search-widget{
+	i{
+		color:$primary-color;
+	}
+	form.example{
+		border:1px solid #eee;
+	}
+
+	form.example input[type=text] {
+	    padding: 10px;
+	    font-size: 14px;
+	    border: none;
+	    float: left;
+	    width: 80%;
+	    background: #eee;
+	}
+
+	form.example button {
+	    float: left;
+	    width: 20%;
+	    padding: 10px;
+	    background: #eee;
+	    color: white;
+	    font-size: 17px;
+	    border: none;
+	    cursor: pointer;
+	}
+
+	form.example::after {
+	    content: "";
+	    clear: both;
+	    display: table;
+	}	
+}
+
+.protfolio-widget{
+	text-align:center;
+	h4{
+		padding:20px 0; 
+	}
+	ul li{
+		padding:15px;
+		display:inline-block;;
+		a i{
+			color:$black;
+
+			&:hover{
+				color:$primary-color;
+			}
+		}
+	}
+}	
+
+
+.category-widget{
+	ul{
+		li{
+			border-bottom:1px solid #eee;
+			padding:10px 20px;	
+			h6{
+				font-weight:300;
+				@include transition();
+			}
+			span{
+				color:$black;
+				@include transition();
+			}
+			@include transition();
+			&:hover{
+				border-color:$primary-color;
+
+				h6,span{
+					color:$primary-color;
+				}
+			}	
+		}
+	}
+}
+
+
+.tags-widget{
+	ul{
+		li{
+			display:inline-block;
+			background:$white;
+			border:1px solid #eee;
+			padding:8px 10px;
+			margin-bottom:8px;
+			@include transition();
+			a{
+				font-weight:300;
+				color:$black;
+			}
+			&:hover{
+				background-color:$primary-color;
+				a{
+					color:$white;
+				}
+			}
+		}
+	}
+}
+
+.recent-posts-widget{
+	.single-recent-post{
+		.recent-details{			
+			margin-left:20px;
+			h4{
+				line-height:1.5em !important;
+				font-size:14px;
+				@include transition();
+			}
+			p{
+				margin-top:10px;
+			}
+		}
+		&:hover{
+			h4{
+				color:$primary-color;
+			}
+		}
+		@media(max-width: 960px){
+			margin-bottom:20px;
+		}		
+	}
+
+}
+
+
+//--------- End sidebar Area Style-------------//
+
+
+
+
+/*
+################
+               End Blog Home  Page style
+################
+*/
+
+
+/*
+################
+               Start Blog Details  Page style
+################
+*/
+
+
+.nav-area{
+	border-bottom: 1px solid #eee;
+	a{
+		color:$black;
+	}
+	.nav-left{
+		.thumb{
+			padding-right: 20px;
+		}
+	}
+	.nav-right{
+		text-align:right;
+			.thumb{
+				padding-left: 20px;
+			}		
+	}
+
+	@media(max-width:768px){
+		.post-details h4{
+			font-size: 14px;
+		}
+
+	}
+
+	@media(max-width:466px){
+		.nav-right{
+			margin-top:50px;
+		}
+	}
+}
+
+.comment-sec-area{
+	border-bottom:1px solid #eee;
+	padding-bottom:50px;
+	a{
+		color:$black;
+	}
+	.comment-list{
+		padding-bottom:30px;
+		&.left-padding{
+			padding-left:25px;
+		}
+	}
+
+	.thumb{
+		margin-right:20px;
+	}
+	.date{
+		font-size:13px;
+		color:#cccccc;
+	}
+	.comment{
+		color:#777777;
+	}
+	.btn-reply{
+		background-color:$black;
+		color: $white;	
+		border:1px solid $black;
+		padding: 8px 30px;	
+		display:block;
+		@include transition();
+		&:hover{
+			background-color:transparent;
+			color: $black;
+		}	
+	}
+}
+
+.commentform-area{
+	h5{
+		font-weight:600!important;
+	}
+	.form-control{
+		border-radius:0;
+		font-size: 14px;
+		font-weight:400;
+	}
+	.primary-btn{
+		padding-left:50px;
+		padding-right:50px;
+		background-color:$primary-color!important;
+		border:1px solid transparent;
+		color:$white;
+		&:hover{
+			border-color:$primary-color!important;
+		}
+	}
+	textarea{
+		height:90%;
+	}
+	padding-bottom:100px;
+	
+	.form-control{
+		border:none;
+		background:$offwhite;
+	}
+}
+
+
+
+
+/*
+################
+               End Blog Details  Page style
+################
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

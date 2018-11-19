@@ -1,0 +1,81 @@
+.shop-item {
+	text-align: center;
+	margin: 0 0 40px;
+}
+
+.shop-item-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.shop-item-image img {
+	width: 100%;
+}
+
+.shop-item-detail,
+.shop-item-image:after {
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-o-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.shop-item-image:after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.shop-item-detail {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 100%;
+	padding: 20px;
+	opacity: 0;
+	z-index: 2;
+	text-align: center;
+	font-size: 12px;
+	color: #aaa;
+}
+
+.shop-item-title {
+	font-weight: 400;
+	font-size: 14px;
+	color: #111;
+	margin: 15px 0 5px;
+}
+
+/* Shop item hover */
+
+.shop-item:hover .shop-item-image:after {
+	background: rgba(255, 255, 255, .7);
+}
+
+.shop-item:hover .shop-item-detail {
+	opacity: 1;
+	bottom: 50%;
+	-webkit-transform: translateY(50%);
+	-moz-transform: translateY(50%);
+	transform: translateY(50%);
+}
+
+/* -------------------------------------------------------------------
+	Exclusive products
+------------------------------------------------------------------- */
+
+.ex-product {
+	opacity: .7;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-o-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.ex-product:hover {
+	opacity: 1;
+}

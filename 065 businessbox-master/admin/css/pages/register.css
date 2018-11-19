@@ -1,0 +1,16 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+.card.form form{
+	padding: 20px;
+}
+
+h4.reg-address {
+	padding-bottom: 5px;
+	color:#555;
+	border-bottom: 1px solid #ddd;
+}

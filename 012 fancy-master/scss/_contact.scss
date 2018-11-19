@@ -1,0 +1,276 @@
+/* Contact Us Area css
+============================================================================================ */
+.contact_us_area{
+    padding: 110px 0px;
+}
+.mapBox{
+    min-height: 520px;
+    box-shadow: 0px 27px 51.33px 7.67px rgba(0, 0, 0, 0.15);
+}
+.contact_details_inner{
+    padding-top: 75px;
+}
+.contact_text{
+    .contact_d_list{
+        margin-top: 40px;
+        .contact_d_list_item{
+            margin-bottom: 22px;
+            a{
+                font-size: 16px;
+                color: $pfont;
+                font-family: $pop;
+                display: block;
+            }
+            p{
+                font-size: 16px;
+                color: $pfont;
+                font-family: $pop;
+                display: block;
+                line-height: 24px;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .static_social{
+        margin-top: 40px;
+        .main_title{
+            padding-bottom: 25px;
+        }
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 7px;
+                margin-bottom: 0px;
+                &:last-child{
+                    margin-right: 0px
+                }
+            }
+        }
+    }
+}
+
+.contact_form{
+    .main_title{
+        padding-bottom: 40px; 
+    }
+}
+.contact_us_form{
+    .form-group{
+        margin-bottom: 20px;
+        input{
+            height: 50px;
+            width: 100%;
+            border: 1px solid #e5e5e5;
+            border-radius: 0px;
+            box-shadow: none;
+            outline: none;
+            padding: 0px 20px;
+            font-size: 16px;
+            color: #7f7f7f;
+            font-family: $pop;
+            @include placeholder{
+                font-size: 16px;
+                color: #b5aec4;
+                font-family: $pop;
+            }
+            &:focus{
+                border-color: #7f7f7f;
+            }
+        }
+        textarea{
+            height: 80px;
+            width: 100%;
+            border: 1px solid #e5e5e5;
+            border-radius: 0px;
+            box-shadow: none;
+            outline: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            color: #7f7f7f;
+            font-family: $pop;
+            resize: none;
+            @include placeholder{
+                font-size: 16px;
+                color: #b5aec4;
+                font-family: $pop;
+            }
+            &:focus{
+                border-color: #7f7f7f;
+            }
+        }
+        &:last-child{
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
+    }
+}
+/* End Contact Us Area css
+============================================================================================ */
+
+
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out; 
+
+
+
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+/**
+ * Fade-move animation for second dialog
+ */
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+/* End Search Popup Area css
+============================================================================================ */
+
+
+/* Contact Success and error Area css
+============================================================================================ */
+.modal-message{
+    .modal-dialog{
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) !important; 
+        margin: 0px;
+        max-width: 500px;
+        width: 100%;
+        .modal-content{
+            .modal-header{
+                text-align: center;
+                display: block;
+                border-bottom: none;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .close{
+                    position: absolute;
+                    right: -15px;
+                    top: -15px;
+                    padding: 0px;
+                    color: #fff;
+                    opacity: 1;
+                    cursor: pointer;
+                }
+                h2{
+                    display: block;
+                    text-align: center;
+                    color: $baseColor;
+                    padding-bottom: 10px;
+                }
+                p{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+/* End Contact Success and error Area css
+============================================================================================ */

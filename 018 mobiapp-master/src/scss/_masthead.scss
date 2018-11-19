@@ -1,0 +1,83 @@
+// Styling for the masthead section
+
+/*====================================================
+                        MASTHEAD
+======================================================*/
+
+    section.masthead {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 150px;
+        padding-bottom: 100px;
+        color: white;
+        background: #087cf9;
+        background: -webkit-linear-gradient(to left, #087cf9, $primary-col);
+        background: linear-gradient(to left, #087cf9, $primary-col);
+
+        .header-content {
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .device-mockup.iphone6_plus.portrait.white>.device,
+        .device-mockup.iphone6_plus.white>.device {
+          margin:90px 0 0 0;
+          width: 270px;
+          height: 550px;
+        }
+
+        .header-content h1 {
+            font-size: 30px;
+        }
+
+        .device-container {
+            max-width: 270px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .device-container .screen img {
+            border-radius: 3px;
+        }
+    }    
+
+    .bg-banner-img img{
+        position: absolute;
+        width: 100%;
+        margin-top: -50%;
+    }
+
+    @media (min-width: 992px) {
+        section.masthead {
+            height: 100vh;
+            padding-top: 0;
+            padding-bottom: 0;
+            
+            .header-content {
+                margin-bottom: 0;
+                text-align: left;
+            }
+            
+            .header-content h1 {
+                font-size: 40px;
+                font-weight: 700;
+                margin: auto;
+            } 
+
+            .device-container {
+                max-width: 325px;
+            }
+        }
+    }
+
+    @media (max-width:991px) {
+        section.masthead { 
+            .device-mockup.iphone6_plus.portrait.white>.device,
+            .device-mockup.iphone6_plus.white>.device {
+              margin:50px 0 0 0;
+              width: 270px;
+              height: 550px;
+            }
+        }        
+    }

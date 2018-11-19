@@ -1,0 +1,22 @@
+// Styling for the contact section
+.contact {
+  padding: 0;
+  #map {
+    border-top: 10px solid $primary-y;
+    border-bottom: 10px solid $primary-b;
+  }
+
+  .contact-detail {
+    padding:100px 0;
+    background:$primary-y;
+    color:$primary-b;
+    text-align: center;
+
+    @media (max-width: 767px) {
+      padding:50px 0;
+      .col-md-4 {
+        margin-top: 50px;
+      }
+    }
+  }
+}

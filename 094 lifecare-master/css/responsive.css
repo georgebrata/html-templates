@@ -1,0 +1,391 @@
+/******************************************
+    File Name: responsive.css
+/****************************************** */
+
+@media (max-width: 1310px) {
+    .macbookright {
+        right: -25%;
+    }
+    body.app_version .app_iphone_01 {
+        right: 0% !important;
+    }
+    body.app_version .app_iphone_02 {
+        right: -10% !important;
+    }
+    body.politics_version .app_iphone_01 {
+        left: 0%;
+    }
+}
+
+@media (max-width: 1200px) {
+    body.watch_version .image-center img {
+        max-width: 660px;
+        top: 0;
+        left: -12%;
+        position: absolute !important;
+        z-index: 10;
+        text-align: center;
+    }
+    body.politics_version .app_iphone_01 {
+        left: -5%;
+    }
+    body.watch_version .macbookright {
+        right: -7%;
+    }
+    .header_style_01 .navbar-brand {
+        padding-right: 0;
+    }
+    .container-fluid {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .container {
+        width: 90%;
+    }
+    .first-section h2 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 1158px) {
+    body.clinic_version .app_iphone_01 {
+        right: -5%;
+    }
+    body.clinic_version .app_iphone_02 {
+        right: 15%;
+    }
+    body.clinic_version .app_iphone_03 {
+        right: -10%;
+    }
+    .header_style_01 .navbar-default .navbar-nav > li > a {
+        font-size: 14px;
+    }
+    .first-section .lead {
+        font-size: 18px;
+    }
+    .navbar-default .btn-light {
+        display: none;
+    }
+    body.app_version .app_iphone_01 {
+        right: -5% !important;
+    }
+    body.app_version .app_iphone_02 {
+        right: -15% !important;
+    }
+}
+
+@media (max-width: 1120px) {
+    .iphones {
+        right: -30%;
+    }
+    .macbookright {
+        bottom: -10%;
+        right: -35%;
+    }
+    .how-its-work .hc {
+        width: 50% !important;
+    }
+    body.clinic_version .how-its-work .hc {
+        width: 33.3333% !important;
+    }
+    body.clinic_version .dev-list .widget img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    body.clinic_version .service-widget {
+        margin: 15px 0;
+    }
+    .m40 {
+        margin-top: 40px;
+    }
+    body.host_version .stat-wrap {
+        text-align: center;
+    }
+    body.host_version .stat-wrap .alignleft {
+        float: none;
+        margin: 0 auto;
+    }
+    .apple-button i {
+        font-size: 32px;
+        margin: 0px 20px 0 0;
+        vertical-align: middle;
+    }
+    body.clinic_version .affix,
+    body.clinic_version .header_style_01,
+    body.app_version .header_style_01 {
+        width: 100% !important;
+        padding: 20px 0 !important;
+    }
+    .apple-button strong {
+        font-size: 24px;
+    }
+    body.app_version .header_style_01 {
+        top: 0 !important;
+    }
+    .pricing-table {
+        margin: 15px 0 !important;
+    }
+    hr.hr2 {
+        display: none;
+    }
+    .stat-wrap .col-md-3,
+    .icon-wrapper,
+    .message-box {
+        margin-bottom: 30px;
+    }
+    .owl-prev i {
+        left: 0;
+        border-radius: 0;
+    }
+    .owl-next i {
+        right: 0;
+        border-radius: 0;
+    }
+    body.clinic_version .how-its-work .hc {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    body.politics_version .header_style_01 {
+        position: relative;
+        top: 0;
+        background-color: #1f1f1f !important;
+    }
+    body.realestate_version .message-box,
+    body.realestate_version .service-widget {
+        margin: 15px 0;
+    }
+    body.realestate_version .property-detail .col-md-2 {
+        margin: 15px 0;
+    }
+    body.realestate_version .first-section {
+        padding: 10em 0 !important;
+    }
+    body.realestate_version .header_style_01 {
+        position: relative;
+        background-color: #1f1f1f;
+    }
+    .footer .col-xs-12 {
+        margin: 15px 0;
+        width: 100% !important;
+    }
+    body.clinic_version .app_iphone_01,
+    body.clinic_version .app_iphone_02,
+    body.clinic_version .app_iphone_03 {
+        display: none;
+    }
+    body.seo_version .header_style_01 {
+        background-color: #0e0e2e;
+    }
+    .navbar-default .btn-light {
+        display: block;
+        width: 100%;
+        border: 0 !important;
+        padding: 0 !important;
+        margin: -8px -2px 0 !important;
+        line-height: 1 !important;
+    }
+    .navbar-collapse {
+        margin-top: 15px;
+    }
+    .header_style_01 {
+        background-color: #1f1f1f;
+        display: block;
+        left: 0;
+        padding: 20px 40px !important;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 111;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #1f1f1f;
+        color: #fff !important;
+        background-color: #1f1f1f !important;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: transparent;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .affix-top {
+        overflow: hidden;
+        visibility: visible;
+        opacity: 1;
+        top: 0 !important;
+    }
+    .header_style_01 .navbar-default .navbar-nav > li a {
+        padding: 10px 5px;
+    }
+    .first-section .col-md-6 {
+        width: 100%;
+        text-align: center;
+    }
+    .social-links,
+    .macbookright {
+        display: none !important;
+    }
+    .footer-distributed form input {
+        width: 300px;
+    }
+    .footer-distributed {
+        padding: 30px;
+        text-align: center;
+        font: bold 14px sans-serif;
+    }
+    .footer-distributed .footer-company-name {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-right {
+        float: none;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .footer-distributed .footer-left {
+        margin-bottom: 20px;
+    }
+    .footer-distributed form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body.building_version .first-section h2 {
+        font-size: 34px;
+    }
+    body.politics_version .issuse-wrap2 {
+        margin-top: 30px;
+    }
+    body.seo_version .nopadtop {
+        padding-top: 120px;
+    }
+    body.host_version .affix,
+    body.host_version .header_style_01 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    body.host_version .stat-wrap .col-md-4 {
+        margin: 15px 0;
+    }
+    .how-its-work .hc {
+        width: 100% !important;
+    }
+    .affix,
+    .header_style_01 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .m130 {
+        margin-top: 0;
+    }
+    .footer .widget,
+    .logos .col-md-2,
+    .service-widget {
+        margin: 15px 0;
+    }
+    .features-left i {
+        float: left;
+        margin-right: 20px !important;
+    }
+    .fl-inner {
+        text-align: left;
+        margin-right: 0;
+    }
+    .effect-1:after {
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+    .first-section {
+        padding: 8em 0 6em !important;
+    }
+    .first-section h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    body.host_version .btn-light,
+    body.app_version .btn-light {
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        text-align: center;
+        width: 40% !important;
+    }
+    body.app_version .btn-light i {
+        display: none !important;
+    }
+    .copyrights {
+        padding: 40px 10px;
+    }
+    .footer-distributed {
+        padding: 0;
+    }
+    .section-title p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .section-title h3 {
+        font-size: 28px;
+    }
+    .portfolio-filter ul li .btn-dark {
+        border: 0 !important;
+        width: 100%;
+        display: block;
+        background-color: #ffffff;
+        border-radius: 0;
+    }
+    .portfolio-filter ul li {
+        border-radius: 0;
+        padding: 1px;
+        display: inline-block;
+        margin: 0 1px 2px 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #ededed;
+        vertical-align: middle;
+        width: 49%;
+        float: left;
+        border: 0 solid #ededed;
+    }
+}

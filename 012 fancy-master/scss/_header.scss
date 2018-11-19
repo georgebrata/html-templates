@@ -1,0 +1,196 @@
+/* Main Menu Area css
+============================================================================================ */
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    &:focus{
+        color: #fff;
+    }
+}
+.main_menu_area{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 30;
+    padding: 0px 75px;
+    border-bottom: 1px solid #626571;
+    .navbar{
+        padding: 0px;
+        background-color: transparent !important;
+        .navbar-collapse{
+            text-align: right;
+            @media (min-width: 992px){
+                display: block !important;
+            }
+        }
+        .navbar-nav{
+            display: inline-block;
+            li{
+                display: inline-block;
+                margin-right: 50px;
+                a{
+                    padding: 0px;
+                    line-height: 99px;
+                    color: #fff;
+                    font-size: 14px;
+                    font-family: $pop;
+                    font-weight: 500;
+                    @include transition;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover, &.active{
+                    a{
+                        color: $baseColor;
+                    }
+                }
+                &.submenu{
+                    .dropdown-menu{
+                        @media(min-width: 992px){
+                            transition: all 300ms ease-out;
+                            transform: scaleY(0);
+                            display: block;
+                            transform-origin: 50% 0;
+                            min-width: 246px;
+                            background: #fff;
+                            border-radius: 0px;
+                            border: none;
+                            top: 99%;
+                            padding: 25px 0px 30px 0px;
+                            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+                        }
+                        li{
+                            display: block;
+                            margin-right: 0px;    
+                            a{
+                                padding: 0px 25px;
+                                line-height: 50px;
+                                font-family: $pop;
+                                font-weight: 500;
+                                font-size: 14px;
+                                text-shadow: none;
+                                line-height: 42px;
+                                color: $dip;
+                                @include transition;
+                                text-transform: capitalize;
+                                &:before{
+                                    display: none;
+                                }
+                            }
+                            &:hover{
+                                a{
+                                    color: $baseColor;  
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        @media(min-width: 992px){
+                            &.submenu{
+                                .dropdown-menu{
+                                    transform: scaleY(1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .navbar-nav.justify-content-end{
+            margin-left: 85px;
+            li{
+                margin-right: 25px;
+                a{
+                    font-size: 16px;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    &.navbar_fixed{
+        position: fixed;
+        width: 100%;
+        top: -70px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .5);  
+        transform: translateY(70px);
+        transition: transform 500ms ease, background 500ms ease;
+        -webkit-transition: transform 500ms ease, background 500ms ease;
+        .navbar{
+            .navbar-nav{
+                li{
+                    a{
+                        line-height: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Main Menu Area css
+============================================================================================ */
+
+/* End Main Menu Area css
+============================================================================================ */
+.search_area{
+    position: fixed;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    z-index: 40;
+    background: #fff;
+    padding: 0px 110px;
+    transition: all 300ms ease-out;
+    .search_inner{
+        position: relative;
+        &:before{
+            content: "";
+            height: 34px;
+            width: 4px;
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: $baseColor;
+        }
+        input{
+            border: none;
+            border-radius: 0px;
+            width: 100%;
+            padding: 0px 32px 0px 10px;
+            height: 98px;
+            outline: none;
+            box-shadow: none;
+            font-size: 36px;
+            color: #b5aec4;
+            font-family: $pop;
+            line-height: 98px;
+            font-weight: normal;
+            @include placeholder{
+                font-size: 36px;
+                color: #b5aec4;
+                font-family: $pop;
+                line-height: 98px;
+                font-weight: normal;
+            }
+        }
+        i{
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $baseColor;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+    &.open{
+        top: 0px;
+    }
+}
+/* End Main Menu Area css
+============================================================================================ */

@@ -1,0 +1,93 @@
+.price-table {
+	background: #fff;
+	border: 1px solid #eaeaea;
+	padding: 25px 20px;
+	margin: 15px 0 30px;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.price-table:hover {
+	border-color: #CACACA;
+}
+
+.price-table.best {
+	margin: 0 0 30px;
+}
+
+.price-table .small {
+	margin: 0;
+}
+
+.borderline {
+	position: relative;
+	background: #eaeaea;
+	display: block;
+	height: 1px;
+	width: 100%;
+	margin: 20px 0 15px;
+}
+
+.borderline:before {
+	position: absolute;
+	background: #eaeaea;
+	content: "";
+	bottom: -7px;
+	left: 50%;
+	height: 14px;
+	width: 14px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	margin-left: -7px;
+}
+
+.borderline:after {
+	position: absolute;
+	background: #fff;
+	content: "";
+	bottom: -5px;
+	left: 50%;
+	height: 16px;
+	width: 16px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	margin-left: -8px;
+}
+
+.price-table h4 {
+	color: #111;
+	margin: 0;
+}
+
+.price-table p.price {
+	font-size: 60px;
+	color: #111;
+	padding: 0;
+	margin: 0 0 0 -10px;
+}
+
+.price-table p.price span {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	padding-top: 25px;
+}
+
+.price-details {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 23px;
+}
+
+.price-details li {
+	padding: 7px 0;
+}
+
+.price-details li > span {
+	text-decoration: line-through;
+	color: #aaa;
+}

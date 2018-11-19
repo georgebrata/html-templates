@@ -1,0 +1,121 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+// Global styling for this template
+ 
+/*====================================================
+                      GLOBAL STYLE
+======================================================*/
+
+body {
+  overflow-x: hidden;
+  @include body-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: $primary-col;
+  &:hover {
+    color: darken($primary-col, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary-col !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  @include heading-font;
+}
+
+section {
+  padding: 100px 0;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    @include body-font;
+  }
+}
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+// Button Styles
+.btn {
+  @include heading-font;
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: $primary-col;
+  border-color: $primary-col;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary-col, 7.5%) !important;
+    border-color: darken($primary-col, 7.5%) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary-col;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary-col;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .9;
+}

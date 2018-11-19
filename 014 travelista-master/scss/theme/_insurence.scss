@@ -1,0 +1,43 @@
+/* =================================== */
+/*  Insurence Page Styles
+/* =================================== */
+
+
+.insurence-right,.insurence-left{
+    h6{
+        font-weight: 500;
+    }
+    h1{
+        margin:20px 0px;
+    }
+    p{
+        max-width: 445px;
+    }
+    img{
+        width:100%;   
+    }    
+}
+
+
+
+.list-wrap{
+    background:#fbfcff;
+    max-width: 445px;
+    padding:30px;
+    ul{
+        list-style-image: url('../img/insurence/bullet.png');
+    }
+    li{
+        padding-left: 12px;            
+        font-weight:500;
+        font-size:14px;
+        margin-bottom:15px;
+        color:$black;
+    }
+}
+
+@media(max-width:991px){
+    .img-one{
+        margin-bottom:45px;
+    }   
+}

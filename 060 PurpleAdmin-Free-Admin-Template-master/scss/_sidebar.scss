@@ -1,0 +1,358 @@
+/* Sidebar */
+
+.sidebar {
+  @extend .sidebar-grdient-dark;
+  font-family: $type1-regular;
+  min-height: 100%;
+  padding: 0;
+  position: absolute;
+  width: $sidebar-width-lg;
+  z-index: 11;
+  transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
+  -webkit-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
+  -moz-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
+  -ms-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
+
+  .nav {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-top: 16px;
+
+    .nav-item {
+      padding:0 $sidebar-menu-padding-x-right 0 $sidebar-menu-padding-x-left;
+      @include transition-duration(0.45s);
+      transition-property: background;
+      -webkit-transition-property: background;
+      .collapse {
+        z-index: 999;
+      }
+
+      .nav-link {
+        @include display-flex;
+        @include align-items(center);
+        @include justify-content(flex-end);
+        white-space: nowrap;
+        height: $nav-link-height;
+        padding:$sidebar-menu-padding-y 0 $sidebar-menu-padding-y 0;
+        color: $sidebar-gradient-menu-color;
+        border-bottom: 1px solid rgba($white, 0.2);
+        @include transition-duration(0.45s);
+        transition-property: color;
+        -webkit-transition-property: color;
+
+        i {
+          color: inherit;
+
+          &.menu-icon {
+            font-size: $sidebar-icon-font-size;
+            line-height: 1;
+            margin-left: 0.8125rem;
+            &:before {
+              vertical-align: middle;
+            }
+          }
+
+          &.menu-arrow {
+            font: normal normal normal 24px/1 "Material Design Icons";
+            line-height: 1;
+            font-size: $sidebar-icon-font-size;
+            &:before{
+              content: "\f141";
+              font-size: inherit;
+              color: inherit;
+            }
+          }
+        }
+
+        .menu-title {
+          color: inherit;
+          display: inline-block;
+          font-size: $sidebar-menu-font-size;
+          line-height: 1;
+          vertical-align: middle;
+          margin-right: auto;
+        }
+        .menu-sub-title{
+          font-size: 10px;
+          margin-right: auto;
+        }
+
+        .badge {
+          margin-left: auto;
+        }
+
+        &:hover {
+          color: lighten($sidebar-gradient-menu-color, 5%);
+        }
+        &[aria-expanded="true"]{
+          .menu-arrow{
+            &:before{
+              content: "\f140";
+            }
+          }
+        }
+      }
+
+      &.active {
+        background: $sidebar-gradient-menu-active-bg;
+        > .nav-link {
+          color: $sidebar-gradient-menu-active-color;
+          border-bottom: none;
+          .menu-title,
+          i {
+            color: inherit;
+          }
+        }
+        .sub-menu{
+          border-top: 1px solid rgba($white, 0.2);
+        }
+      }
+      &:hover{
+        background: $sidebar-gradient-menu-hover-bg;
+      }
+    }
+
+    &:not(.sub-menu) {
+      > .nav-item {
+        &:hover {
+          &:not(.nav-category):not(.nav-profile) {
+            > .nav-link {
+              color: $sidebar-dark-menu-hover-color;
+            }
+          }
+        }
+      }
+    }
+    &.sub-menu {
+      margin-bottom: 20px;
+      padding-top: 12px;
+      margin-top:0;
+      list-style: none;
+
+      .nav-item {
+        margin-right: auto;
+        padding: 0;
+        .nav-link {
+          color: $sidebar-gradient-submenu-color;
+          padding: 8px 30px 8px 30px;
+          position: relative;
+          font-size: $sidebar-submenu-font-size;
+          line-height: 1;
+          height: auto;
+          border-bottom: none;
+          display: inline-block;
+          &:before{
+            content: "\F374";
+            font-family: "Material Design Icons";
+            display: block;
+            position: absolute;
+            left:0px;
+            top:50%;
+            @include transform(translateY(-50%));
+          }
+          &.active {
+            color: $sidebar-gradient-menu-active-color;
+            background: transparent;
+          }
+          &:hover{
+            color: $sidebar-gradient-submenu-hover-color;
+          }
+        }
+        &:hover{
+          background: transparent;
+        }
+      }
+    }
+  }
+  .sidebar-progress{
+    padding:0 $sidebar-menu-padding-x-right 0 $sidebar-menu-padding-x-left;
+    p{
+      font-family: $type1-bold;
+      font-size: 15px;
+      margin-bottom: 13px;
+      &:last-child{
+        font-family: $type1-regular;
+        font-size: $default-font-size;
+      }
+    }
+    .progress{
+      max-width: 160px;
+      margin-bottom: 13px;
+    }
+  }
+}
+//sidebar color variation
+.sidebar-light {
+  background: $sidebar-light-bg;
+
+  .sidebar {
+    background: $sidebar-light-bg;
+    .nav {
+      .nav-item {
+        .nav-link {
+          color: $sidebar-light-menu-color;
+          .menu-title,
+          i {
+            color: inherit;
+          }
+        }
+
+        &.active {
+          background: $sidebar-light-menu-active-bg;
+          > .nav-link {
+            color: $sidebar-light-menu-active-color;
+            .menu-title,
+            i {
+              color: inherit;
+            }
+          }
+          .sub-menu{
+            .nav-item{
+              .nav-link{
+                color: $white;
+              }
+            }
+          }
+        }
+        &:hover {
+          background: $sidebar-light-menu-hover-bg;
+          .sub-menu{
+            .nav-item{
+              .nav-link{
+                color: $sidebar-light-menu-hover-color;
+              }
+            }
+          }
+        }
+        &.hover-open{
+          .nav-link{
+            .menu-title{
+              @include transition-duration(0s);
+            }
+          }
+          &:hover {
+            background: $sidebar-light-menu-hover-bg;
+            .sub-menu{
+              .nav-item{
+                .nav-link{
+                  color: $sidebar-light-submenu-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      &.sub-menu {
+        .nav-item {
+          .nav-link {
+            color: $sidebar-light-submenu-color;
+            &.active {
+              color: $sidebar-light-submenu-color;
+            }
+          }
+          &:hover{
+            background: transparent;
+          }
+        }
+      }
+    }
+    .sidebar-progress{
+      p{
+        color: $sidebar-light-submenu-color;
+      }
+    }
+  }
+}
+
+
+/* style for off-canvas menu*/
+@media screen and (max-width: 991px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+
+    &.row-offcanvas-right {
+      right: 0;
+
+      .sidebar-offcanvas {
+        right: -100%; // 12 columns
+      }
+
+      &.active {
+        right: 50%; // 6 columns
+
+        .sidebar-offcanvas {
+          right: -50%; // 6 columns
+        }
+      }
+    }
+
+    &.row-offcanvas-left {
+      left: 0;
+
+      .sidebar-offcanvas {
+        left: -100%; // 12 columns
+      }
+
+      &.active {
+        left: 50%; // 6 columns
+
+        .sidebar-offcanvas {
+          left: -50%; // 6 columns
+        }
+      }
+    }
+
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 50%; // 6 columns
+
+      .nav {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  //for smaller devices like iphone 5
+
+  .row-offcanvas {
+    &.row-offcanvas-right {
+      &.active {
+        right: 80%;
+
+        .sidebar-offcanvas {
+          right: -75%;
+        }
+      }
+    }
+
+    .sidebar-offcanvas {
+      width: 75%;
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  //for smaller devices like iphone 5
+
+  .row-offcanvas {
+    &.row-offcanvas-right {
+      &.active {
+        right: 100%;
+
+        .sidebar-offcanvas {
+          right: -91%;
+        }
+      }
+    }
+
+    .sidebar-offcanvas {
+      width: 91%;
+    }
+  }
+}

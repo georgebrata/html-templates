@@ -1,0 +1,7 @@
+@import "mixins/custom-mixins";
+.bg-light {
+	background-color: lighten(#c8d1e6, 12%)!important;
+}
+.pb_icon-gradient {
+  @include pb_text-gradient(#665fee, #27c2de, 45deg)
+}

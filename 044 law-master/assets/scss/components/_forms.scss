@@ -1,0 +1,105 @@
+.pb_form_v1 {
+	padding: 50px;
+	@include pb_box-shadow(1px, 11px, 68px, -20px, rgba($black,.75));
+	@include media-breakpoint-down(md) {
+		padding: 30px;
+	}
+}
+
+// inputs
+input, select, textarea {
+	font-weight: 300;
+	color: rgba($black, .7);
+}
+.pb_select-wrap {
+	position: relative;
+	&:before {
+		@include Ionicons;
+		content: "\f3d0";
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 26px;
+	}
+	select {
+		appearance: none;
+	}
+}
+// select {
+// 	height: 55px!important;
+// 	&.form-control-lg {
+// 		height: 48px!important;
+// 	}
+// }
+.form-control {
+	&.reverse {
+		background: lighten($black, 95%);
+		transition: .3s all ease;
+		border-color: lighten($black, 95%);
+		&:focus, &:active {
+			background: none;
+			border-color: theme-color('primary')!important;
+		}
+	}
+}
+
+.form-control-outline {
+	background: none;
+	&:focus, &:active {
+		background: none;
+	}
+	&.light {
+		color: $white;
+		border-color: rgba($white, .4);
+		&:focus, &:active {
+			border-color: rgba($white, 1);
+		}
+		&::placeholder {
+			color: rgba($white, .5);
+		}
+	}
+	&.dark {
+		color: $body-color;
+	}
+}
+
+// buttons
+.btn {
+	&:focus, &:active {
+		box-shadow: none!important;
+		outline: none!important;
+	}
+}
+.btn-shadow-blue {
+	@include pb_box-shadow(0px, 15px, 28px, -5px, rgba($blue,.45));
+}
+.pb_btn-pill {
+	border-radius: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.pb_outline-light {
+	border: 1px solid rgba(255,255,255,.2);
+	text-transform: uppercase;
+	background: none;
+	color: rgba(255,255,255,1);
+	&:hover, &:active, &:focus {
+		outline: none;
+		background: $white!important;
+		border: 1px solid rgba(255,255,255,1);
+		color: $black;
+	}
+}
+.pb_outline-dark {
+	border: 1px solid rgba(0,0,0,.2);
+	text-transform: uppercase;
+	color: rgba(0,0,0,1);
+	background: none;
+	&:hover, &:active, &:focus {
+		outline: none;
+		background: $black!important;
+		border: 1px solid rgba(0,0,0,1);
+		color: $white;
+	}
+}

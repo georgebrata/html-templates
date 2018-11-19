@@ -1,0 +1,101 @@
+.update-pro{
+	margin: 15px 25px;}
+
+.update-pro button {
+		padding: 13px 25px;
+	background: #4d7cfe;
+	color: #fff;
+	border-radius: 3px;
+	justify-content: center;
+	width: 100%;
+	border: 0;
+	cursor: pointer;
+}
+
+.update-pro button:hover {
+	background: #4d7cfe !important;
+	color: #fff;
+	transform: translateY(-2px);
+	transition: all .2s linear;
+}
+
+.update-pro:hover button:before{
+	display: none;
+}
+
+.update-pro button p, .update-pro button i{
+	color: #fff !important;
+	margin-bottom: 0px;
+}
+
+.update-pro button i{
+	margin-right: 5px !important;
+	font-size: 23px;
+	color: #C3C5CA;
+	margin-right: 15px;
+	width: 25px;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+}
+
+.demo .btn, .demo .progress{
+	margin-bottom: 15px !important;
+}
+
+.demo .form-check-label, .demo .form-radio-label{
+	margin-right: 15px;
+}
+
+.demo #slider{
+	margin-bottom: 15px;
+}
+
+.table-typo tbody > tr > td{
+	border-color: #fafafa;
+}
+
+.table-typo tbody > tr > td:first-child{
+	min-width: 200px;
+	vertical-align: bottom;
+}
+
+.table-typo tbody > tr > td:first-child p{
+	font-size: 14px;
+	color: #333;
+}
+
+.demo-icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 20px;
+	padding: 10px;
+	transition: all .2s;
+}
+
+.demo-icon:hover{
+	background-color: #f4f5f8;
+	border-radius: 3px;
+}
+
+.demo-icon .icon-preview{
+	font-size: 1.8rem;
+	margin-right: 10px;
+	line-height: 1;
+	color: #333439;
+}
+
+.demo-icon .icon-class{
+	font-weight: 300;
+	font-size: 13px;
+	color: #777;
+}
+
+.from-show-notify .form-control{
+	margin-bottom: 15px;
+}
+
+.from-show-notify label{
+	padding-top: 0.65rem;
+}

@@ -1,0 +1,50 @@
+/*============ testimonial_area css ============*/
+.testimonial_area{
+    background: #f9f9ff;
+}
+.testimonial_slider{
+    .testimonial_item{
+        border: 1px solid #eeeeee;
+        background: #fff;
+        padding: 40px;
+        img{
+            width: auto;
+            margin-right: 30px;
+        }
+        p{
+            color: #8c8d9e;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 0px;
+            padding-bottom: 15px;
+        }
+        .sec_h4{
+            line-height: 30px;
+            transition: all 0.3s linear;
+            &:hover{
+                color: $light_blue;
+            }
+        }
+        .star{
+            a{
+                color: $yellow;
+                font-size: 14px;
+            }
+        }
+    }
+    .owl-dots{
+        text-align: center;
+        margin-top: 80px;
+        .owl-dot{
+            width: 14px;
+            height: 14px;
+            background: #eeeeee;
+            display: inline-block;
+            margin: 0px 5px;
+            transition: all 0.3s linear;
+            &.active{
+                background: $yellow;
+            }
+        }
+    }
+}

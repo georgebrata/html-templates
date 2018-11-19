@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. 1600px
+2. 1440px
+3. 1280px
+4. 1199px
+5. 1024px
+6. 991px
+7. 959px
+8. 880px
+9. 768px
+10. 767px
+11. 539px
+12. 479px
+13. 400px
+
+******************************/
+
+
+@media only screen and (max-width: 1600px)
+{
+	
+}
+
+/************
+2. 1440px
+************/
+
+@media only screen and (max-width: 1440px)
+{
+	.main_nav ul
+	{
+		margin-right: 80px;
+	}
+	.main_nav ul li
+	{
+		margin-right: 50px;
+	}
+}
+
+/************
+3. 1380px
+************/
+
+@media only screen and (max-width: 1380px)
+{
+	
+}
+
+/************
+3. 1280px
+************/
+
+@media only screen and (max-width: 1280px)
+{
+	.logo
+	{
+		padding-left: 50px;
+	}
+	.contact_logo
+	{
+		padding-left: 0px;
+	}
+	.logo a
+	{
+		font-size: 28px;
+	}
+	.search
+	{
+		width: auto;
+		margin-right: 40px;
+	}
+	.main_nav ul
+	{
+		margin-right: 68px;
+	}
+	.next_section_scroll
+	{
+		display: block;
+	}
+	.footer_logo
+	{
+		padding-left: 0px;
+	}
+}
+
+/************
+4. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+	#google_map
+	{
+		width: 100%;
+		height: 486px;
+	}
+}
+
+/************
+4. 1100px
+************/
+
+@media only screen and (max-width: 1100px)
+{
+	
+}
+
+/************
+5. 1024px
+************/
+
+@media only screen and (max-width: 1024px)
+{
+	
+}
+
+/************
+6. 991px
+************/
+
+@media only screen and (max-width: 991px)
+{
+	.main_nav
+	{
+		display: none;
+	}
+	.hamburger_container
+	{
+		display: inline-block;
+	}
+	#google_map
+	{
+		width: 100%;
+		height: 361px;
+	}
+	.contact_info
+	{
+		margin-top: 109px;
+	}
+	.footer_social
+	{
+		margin-bottom: 60px;
+	}
+	.footer_cr
+	{
+		display: none;
+	}
+	.footer_cr_2
+	{
+		display: block;
+	}
+}
+
+/************
+7. 959px
+************/
+
+@media only screen and (max-width: 959px)
+{
+	
+}
+
+/************
+8. 880px
+************/
+
+@media only screen and (max-width: 880px)
+{
+	
+}
+
+/************
+9. 768px
+************/
+
+@media only screen and (max-width: 768px)
+{
+	
+}
+
+/************
+10. 767px
+************/
+
+@media only screen and (max-width: 767px)
+{
+	h1
+	{
+		font-size: 36px;
+	}
+	.logo
+	{
+		padding-left: 30px;
+	}
+	.contact_logo
+	{
+		padding-left: 0px;
+	}
+	#google_map
+	{
+		width: 100%;
+		height: 266px;
+	}
+	.marker
+	{
+		width: 50px;
+		height: 50px;
+	}
+	.marker_inner
+	{
+		width: 30px;
+		height: 30px;
+	}
+	.marker_center
+	{
+		width: 6px;
+		height: 6px;
+	}
+	.reply_form_name
+	{
+		margin-right: 0px;
+		width: 100%;
+	}
+	.reply_form_email
+	{
+		margin-left: 0px;
+		width: 100%;
+		margin-top: 13px;
+	}
+}
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+	.logo
+	{
+		padding-left: 15px;
+	}
+	.contact_logo
+	{
+		padding-left: 0px;
+	}
+	.hamburger_container
+	{
+		margin-right: 5px;
+	}
+	#google_map
+	{
+		width: 100%;
+		height: calc((100vw - 30px) / 1.98);
+	}
+	.footer_col ul li a
+	{
+		font-size: 14px;
+	}
+	.footer_cr_2
+	{
+		font-size: 14px;
+	}
+}
+
+/************
+11. 539px
+************/
+
+@media only screen and (max-width: 539px)
+{
+	
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 480px)
+{
+	h1{font-size: 24px;}
+	h2{font-size: 20px;}
+	p{font-size: 13px;}
+	.header
+	{
+		height: 68px;
+	}
+	.header.scrolled
+	{
+		height: 50px;
+		background: rgba(27, 11, 51, 0.92);
+	}
+	.logo a
+	{
+		font-size: 18px;
+	}
+	.button
+	{
+		height: 40px;
+		width: 140px;
+		font-size: 11px;
+		line-height: 37px;
+	}
+	.button a
+	{
+		font-size: 11px;
+		line-height: 37px;
+	}
+}
+
+/************
+13. 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+	
+}
+
+/************
+14. 400px
+************/
+
+@media only screen and (max-width: 400px)
+{
+	
+}

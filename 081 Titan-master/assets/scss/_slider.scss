@@ -1,0 +1,207 @@
+/* -------------------------------------------------------------------
+General Styles - FlexSlider
+------------------------------------------------------------------- */
+
+.flex-direction-nav a,
+.flex-control-nav > li > a {
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.flex-direction-nav a {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 50%;
+	top: 0;
+	z-index: 10;
+	overflow: hidden;
+	opacity: 0;
+	margin:0;
+}
+
+.flex-direction-nav .flex-prev {
+	opacity: 0;
+	left: 0;
+	cursor: url(../images/prev-light.png), e-resize;
+}
+
+.flex-direction-nav .flex-next {
+	opacity: 0;
+	right: 0;
+	cursor: url(../images/next-light.png), e-resize;
+}
+
+.flex-control-nav {
+	position: absolute;
+	width: auto;
+	left: 50%;
+	bottom: 20px;
+	z-index: 11;
+	text-align: center;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+
+}
+
+.flex-control-nav > li {
+	display: inline-block;
+	margin: 5px 3px;
+}
+
+.flex-control-nav > li > a {
+	background: transparent;
+	border: 1px solid #fff;
+	display: block;
+	height: 6px;
+	width: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.flex-control-nav > li > a:hover,
+.flex-control-nav > li > a.flex-active {
+	background: #fff;
+}
+
+/* -------------------------------------------------------------------
+Hero Slider
+------------------------------------------------------------------- */
+
+.hero-slider {
+	margin: 0!important;
+}
+
+.hero-slider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+
+.hero-slider,
+.hero-slider .flex-viewport {
+	height: 100% !important;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.hero-slider .slides {
+	height: 100% !important;
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	transition-delay: 1s;
+}
+
+.hero-slider .flex-direction-nav a {
+	width: 15%;
+}
+
+.hero-slider .slides li {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100% !important;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+/* Caption */
+
+.titan-caption {
+	position: relative;
+	display: table;
+	height: 100%;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.titan-caption {
+	position: relative;
+	display: table;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.caption-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/*
+Photography Page Slider
+*/
+.photography-page {
+	.image-caption {
+		bottom: 20px;
+		position: absolute;
+		width: 35%;
+
+		.caption-text {
+			font-size: 24px;
+			text-transform: capitalize;
+			letter-spacing: 1px;
+		}
+	}
+	.flex-control-nav {
+		left: 80%;
+		bottom: 20px;
+		z-index: 11;
+
+	}
+}
+
+
+
+/* -------------------------------------------------------------------
+General Styles - Owlcarousel
+------------------------------------------------------------------- */
+
+.owl-controls {
+	margin-top: 40px;
+}
+
+.owl-pagination div {
+	display: inline-block;
+}
+
+.owl-controls .owl-page span {
+	background: transparent;
+	border: 1px solid #111;
+	display: block;
+	height: 6px;
+	width: 6px;
+	margin: 0 3px 5px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.owl-controls .owl-page.active span,
+.owl-controls.clickable .owl-page:hover span {
+	background: #111;
+}
+
+.owl-controls .owl-buttons > div {
+	display: inline-block;
+	margin: 5px;
+	font-size: 14px;
+	color: #111;
+}

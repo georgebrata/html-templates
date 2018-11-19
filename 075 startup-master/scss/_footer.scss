@@ -1,0 +1,139 @@
+ footer {
+	background-image: url('../img/bg-footer.jpg');
+	@include background-cover;
+	position: relative; 
+	color:#fff;
+
+	&::before{
+	  background-color: rgba(0, 57, 119, 0.86);
+	  content: '';
+	  display: block;
+	  height: 100%;
+	  position: absolute;
+	  width: 100%;
+	}
+
+	.container {
+		.row {
+			padding:100px 0 50px;
+
+			.company-desc {
+				address {
+					i {
+						font-size: 30px;
+					}
+				} 
+			}
+
+			.social {
+				ul {
+					padding-left: 0;
+					li {
+						list-style: none;
+						display:inline-block;
+						margin:10px 15px;
+						height:35px;
+						width: 35px;
+						text-align: center;
+						line-height: 35px;
+						border:1px solid $white; 
+
+						&:hover {
+							cursor: pointer;
+							background:$white;
+							color:$primary-b;
+						}
+					}
+				}
+
+				.cont-info {
+					margin-left: 15px;
+					margin-top: 5px;
+					i {
+						font-size:30px;
+					}
+					a {
+						margin-left: 5px;
+						color:$white;
+						text-decoration: none;
+					}
+				} 
+			}
+
+			.latest-news {
+				h3 {
+					margin-bottom: 15px;
+				}
+
+				margin-bottom: 15px;
+				img {
+					height:60px;
+					width:60px;
+					float: left;
+					margin-right: 10px;
+				}
+				p {
+					margin:0;
+					line-height:22px;
+				}
+
+				@media (max-width: 991px) {
+				img {
+						margin-bottom: 40px;
+						height:60px;
+						width:60px;
+						float: left;
+						margin-right: 10px;
+					}
+				}
+			} 
+
+			@media (max-width:767px) {
+				max-width:320px;
+				margin: 0 auto;
+
+				.company-desc {
+					padding-left: 10px;
+					margin-bottom: 70px;
+				}
+
+				.social {
+					padding-left: 10px;
+					margin-bottom: 70px; 
+				}
+
+				.latest-news { 
+					padding-left: 10px;
+					img {
+						height:60px;
+						width:60px;
+						float: left;
+						margin-right: 10px;
+					}
+
+					clear: both;
+				} 
+			} 
+
+		}
+	} 
+
+	.footer-b {
+		background:$primary-b;
+		position: relative;
+		height:55px;
+		line-height:55px;
+		small {
+			font-size:15px;
+			color:$white; 
+			a {
+				color:$primary-y;
+			}
+		}
+
+		@media (max-width:420px) {
+			height:100%;
+			line-height:30px;
+		}
+	}
+}

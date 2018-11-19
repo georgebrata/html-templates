@@ -1,0 +1,106 @@
+/*------------------------------------------------------------------
+ [Master Stylesheet]
+
+  Project:	Purple Admin (Free)
+  Version:	1.0
+-------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------------
+  ===== Table of Contents =====
+
+  * Bootstrap functions
+  * Template variables
+  * SCSS Compass Functions
+  * Boostrap Main SCSS
+  * Template mixins
+    + Animation Mixins
+    + Badge Mixins
+    + Button Mixins
+    + Miscellaneous Mixins
+    + BlockQuote Mixins
+    + Cards Mixins
+  * Core Styles
+    + Reset Styles
+    + Fonts
+    + Functions
+    + Backgrounds
+    + Sidebar
+    + Navbar
+    + Typography
+    + Miscellaneous
+    + Footer
+    + Layouts
+    + Utilities
+    + Demo styles
+    + Authentication
+  * Components
+    + Buttons
+    + Cards
+    + Checkboxes and Radios
+    + Forms
+    + Icons
+    + Lists
+    + Preview
+    + Tables
+-------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------*/
+/* === Import Bootstrap functions and variables === */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+/*-------------------------------------------------------------------*/
+/* === Import template variables === */
+@import "variables";
+
+/*-------------------------------------------------------------------*/
+/* === SCSS Compass Functions === */
+@import "../node_modules/compass-mixins/lib/compass";
+@import "../node_modules/compass-mixins/lib/animate";
+
+/*-------------------------------------------------------------------*/
+/* === Boostrap Main SCSS === */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/*-------------------------------------------------------------------*/
+/* === Template mixins === */
+@import "mixins/animation";
+@import "mixins/buttons";
+@import "mixins/badges";
+@import "mixins/misc";
+@import "mixins/blockqoute";
+@import "mixins/cards";
+
+/*-------------------------------------------------------------------*/
+/* === Core Styles === */
+@import "reset";
+@import "fonts";
+@import "functions";
+@import "background";
+@import "sidebar";
+@import "navbar";
+@import "typography";
+@import "misc";
+@import "footer";
+@import "layouts";
+@import "utilities";
+@import "demo";
+@import "auth";
+
+/*-------------------------------------------------------------------*/
+/* === Components === */
+@import "components/buttons";
+@import "components/badges";
+@import "components/bootstrap-progress";
+@import "components/cards";
+@import "components/checkbox-radio";
+@import "components/forms";
+@import "components/icons";
+@import "components/lists";
+@import "components/preview";
+@import "components/tables";
+
+/*-------------------------------------------------------------------*/

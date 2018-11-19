@@ -1,0 +1,29 @@
+// Bootstrap Sass Imports
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Ubuntu');
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+
+// Global CSS
+@import "global.scss";
+
+// Components
+@import "navbar.scss";
+@import "button.scss";
+@import "heading.scss";
+@import "masthead.scss";
+@import "button.scss";
+@import "about.scss";
+@import "devider.scss";
+@import "how-work.scss";
+@import "services.scss";
+@import "portfolio.scss";
+@import "faq.scss";
+@import "team.scss";
+@import "testimonials.scss";
+@import "news.scss";
+@import "client.scss";
+@import "footer.scss";
+@import "contact.scss";

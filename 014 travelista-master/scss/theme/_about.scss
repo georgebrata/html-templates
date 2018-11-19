@@ -1,0 +1,35 @@
+/* =================================== */
+/*  About Page Styles
+/* =================================== */
+
+
+/*-------- start about-info Style  -------------*/
+
+.about-info-area{
+  .info-left{
+    img{
+      width:100%
+    }
+    @media(max-width:991px){
+      margin-bottom:30px;
+    }
+  }
+
+  .info-right{
+    h6{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 400;
+    }
+    h1{
+      text-transform:uppercase;
+      margin:20px 0px;
+    }
+    p{
+      max-width:450px;
+    }
+  }
+}
+
+
+/*-------- end about-info Style  -------------*/

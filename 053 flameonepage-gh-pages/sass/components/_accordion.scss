@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------
+  	[Accordion]
+------------------------------------------------------------------*/
+
+.accordion {
+	.panel-default {
+		border: none;
+	}
+
+	.panel-heading {
+		border-radius: 0;
+	}
+	
+	.panel-default > .panel-heading {
+		color: $color-heading;
+		background: $color-white;
+		border: none;
+		padding: 0;
+	}
+
+	.panel-title {
+		@include font($size: 22px);
+	}
+
+	.panel-title-child {
+		display: block;
+		padding: 30px;
+	}
+
+	.panel-group .panel + .panel {
+		border-radius: 0;
+		margin-top: 10px;
+	}
+
+	.panel-default > .panel-heading + .panel-collapse > .panel-body {
+		@include font($size: 16px);
+		border-top: none;
+		padding: 0 30px 30px 30px;
+		margin-top: -1px;
+	}
+
+	[aria-expanded="true"],
+	.collapse.in {
+		color: $color-white;
+		background: $color-base;
+	}
+}

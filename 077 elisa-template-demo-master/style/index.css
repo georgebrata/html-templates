@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Header */
+
+.download-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #312F38;
+}
+
+.download-section h2 {
+  font-family: 'Rubik', sans-serif;
+  color: #F4F5F7;
+  margin-top: 50px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.download-section .white-btn-download {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  width: 170px;
+  height: 40px;
+  background-color: #312F38;
+  border: 2px solid #F4F5F7;
+  border-radius: 20px;
+  color: #F4F5F7;
+}
+
+.download-section .white-btn-download:hover {
+  border: 2px solid #8779BD;
+  transform: scale(1.05);
+}
+
+/*Layouts (Main)*/
+
+.layouts {
+  background-color: #F4F5F7;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.layouts .col-sm-12 h3 {
+  font-family: 'Rubik', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #496174;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.layouts .col-sm-12 .border {
+  height: 4px;
+  width: 60px;
+  border-radius: 5px;
+  margin: 0 auto 30px;
+  background-color: #01bf86
+}
+
+
+.box-for-img {
+  padding: 20px 0 30px 0;
+}
+
+.box-for-img img {
+  transition: border 1s ease;
+  border: 7px solid #eeeeee;
+  width: 100%;
+  height: auto;
+}
+
+.box-for-img:hover img {
+  border: 7px solid #dddddd;
+}
+
+.box-for-img h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  color: #496174;
+}
+
+/*Footer*/
+.last-section {
+  padding: 20px 0;
+  background-color: #312F38;
+
+}
+
+.last-section p {
+  font-family: 'Rubik', sans-serif;
+  color: #F4F5F7;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.last-section p a {
+  font-family: 'Rubik', sans-serif;
+  color: #F4F5F7;
+}

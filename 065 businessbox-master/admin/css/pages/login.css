@@ -1,0 +1,47 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+.cl-blue{
+    color: #2196f3;
+}
+ .overlay {
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     z-index: 0;
+    background: rgba(0, 0, 0, 0.66); 
+    background: linear-gradient(to bottom, rgba(123, 67, 151, 0.35), rgba(33, 150, 243, 0.55));
+
+ }
+
+.hero-area {
+    background-image: url("../../img/pexels-photo-442574.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+  
+ .hero-area {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .contact-h-cont {
+    width: 500px;
+    margin:0 auto;
+    padding:30px;
+    background: #fff;
+    border-bottom: 4px solid #2196f3;
+ }
+ 

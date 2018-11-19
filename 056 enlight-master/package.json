@@ -1,0 +1,16 @@
+{
+"devDependencies": {
+  "gulp": "latest",
+  "gulp-sass": "latest",
+  "gulp-uglify": "latest",
+  "gulp-rename": "latest",
+  "gulp-notify": "latest",
+  "gulp-minify-css": "latest",
+  "gulp-concat": "latest",
+  "gulp-plumber": "latest",
+  "browser-sync": "latest",
+  "gulp-sourcemaps": "latest",
+  "gulp-autoprefixer": "latest",
+  "gulp-clean-css": "latest"
+  }
+}

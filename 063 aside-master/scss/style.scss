@@ -1,0 +1,673 @@
+$font-serif: 'Crimson Text', serif;
+$font-sans-serif: 'Work Sans', sans-serif;
+
+$xl: 1140px;
+$lg: 960px;
+$md: 768px;
+$sm: 576px;
+$white: #fff;
+$black: #000;
+$primary: #1FAD9F;
+html {
+	overflow-x: hidden;
+}
+body {
+	font-family: $font-sans-serif;
+	line-height: 1.8;
+	font-size: 18px;
+	background: $white;
+	color: lighten(#545d61, 20%);
+
+}
+a {
+	transition: .3s all ease;
+	color: $primary;
+	&:hover {
+		text-decoration: none;
+		color: $primary;
+	}
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.45;
+	font-weight: normal;
+	color: $black;
+}
+
+.text-primary {
+	color: $primary!important;
+}
+
+.probootstrap-aside {
+	height: 100vh;
+	width: 250px;
+	position: fixed;
+	top: 0;
+	float: left;
+	min-height: 500px;
+	overflow-y: scroll;
+	transition: .3s all ease;
+	background: $white;
+	z-index: 10;
+	font-size: 16px;
+	line-height: 1.5;
+
+	@media screen and (max-width: $md) {
+		transform: translateX(-250px);
+		padding-top: 40px;
+	}
+	&.active {
+		transform: translateX(0px);	
+	}
+	
+	.probootstrap-close-menu {
+		position: absolute;
+		right: 15px;
+		color: $black;
+		font-size: 14px;
+		top: 20px;
+		z-index: 20;
+		text-transform: uppercase;
+		span {
+			position: relative;
+			font-size: 16px;
+			top: 2px;
+		}
+	}
+	.probootstrap-site-logo {
+		padding: 30px 30px 30px 30px;
+		position: relative;
+
+		.probootstrap-logo {
+			font-size: 20px;
+			text-decoration: none;
+			color: $black;
+			color: $primary;
+			text-transform: uppercase;
+			letter-spacing: .05em;
+		}
+		
+	}
+	.probootstrap-nav {
+		padding-left: 30px;
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				padding: 0;
+				margin: 0 0 10px 0;
+				display: block;
+				list-style: none;
+				float: left;
+				width: 100%;
+				a {
+					color: $black;
+					padding: 3px 0;
+					display: block;
+					float: left;
+					position: relative;
+					&:after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						width: 0;
+						left: 0;
+						height: 2px;
+						background: $primary;
+						transition: .3s width ease-out;
+					}
+					&:hover {
+						&:after {
+							width: 30px;
+						}
+					}
+				}
+				&.active {
+					a {
+						&:after {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	.probootstrap-overflow {
+		height: 500px;
+	}
+	.probootstrap-aside-footer {
+		font-size: 14px;
+		padding-left: 30px;
+		position: absolute;
+		bottom: 20px;
+	}
+}
+.probootstrap-aside-social {
+	li {
+		display: inline-block;
+	}
+	a {
+		display: inline-block;
+		color: lighten($black, 40%);
+		font-size: 20px;
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+.probootstrap-main {
+	width: calc(100% - 250px);
+	float: right;
+	padding: 30px;
+	position: relative;
+	&:before {
+		background: rgba(0,0,0,.5);
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 6;
+		visibility: hidden;
+		opacity: 0;
+		transition: .6s all ease;
+	}
+	&.mobile-open {
+		&:before {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	.probootstrap-bar {
+		position: fixed;
+		top: 0;
+		padding: 20px 0;
+		z-index: 5;
+		background: $white;
+		width: calc(100% - 250px);
+		transform: translateY(-100%);
+		@media screen and (max-width: $md) {
+			width: 100%;
+			left: 0;
+			right: 0;
+			transform: translateY(0%);
+		}
+		.probootstrap-toggle {
+			position: absolute;
+			left: 15px;
+			font-size: 20px;
+			color: $black;
+			z-index: 2;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.probootstrap-main-site-logo {
+			margin: 0 auto;
+			width: 100px;
+			text-align: center;
+			position: relative;
+			a {
+				font-size: 20px;
+				text-decoration: none;
+				color: $black;
+				text-transform: uppercase;
+				letter-spacing: .05em;
+			}
+		}
+	}
+	@media screen and (max-width: $md) {
+		width: 100%;
+		padding: 30px 15px;
+	}
+	.card-columns {
+		
+		
+		@media screen and (max-width: $xl) {
+			columns: 3;
+		}
+		
+		@media screen and (max-width: $lg) {
+			columns: 2;
+		}
+		@media screen and (max-width: $md) {
+			columns: 2;
+		}
+		@media screen and (max-width: $sm) {
+			columns: 1;
+		}
+		.card {
+			background: lighten(#ccc, 10%);
+			border: none;
+			border-radius: 0px!important;
+			margin-bottom: 20px;
+			transform: scale(1.0);
+			transition: .2s all ease;
+			position: relative;
+			opacity: 0;
+			visibility: hidden;
+			&.img-loaded {
+				opacity: 1;
+				visibility: visible;
+			}
+			
+			a {
+				position: relative;
+				display: block;
+				&:before {
+					z-index: 1;
+					content: "";
+					background: rgba(255,255,255,.7);
+					position: absolute;
+
+					
+					top: 0px;
+					left: 0px;
+					right: 0px;
+					bottom: 0px;
+
+					visibility: hidden;
+					opacity: 0;
+					transition: .3s all ease;
+				}
+				.card-img-top {
+					border-top-left-radius: 0px!important;
+					border-top-right-radius: 0px!important;
+				}
+			}
+
+			&:hover, &:focus {
+				transform: scale(0.96);
+				a {
+					&:before {
+						top: 10px;
+						left: 10px;
+						right: 10px;
+						bottom: 10px;
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+				
+			}
+
+			
+			
+		}
+	}
+}
+
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.probootstrap-cover {
+  // background: lighten( $black, 10%);
+  @extend .bg-image;
+  background-position: center center;
+ 
+	.probootstrap-heading {
+		font-size: 45px;
+		line-height: 1.34;
+		color: $white;
+		@media screen and (max-width: $md) {
+			font-size: 37px;
+			line-height: 1.3;
+		}
+	}
+	.probootstrap-subheading, p {
+		color: rgba($white, .5);
+	}
+  .btn {
+		@media screen and (max-width: $md) {
+			width: 100%!important;
+			border: 1px solid red;
+		}
+	}
+	a {
+		position: relative;
+		color: $white;
+		&:before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: $primary;
+			height: 2px;
+			content: " ";
+		}
+	}
+	&.overlay {
+		position: relative;
+		&:before {
+			content: "";
+			background: rgba($black,.6);
+			position: absolute;
+			top: 0; 
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+.btn {
+	border-radius: 4px;
+	padding: 20px 30px;
+	font-size: 14px;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	&:before {
+		display: none;
+	}
+	&:hover, &:active, &:focus {
+		outline: none;
+		box-shadow: none;
+	}
+	&.btn-primary {
+		background: $primary;
+		border-color: $primary;
+		color: $white;
+		&:hover, &:focus, &:active {
+			border-color: darken($primary, 10%);
+			background: darken($primary, 10%);
+		}
+	}
+	&.btn-outline-white {
+		border-color: rgba($white, .2);
+		background: none;
+		&:hover, &:focus, &:active {
+			background: $white;
+			border-color: $white;
+			color: $black;
+		}
+	}
+}
+.form-control {
+	border: 2px solid rgba($black, .2);
+	height: 55px;
+	background: none!important;
+	color: $black!important;
+	font-size: 18px;
+	&:focus, &:active {
+		border: 2px solid $black;
+	}
+}
+textarea {
+	height: inherit!important;
+}
+.probootstrap-vh-100 {
+  height: 100vh;
+  @media screen and (max-width: $lg) {
+  	height: inherit;
+  	padding-top: 5em;
+  	padding-bottom: 5em;
+  }
+}
+.probootstrap-vh-75 {
+  height: 75vh;
+  @media screen and (max-width: $lg) {
+  	height: inherit;
+  	padding-top: 5em;
+  	padding-bottom: 5em;
+  }
+}
+
+.bg-primary {
+	background: $primary!important;
+}
+.probootstrap-section,
+.probootstrap-footer {
+	padding: 7em 0;
+
+	.probootstrap-heading {
+		font-size: 40px;
+		line-height: 1.5;
+		@media screen and (max-width: $md) {
+			font-size: 30px;
+		}
+	}
+}
+.probootstrap-bg-dark {
+	background: darken(#2A363B, 2%);
+}
+.probootstrap-footer {
+	font-size: 16px;
+	.probootstrap-footer-logo {
+		text-transform: uppercase;
+		letter-spacing: .1em;
+	}
+	.probootstrap-footer-widget {
+		h2 {
+			font-weight: normal;
+		}
+	}
+	p {
+		color: rgba($white, .3);
+	}
+	&.probootstrap-bg-dark {
+		background: darken(#2A363B, 4%);
+	}
+	a {
+		color: rgba($white, .3);
+		&:hover {
+			color: $primary;
+		}
+	}
+	.probootstrap-heading {
+		font-size: 24px;
+	}
+	.probootstrap-heading-2 {
+		font-size: 14px;
+		font-weight: bold;
+		letter-spacing: .05em;
+		text-transform: uppercase;
+		color: rgba(255,255,255,.6);
+	}
+}
+
+
+
+
+.probootstrap-footer-social {
+	li {
+		list-style: none;
+		margin: 0 10px 10px 0;
+		display: inline-block;
+		a {
+			height: 60px;
+			width: 60px;
+			display: block;
+			float: left;
+			background: rgba($white, .05);
+			border-radius: 50%;
+			position: relative;
+			span {
+				position: absolute;
+				font-size: 26px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+.footer-small-nav {
+	> li {
+		display: inline-block;
+		a {
+			margin: 0 10px 10px 0;
+			&:hover, &:focus {
+				color: $primary;
+			}
+		}
+	}
+}
+.media {
+	.probootstrap-icon {
+		width: 100px;
+		span {
+			color: $primary;
+		}
+	}
+}
+.probootstrap-media {
+	border: 1px solid lighten(#ccc, 10%);
+	&.text-center {
+		.probootstrap-icon {
+			margin: 0 auto;
+		}
+	}
+}
+.probootstrap-overflow-hidden {
+	overflow: hidden;
+}
+
+.padding-top-bottom {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+
+// owl
+.probootstrap-owl {
+	position: relative;
+	z-index: 1;
+	.owl-dots, .owl-nav {
+
+	}
+	.owl-nav {
+		position: absolute;
+		top: 50%;
+		// margin-top: -25px;
+		margin-top: -50px;
+		z-index: 10;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		visibility: hidden;
+		transition: .3s all ease;
+		.owl-prev, 
+		.owl-next {
+			position: absolute;
+			font-size: 30px;
+			background: $primary;
+			color: $white;
+			padding: 10px;
+			line-height: 0;
+		}
+		.owl-prev {
+			left: 0;
+		}
+		.owl-next {
+			right: 0;
+		}
+	}
+	.owl-dots {
+		position: relative;
+		text-align: center;
+		margin-top: 30px;
+		.owl-dot {
+			display:inline-block;
+			zoom:1;
+			span {
+				width: 10px;
+				height: 10px;
+				background: #ccc;
+				border-radius: 50%;
+				display: inline-block;
+				margin: 5px 7px;
+			}
+			&.active {
+				span {
+					background: $primary;
+				}
+			}
+		}
+	}
+	&:hover {
+		.owl-nav {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+// animate initial
+.probootstrap-animate {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#probootstrap-loader {
+	position: fixed;
+	width:  96px;
+	height: 96px;
+	left:  50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 0px 24px 64px rgba(0,0,0,0.24);
+	border-radius:16px;
+	opacity: 0; 
+	visibility: hidden;
+	transition: opacity .2s ease-out, visibility 0s linear .2s;
+	z-index:1000;
+}
+
+#probootstrap-loader.fullscreen {
+	padding:  0;
+	left:  0;
+	top:  0;
+	width:  100%;
+	height: 100%;
+	transform: none;
+	background-color: #fff;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#probootstrap-loader.show {
+	transition: opacity .4s ease-out, visibility 0s linear 0s;
+	visibility: visible;
+	opacity: 1;
+}
+
+#probootstrap-loader .circular {
+  animation: loader-rotate 2s linear infinite;
+  position: absolute;
+  left:  calc(50% - 24px);
+  top:  calc(50% - 24px);
+  display: block;
+  transform: rotate(0deg);
+}
+
+#probootstrap-loader .path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: loader-dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+}
+
+@keyframes loader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -136px;
+  }
+}

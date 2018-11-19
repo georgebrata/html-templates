@@ -1,0 +1,49 @@
+// Import font(s) from google.
+
+// Mixins
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot?1z9v6x');
+	src:url('../fonts/icomoon/icomoon.eot?1z9v6x#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.ttf?1z9v6x') format('truetype'),
+		url('../fonts/icomoon/icomoon.woff?1z9v6x') format('woff'),
+		url('../fonts/icomoon/icomoon.svg?1z9v6x#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin icomoon() {
+	
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+@mixin inline-block() {
+	display:inline-block;
+  *display:inline;
+  zoom:1;
+}
+
+// Variables
+$font-primary: 'Raleway', Arial, sans-serif;
+$font-secondary: 'Open Sans', Arial, sans-serif;
+$brand-primary: #6a41ed;
+$brand-secondary: #49D292;
+$brand-black: #000000;
+$brand-white: #ffffff;
+$brand-dropdown: #49D292;
+
+$screen-lg: 1200px;
+$screen-md: 992px;
+$screen-sm: 768px;
+$screen-xs: 480px;

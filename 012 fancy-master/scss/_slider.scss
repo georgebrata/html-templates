@@ -1,0 +1,25 @@
+/* Slider Area css
+============================================================================================ */
+.main_slider_area{
+    #main_slider{
+        ul{
+            li{
+                .slider_button{
+                    .bg_btn{
+                        display: inline-block;
+                        line-height: 46px !important;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        margin-right: 7px;
+                    }
+                    .tp_btn{
+                        display: inline-block;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Slider Area css
+============================================================================================ */

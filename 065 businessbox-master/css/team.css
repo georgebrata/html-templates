@@ -1,0 +1,67 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+/*====================================================
+                  TEAM-P1
+======================================================*/
+
+#team-p1{
+	padding:100px 0 0 0;
+}
+
+#team-p1 .team-p1-cont{
+	padding:20px;
+}
+
+.team-p2 .team-p2-cont{
+	padding-bottom: 20px;
+	box-shadow: 3px 3px 10px 1px rgba(158, 158, 158, 0.68);
+}
+
+#team-p1 .team-p1-cont h5,
+.team-p2 .team-p2-cont h5{
+	padding-top: 20px;
+	line-height: 25px;
+	color:#777;
+	padding-left: 10px;
+}
+
+#team-p1 .team-p1-cont h6,
+.team-p2 .team-p2-cont h6{ 
+	color:#2196f3;
+	padding-left: 10px;
+}
+
+#team-p1 .team-p1-cont ul,
+.team-p2 .team-p2-cont ul{
+	float: right;
+	margin-top: -60px;
+	padding-right: 20px;
+}
+
+#team-p1 .team-p1-cont ul li>a>i,
+.team-p2 .team-p2-cont ul li>a>i{
+	padding: 2px;
+	height: 30px;
+	width: 30px;
+}
+
+@media (max-width: 767px) {
+	.team-p1-cont img{
+		width: 100%;
+	}
+
+	.team-p2 .team-p2-cont{
+		margin-top: 30px;
+	}
+}
+
+@media(max-width: 575px){
+	#comp-offer.team-p2 .col-sm-6{
+		margin: 0 auto;
+	}
+}

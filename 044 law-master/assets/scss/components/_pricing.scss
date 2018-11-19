@@ -1,0 +1,15 @@
+.pb_pricing_v1 {
+	margin-bottom: 50px;
+	.price {
+		font-size: 50px;
+		color: theme-color('primary');
+		sup {
+			font-size: 20px;
+			top: -1em;
+		}
+		span {
+			font-size: 20px;
+			color: $gray-500;
+		}
+	}
+}

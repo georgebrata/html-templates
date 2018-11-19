@@ -1,0 +1,111 @@
+/*============== contact_area css ================*/
+.contact_area{}
+.mapBox{
+    height: 420px;
+    margin-bottom: 80px;
+}
+.contact_info{
+    .info_item{
+        position: relative;
+        padding-left: 45px;
+        i{
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 20px;
+            line-height: 24px;
+            color: $yellow;
+            font-weight: 600;
+        }
+        h6{
+            font-size: 16px;
+            line-height: 24px;
+            color: $dark;
+            font-weight: 300;
+            margin-bottom: 0px;
+            a{
+                color: $dark;
+            }
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+            padding: 2px 0px;
+        }
+    }
+}
+.contact_form{
+    .form-group{
+        margin-bottom: 10px;
+        .form-control{
+            font-size: 13px;
+            line-height: 26px;
+            color: #999;
+            border: 1px solid #eeeeee;
+            font-family: $pop;
+            border-radius: 0px;
+            padding-left: 20px;
+            &:focus{
+                box-shadow: none;
+                outline: none;
+            }
+            @include placeholder{
+                color: #999;
+            }
+        }
+        textarea{
+            &.form-control{
+                height: 140px;
+            }
+        }
+    }
+    .theme_btn{
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+
+
+/* Contact Success and error Area css
+============================================================================================ */
+.modal-message{
+    .modal-dialog{
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) !important; 
+        margin: 0px;
+        max-width: 500px;
+        width: 100%;
+        .modal-content{
+            .modal-header{
+                text-align: center;
+                display: block;
+                border-bottom: none;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                .close{
+                    position: absolute;
+                    right: -15px;
+                    top: -15px;
+                    padding: 0px;
+                    color: #fff;
+                    opacity: 1;
+                    cursor: pointer;
+                }
+                h2{
+                    display: block;
+                    text-align: center;
+                    color: $yellow;
+                    padding-bottom: 10px;
+					font-family: $pop;
+                }
+                p{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+/* End Contact Success and error Area css
+============================================================================================ */

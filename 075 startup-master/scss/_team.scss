@@ -1,0 +1,145 @@
+// Styling for the team section
+.team {
+    padding:50px 0;
+    .box{
+        border:2px solid $primary-b;
+        margin-top: 30px;
+        background: $primary-b;
+        color: $white;
+        overflow: hidden;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        position: relative;
+        transition: all 0.3s ease-out 0s;
+      
+        img{
+            width: 100%;
+            height: auto;
+            opacity: 1;
+            transition: all 0.3s ease-out 0s;
+        } 
+
+        .box-content{
+            width: 78px;
+            height: 78px;
+            background-color: rgba(255, 255, 255, 0);
+            overflow: hidden;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transform: rotate(45deg);
+            transition: all 0.3s ease-out 0s;
+
+            .icon{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                transition: all 0.3s ease-out 0s;
+
+                li{
+                    display: inline-block;
+
+                    a{
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        background: $gray-500;
+                        border: 2px solid $white;
+                        font-size: 20px;
+                        color: $white;
+                        text-align: center;
+                        position: absolute;
+                        transition: all 0.2s ease 0s;
+                        
+                        &.left{
+                            bottom: 0;
+                            left: 0;
+                            transform: translate(-100%, 100%);
+                        }
+
+                        &.right{
+                            top: 0;
+                            right: 0;
+                            transform: translate(100%, -100%);
+                        }
+
+                        &:hover{
+                            background: $primary-b;
+                        }
+
+                        i{
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+
+            &:before,
+            &:after,
+            .icon:before,
+            .icon:after{
+                content: "";
+                display: block;
+                background: $white;
+                position: absolute;
+                transition: all 0.4s ease-in-out 0s;
+            }  
+
+            &:before,
+            &:after{
+                width: 0;
+                height: 2px;
+            }
+
+            .icon:before,
+            .icon:after{
+                width: 2px;
+                height: 0;
+            }
+
+            &:before,
+            .icon:before{
+                top: 0;
+                left: 0;
+            }
+
+            &:after,
+            .icon:after{
+                bottom: 0;
+                right: 0;
+            }    
+        }   
+  
+        &:hover { 
+            img{
+                opacity: 0.2;
+                transform: scale(1.1);
+            }
+
+            .box-content{
+                background-color: rgba(255, 255, 255, 0.3);
+                .icon li a{
+                    transform: translate(0%, 0%);
+                    transition-delay: 0.35s;
+                }
+
+                &:before,
+                &:after{
+                    width: 100%;
+                }
+
+                .icon:before,
+                .icon:after{
+                    height: 100%;
+                }
+            } 
+        }
+
+        @media only screen and (max-width:990px){
+          margin-bottom: 20px; 
+        }
+    }
+}

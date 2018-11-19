@@ -1,0 +1,113 @@
+
+/*=======================================
+Template Design By MarkUps.
+Author URI : http://www.markups.io/
+========================================*/
+.scrollToTop {
+  background-color: #970001;
+  border: 2px solid #970001;
+}
+
+.mu-readmore-btn,
+.mu-browsmore-btn,
+.mu-main-navbar .mu-main-nav li a:hover, 
+.mu-main-navbar .mu-main-nav li a:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus,
+.mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-small-title,
+.mu-about-us-right ul li:before,
+.mu-title .mu-subtitle,
+.mu-menu-item-nav li .media .media-body .media-heading a:hover, 
+.mu-menu-item-nav li .media .media-body .media-heading a:focus,
+.mu-menu-item-nav li .media .media-body .mu-menu-price,
+.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-info h4,
+.mu-footer-copyright p a:hover, 
+.mu-footer-copyright p a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.mu-main-navbar .navbar-header .navbar-brand span {
+  color: #970001;
+}
+
+.mu-readmore-btn::after,
+.mu-testimonial-slider .slick-dots li,
+.mu-chef-nav .slick-dots li,
+.mu-top-slider .slick-dots li button,
+.mu-opening-hour {
+  border: 2px solid #970001;
+}
+
+.mu-readmore-btn:hover, 
+.mu-readmore-btn:focus,
+.mu-restaurant-menu li a,
+.mu-testimonial-slider .slick-dots .slick-active,
+.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:hover, 
+.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a:focus,
+.mu-footer-social a:hover, 
+.mu-footer-social a:hover,
+.navbar-default .navbar-toggle .icon-bar,
+.mu-chef-nav .slick-dots .slick-active,
+.datepicker .datepicker-switch:hover, 
+.datepicker .prev:hover, 
+.datepicker .next:hover, 
+.datepicker tfoot tr th:hover,
+.datepicker table tr td.day:hover,
+.mu-counter-nav li .mu-single-counter,
+.mu-top-slider .slick-dots li.slick-active button::before  {
+  background-color: #970001;
+}
+
+.mu-readmore-btn:hover::after, 
+.mu-readmore-btn:focus::after,
+.mu-reservation-form input[type="text"]:focus,
+.mu-reservation-form input[type="email"]:focus,
+.mu-reservation-form select:focus,
+.mu-reservation-form textarea:focus,
+.mu-contact-form input[type="text"]:focus,
+.mu-contact-form input[type="email"]:focus,
+.mu-contact-form textarea:focus {
+  border-color: #970001;
+}
+
+.mu-browsmore-btn:hover, 
+.mu-browsmore-btn:focus,
+.mu-top-slider .slick-prev:hover, 
+.mu-top-slider .slick-prev:focus,
+.mu-top-slider .slick-next:hover,
+.mu-top-slider .slick-next:focus,
+.mu-send-btn:hover, 
+.mu-send-btn:focus {
+  background-color: #970001;
+  border-color: #970001;
+}
+
+
+.mu-restaurant-menu li a:hover, 
+.mu-restaurant-menu li a:focus, 
+.mu-restaurant-menu li.active a,
+.mu-restaurant-menu li.active a:hover,
+.mu-restaurant-menu li.active a:focus {
+  color: #970001;
+  border-color: #970001 #970001 transparent;
+}
+
+
+#mu-reservation .mu-reservation-area .mu-reservation-content h3,
+.mu-contact-right .mu-contact-widget h3,
+.mu-opening-hour h2 {
+  border-bottom: 2px solid #970001;
+}
+
+
+.mu-chef-nav .slick-list li .mu-single-chef .mu-single-chef-social a {
+  border: 1px solid #970001;
+  color: #970001;
+}
+
+
+
+/*=======================================
+Template Design By MarkUps.
+Author URI : http://www.markups.io/
+========================================*/

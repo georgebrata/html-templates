@@ -1,0 +1,310 @@
+/*     Form     */
+
+.form-button-action {
+  display: inline-flex;
+}
+
+/*     CheckBox Input    */
+
+.select-all-checkbox + .form-check-sign:before {
+  background: #ccc !important;
+  border-color: #ccc !important;
+}
+
+[type="checkbox"] {
+  &:not(:checked), &:checked {
+    position: absolute;
+    left: -9999px;
+  }
+  &:not(:checked) + .form-check-sign, &:checked + .form-check-sign {
+    position: relative;
+    padding-left: 1.65em;
+    color: #777;
+    cursor: pointer;
+  }
+  &:not(:checked) + .form-check-sign:before, &:checked + .form-check-sign:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    background: $transparent-bg;
+    border-radius: 4px;
+  }
+  &:not(:checked) + .form-check-sign:after, &:checked + .form-check-sign:after {
+    content: "\f17b";
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    left: 2px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 0.8;
+    color: #4D7CFE;
+    transition: all .2s;
+    font-family: LineAwesome;
+  }
+  &:not(:checked) + .form-check-sign:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  &:checked + .form-check-sign {
+    &:after {
+      opacity: 1;
+      transform: scale(1);
+    }
+    font-weight: 700;
+  }
+  &:disabled {
+    &:not(:checked) + .form-check-sign:before {
+      box-shadow: none;
+      border-color: #bbb;
+      background-color: #ddd;
+    }
+    &:checked + .form-check-sign {
+      &:before {
+        box-shadow: none;
+        border-color: #bbb;
+        background-color: #ddd;
+      }
+      &:after {
+        color: #999;
+      }
+    }
+    + .form-check-sign {
+      color: #aaa;
+    }
+  }
+  &:checked:focus + .form-check-sign:before, &:not(:checked):focus + .form-check-sign:before {
+    border: 1px solid #ccc;
+  }
+}
+
+/* checked mark aspect changes */
+
+/* disabled checkbox */
+
+/* accessibility */
+
+/* hover style just for information */
+
+.form-check-sign:hover:before {
+  border: 1px solid #ccc !important;
+}
+
+.form-check {
+  padding-left: 0.75rem;
+}
+
+.form-check-input {
+  position: relative;
+  margin-top: .3rem;
+}
+
+/*     Radio Input    */
+
+[type="radio"] {
+  &:not(:checked), &:checked {
+    position: absolute;
+    left: -9999px;
+  }
+  &:not(:checked) + .form-radio-sign, &:checked + .form-radio-sign {
+    position: relative;
+    padding-left: 1.65em;
+    color: #777;
+    cursor: pointer;
+  }
+  &:not(:checked) + .form-radio-sign:before {
+    content: "\f18a";
+    font-size: 22px;
+    font-family: LineAwesome;
+    position: absolute;
+    left: 0;
+    top: auto;
+    background: $transparent-bg;
+    line-height: 1;
+  }
+  &:checked + .form-radio-sign:before {
+    content: "\f18a";
+    font-size: 22px;
+    font-family: LineAwesome;
+    position: absolute;
+    left: 0;
+    top: auto;
+    background: $transparent-bg;
+    line-height: 1;
+    display: none;
+  }
+  &:not(:checked) + .form-radio-sign:after, &:checked + .form-radio-sign:after {
+    content: "\f1bc";
+    position: absolute;
+    left: 0px;
+    top: auto;
+    text-align: center;
+    font-size: 22px;
+    color: #4D7CFE;
+    transition: all .2s;
+    line-height: 1;
+    font-family: LineAwesome;
+  }
+  &:not(:checked) + .form-radio-sign:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  &:checked + .form-radio-sign {
+    &:after {
+      opacity: 1;
+      transform: scale(1);
+    }
+    font-weight: 700;
+  }
+  &:disabled {
+    &:not(:checked) + .form-radio-sign:before {
+      box-shadow: none;
+      opacity: 0.65;
+    }
+    &:checked + .form-radio-sign {
+      &:before {
+        box-shadow: none;
+        opacity: 0.65;
+      }
+      &:after {
+        opacity: 0.65;
+      }
+    }
+    + .form-radio-sign {
+      color: #aaa;
+      opacity: 0.65;
+    }
+  }
+  &:checked:focus + .form-radio-sign:before, &:not(:checked):focus + .form-radio-sign:before {
+    border: 1px solid #ccc;
+  }
+}
+
+/* checked mark aspect changes */
+
+/* disabled radio */
+
+/* accessibility */
+
+.form-radio {
+  padding-left: 0.75rem;
+}
+
+.form-radio-input {
+  position: relative;
+  margin-top: .3rem;
+}
+
+/*     Input    */
+
+.form-group, .form-check {
+  margin-bottom: 0;
+  padding: 15px 10px;
+}
+
+.form-group label, .form-check label {
+  margin-bottom: .5rem !important;
+  color: #3f4047 !important;
+  font-weight: $font-weight-normal;
+  font-size: 1rem;
+}
+
+.form-inline label {
+  margin-bottom: 0 !important;
+}
+
+.input-fixed {
+  width: 200px;
+}
+
+.form-control.input-full {
+  width: 100% !important;
+}
+
+.has-success .form-control {
+  border-color: $success-color;
+  color: $success-color;
+}
+
+.has-error .form-control {
+  border-color: $danger-color;
+  color: $danger-color;
+}
+
+.has-feedback {
+  position: relative;
+}
+
+.form-control-feedback {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.has-success .form-control-feedback {
+  color: $success-color;
+}
+
+.has-error .form-control-feedback {
+  color: $danger-color;
+}
+
+.input-group {
+  &.has-icon {
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+  }
+  &.has-success, &.has-icon.has-success {
+    border-color: 1px solid $success-color !important;
+    color: $success-color;
+  }
+  &.has-error {
+    border: 1px solid $danger-color !important;
+    color: $danger-color;
+  }
+  &.has-icon {
+    &.has-error {
+      border: 1px solid $danger-color !important;
+      color: $danger-color;
+    }
+    .form-control {
+      border-radius: .25rem;
+      border: 0px;
+      position: relative;
+    }
+    .input-group-icon {
+      background: $transparent-bg;
+      border: 0px;
+    }
+  }
+}
+
+.input-square {
+  border-radius: 0px !important;
+}
+
+.input-pill {
+  border-radius: 1.3rem !important;
+}
+
+.input-solid {
+  background: #e8e8e8 !important;
+  border-color: #e8e8e8 !important;
+}
+
+.form-control {
+  &:disabled, &[readonly] {
+    background: #e8e8e8 !important;
+    border-color: #e8e8e8 !important;
+  }
+  &:disabled, &[readonly] {
+    opacity: 0.6 !important;
+  }
+}

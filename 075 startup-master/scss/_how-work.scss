@@ -1,0 +1,49 @@
+.how-work {
+  padding:100px;
+  .how-work-cont {
+    h1{
+      margin-bottom: 30px;
+      color:$gray-600;
+    }
+
+    h6{
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color:$primary-y;
+    }
+
+    p {
+      color:$gray-600;
+    }
+
+    button {
+      border-radius: 20px;
+    }
+
+    @media (max-width: 991px) {
+      h6{
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:$primary-y;
+      }
+
+      h1{
+        margin-bottom: 20px;
+        font-size: 30px 
+      }
+    }
+
+    @media (max-width: 767px) {
+      h1{
+        margin-bottom: 20px;
+        font-size: 25px 
+      }
+    } 
+  }
+
+  @media (max-width:575px) {
+    padding:50px 5px;
+  }  
+}     

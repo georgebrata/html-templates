@@ -1,0 +1,331 @@
+/* =================================================================== 
+ *
+ *  Count v1.0 Demo Stylesheet
+ *  04-16-2018
+ *
+ * =================================================================== */
+
+
+/* ===================================================================
+ * preloader - (_preloader-line-scale-pulse-out.scss)
+ *
+ * ------------------------------------------------------------------- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #050505;
+  z-index: 800;
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+.no-js #preloader,
+.oldie #preloader {
+  display: none;
+}
+
+#loader {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.line-scale-pulse-out > div {
+  background-color: #ec008c;
+  width: 4px;
+  height: 35px;
+  border-radius: 2px;
+  margin: 2px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  display: inline-block;
+  -webkit-animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+  animation: line-scale-pulse-out 0.9s -0.6s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+}
+
+.line-scale-pulse-out > div:nth-child(2),
+.line-scale-pulse-out > div:nth-child(4) {
+  -webkit-animation-delay: -0.4s !important;
+  animation-delay: -0.4s !important;
+}
+
+.line-scale-pulse-out > div:nth-child(1),
+.line-scale-pulse-out > div:nth-child(5) {
+  -webkit-animation-delay: -0.2s !important;
+  animation-delay: -0.2s !important;
+}
+
+@-webkit-keyframes line-scale-pulse-out {
+  0% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+
+  50% {
+    -webkit-transform: scaley(0.4);
+    transform: scaley(0.4);
+  }
+
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+
+}
+
+@keyframes line-scale-pulse-out {
+  0% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+
+  50% {
+    -webkit-transform: scaley(0.4);
+    transform: scaley(0.4);
+  }
+
+  100% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+
+}
+
+/* ===================================================================
+ * base style
+ *
+ * ------------------------------------------------------------------- */
+html {
+  font-size: 10px;
+}
+
+@media only screen and (max-width:400px) {
+  html {
+    font-size: 9.411764705882353px;
+  }
+
+}
+
+body {
+  background: #111111;
+  font-family: "metropolis-regular", sans-serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.765;
+  color: #757575;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #ec008c;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #0087cc;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+h1,
+h3 {
+  font-family: "metropolis-semibold", sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  margin-bottom: 2.1rem;
+}
+
+p.lead {
+  font-family: "metropolis-light", sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.8;
+  margin-bottom: 3.6rem;
+}
+
+@media only screen and (max-width:800px) {
+  p.lead {
+    font-size: 1.8rem;
+  }
+
+}
+
+/* ===================================================================
+ * layout style
+ *
+ * ------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+ * header
+ * ------------------------------------------------------------------- */
+header {
+  text-align: center;
+  padding: 6.6rem 0 1.5rem;
+  margin-bottom: 6.6rem;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+header .row {
+  max-width: 880px;
+}
+
+@media only screen and (max-width:1200px) {
+  header .row {
+    max-width: 700px;
+  }
+
+}
+
+header h1 {
+  font-size: 5.2rem;
+  line-height: 1.385;
+  letter-spacing: -.1rem;
+}
+
+header h1 span {
+  color: #ec008c;
+}
+
+@media only screen and (max-width:600px) {
+  header h1 {
+    font-size: 4rem;
+    letter-spacing: -.07rem;
+  }
+
+}
+
+/* ------------------------------------------------------------------- 
+ * main
+ * ------------------------------------------------------------------- */
+main {
+  text-align: center;
+  padding-bottom: 9rem;
+}
+
+main .col-block {
+  margin-bottom: 3rem;
+}
+
+main .entry__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+main .entry__thumb a {
+  display: block;
+}
+
+main .entry__thumb a img {
+  vertical-align: bottom;
+}
+
+main .entry__thumb a::before {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+main .entry__thumb a::after {
+  content: "...";
+  font-family: georgia, serif;
+  font-size: 2.7rem;
+  z-index: 1;
+  display: block;
+  height: 30px;
+  width: 30px;
+  letter-spacing: -1px;
+  line-height: 30px;
+  margin-left: -15px;
+  margin-top: -30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+main .entry__thumb:hover a::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+main .entry__thumb:hover a::after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+main .entry__title {
+  padding-top: 2.7rem;
+}
+
+main .entry__title h3 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
+  color: white;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * main
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width:1200px) {
+  main .row {
+    max-width: 900px;
+  }
+
+}
+
+@media only screen and (max-width:800px) {
+  main .row {
+    max-width: 500px;
+  }
+
+}
+
+/*# sourceMappingURL=demo.css.map */

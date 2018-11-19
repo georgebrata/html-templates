@@ -1,0 +1,36 @@
+// Styling for the services section
+.services {
+	background:$gray-200;
+	.service-desc-cont {
+	    margin-bottom: 40px;
+
+		img {
+		    height: 40px;
+		    width: 40px;
+		    margin-bottom: 15px;
+		    opacity: 0.7;
+		}
+
+		h5 {
+			font-size: 18px;
+			color:$gray-600;
+		}
+
+		p {
+			font-size:15px;
+			color:$gray-500;
+		} 
+	} 
+
+	@media (max-width:991px) {
+		padding:50px 0;
+	} 
+
+	@media (max-width:767px) {
+		.service-img {
+			img {
+				padding-bottom: 30px;
+			}			
+		}
+	}
+}

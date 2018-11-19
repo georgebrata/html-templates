@@ -1,0 +1,103 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/custom";
+@import "icon-fonts";
+
+a {
+	color: $black;
+}
+.pb_navbar {
+	.navbar-brand {
+		.light {
+			display: block;
+		}
+		.dark {
+			display: none;
+		}
+	}
+	ul {
+		li {
+			a {
+				font-size: 13px!important;
+				border-bottom: none;
+			}
+		}
+	}
+	.logo-center {
+		a {
+			margin-top: -10px;
+			.light {
+				display: block;
+			}
+			.dark {
+				display: none;
+			}
+		}
+	}
+	&.scrolled {
+		&.pb_scrolled-light {
+
+			.navbar-brand {
+				.light {
+					display: none;
+				}
+				.dark {
+					display: block;
+					height: 30px;
+				}
+			}
+
+			.logo-center {
+				a {
+					margin-top: -5px;
+					.light {
+						display: none;
+					}
+					.dark {
+						display: block;
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.pb_food-menu {
+	li {
+		margin-bottom: 30px;
+		position: relative;
+		.price {
+			color: $black;
+		}
+	}
+}
+
+.pb_tab_v1 {
+	margin-bottom: 70px;
+	.nav-item {
+		@include media-breakpoint-down(sm) {
+			display: block;
+			width: 100%;
+		}
+		a {
+			color: $gray-700;
+			border: 1px solid $gray-200;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			margin: 0 10px;
+			text-transform: uppercase;
+			font-size: 13px;
+			letter-spacing: .2em;
+			@include media-breakpoint-down(sm) {
+				display: block;
+				margin: 0 0 10px 0;
+			}
+			&.active {
+				border: 1px solid $black;
+				color: $black;
+			}
+		}
+	}
+}

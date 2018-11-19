@@ -1,0 +1,745 @@
+
+.section-gap {
+	padding: 120px 0;
+}
+.section-title {
+	padding-bottom: 30px;
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 0;
+		@include media-breakpoint-down (md) {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+.p1-gradient-bg {
+  background-image: -moz-linear-gradient( 90deg, rgb(244,86,34) 0%, rgb(245,62,84) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(244,86,34) 0%, rgb(245,62,84) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(244,86,34) 0%, rgb(245,62,84) 100%);
+}
+
+.p1-gradient-color {
+  background: -moz-linear-gradient( 90deg, rgb(244,86,34) 0%, rgb(245,62,84) 100%);
+  background: -webkit-linear-gradient( 90deg, rgb(244,86,34) 0%, rgb(245,62,84) 100%);
+  background: -ms-linear-gradient( 90deg, rgb(244,86,34) 0%, rgb(245,62,84) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.primary-btn {
+	@extend .p1-gradient-bg;
+	line-height: 42px;
+	padding-left: 30px;
+	padding-right: 60px;
+	border-radius: 25px;
+	border:none;
+	color: $white;
+	display: inline-block;
+	font-weight: 500;
+	position: relative;
+	@include transition();
+	cursor: pointer;
+	text-transform: uppercase;
+	position: relative;
+	&:focus {
+		outline: none;
+	}
+	span {
+		color: $white;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-60%);
+		right: 30px;
+		@include transition();
+	}
+	&:hover {
+		color: $white;
+		span {
+			color: $white;
+			right: 20px;
+		}
+	}
+	&.white {
+		border: 1px solid $white;
+		color: $white;
+		span {
+			color: $white;
+		}
+		&:hover {
+			background: $white;
+			color: $primary-color;
+			span {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+//--------- Start Banner Area -------------//
+
+.banner-area {
+	@extend .p1-gradient-bg;
+	.fullscreen {
+		@include media-breakpoint-down (lg) {
+			height: 800px !important;
+		}
+	}
+}
+.banner-content {
+	text-align:center;
+	h1{
+		color:$white;
+		font-size: 72px;
+		font-weight: 700;
+		line-height: 1em;
+		margin-top:20px;
+		span{
+			font-weight:700;
+		}
+		@include media-breakpoint-down(md) {
+			font-size: 36px;
+		}
+		br {
+			@include media-breakpoint-down (md) {
+				display: none;
+			}
+		}
+
+		@include media-breakpoint-down (lg) {
+			font-size:45px;
+		}	
+
+		@media ( max-width:414px ) {
+			font-size:40px;
+		}
+	}
+	h5{
+		font-weight:400;
+		letter-spacing: 3px;
+	}
+	@media(max-width:1280px){
+		br{
+			display:none;
+		}
+	}
+	@media(max-width:800px){
+		margin-top:80px;
+	}
+}
+
+.banner-right{
+	@media(max-width:800px){
+		img{
+			width:55%;
+			margin-right: auto !important;
+			margin-left: auto !important;
+			display:block;
+		}
+	}
+}
+
+.primary-btn{
+	background:$white;
+	border:1px solid transparent;
+	color:$black;
+	padding-left: 40px;
+	padding-right: 40px;	
+	border-radius:50px;
+	&:hover{
+		border:1px solid $white;
+		background:transparent;
+		color:$white;
+	}
+}
+
+
+//--------- End Banner Area -------------//
+
+//--------- start about area  -------------//
+
+
+.info-area {
+	.info-thumb {
+		overflow: hidden;
+		display: inline-block;
+	}
+
+	@media(max-width:800px){
+		.info-content{
+			text-align:center;
+			padding: 80px 30px 80px 0;
+		}
+	}
+
+
+	.info-content {
+		box-shadow: 0px 0px 50px 0px rgba(157, 157, 157, 0.3);	
+		@include media-breakpoint-down(xs) {
+			margin-top: 30px;
+		}
+		position: relative;
+		&:after {
+			content: "";
+			box-shadow: -35.355px 35.355px 50px 0px rgba(157, 157, 157, 0.3);					
+			position: absolute;
+			right: 100%;
+			top: 0;
+			z-index: 2;
+			background: $white;
+			width: 70px;
+			height: 100%;
+			@include media-breakpoint-down(md) {
+				width: 50px;
+			}
+			@include media-breakpoint-down(xs) {
+				display: none;
+			}
+		}
+		background: $white;
+		padding: 60px 40px 60px 0px;
+		@include media-breakpoint-down(md) {
+			padding: 30px 30px 30px 0;
+		}
+		@include media-breakpoint-down(xs) {
+			padding: 30px;
+		}
+		h1 {
+			line-height: 1.15em;
+			margin-bottom: 30px;
+		}
+		.meta{
+			color:$black;
+			font-weight:400;
+			font-size:14px;
+			margin-top:20px;
+		}
+	}
+
+	.info-left{
+		z-index:2;
+		@media(max-width:800px){
+			margin-top:0px;
+			margin-bottom:40px;
+		}
+	}
+
+	
+}
+
+
+//--------- end about area  -------------//
+
+
+//--------- Start fact Area -------------//
+
+.fact-area{
+	background:url(../img/fact-bg.jpg) center;
+	background-size: cover;
+	h1,p{
+		color:$white;
+	}
+	.overlay-bg{
+		background:rgba(#000,.65);
+	}
+}
+
+
+//--------- end  fact Area -------------//
+
+
+//--------- start  counter  Area -------------//
+
+.counter-area{
+	margin-top:-100px;
+
+}
+
+.single-counter{
+	text-align:center;
+  	border-radius: 10px;
+  	background-color: rgb(255, 255, 255);
+  	padding:40px 0;
+  	box-shadow: 0px 10px 50px 0px rgba(245, 63, 81, 0.3);	
+	h1{
+		font-size:60px;
+		font-weight:400;
+		color:$primary-color;
+	}
+	p{
+		color:$black;
+	}
+	@media(max-width:800px){
+		margin-bottom:30px;
+	}
+}
+
+
+
+//--------- end  counter  Area -------------//
+
+
+//--------- start price Area -------------//
+
+.single-price{
+	text-align:center;
+	border:1px solid rgb(238, 238, 238);
+	.price-top{
+		background-color:#fbfcff;
+		border-bottom: 1px solid rgb(238, 238, 238);
+		padding: 30px 0px; 		
+	}
+	.price-bottom{
+		background-color:$offwhite;
+		margin: 0 45px 45px 45px;
+		padding: 35px;
+		@include transition();		
+		h1{
+			font-size: 60px;
+			font-weight: 300;
+			span{
+				font-size: 25px;
+				margin-top: -14px;
+				position: absolute;
+				margin-left: -20px;
+			}
+		}
+		.primary-btn{
+			margin-top:20px;
+			background:$black;
+			color:$white;
+			text-transform:capitalize;
+			@include transition();
+			&:hover{
+				border:1px solid transparent;
+			}
+		}
+		@media(max-width:1280px){
+			margin:0;
+		}
+		@media(max-width:1024px){
+			.primary-btn{
+				padding-left: 22px;
+				padding-right: 22px;
+			}
+		}
+	}
+	p{
+		padding:30px 0px;
+	}
+	&:hover{
+		cursor:pointer;
+		.price-bottom{
+			@extend .p1-gradient-bg;
+			h1{
+				color:$white;
+			}
+		}
+		.primary-btn{
+			background-color:#ca4829;
+		}
+	}
+	@media(max-width:800px){
+		margin-bottom:50px;
+	}
+}
+
+
+
+//--------- end price Area -------------//
+
+
+//--------- start course Area -------------//
+
+.course-area{
+	background:$offwhite;
+	.owl-controls{
+		position: absolute;
+		left: 101%;
+		top: 25%;		
+		@media(max-width: 1024px){
+			position:relative;
+			text-align: center;
+			left:0;
+			top:20px;
+			.owl-prev,.owl-next{
+				display: inline-block;
+			}
+		}
+	}
+
+
+	.lnr-arrow-up,.lnr-arrow-down{
+		background-color: rgb(255, 255, 255);
+		box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.2);
+		padding: 14px;
+		color: #000;
+		font-weight: 500;
+		border: 1px solid #f5f5f5;	
+		display:inline-flex;	
+	}	
+}
+
+.single-course{
+
+	.sale-btn{
+		background-color:$primary-color;
+		color:$white;
+		width:140px;
+		text-align:center;
+		padding:10px 20px;
+		position:absolute;
+		margin-top:-80px;
+		margin-left:30px;	
+	}
+	.price{
+		color:$primary-color;
+	}
+	.details{
+		padding:5px 30px 30px 30px;
+		h4{
+			padding:20px 0;
+			@include transition();
+			&:hover{
+				color:$primary-color;
+			}
+		}
+	}
+}
+
+
+//--------- end course Area -------------//
+
+
+//--------- Start call-to-action Area -------------//
+
+.call-to-action-area{
+	@extend .p1-gradient-bg;
+	@media(max-width:768px){
+		.download-button{
+			-webkit-box-direction: normal !important;
+			-webkit-box-orient: vertical !important;
+			-webkit-flex-direction: column !important;
+			-moz-flex-direction: column !important;
+			-ms-flex-direction: column !important;
+			flex-direction: column !important;
+		}
+	}
+}
+
+.buttons{
+	padding:20px 30px 0px 30px;
+	margin:20px;
+	border:1px solid transparent;
+	@include transition();
+	i{
+		font-size:40px;
+		padding-right:20px;
+		color:$primary-color;
+	}	
+	&:hover{
+		cursor:pointer;
+ 		box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+		background:transparent;
+		color:$white;
+		border:1px solid $white;
+		i,a{
+			color:$white!important;
+		}
+	}
+	background-color:$white;
+	color:$black;
+	a{
+		color:$black;
+	}
+	p{
+		span{
+			font-size:24px;
+			font-weight:600;
+		}
+	}
+}
+
+//--------- End call-to-action Area -------------//
+
+
+//--------- Start testimonial Area -------------//
+
+.testomial-area{
+	.owl-carousel .owl-item img{
+		width:auto!important;
+	}
+
+	.owl-dots {
+	    text-align: center;
+	    bottom: 5px;
+	    margin-top:20px;
+	    width: 100%;
+	    -webkit-backface-visibility: hidden;
+	    -moz-backface-visibility: hidden;
+	    -ms-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	}
+
+	.owl-dot {
+	    height: 10px;
+	    width: 10px;
+	    display: inline-block;
+	    background: rgba(127,127,127, 0.5);
+	    margin-left: 5px;
+	    margin-right: 5px;
+	    @include transition();
+	}
+
+	.owl-dot.active {
+		@include transition;
+	    background:$primary-color;
+	}
+
+}
+
+.single-testimonial{
+	text-align:center;
+	padding:30px;
+    border-radius: 10px;
+   	background:$white;
+	text-align:center;
+	border:1px solid #eee;
+	.desc{
+		padding:30px 0px; 
+	}
+}
+
+
+//--------- End testimonial Area -------------//
+
+//--------- start footer Area -------------//
+
+	.footer-area{
+		padding-top:100px;
+		background-color:#222222;
+	}
+	h6{
+		color:#fff;
+		margin-bottom:25px;
+		font-size:18px;
+		font-weight:600;
+	}
+	
+	.copy-right-text{
+		i,a{
+			color:$primary-color;
+		}
+	}
+
+
+
+
+	.footer-social{
+		a{
+			padding-right:25px;
+			@include transition();
+			&:hover{
+			
+				i{
+						@extend .p1-gradient-color;
+				}
+			}
+		}
+		
+		i{
+			color:#cccccc;
+			@include transition();
+
+		}
+		@include media-breakpoint-down(md) {
+			text-align:left;
+		}
+	}
+
+
+	.single-footer-widget {
+		input {
+			border: none;
+			width:80%!important;
+			font-weight: 300;
+			background: #191919;
+			color:#777;
+			padding-left:20px;
+			border-radius: 0;
+			font-size: 14px;
+			padding: 10px 18px;
+			&:focus {
+    			background-color: #191919;
+			}
+		}
+
+		.bb-btn{
+			@extend .p1-gradient-color;
+			color:#fff;
+			font-weight:300;
+			border-radius:0;
+			z-index:9999;
+			cursor:pointer;
+		}
+
+		.info {
+				position:absolute;
+				margin-top:20%;
+				color: #fff;
+				font-size: 12px;
+				&.valid {
+					color: green;
+				}
+				&.error {
+					color: red;
+				}
+		}
+
+		.click-btn{
+			@extend .p1-gradient-bg;
+			color: #fff;
+			border-radius: 0;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			padding: 8px 12px;
+			border:0;
+		}
+
+		::-moz-selection { /* Code for Firefox */
+	  	 	 background-color: #191919!important;
+	  		 color: $text-color;
+		}
+		::selection {
+		    background-color: #191919!important;
+		    color: $text-color;
+		}
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		    color:    $text-color;
+		    font-weight: 300;
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		   color:    $text-color;
+		   opacity:  1;
+		   font-weight: 300;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   color:    $text-color;
+		   opacity:  1;
+		   font-weight: 300;
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		   color:    $text-color;
+		   font-weight: 300;
+		}
+		::-ms-input-placeholder { /* Microsoft Edge */
+		   color:    $text-color;
+		   font-weight: 300;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin-bottom:30px;
+		}
+	}
+		
+
+
+		@media(max-width:800px){
+			.social-widget{
+				margin-top:30px;
+			}			
+		}
+		
+
+	.footer-text{
+		padding-top:20px;
+		a,i{
+			color:$primary-color;
+		}
+	}
+
+//--------- end footer Area -------------//
+
+//----------- Start Generic Page -------------//
+
+.whole-wrap{
+	background-color:$white;
+}
+
+
+.generic-banner {
+	@extend .p1-gradient-bg;
+	text-align:center;
+	.height {
+		height: 600px;
+		@include media-breakpoint-down (sm) {
+			height: 400px;
+		}
+	}
+	.generic-banner-content {
+		h2 {
+			line-height: 1.2em;
+			margin-bottom: 20px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+		p {
+			text-align:center;
+			font-size: 16px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.generic-content{
+	h1{
+		font-weight:600;	
+	}
+}
+
+
+.about-generic-area {
+	background: $white;
+	.border-top-generic {
+
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}
+.white-bg {
+	background: $white;
+}
+.section-top-border {
+	padding: 70px 0;
+	border-top: 1px dotted #eee;
+}
+.switch-wrap {
+	margin-bottom: 10px;
+	p {
+		margin: 0;
+	}
+}
+//----------- End Generic Page -------------//

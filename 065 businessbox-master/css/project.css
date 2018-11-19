@@ -1,0 +1,85 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+        /*====================================================
+                   PROJECT-p1
+======================================================*/
+
+#project-p1 .project-p1-cont {
+    padding: 30px 20px;
+}
+
+#project-p1 .project-p1-cont p {
+    color: #ddd;
+    font-weight: 700;
+}
+
+#project-p1 .project-p1-cont i{
+    color:#fff;
+    padding: 15px 0;
+}
+
+#project-p1 .bg-atlis {
+    background: #0570c5;
+}
+
+.project-p2 {
+    padding: 0 0 15px 0;
+}
+
+.project-p2 .col-md-6:nth-child(1n) {
+    padding-right: 7.5px;
+}
+
+.project-p2 .col-md-6:nth-child(2n) {
+    padding-left: 7.5px;
+}
+
+.project-p2 .project-p2-cont {
+    margin-top: 15px;
+}
+
+.project-p2 .project-p2-cont {
+    overflow: hidden;
+}
+
+.project-p2 .project-p2-cont img {
+    width: 100%;
+    height: 300px;
+    transition: transform .5s ease;
+}
+
+.project-p2 .project-p2-cont .project-p2-desc {
+    position: absolute;
+    overflow: visible;
+    margin-top: 15%;
+    margin-left: 10%;
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .project-p2 .project-p2-cont .col-md-5 {
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
+
+@media(max-width: 767px) {
+    .project-p2 .project-p2-cont .project-p2-desc h4 {
+        font-size: 20px;
+    }
+    .project-p2 .project-p2-cont .project-p2-desc {
+        position: absolute;
+        overflow: visible;
+        margin-top: 20%;
+        margin-left: 10%;
+        background: #f0f0f0;
+        padding: 20px;
+    }
+}

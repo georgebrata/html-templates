@@ -1,0 +1,40 @@
+@import "mixins/custom-mixins";
+.bg-light {
+	background-color: lighten(#c8d1e6, 12%)!important;
+}
+.pb_icon-gradient {
+	&:before {
+  		@include pb_text-gradient(#665fee, #27c2de, 45deg)
+  }
+}
+.pb_slant-light,
+.pb_slant-white {
+	position: relative;
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: -100px;
+		left: -50px;
+		height: 200px;
+		width: 130%;
+		background-color: lighten(#c8d1e6, 12%);
+		transform: rotate(-4deg);
+		z-index: 10;
+	}
+	&.pb_slant-reverse {
+		&:after {
+			transform: rotate(4deg);	
+			left: -100px;
+			bottom: -140px;
+		}
+	}
+}
+.pb_slant-white {
+	&:after {
+		background-color: #fff;
+	}
+}
+
+.pb_section {
+	padding: 10em 0;
+}

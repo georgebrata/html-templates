@@ -1,0 +1,25 @@
+// Styling for the contact section
+
+/*====================================================
+                      CONTACT
+======================================================*/
+
+.contact {
+    .contact-cont {
+        margin:0 auto 60px auto;
+        text-align: center;
+        a {
+          text-decoration: none;
+        }
+
+        img {
+          margin:0 auto;
+          margin-bottom: 15px;
+        }
+
+        h5 {
+          text-align: center;
+          color:$gray-500;
+        } 
+    }
+}

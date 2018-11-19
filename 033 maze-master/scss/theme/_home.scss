@@ -1,0 +1,489 @@
+body {
+	background: $primary-color;
+}
+.main-wrapper-first {
+	width: 68.75%;
+	margin: 0 auto;
+	margin-top: 6rem;
+	@include media-breakpoint-up(xl) {
+		width: 80%;
+	}
+	@include media-breakpoint-down(lg) {
+		margin-top:3rem;
+		width: 90%;
+	}
+	@include media-breakpoint-down(sm) {
+		margin-top: 3rem;
+		width: 97%;
+	}
+}
+
+
+.main-wrapper {
+	width: 68.75%;
+	margin: 0 auto;
+	@include media-breakpoint-up(xl) {
+		width: 80%;
+	}
+	@include media-breakpoint-down(lg) {
+		width: 90%;
+	}
+	@include media-breakpoint-down(sm) {
+		width: 97%;
+	}
+}
+.section-gap {
+	padding: 120px 0;
+}
+.section-title {
+	padding-bottom: 30px;
+	h2 {
+		margin-bottom: 5px;
+	}
+}
+
+.text-center{
+	text-align:center;
+}
+
+.mt-sm-30 {
+	@include media-breakpoint-down (sm) {
+		margin-top: 30px;
+	}
+}
+.mt-sm-20 {
+	@include media-breakpoint-down (sm) {
+		margin-top: 20px;
+	}
+}
+.primary-btn {
+	line-height: 40px;
+	padding: 0 30px;
+	border-radius: 20px;
+	background: $white;
+	border: 1px solid #eee;
+	color: $black;
+	display: inline-block;
+	font-weight: 500;
+	position: relative;
+	@include transition();
+	cursor: pointer;
+	text-transform: uppercase;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		background: $primary-color;
+		border: 1px solid $white;
+		color: $white;
+	}
+}
+
+.text-color-black{
+	color:$text-color-black;
+}
+
+//--------- Start Banner Area -----------//
+
+	.main-wrapper-first{
+		background:#f66483;
+	}
+
+	.banner-content{
+		color:$white;
+		h1{
+			color:$white;
+			font-weight:$font-weight-sb;
+		}
+		p{
+			margin-top:1rem;
+		} 
+	}
+
+	@include media-breakpoint-down(sm){
+
+		.banner-content{
+			margin-top:30px;
+		}
+		.banner-content h1{
+			font-size:20px;
+		}
+	}
+
+	.banner-area{
+		background:#f66483
+	}
+
+
+
+
+//--------- End Banner Area -----------//
+//----------- Start Feature Area ------------//
+
+.featured-area{
+	background-color:$white;
+}
+
+
+.single-feature{
+	 h2{
+		font-size:18px;
+		font-weight:500;
+	}
+	a{
+		font-weight:400;
+	}
+	p{
+		margin-top:1rem;
+	}
+	img{
+		border-radius:2px;
+		height: 100%;
+	}
+	.desc{
+		margin-left:18px;	
+	}
+}
+
+
+@media(max-width:1024px) and (min-width: 768px){
+	.single-feature p{
+		margin-bottom:5px;
+	}
+}
+
+@media(max-width:768px) and (min-width: 768px){
+	.single-feature{ 
+		img{
+			height: 100%;
+		}
+		h2{
+			font-size: 14px;
+		}
+		p{
+			font-size: 10px;
+			margin-top: 1px;
+			line-height: 15px;
+			margin-bottom: 0px;
+		}
+		a{
+			font-size: 10px;
+		}
+
+	}
+}
+
+
+@include media-breakpoint-down(sm) {
+	.single-feature{
+		padding-top:30px;
+		padding-bottom:30px;
+	}
+}
+
+
+.special-offer-area{
+	
+}
+
+.offer-left,.offer-right{
+	min-height:495px;
+	display: flex;
+	color:$white;
+	h2{
+		color:$white;
+	}
+}
+
+.offer_desc{
+	align-self: flex-end;
+}
+
+@media (max-width: 1199px) {
+  .offer_desc h2{
+    font-size: 25px !important;
+  }
+}
+
+
+
+//----------- End Feature Area ------------//
+
+
+//----------- Special Offer Area ------------//
+
+
+.special-offer-area{
+	 h2{
+		font-weight:$font-weight-sb;
+	 }
+	 p{
+	 	margin-top:1rem;
+	 }
+}
+
+.offer-left{
+	background:url(../img/oa1.jpg)no-repeat center center;
+	@include background-cover;
+}
+
+.offer-right{
+	background:url(../img/oa2.jpg) no-repeat center center;
+	@include background-cover;
+}
+
+
+//----------- End Special Offer Area ------------//
+
+
+//----------- Gallery  Area ------------//
+
+.image-gallery-area{
+	background:$white;
+}
+
+.gallery-item{
+	margin-left:0;
+	margin-right:0;
+
+}
+
+//----------- End Gallery Area ------------//
+
+
+//----------- Process Area ------------//
+
+.process-area{
+	background-color:$offwhite;
+	.icon{
+		background-color:$white;
+		float:left;
+		padding:20px;
+		margin-right:10px;
+	}
+	.lnr {
+		font-size: 28px;
+		color: #f5204b;
+		font-weight: 600;
+	}
+	h2{
+		font-size:18px;
+		font-weight:500;
+		margin-bottom:.5rem;
+	}
+	p{
+		font-size:14px;
+		font-weight:300;
+	}
+	@include media-breakpoint-down(lg) {
+		.lnr{
+			font-size:18px;
+		}
+		p{
+			font-size:12px;
+		}
+		h2{
+			margin-bottom: 0.1rem;
+		}
+
+	}	
+}
+
+@media(max-width:768px) and (min-width: 768px){
+	.process-area{
+		 h2{
+			font-size: 10px;
+		}
+		p{
+			font-size: 8px;
+		}
+	}
+}
+
+
+
+//----------- End Process Area ------------//
+
+
+//----------- About Area ------------//
+
+
+.about-area{
+	position:relative;
+	background:$white;
+	h2{
+		font-size:18px;
+		font-weight:500;
+		margin-bottom:18px;
+	}
+
+
+}
+
+.about-left{
+	padding-left:0;
+	padding-right:0;
+}
+
+.about-right{
+	padding-left:70px;
+	padding-right:70px;
+}
+
+
+@media(max-width:768px) {
+	.about-left{
+		img{
+			width: 100%;
+		}
+	}
+}
+
+//----------- End About Area ------------//
+
+
+//----------- Newsletter Area ------------//
+
+.newsletter-area{
+	background-color:$primary-color;
+	color:$white;
+	.subscribe-content h3 {
+  	font-weight: 600;
+  	}
+  	p{
+  		margin-top:1rem;
+  		font-weight:300;
+  	}
+
+  	.subcribe-form{
+		margin-top:30px;
+  	}
+
+  	@media(min-width:991px){
+		.subcribe-form{
+			width:600px;
+		}
+  	}
+}
+
+@media (max-width: 991px) {
+  .subscription {
+    margin-top: 20px;
+  }
+}
+
+.subscription input {
+  width: 100%;
+  line-height: 50px;
+  padding: 0 180px 0 25px;
+  border: none;
+  background:$white;
+  font-weight: 300;
+  border-radius: 25px;
+  color: $black;
+}
+
+.subscription .primary-btn {
+  background:$primary-color;
+  color:$white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+.subscription .info {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 12px;
+}
+
+.subscription .info.valid {
+  color: green;
+}
+
+.subscription .info.error {
+  color: $white;
+}
+
+@media (max-width: 767px) {
+  .subscription input {
+    padding: 0 25px;
+  }
+  .subscription .primary-btn {
+    top: 120%;
+    transform: translate(50%, 0);
+    right: 50%;
+    width: 177px;
+  }
+  .subscription .info {
+    top: 110px;
+  }
+}
+
+//----------- End Newsletter Area ------------//
+
+
+//----------- Footer Area ------------//
+
+.footer-area{
+	background:url(../img/f-bg.jpg);
+	background-size:cover;
+	color:$white;
+	margin-bottom:90px;
+	i{
+		color:$white;
+		@include transition;
+		&:hover{
+			color:$black;
+		}
+	}
+	a:hover{
+			color:$black !important;
+	}
+	@include media-breakpoint-down(sm) {
+		margin-top:55px;
+	}
+	
+	.footer-social{
+		margin-top:30px;
+		a{
+			padding:15px;
+		}
+	}
+
+}
+
+
+
+
+
+//----------- End Footer Area ------------//
+
+//----------- Start Generic Page -------------//
+
+.beginning-area{
+	background-color:$white;
+}
+
+.generic-featured-area{
+	background-color:$offwhite;
+}
+
+.about-generic-area{
+	background-color:$white;
+}
+
+
+
+//----------- End Generic Page -------------//
+
+
+
+

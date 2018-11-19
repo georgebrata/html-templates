@@ -1,0 +1,427 @@
+<!Doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Ruby - Responsive Corporate Tempalte</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="img/header-logo1.png">
+        <!-- Place favicon.ico in the root directory -->
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/animate-text.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<!-- Ruby CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		
+		<!-- Color CSS -->
+		<link rel="stylesheet" href="css/color/color7.css">
+		<!--<link rel="stylesheet" href="css/color/color1.css">-->
+		<!--<link rel="stylesheet" href="css/color/color2.css">-->
+		<!--<link rel="stylesheet" href="css/color/color3.css">-->
+		<!--<link rel="stylesheet" href="css/color/color4.css">-->
+		<!--<link rel="stylesheet" href="css/color/color5.css">-->
+		<!--<link rel="stylesheet" href="css/color/color6.css">-->
+		<!--<link rel="stylesheet" href="css/color/color8.css">-->
+		<!--<link rel="stylesheet" href="css/color/color9.css">-->
+
+		<link rel="stylesheet" href="#" id="colors">
+		
+    </head>
+    <body>
+	
+		<div class="color-plate ">
+			<a class="icon"><i class="fa fa-cog fa-spin"></i></a>
+			<h2>Ruby Color</h2>
+			<div class="color-head">
+				<span class="color1"></span>
+				<span class="color2"></span>
+				<span class="color3"></span>
+				<span class="color4"></span>
+				<span class="color5"></span>
+				<span class="color6"></span>
+				<span class="color7"></span>
+				<span class="color8"></span>
+				<span class="color9"></span>
+			</div>
+		</div>
+		
+		<!-- Header Area -->
+		<header id="header" class="header">
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-2 col-xs-2">
+							<div class="logo">
+								<a href="index.html"><img src="img/logo.png" alt="logo.png"></a>
+							</div>
+						</div>
+						<div class="col-md-9 col-sm-10">
+							<div class="mobile-menu"></div>
+							<nav class="navbar navbar-default">
+								<div class="collapse navbar-collapse">
+									<ul id="nav" class="nav navbar-nav">
+										<li class="current"><a href="#slider">home</a>
+										</li>
+										<li><a href="#Services">Services</a></li>
+										<li><a href="#latest-works">portfolio<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+											<ul class="dropdown">
+												<li><a href="portfolio.html">Portfolio</a></li>
+												<li><a href="portfolio-single.html">portfolio-single</a></li>
+											</ul>
+										</li>
+										<li><a href="#blog">Blogs<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+											<ul class="dropdown">
+												<li><a href="blog.html">Blog Archive</a></li>
+												<li><a href="blog-single.html">Blog Single</a></li>
+											</ul>
+										</li>
+										<li><a href="#team">Team</a></li>
+										<li><a href="#">Pages <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+											<ul class="dropdown">
+												<li><a href="404.html">Error 404</a></li>
+												<li><a href="mail-success.html">Mail Success</a></li>
+											</ul>
+										</li>
+										<li><a href="#contact">Contact</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--/ End Header Area -->
+		
+		<!--breadcrumb -->
+		<div class="breadcrumb" data-stellar-background-ratio="0.5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="breadcrumb-text">
+							<h2>Blog</h2>
+							<ul>
+								<li><a href="index.html">Home</a> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></li>
+								<li><a href="blog-single.html">Blog Single</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End breadcrumb -->
+		
+		<!-- Blog -->
+		<section id="blog-single" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/blog1.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<h3 class="date">25<span>nov</span></h3>
+								<h2><a href="#"> give us that</a></h2>
+								<div class="title"><span class="user"><i class="fa fa-user" aria-hidden="true"></i>adminaccess</span> <span class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i>no comment</span></div>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<a href="#" class="btn">Read More<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								<h5 class="tags">tags-
+									<li><a href="#">html,</a></li>
+									<li><a href="#">Bootstrap,</a></li>
+									<li><a href="#">Creative,</a></li>
+									<li><a href="#">web design</a></li>
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/blog2.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<h3 class="date">30<span>nov</span></h3>
+								<h2><a href="#"> consisting with technology</a></h2>
+								<div class="title"><span class="user"><i class="fa fa-user" aria-hidden="true"></i>adminaccess</span> <span class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i>no comment</span></div>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<a href="#" class="btn">Read More<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								<h5 class="tags">tags-
+									<li><a href="#">html,</a></li>
+									<li><a href="#">Bootstrap,</a></li>
+									<li><a href="#">Creative,</a></li>
+									<li><a href="#">web design</a></li>
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/blog3.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<h3 class="date">05<span>dec</span></h3>
+								<h2><a href="#">the inline product </a></h2>
+								<div class="title"><span class="user"><i class="fa fa-user" aria-hidden="true"></i>adminaccess</span> <span class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i>no comment</span></div>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<a href="#" class="btn">Read More<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								<h5 class="tags">tags-
+									<li><a href="#">html,</a></li>
+									<li><a href="#">Bootstrap,</a></li>
+									<li><a href="#">Creative,</a></li>
+									<li><a href="#">web design</a></li>
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/blog1.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<h3 class="date">05<span>dec</span></h3>
+								<h2><a href="#">the inline product </a></h2>
+								<div class="title"><span class="user"><i class="fa fa-user" aria-hidden="true"></i>adminaccess</span> <span class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i>no comment</span></div>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<a href="#" class="btn">Read More<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								<h5 class="tags">tags-
+									<li><a href="#">html,</a></li>
+									<li><a href="#">Bootstrap,</a></li>
+									<li><a href="#">Creative,</a></li>
+									<li><a href="#">web design</a></li>
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.4s">
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/blog2.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<h3 class="date">05<span>dec</span></h3>
+								<h2><a href="#">the inline product </a></h2>
+								<div class="title"><span class="user"><i class="fa fa-user" aria-hidden="true"></i>adminaccess</span> <span class="comment"><i class="fa fa-comment-o" aria-hidden="true"></i>no comment</span></div>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<p>Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  </p>
+								<a href="#" class="btn">Read More<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+								<h5 class="tags">tags-
+									<li><a href="#">html,</a></li>
+									<li><a href="#">Bootstrap,</a></li>
+									<li><a href="#">Creative,</a></li>
+									<li><a href="#">web design</a></li>
+								</h5>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="pagination-head">
+							<div class="pagination">
+								<ul>
+									<li><a href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>prev</a></li>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">next<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!--/ End Newslatter -->
+		
+		
+		<!-- Clients Area -->
+		<div id="clients" class="clients section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="owl-carousel clients-slider">
+							<!-- Single Clients -->
+							<div class="single-clients">
+								<img src="img/client1.jpg" alt="#">
+							</div>
+							<!--/ End Single Client -->
+							<!-- Single Client -->
+							<div class="single-clients">
+								<img src="img/client2.jpg" alt="#">
+							</div>
+							<!--/ End Single Client -->
+							<!-- Single Client -->
+							<div class="single-clients">
+								<img src="img/client3.jpg" alt="#">
+							</div>
+							<!--/ End Single Client -->
+							<!-- Single Client -->
+							<div class="single-clients">
+								<img src="img/client4.jpg" alt="#">
+							</div>
+							<!--/ End Single Client -->
+							<!-- Single Client -->
+							<div class="single-clients">
+								<img src="img/client5.jpg" alt="#">
+							</div>
+							<!--/ End Single Client -->
+							<!-- Single Client -->
+							<div class="single-clients">
+								<img src="img/client6.jpg" alt="#">
+							</div>
+							<!--/ End Single Client -->
+							<!-- Single Client -->
+							<div class="single-clients">
+								<img src="img/client7.jpg" alt="#">
+							</div>
+							<!--/ End Single Client -->
+							<!-- Single Client -->
+							<div class="single-clients">
+								<img src="img/client8.jpg" alt="#">
+							</div>
+							<!--/ End Single Client -->
+							<!-- Single Client -->
+							<div class="single-clients">
+								<img src="img/client9.jpg" alt="#">
+							</div>
+							<!--/ End Single Client -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Clients Area -->
+		
+		
+			
+
+		<!-- Footer Area -->
+		<footer id="footer" class="footer section">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="single-footer">
+								<div class="logo">
+									<img src="img/ruby.png" alt="#">
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  consectetur adipisicing elit, </p>
+								<div class="contact">
+									<p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Mirpur, dhaka-bangledesh</p>
+									<p class="mail-add"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@clippinglamp.com</p>
+									<p class="call"><i class="fa fa-phone-square" aria-hidden="true"></i>call:900-200-2315</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="single-footer">
+								<h2><i class="fa fa-sliders" aria-hidden="true"></i>setra site map</h2>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>home</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>our shop</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>about us</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>blog</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>your account</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>our guarantee</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="single-footer">
+								<h2><i class="fa fa-cogs" aria-hidden="true"></i>our company</h2>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>shipping policy</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>international shipping</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>affiliates</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>our sponsors</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>team & conditions</span>
+								<span><i class="fa fa-caret-right" aria-hidden="true"></i>cash on delivery</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-12">
+							<div class="single-footer">
+								<h2>newsletter subscription</h2>
+								<p>subscribe to our newsletter to get allour news in your inbox</p>
+								<div class="mail">
+									<input type="email" placeholder="Enter your email">
+									<button class="button"><a href="#">subscribe us</a></button>
+									<i class="fa fa-lock"  class="icon"></i>
+									<p>Your email address is 100% safe to us</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Footer Top -->
+
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="copyright-content">
+								<p>Copyright 2018 | Ruby Limtied | All Rights Reserved</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<ul class="social">
+								<li><a href=""><i class="fa fa-facebook"></i></a></li>
+								<li><a href=""><i class="fa fa-twitter"></i></a></li>
+								<li><a href=""><i class="fa fa-instagram"></i></a></li>
+								<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+								<li><a href=""><i class="fa fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		<!--/ End Footer Area -->
+			
+		
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+		<script src="js/colors.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/jquery.scrollUp.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/animate-text.js"></script>
+		<script src="js/particles.min.js"></script>
+		<script src="js/particle-code.js"></script>
+		<script src="js/jquery.counterup.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC0RqLa90WDfoJedoE3Z_Gy7a7o8PCL2jw"></script>
+        <script type="text/javascript" src="js/gmaps.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

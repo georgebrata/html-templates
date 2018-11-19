@@ -1,0 +1,495 @@
+/*--------------------------- Color variations ----------------------*/
+/* Medium Layout: 1280px */
+/* Tablet Layout: 768px */
+/* Mobile Layout: 320px */
+/* Wide Mobile Layout: 480px */
+/*
+################
+               Start Common Page style
+################
+*/
+.black-bg {
+  background-color: #fff;
+}
+
+.top-section-area {
+  background-color: #f40e67;
+  margin-top: 68px;
+}
+
+.top-left h1 {
+  font-size: 60px;
+}
+
+@media (max-width: 768px) {
+  .top-left h1 {
+    font-size: 35px;
+  }
+}
+
+.top-right ul {
+  text-align: right;
+}
+
+.top-right ul li {
+  display: inline-block;
+}
+
+.top-right ul li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.top-right ul li .lnr {
+  color: #fff;
+  font-weight: 900;
+  margin: 0px 20px;
+}
+
+@media (max-width: 800px) {
+  .top-right ul {
+    text-align: left;
+    margin-top: 30px;
+  }
+}
+
+.newsletter-area {
+  background-color: #f9f9ff;
+}
+
+.newsletter-area .primary-btn:hover .lnr {
+  color: #f40e67;
+}
+
+.primary-btn {
+  line-height: 40px;
+  padding: 0 30px;
+  border-radius: 20px;
+  background: #f40e67;
+  border: 1px solid #fff;
+  color: #222222;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.primary-btn .lnr {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -3px;
+}
+
+.primary-btn:focus {
+  outline: none;
+}
+
+.primary-btn span {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.primary-btn:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 1;
+}
+
+.primary-btn:hover {
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.primary-btn:hover:after {
+  opacity: 1;
+}
+
+.primary-btn.hover {
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.primary-btn.hover:after {
+  opacity: 1;
+}
+
+.newsletter input {
+  width: 100%;
+  line-height: 50px;
+  padding: 0 180px 0 25px;
+  border: none;
+  background: #fff;
+  font-weight: 300;
+  border-radius: 25px;
+}
+
+.newsletter .primary-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+.newsletter .info {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 12px;
+}
+
+.newsletter .info.valid {
+  color: green;
+}
+
+.newsletter .info.error {
+  color: red;
+}
+
+@media (max-width: 767px) {
+  .newsletter input {
+    padding: 0 25px;
+  }
+  .newsletter .primary-btn {
+    top: 120%;
+    transform: translate(50%, 0);
+    right: 50%;
+    width: 185px;
+  }
+  .newsletter .info {
+    top: 110px;
+  }
+}
+
+/*
+################
+               End Common Page style
+################
+*/
+/*
+################
+               Start About Page style
+################
+*/
+.information-area .owl-carousel .owl-item img {
+  width: auto !important;
+}
+
+.information-area .owl-dots {
+  text-align: left;
+  bottom: 5px;
+  margin-top: 20px;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.information-area .owl-dot {
+  border-radius: 50px;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  background: rgba(127, 127, 127, 0.5);
+  margin-left: 5px;
+  margin-right: 5px;
+  @inlcude transition();
+}
+
+.information-area .owl-dot.active {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 0px 25px 0px 0px;
+  background: #f40e67;
+}
+
+.info-right {
+  background: url(../img/elements/video-bg.png) no-repeat center;
+  background-size: cover;
+  height: 251px;
+}
+
+.info-right .overlay-bg {
+  background-color: rgba(244, 14, 103, 0.8);
+}
+
+.info-right .play-btn {
+  z-index: 2;
+}
+
+@media (max-width: 800px) {
+  .info-right {
+    margin-top: 100px;
+  }
+}
+
+.about-right {
+  padding-right: 20%;
+  padding-left: 5%;
+}
+
+@media (max-width: 1280px) {
+  .about-right {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .about-right h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-right h1 {
+    font-size: 20px;
+  }
+  .about-right p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-right {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+.team-area {
+  background-color: #f9f9ff;
+}
+
+.team-area .single-team {
+  padding: 10px;
+}
+
+.team-area .thumb {
+  position: relative;
+}
+
+.team-area .thumb div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(244, 14, 103, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.team-area .thumb div i {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.team-area .thumb img {
+  display: block;
+  width: 100%;
+}
+
+.team-area .thumb div span {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.team-area .thumb div p {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-weight: 100;
+}
+
+@media (max-width: 768px) {
+  .team-area .thumb div p {
+    bottom: -15px;
+  }
+}
+
+.team-area .thumb:hover div {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.about-feature-area {
+  background: url(../img/elements/feature-bg.jpg) center;
+  background-size: cover;
+}
+
+.about-feature-area .overlay-bg {
+  background: #222;
+  opacity: .9;
+}
+
+.single-about-feature {
+  padding: 30px 30px 15px 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.single-about-feature a, .single-about-feature .title .lnr, .single-about-feature p {
+  color: #fff;
+}
+
+.single-about-feature:hover {
+  cursor: pointer;
+  background-color: #f40e67;
+}
+
+.single-about-feature .title .lnr {
+  font-weight: 400;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.testimonial-area {
+  background-color: #f9f9ff;
+}
+
+.testimonial-area .owl-controls {
+  position: absolute;
+  left: 101%;
+  top: 25%;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-area .owl-controls {
+    position: relative;
+    text-align: center;
+    left: 0;
+    top: 20px;
+  }
+  .testimonial-area .owl-controls .owl-prev, .testimonial-area .owl-controls .owl-next {
+    display: inline-block;
+  }
+}
+
+.testimonial-area .lnr-arrow-up, .testimonial-area .lnr-arrow-down {
+  background-color: white;
+  box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.2);
+  padding: 14px;
+  color: #000;
+  font-weight: 500;
+  border: 1px solid #f5f5f5;
+  display: inline-flex;
+}
+
+.single-testimonial {
+  background-color: #fff;
+  padding: 25px 30px 12px 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.single-testimonial:hover {
+  cursor: pointer;
+}
+
+.single-testimonial .thumb {
+  margin-right: 30px;
+}
+
+.single-testimonial h4 {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #f40e67;
+  margin-bottom: 5px;
+}
+
+.single-testimonial h4:hover {
+  color: #f40e67;
+  cursor: pointer;
+}
+
+/*
+################
+               End About Page style
+################
+*/
+/*
+################
+               Start Privacy & Policy style
+################
+*/
+/*
+################
+               End Privacy & Policy style
+################
+*/
+/*
+################
+               Start Terms & Condition  Page style
+################
+*/
+/*
+################
+               Start Terms & Condition  Page style
+################
+*/
+/*
+################
+               Start Contact us  Page style
+################
+*/
+.contact-content-area {
+  background-color: #f9f9ff;
+}
+
+.contact-top {
+  text-align: center;
+}
+
+.contact-page-contact .form-area input, .contact-page-contact .form-area textarea {
+  border-radius: 0;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.contact-page-contact .form-area textarea {
+  height: 190px;
+  margin-top: 0px;
+}
+
+.contact-page-contact .form-area .primary-btn:hover {
+  color: #222 !important;
+}
+
+/*
+################
+               Start Contact us  Page style
+################
+*/

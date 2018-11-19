@@ -1,0 +1,65 @@
+
+/* Selection */
+
+::-moz-selection {
+	background: #000;
+	color: #fff;
+}
+
+::-webkit-selection{
+	background: #000;
+	color: #fff;
+}
+
+::selection{
+	background: #000;
+	color: #fff;
+}
+
+/* Forms common style */
+
+.form-control {
+	font-family: "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 11px;
+	height: 33px;
+	border: 1px solid #EAEAEA;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	-o-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.form-control:focus {
+	border-color: #CACACA;
+}
+
+/* Forms size */
+
+.input-lg,
+.form-horizontal .form-group-lg .form-control {
+	height: 43px;
+	font-size: 13px;
+}
+
+.input-sm, .form-horizontal .form-group-sm .form-control {
+	height: 29px;
+	font-size: 10px;
+}
+
+.rqst-form {
+	margin-top: 27px;
+
+	.btn {
+		margin-top: 5px;
+	}
+}
+
+.input-group-addon {
+	border: 1px solid #e4e4e4 !important;
+}

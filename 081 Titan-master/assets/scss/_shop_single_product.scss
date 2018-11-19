@@ -1,0 +1,40 @@
+.product-gallery {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	margin: 10px 0 0;
+}
+
+.product-gallery li {
+	display: inline-block;
+	width: 15%;
+	margin: 0 5px;
+}
+
+.product-gallery li:first-child {
+	margin-left: 0;
+}
+
+.product-title {
+	margin: 0 0 20px;
+	color: #111;
+}
+
+.star,
+.star-off {
+	margin-bottom: 5px;
+	color: #f1c40f;
+}
+
+.star-off {
+	color: #e5e5e5;
+}
+
+.amount {
+	font-size: 32px;
+	color: #111;
+}
+
+.reviews {
+	margin: 0;
+}

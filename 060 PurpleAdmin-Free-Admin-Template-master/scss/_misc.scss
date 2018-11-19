@@ -1,0 +1,45 @@
+/* Miscellanoeous */
+
+body {
+  background: rgba(250,0,83,1);
+}
+
+body,
+html {
+  overflow-x: hidden;
+  padding-right: 0 !important; // resets padding right added by Bootstrap modal
+}
+
+*:-moz-full-screen,
+*:-webkit-full-screen,
+*:fullscreen *:-ms-fullscreen {
+  overflow: auto !important;
+}
+
+.content-wrapper {
+  background: $content-bg;
+  margin-left: $sidebar-width-lg;
+  min-height: 100vh;
+  padding: 1.5rem 1.7rem;
+  transition: width $action-transition-duration $action-transition-timing-function, margin $action-transition-duration $action-transition-timing-function;
+  width: calc(100% - #{$sidebar-width-lg});
+  @media (max-width: 991px) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  &.full-page-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.container-scroller {
+  overflow: hidden;
+}
+
+pre {
+  background: color(gray-lighter);
+  padding: 15px;
+  font-size: 14px;
+}

@@ -1,0 +1,20 @@
+.mail-success .mail-head .button .btn,.error .error-left .button .btn,.error .error-left h2,.error .error-left p,#blog-single .pagination ul li:hover a,#blog-single .single-news .news-body .tags li a,#blog-single .single-news .news-body .btn,#blog-single .single-news .news-body h2 a:hover,#single-pf .single-news .news-body .btn,#single-pf .single-news .news-body span a,#single-pf .single-news .news-body h2 a:hover,.header .nav li.current a,.header #nav li:hover a,#header .nav li .dropdown li:hover a,#slider .button .btn,.cd-words-wrapper,#features .single-right i,.latest-works .works-menu ul li:hover,.latest-works .works-menu ul li.active,.latest-works .single-work .works-hover h4:hover,.latest-works .single-work .works-hover a:hover i,#testimonials .single-testimonial p .fa,#blog .single-news .news-body h2:hover a,#blog .single-news .news-body .btn,.p-table4 .table-head .price .amount span,.p-table4 .button .btn,.p-table4 .button .btn i,#contact .contact-left .p1,.contact .form .btn:hover,.footer .single-footer .contact i,.footer .single-footer span:hover,.footer .single-footer h2 i,.footer .copyright .social li a{
+	color:#8e44ad;
+}
+
+.mail-success .mail-head .button .btn::before ,.mail-success .mail-head .button .btn:after,.mail-success .mail-head .button span::before,.mail-success .mail-head .button span::after,.error .error-left .button span::after ,.error .error-left .button span::before,.error .error-left .button .btn:after,.error .error-left .button .btn::before ,#blog-single .single-news .news-body .date,#single-pf .owl-nav button:hover,.color-plate .icon,#scrollUp,.section-title h2:before,.section-title h2::after,#slider .button .btn::before,#slider .button .btn:after,#slider .button span::before,#slider .button span::after,#Services .single-service i,#blog .single-news .news-body .date,#team .team-hover .social li a:hover,.p-table4 .button .btn::before,.p-table4 .button .btn:after,.p-table4 .button span::before,.p-table4 .button span::after,#contact .contact-left .p1::before,#contact .contact-right,.footer .single-footer .button,.footer .copyright,.slicknav_menu .slicknav_btn{
+	background:#8e44ad;
+}
+#Services .single-service h3::before,.latest-works .single-work .works-hover a:hover i,.p-table4 .table-head .amount{
+	border-color:#8e44ad;
+}
+#header .nav li .dropdown{
+	border-top-color:#8e44ad;
+}
+.p-table4 .single-table:hover .table-head .price .amount{
+	box-shadow: 0px 0px 20px #8e44ad;
+}
+.footer .single-footer h2 i{
+	border-right-color:#8e44ad;
+}
+

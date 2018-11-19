@@ -1,0 +1,236 @@
+/* =================================== */
+/*  Footer Styles
+/* =================================== */
+
+
+    .footer-area{
+        background:#04091e;
+        padding-top:100px;
+            .footer-nav {
+                    li {
+                        margin-top: 18px;
+                        a {
+                            color: #fff;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+
+                .primary-btn {
+                    background-color:$primary-color;
+                    line-height: 42px;
+                    padding-left: 30px;
+                    padding-right: 60px;
+                    border-radius: 25px;
+                    border:none;
+                    color: $white;
+                    display: inline-block;
+                    font-weight: 500;
+                    position: relative;
+                    @include transition();
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    position: relative;
+                    &:focus {
+                        outline: none;
+                    }
+                    span {
+                        color: $white;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-60%);
+                        right: 30px;
+                        @include transition();
+                    }
+                    &:hover {
+                        background-color:$primary-color;
+                        box-shadow:none;
+                        color: $white;
+                        span {
+                            color: $white;
+                            right: 20px;
+                        }
+                    }
+                    &.white {
+                        border: 1px solid $white;
+                        color: $white;
+                        span {
+                            color: $white;
+                        }
+                        &:hover {
+                            background: $white;
+                            color: $primary-color;
+                            span {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+    h6{
+        text-transform:uppercase;
+        color:#fff;
+        margin-bottom:25px;
+        font-size:16px;
+        font-weight:600;
+    }
+        }
+    .copy-right-text{
+        i,a{
+            color:$primary-color;
+        }
+    }
+
+
+    .instafeed {
+        margin: -5px;
+        li {
+            overflow: hidden;
+            width: 25%;
+            img {
+                margin: 5px;
+            }
+        }
+    }
+
+
+    .footer-social{
+        text-align:right;
+        a{
+            width: 20px;
+            width: 40px;
+            display: inline-table;
+            height: 40px;
+            text-align: center;
+            padding-top: 10px;
+            @include transition();
+            &:hover{
+                i{
+                    color:$primary-color;
+                }
+            }
+        }
+        
+        i{
+            color:#cccccc;
+            @include transition();
+
+        }
+        @include media-breakpoint-down(md) {
+            text-align:left;
+            margin-top:20px;
+        }
+    }
+
+
+    .single-footer-widget {
+        color:#fff;
+        input {
+            line-height: 38px;
+            border: none;
+            background: transparent;
+            border:1px solid #333;
+            font-weight: 300;
+            color:#777;
+            padding-left:20px;
+            width:80%;
+        }
+        .bb-btn{
+            background-color:$primary-color;
+            color:#fff;
+            font-weight:300;
+            border-radius:0;
+            cursor:pointer;
+        }
+
+            
+        @media(max-width:960px) {
+            .nw-btn{
+                margin-top:20px;
+            }
+            .newsletter{
+                padding-bottom: 40px;
+            }
+
+        }
+
+
+        .info {
+                position:absolute;
+                margin-top:20px;
+                color: #fff;
+                font-size: 12px;
+                &.valid {
+                    color: green;
+                }
+                &.error {
+                    color: red;
+                }
+
+        }
+
+        ::-moz-selection { /* Code for Firefox */
+             background-color: $primary-color;
+             color: $text-color;
+        }
+        ::selection {
+            background-color: $primary-color;
+            color: $text-color;
+        }
+        ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+            color:    $text-color;
+            font-weight: 300;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+           color:    $text-color;
+           opacity:  1;
+           font-weight: 300;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+           color:    $text-color;
+           opacity:  1;
+           font-weight: 300;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+           color:    $text-color;
+           font-weight: 300;
+        }
+        ::-ms-input-placeholder { /* Microsoft Edge */
+           color:    $text-color;
+           font-weight: 300;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom:70px;
+        }
+        p{
+            color:$text-color;
+        }
+        ul{
+            li{
+                margin-bottom:12px;
+                a{
+                    color:$text-color;
+                    @include transition();
+                    &:hover{
+                        color:$primary-color;
+                    }       
+                }
+            }
+        }
+
+    }
+
+    .footer-bottom{
+        padding-top:40px;
+        margin-top:20px;
+        border-top:1px solid #333;
+    }
+
+
+    .footer-text{
+        a,i{
+        color:$primary-color;
+    }
+}        

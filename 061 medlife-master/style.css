@@ -1,0 +1,1646 @@
+/* Variables */
+/* mixin */
+/* ----------------------------------------------------------
+:: Template Name: Medilife - Medical & Health Template
+:: Author: Colorlib
+:: Author URL: https://colorlib.com
+:: Version: 1.0.0
+:: Created: 04 March 2018
+:: Last Updated: 04 March 2018
+---------------------------------------------------------- */
+/* [ -- Master Stylesheet -- ] */
+/* ------------- Index of Stylesheet -------------
+:: 1.0 Import Fonts
+:: 2.0 Import All CSS
+:: 3.0 Base CSS
+:: 4.0 Header Area CSS
+:: 5.0 Welcome Area CSS
+:: 6.0 Book An Appoinment Area
+:: 7.0 About Us Area CSS
+:: 8.0 Service Area CSS
+:: 9.0 Gallery Area CSS
+:: 10.0 Features Area CSS
+:: 11.0 Emergency Area CSS
+:: 12.0 Footer Area CSS
+:: 13.0 Breadcumb Area CSS
+:: 14.0 Video Area CSS
+:: 15.0 Tabs Area CSS
+:: 16.0 Services Area CSS
+:: 17.0 Single Benefits Area CSS
+:: 18.0 CTA Area CSS
+:: 19.0 Blog Area CSS
+:: 20.0 Contact Area CSS
+:: 21.0 Shortcode Area CSS
+------------------------------------------------ */
+/* :: 1.0 Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/* :: 2.0 Import All CSS */
+@import url(css/bootstrap.min.css);
+@import url(css/animate.css);
+@import url(css/owl.carousel.css);
+@import url(css/magnific-popup.css);
+@import url(css/font-awesome.min.css);
+@import url(css/themify-icons.css);
+@import url(css/medilife-icons.css);
+@import url(css/nice-select.css);
+/* :: 3.0 Base CSS */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #081f3e;
+  font-weight: 700; }
+
+p {
+  color: #57595c;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400; }
+
+a {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-decoration: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700; }
+  a:hover, a:focus {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700; }
+
+#preloader {
+  overflow: hidden;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+  background-color: #006cff; }
+
+.medilife-load {
+  -webkit-animation: 2000ms linear 0s normal none infinite running medilife-load;
+  animation: 2000ms linear 0s normal none infinite running medilife-load;
+  background: transparent;
+  border-color: #ffffff;
+  border-top-color: #006cff;
+  border-left-color: #006cff;
+  border-right-color: #006cff;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  height: 50px;
+  left: calc(50% - 25px);
+  position: relative;
+  top: calc(50% - 25px);
+  width: 50px;
+  z-index: 9; }
+
+@-webkit-keyframes medilife-load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes medilife-load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+ul,
+ol {
+  margin: 0; }
+  ul li,
+  ol li {
+    list-style: none; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+.medica-table {
+  display: table;
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+.medica-table-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
+.mt-15 {
+  margin-top: 15px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mt-70 {
+  margin-top: 70px; }
+
+.mt-100 {
+  margin-top: 100px; }
+
+.mb-15 {
+  margin-bottom: 15px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.ml-15 {
+  margin-left: 15px; }
+
+.ml-30 {
+  margin-left: 30px; }
+
+.mr-15 {
+  margin-right: 15px; }
+
+.mr-30 {
+  margin-right: 30px; }
+
+.mb-70 {
+  margin-bottom: 70px; }
+
+.mb-100 {
+  margin-bottom: 100px; }
+
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.bg-transparent {
+  background-color: transparent; }
+
+.bg-transparent-dark {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
+.bg-transparent-light {
+  background-color: rgba(255, 255, 255, 0.5) !important; }
+
+.font-bold {
+  font-weight: 700; }
+
+.font-light {
+  font-weight: 300; }
+
+.height-500 {
+  height: 500px !important; }
+
+.height-600 {
+  height: 600px !important; }
+
+.height-700 {
+  height: 700px !important; }
+
+.height-800 {
+  height: 800px !important; }
+
+#scrollUp {
+  background-color: #006cff;
+  border-radius: 50%;
+  bottom: 60px;
+  right: 60px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 30px;
+  height: 70px;
+  text-align: center;
+  width: 70px;
+  line-height: 66px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  #scrollUp:hover {
+    background-color: #081f3e; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    #scrollUp {
+      bottom: 30px;
+      right: 30px;
+      height: 50px;
+      width: 50px;
+      line-height: 46px; } }
+  @media only screen and (max-width: 767px) {
+    #scrollUp {
+      bottom: 30px;
+      right: 30px;
+      height: 50px;
+      width: 50px;
+      line-height: 46px; } }
+
+.section-padding-100 {
+  padding: 100px 0; }
+
+.section-padding-50 {
+  padding: 50px 0; }
+
+.section-padding-50-0 {
+  padding: 50px 0 0 0; }
+
+.section-padding-100-70 {
+  padding: 100px 0 70px; }
+
+.section-padding-100-50 {
+  padding: 100px 0 50px; }
+
+.section-padding-100-0 {
+  padding: 100px 0 0; }
+
+.section-padding-0-100 {
+  padding: 0 0 100px; }
+
+.section-padding-100-20 {
+  padding: 100px 0 20px 0; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1; }
+  .section-heading h2 {
+    font-size: 44px;
+    margin-bottom: 0; }
+
+.btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+  .btn:hover, .btn:focus {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); }
+
+.medilife-btn {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #006cff;
+  height: 45px;
+  padding: 0 55px 0 30px;
+  line-height: 42px;
+  font-size: 14px;
+  min-width: 140px;
+  border-radius: 0;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  .medilife-btn span {
+    width: 40px;
+    height: 45px;
+    background-color: #081f3e;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  .medilife-btn:hover, .medilife-btn:focus {
+    background-color: #081f3e;
+    color: #ffffff; }
+  .medilife-btn:hover span, .medilife-btn:focus span {
+    color: #ffffff;
+    background-color: #006cff; }
+  .medilife-btn.btn-2 {
+    background-color: #081f3e;
+    color: #ffffff; }
+    .medilife-btn.btn-2 span {
+      color: #ffffff;
+      background-color: #006cff; }
+    .medilife-btn.btn-2:hover, .medilife-btn.btn-2:focus {
+      background-color: #006cff;
+      color: #ffffff; }
+    .medilife-btn.btn-2:hover span, .medilife-btn.btn-2:focus span {
+      color: #ffffff;
+      background-color: #081f3e; }
+  .medilife-btn.btn-3 {
+    background-color: #ffffff;
+    color: #081f3e;
+    border: 2px solid;
+    border-color: #006cff; }
+    .medilife-btn.btn-3 span {
+      top: -2px;
+      right: -2px; }
+  .medilife-btn.btn-4 {
+    background-color: #ffffff;
+    color: #081f3e;
+    border: 2px solid;
+    border-color: #006cff; }
+    .medilife-btn.btn-4 span {
+      background-color: #006cff;
+      top: -2px;
+      right: -2px; }
+
+.medilife-appoint-btn {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #ff0000;
+  height: 50px;
+  padding: 0 15px;
+  line-height: 50px;
+  font-size: 14px;
+  min-width: 140px;
+  border-radius: 0;
+  font-weight: 500;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-transform: uppercase;
+  box-shadow: none; }
+  .medilife-appoint-btn span {
+    font-weight: 700; }
+  .medilife-appoint-btn:hover, .medilife-appoint-btn:focus {
+    color: #006cff;
+    background-color: #ffffff;
+    box-shadow: none;
+    font-weight: 500; }
+  .medilife-appoint-btn:hover span, .medilife-appoint-btn:focus span {
+    font-weight: 700; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .medilife-appoint-btn {
+      margin-top: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .medilife-appoint-btn {
+      margin-top: 10px; } }
+
+.bg-overlay {
+  position: relative;
+  z-index: 1; }
+  .bg-overlay::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #006cff;
+    opacity: 0.85;
+    content: ''; }
+
+.bg-overlay-black {
+  position: relative;
+  z-index: 1; }
+  .bg-overlay-black::after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.85;
+    content: ''; }
+
+.bg-overlay-white {
+  position: relative;
+  z-index: 1; }
+  .bg-overlay-white::after {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 241, 255, 0.5);
+    content: ''; }
+
+.bg-gray {
+  background-color: #f5f7f9; }
+
+.row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.nicescroll-rails {
+  z-index: 999999 !important; }
+
+/* :: 4.0 Header Area CSS */
+.header-area {
+  position: absolute;
+  z-index: 10000;
+  width: 100%;
+  height: auto;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+
+.top-header-area {
+  position: relative;
+  z-index: 1;
+  height: 45px;
+  background-color: #081f3e; }
+  .top-header-area p {
+    margin-bottom: 0;
+    color: #b5b5b5; }
+    .top-header-area p span {
+      color: #006cff; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .top-header-area p {
+        font-size: 13px; } }
+    @media only screen and (max-width: 767px) {
+      .top-header-area p {
+        font-size: 12px; } }
+  @media only screen and (max-width: 767px) {
+    .top-header-area {
+      height: auto;
+      padding: 15px 0; } }
+
+.main-header-area {
+  width: 100%;
+  height: 110px;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 108, 255, 0.5);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .main-header-area {
+      height: 80px; } }
+  @media only screen and (max-width: 767px) {
+    .main-header-area {
+      height: 70px; } }
+
+.is-sticky .main-header-area {
+  width: 100%;
+  z-index: 10000 !important;
+  height: 80px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: #081f3e; }
+  @media only screen and (max-width: 767px) {
+    .is-sticky .main-header-area {
+      height: 70px; } }
+
+.header-area .main-menu .nav-link {
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0 1px; }
+  .header-area .main-menu .nav-link:hover {
+    background-color: #006cff; }
+  .header-area .main-menu .nav-link:focus {
+    background-color: #006cff; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header-area .main-menu .nav-link {
+      padding: 10px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-area .main-menu .nav-link {
+      padding: 10px 30px;
+      margin: 1px 0; } }
+  @media only screen and (max-width: 767px) {
+    .header-area .main-menu .nav-link {
+      padding: 10px 30px;
+      margin: 1px 0; } }
+
+.header-area .main-menu .nav-item.active .nav-link {
+  background-color: #006cff; }
+
+.dropdown-menu.show {
+  border: none;
+  padding: 15px 0;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.15);
+  margin-top: 15px; }
+
+.dropdown-item {
+  font-size: 13px;
+  font-weight: 500;
+  color: #5f5f5f;
+  text-transform: uppercase; }
+  .dropdown-item:hover {
+    color: #006cff;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #f5f7f9; }
+  .dropdown-item:focus {
+    color: #006cff;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #f5f7f9; }
+
+.navbar {
+  padding: 0; }
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-toggler {
+    margin: 20px 0; } }
+@media only screen and (max-width: 767px) {
+  .navbar-toggler {
+    margin: 15px 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #medilifeMenu {
+    width: 100%;
+    background-color: #081f3e;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    padding: 30px 15px;
+    border-radius: 0 0 6px 6px;
+    margin-top: -2px;
+    border-radius: 0; } }
+@media only screen and (max-width: 767px) {
+  #medilifeMenu {
+    width: 100%;
+    background-color: #081f3e;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px 10px;
+    border-radius: 0 0 6px 6px;
+    margin-top: -2px;
+    border-radius: 0; } }
+
+/* :: 5.0 Welcome Area CSS */
+.single-hero-slide {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 900px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-hero-slide {
+      height: 700px; } }
+  @media only screen and (max-width: 767px) {
+    .single-hero-slide {
+      height: 700px; } }
+
+.hero-slides-content h2 {
+  color: #081f3e;
+  font-size: 60px;
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-slides-content h2 {
+      font-size: 40px; } }
+  @media only screen and (max-width: 767px) {
+    .hero-slides-content h2 {
+      font-size: 24px; } }
+.hero-slides-content h5 {
+  color: #081f3e;
+  font-size: 22px;
+  font-weight: 600; }
+
+.hero-area .owl-prev,
+.hero-area .owl-next {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  line-height: 70px;
+  text-align: center;
+  color: #ffffff;
+  left: 70px;
+  margin-top: -35px;
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  background-color: #081f3e;
+  font-size: 14px; }
+  .hero-area .owl-prev:hover,
+  .hero-area .owl-next:hover {
+    background-color: #006cff; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-area .owl-prev,
+    .hero-area .owl-next {
+      left: 30px;
+      width: 50px;
+      height: 50px;
+      margin-top: -25px;
+      line-height: 50px; } }
+  @media only screen and (max-width: 767px) {
+    .hero-area .owl-prev,
+    .hero-area .owl-next {
+      left: 15px;
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+      line-height: 40px; } }
+.hero-area .owl-next {
+  left: auto;
+  right: 70px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-area .owl-next {
+      right: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .hero-area .owl-next {
+      right: 15px; } }
+.hero-area:hover .owl-prev, .hero-area:hover .owl-next {
+  opacity: 1; }
+.hero-area .owl-dots {
+  width: 1110px;
+  position: absolute;
+  bottom: 110px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero-area .owl-dots {
+      width: 920px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-area .owl-dots {
+      width: 680px; } }
+  @media only screen and (max-width: 767px) {
+    .hero-area .owl-dots {
+      width: 85%; } }
+.hero-area .owl-dot {
+  display: inline-block;
+  width: 36px;
+  height: 4px;
+  background-color: #cacaca;
+  margin-right: 8px; }
+  .hero-area .owl-dot.active {
+    background-color: #006cff; }
+
+/* :: 6.0 Book An Appoinment Area */
+.align-items-stretch {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-items: stretch; }
+
+.form-control {
+  background-color: transparent;
+  width: 100%;
+  height: 38px;
+  border-radius: 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 500;
+  padding: 0 15px;
+  border: 2px solid #536174; }
+  .form-control:hover, .form-control:focus {
+    background-color: transparent;
+    box-shadow: none; }
+
+textarea {
+  width: 100%;
+  height: 100px !important;
+  padding: 20px; }
+
+.nice-select {
+  line-height: 34px; }
+  .nice-select .list {
+    left: 0 !important;
+    right: 0 !important;
+    border-radius: 0; }
+
+.medilife-book-an-appoinment-area {
+  position: relative;
+  z-index: 1;
+  margin-top: -65px; }
+  .medilife-book-an-appoinment-area .appointment-form-content {
+    background-color: #081f3e; }
+  .medilife-book-an-appoinment-area .medilife-appointment-form {
+    background-color: #081f3e;
+    padding: 60px 50px; }
+    .medilife-book-an-appoinment-area .medilife-appointment-form select {
+      border: 2px solid #536174;
+      background-color: transparent; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .medilife-book-an-appoinment-area .medilife-appointment-form {
+        padding: 40px 30px; } }
+    @media only screen and (max-width: 767px) {
+      .medilife-book-an-appoinment-area .medilife-appointment-form {
+        padding: 30px; } }
+    @media only screen and (max-width: 767px) {
+      .medilife-book-an-appoinment-area .medilife-appointment-form button[type=submit] {
+        margin-top: 15px; } }
+  .medilife-book-an-appoinment-area .medilife-contact-info {
+    padding: 30px;
+    background-color: #006cff; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .medilife-book-an-appoinment-area .medilife-contact-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-bottom: 0; } }
+
+.single-contact-info img {
+  margin-bottom: 15px; }
+.single-contact-info p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0; }
+
+/* :: 7.0 About Us Area CSS */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .medica-about-content {
+    margin-bottom: 100px; } }
+@media only screen and (max-width: 767px) {
+  .medica-about-content {
+    margin-bottom: 100px; } }
+.medica-about-content h2 {
+  font-size: 44px;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 767px) {
+    .medica-about-content h2 {
+      font-size: 30px; } }
+
+/* :: 8.0 Service Area CSS */
+.medica-services-area {
+  position: relative;
+  z-index: 1; }
+
+.single-service-area {
+  margin-bottom: 80px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  .single-service-area .service-icon {
+    width: 64px;
+    height: 64px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 64px;
+    flex: 0 0 64px;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 64px;
+    font-size: 30px;
+    background-color: #cacaca;
+    border-radius: 50%;
+    color: #ffffff;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  .single-service-area .service-content {
+    margin-top: 15px; }
+    .single-service-area .service-content h5 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms; }
+    .single-service-area .service-content p {
+      margin-bottom: 0; }
+  .single-service-area:hover .service-icon {
+    background-color: #006cff; }
+  .single-service-area:hover .service-content h5 {
+    color: #006cff; }
+
+/* :: 9.0 Gallery Area CSS */
+.single-gallery-item {
+  position: relative;
+  z-index: 1;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  .single-gallery-item::after {
+    background-color: rgba(0, 108, 255, 0.75);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    content: '';
+    opacity: 0;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  .single-gallery-item:hover::after {
+    opacity: 1; }
+  .single-gallery-item .view-more-btn {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 9;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+    .single-gallery-item .view-more-btn a {
+      background-color: transparent;
+      font-size: 16px;
+      color: #ffffff;
+      display: block;
+      box-shadow: none;
+      font-weight: 700;
+      opacity: 0; }
+  .single-gallery-item:hover .view-more-btn a {
+    opacity: 1; }
+
+/* :: 10.0 Features Area CSS */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .features-content {
+    margin-bottom: 100px; } }
+@media only screen and (max-width: 767px) {
+  .features-content {
+    margin-bottom: 100px; } }
+.features-content h2 {
+  font-size: 48px;
+  margin-bottom: 30px; }
+  @media only screen and (max-width: 767px) {
+    .features-content h2 {
+      font-size: 30px; } }
+
+/* :: 11.0 Emergency Area CSS */
+.medilife-emergency-area {
+  background-color: #006cff; }
+  .medilife-emergency-area .emergency-content i {
+    font-size: 130px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 50px; }
+  .medilife-emergency-area .emergency-content h2 {
+    font-size: 44px;
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .medilife-emergency-area .emergency-content h2 {
+        font-size: 30px; } }
+    @media only screen and (max-width: 767px) {
+      .medilife-emergency-area .emergency-content h2 {
+        font-size: 24px; } }
+  .medilife-emergency-area .emergency-content h3 {
+    font-size: 60px;
+    color: #ffffff;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .medilife-emergency-area .emergency-content h3 {
+        font-size: 40px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .medilife-emergency-area .emergency-content h3 {
+        font-size: 30px; } }
+    @media only screen and (max-width: 767px) {
+      .medilife-emergency-area .emergency-content h3 {
+        font-size: 24px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .medilife-emergency-area .emergency-content {
+      margin-bottom: 100px; } }
+  @media only screen and (max-width: 767px) {
+    .medilife-emergency-area .emergency-content {
+      margin-bottom: 100px; } }
+  .medilife-emergency-area .single-emergency-helpline h5 {
+    color: #ffffff;
+    margin-bottom: 20px; }
+  .medilife-emergency-area .single-emergency-helpline p {
+    color: #ffffff;
+    margin-bottom: 0; }
+
+/* :: 12.0 Footer Area CSS */
+.footer-area {
+  background-color: #020f20;
+  padding-left: 45px;
+  padding-right: 45px; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .footer-area {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer-area {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .footer-area {
+      padding-left: 0;
+      padding-right: 0; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer-widget-area {
+    margin-bottom: 50px; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-widget-area {
+    margin-bottom: 50px; } }
+@media only screen and (max-width: 767px) {
+  .footer-widget-area {
+    margin-bottom: 50px; } }
+.footer-widget-area .footer-logo {
+  margin-bottom: 50px; }
+.footer-widget-area p {
+  color: #ffffff;
+  margin-bottom: 0; }
+.footer-widget-area .footer-social-info {
+  margin-top: 40px; }
+  .footer-widget-area .footer-social-info a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 18px;
+    display: inline-block; }
+.footer-widget-area .widget-title h6 {
+  font-size: 18px;
+  color: #006cff;
+  margin-bottom: 50px;
+  text-transform: capitalize; }
+.footer-widget-area .widget-single-blog-post {
+  margin-bottom: 15px; }
+  .footer-widget-area .widget-single-blog-post .widget-post-thumbnail {
+    width: 70px;
+    height: 70px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    margin-right: 30px; }
+  .footer-widget-area .widget-single-blog-post .widget-post-content a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2px; }
+  .footer-widget-area .widget-single-blog-post .widget-post-content p {
+    font-size: 12px; }
+.footer-widget-area .footer-contact-form {
+  background-color: #081f3e;
+  padding: 30px 40px; }
+  @media only screen and (max-width: 767px) {
+    .footer-widget-area .footer-contact-form {
+      padding: 30px 20px; } }
+.footer-widget-area .footer-newsletter-area form {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px; }
+.footer-widget-area .footer-newsletter-area input {
+  width: 100%;
+  height: 48px;
+  background-color: #081f3e;
+  font-size: 15px;
+  padding: 0 15px; }
+.footer-widget-area .footer-newsletter-area button {
+  position: absolute;
+  top: 0;
+  padding: 0 20px;
+  height: 48px;
+  right: 0;
+  z-index: 9;
+  cursor: pointer;
+  background-color: #006cff;
+  color: #ffffff;
+  border: none; }
+.footer-widget-area .footer-newsletter-area p {
+  font-size: 12px;
+  color: #57595c;
+  font-style: italic;
+  margin-bottom: 0; }
+
+.copywrite-text p {
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 0; }
+  .copywrite-text p a {
+    color: rgba(255, 255, 255, 0.35); }
+
+/* :: 13.0 Breadcumb Area CSS */
+.breadcumb-area {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  padding-top: 150px; }
+  .breadcumb-area .breadcumb-title {
+    font-size: 60px;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 767px) {
+      .breadcumb-area .breadcumb-title {
+        font-size: 30px; } }
+  .breadcumb-area::after {
+    background-color: rgba(230, 241, 255, 0.75);
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1; }
+
+/* :: 14.0 Video Area CSS */
+.video-box {
+  position: relative;
+  z-index: 1; }
+  .video-box .play-btn {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10; }
+    .video-box .play-btn a {
+      margin-bottom: 30px;
+      display: block; }
+      @media only screen and (max-width: 767px) {
+        .video-box .play-btn a {
+          margin-bottom: 15px; } }
+    .video-box .play-btn h6 {
+      font-size: 18px;
+      margin-bottom: 0;
+      color: #ffffff; }
+      @media only screen and (max-width: 767px) {
+        .video-box .play-btn h6 {
+          font-size: 12px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .video-content {
+    margin-top: 100px; } }
+@media only screen and (max-width: 767px) {
+  .video-content {
+    margin-top: 100px; } }
+.video-content h2 {
+  font-size: 44px;
+  color: #ffffff;
+  margin-bottom: 50px; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .video-content h2 {
+      font-size: 24px; } }
+  @media only screen and (max-width: 767px) {
+    .video-content h2 {
+      font-size: 24px; } }
+.video-content p {
+  color: #ffffff;
+  margin-bottom: 0; }
+
+.single-pie-bar {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 100px; }
+  .single-pie-bar canvas {
+    margin-bottom: 20px; }
+  .single-pie-bar p {
+    margin-bottom: 0; }
+
+/* :: 15.0 Tabs Area CSS */
+.medilife-tabs-content .nav-tabs {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: none; }
+.medilife-tabs-content .nav-link {
+  padding: 15px 30px;
+  background-color: #f0f0f0;
+  display: block;
+  border-radius: 0 !important;
+  border: none;
+  border-bottom: 20px solid #ffffff;
+  font-size: 18px;
+  color: #081f3e; }
+  .medilife-tabs-content .nav-link:hover, .medilife-tabs-content .nav-link:focus {
+    border-color: #ffffff; }
+  .medilife-tabs-content .nav-link.active {
+    background-color: #006cff;
+    color: #ffffff;
+    border-color: #006cff; }
+    @media only screen and (max-width: 767px) {
+      .medilife-tabs-content .nav-link.active {
+        border-color: #ffffff; } }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .medilife-tabs-content .nav-link {
+      padding: 15px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .medilife-tabs-content .nav-link {
+      padding: 15px;
+      font-size: 14px; } }
+  @media only screen and (max-width: 767px) {
+    .medilife-tabs-content .nav-link {
+      padding: 10px;
+      font-size: 12px; } }
+.medilife-tabs-content .medilife-tab-content {
+  margin-top: 1px;
+  border: 2px solid;
+  border-color: #006cff;
+  padding: 70px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .medilife-tabs-content .medilife-tab-content {
+      padding: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .medilife-tabs-content .medilife-tab-content {
+      padding: 15px; } }
+  .medilife-tabs-content .medilife-tab-content .medilife-tab-text {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(55% - 50px);
+    flex: 0 0 calc(55% - 50px);
+    min-width: calc(55% - 50px);
+    margin-right: 50px; }
+    @media only screen and (max-width: 767px) {
+      .medilife-tabs-content .medilife-tab-content .medilife-tab-text {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        min-width: 100%;
+        margin-right: 0; } }
+    .medilife-tabs-content .medilife-tab-content .medilife-tab-text h2 {
+      font-size: 44px;
+      margin-bottom: 30px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .medilife-tabs-content .medilife-tab-content .medilife-tab-text h2 {
+          font-size: 30px; } }
+      @media only screen and (max-width: 767px) {
+        .medilife-tabs-content .medilife-tab-content .medilife-tab-text h2 {
+          font-size: 30px; } }
+  .medilife-tabs-content .medilife-tab-content .medilife-tab-img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    min-width: 45%; }
+
+/* :: 16.0 Services Area CSS */
+.singleServiceArea {
+  position: relative;
+  z-index: 1;
+  width: 33.3333333%;
+  display: inline-block;
+  float: left;
+  padding: 70px 40px 100px; }
+  .singleServiceArea:first-child {
+    background-color: #006cff; }
+  .singleServiceArea:last-child {
+    background-color: #081f3e; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .singleServiceArea {
+      padding: 50px 20px; } }
+  @media only screen and (max-width: 767px) {
+    .singleServiceArea {
+      padding: 50px 20px;
+      width: 100%; } }
+  .singleServiceArea .singleServiceIcon {
+    margin-right: 20px; }
+    .singleServiceArea .singleServiceIcon i {
+      color: #ffffff;
+      font-size: 80px; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .singleServiceArea .singleServiceIcon i {
+          font-size: 60px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .singleServiceArea .singleServiceIcon i {
+          font-size: 30px; } }
+      @media only screen and (max-width: 767px) {
+        .singleServiceArea .singleServiceIcon i {
+          font-size: 30px; } }
+  .singleServiceArea .singleServiceText {
+    padding-top: 30px; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .singleServiceArea .singleServiceText {
+        padding-top: 0; } }
+    @media only screen and (max-width: 767px) {
+      .singleServiceArea .singleServiceText {
+        padding-top: 0; } }
+    .singleServiceArea .singleServiceText h2 {
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-size: 40px; }
+      @media only screen and (min-width: 992px) and (max-width: 1199px) {
+        .singleServiceArea .singleServiceText h2 {
+          font-size: 30px; } }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .singleServiceArea .singleServiceText h2 {
+          font-size: 24px; } }
+      @media only screen and (max-width: 767px) {
+        .singleServiceArea .singleServiceText h2 {
+          font-size: 24px; } }
+    .singleServiceArea .singleServiceText p {
+      color: #ffffff; }
+
+/* :: 17.0 Single Benefits Area CSS */
+.single-benefits-area {
+  position: relative;
+  z-index: 1; }
+  .single-benefits-area .single-benefits-title {
+    margin-bottom: 20px; }
+    .single-benefits-area .single-benefits-title i {
+      font-size: 50px;
+      color: #006cff; }
+    .single-benefits-area .single-benefits-title h5 {
+      font-size: 22px;
+      margin: 0 15px; }
+
+/* :: 18.0 CTA Area CSS */
+.medilife-cta-area {
+  position: relative;
+  z-index: 1;
+  background-color: #006cff;
+  padding: 30px 0; }
+  .medilife-cta-area .cta-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .medilife-cta-area .cta-content i {
+      color: #ffffff;
+      font-size: 50px;
+      margin-right: 30px;
+      display: inline-block; }
+    .medilife-cta-area .cta-content h2 {
+      margin-bottom: 0;
+      font-size: 36px;
+      margin-right: 30px;
+      color: #081f3e; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .medilife-cta-area .cta-content h2 {
+          font-size: 20px; } }
+      @media only screen and (max-width: 767px) {
+        .medilife-cta-area .cta-content h2 {
+          font-size: 20px;
+          margin: 15px 0; } }
+    .medilife-cta-area .cta-content h3 {
+      color: #ffffff;
+      margin-bottom: 0;
+      font-size: 44px; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .medilife-cta-area .cta-content h3 {
+          font-size: 30px; } }
+      @media only screen and (max-width: 767px) {
+        .medilife-cta-area .cta-content h3 {
+          font-size: 30px; } }
+    @media only screen and (max-width: 767px) {
+      .medilife-cta-area .cta-content {
+        display: block; } }
+
+/* :: 19.0 Blog Area CSS */
+.single-blog-area {
+  position: relative;
+  z-index: 1; }
+  .single-blog-area .blog-post-thumbnail {
+    position: relative;
+    z-index: 1; }
+    .single-blog-area .blog-post-thumbnail .post-date a {
+      min-width: 110px;
+      height: 35px;
+      background-color: #006cff;
+      display: block;
+      color: #ffffff;
+      line-height: 35px;
+      text-align: center;
+      position: absolute;
+      font-size: 15px;
+      font-weight: 400;
+      top: 20px;
+      left: 20px;
+      z-index: 3; }
+  .single-blog-area .post-content {
+    position: relative;
+    z-index: 1;
+    padding: 50px 20px; }
+    .single-blog-area .post-content .post-author {
+      width: 58px;
+      height: 58px;
+      position: absolute;
+      z-index: 5;
+      border-radius: 50%;
+      top: -29px;
+      left: 20px; }
+      .single-blog-area .post-content .post-author a {
+        border-radius: 50%; }
+        .single-blog-area .post-content .post-author a img {
+          border-radius: 50%;
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); }
+    .single-blog-area .post-content .headline {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #081f3e;
+      display: block; }
+    .single-blog-area .post-content .comments {
+      font-size: 12px;
+      color: #57595c;
+      text-decoration: underline;
+      font-weight: 300; }
+
+.search-widget-area form {
+  position: relative;
+  z-index: 1; }
+.search-widget-area input[type=search] {
+  width: 100%;
+  height: 50px;
+  background-color: #f5f7f9;
+  border: none;
+  font-size: 12px;
+  font-style: italic;
+  padding: 0 15px; }
+.search-widget-area input[type=submit] {
+  width: 80px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #006cff;
+  font-weight: 500;
+  padding: 0 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer; }
+
+.medilife-catagories-card h5 {
+  margin-bottom: 30px; }
+.medilife-catagories-card ul li a {
+  display: block;
+  padding: 10px;
+  color: #57595c;
+  font-size: 14px;
+  font-weight: 400; }
+  .medilife-catagories-card ul li a:hover, .medilife-catagories-card ul li a:focus {
+    color: #006cff; }
+
+.latest-news-widget-area h5 {
+  margin-bottom: 30px; }
+.latest-news-widget-area .widget-single-blog-post {
+  margin-bottom: 30px; }
+  .latest-news-widget-area .widget-single-blog-post .widget-post-thumbnail {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58px;
+    flex: 0 0 58px;
+    min-width: 58px; }
+  .latest-news-widget-area .widget-single-blog-post .widget-post-content a {
+    display: block;
+    color: #57595c;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400; }
+  .latest-news-widget-area .widget-single-blog-post .widget-post-content:hover a, .latest-news-widget-area .widget-single-blog-post .widget-post-content:focus a {
+    color: #006cff; }
+  .latest-news-widget-area .widget-single-blog-post .widget-post-content p {
+    font-size: 12px;
+    color: #006cff;
+    margin-bottom: 0;
+    font-weight: 500; }
+
+.medilife-emergency-card {
+  padding: 50px 30px; }
+  .medilife-emergency-card i {
+    font-size: 70px;
+    display: block;
+    margin-bottom: 50px;
+    color: #ffffff; }
+  .medilife-emergency-card h2 {
+    font-size: 28px; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .medilife-emergency-card h2 {
+        font-size: 20px; } }
+    @media only screen and (max-width: 767px) {
+      .medilife-emergency-card h2 {
+        font-size: 20px; } }
+  .medilife-emergency-card h3 {
+    font-size: 34px;
+    color: #ffffff;
+    margin-bottom: 0; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .medilife-emergency-card h3 {
+        font-size: 20px; } }
+    @media only screen and (max-width: 767px) {
+      .medilife-emergency-card h3 {
+        font-size: 20px; } }
+
+.pagination .page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+.pagination .page-item:last-child .page-link {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+.pagination .page-item.active .page-link {
+  color: #ffffff;
+  background-color: #006cff; }
+.pagination .page-link {
+  padding: 0;
+  margin-left: 3px;
+  line-height: 43px;
+  font-size: 16px;
+  color: #081f3e;
+  background-color: #f5f7f9;
+  border: none;
+  width: 43px;
+  height: 43px;
+  text-align: center; }
+  .pagination .page-link:focus, .pagination .page-link:hover {
+    color: #ffffff;
+    background-color: #006cff; }
+
+.post-meta {
+  margin-bottom: 30px; }
+  .post-meta a {
+    font-size: 14px;
+    color: #57595c;
+    font-weight: 400; }
+
+.comments-area h5 {
+  margin-bottom: 50px; }
+
+.single_comment_area {
+  margin-bottom: 50px; }
+  .single_comment_area .comment-wrapper .comment-author {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    margin-right: 30px; }
+    .single_comment_area .comment-wrapper .comment-author img {
+      border-radius: 50%; }
+    @media only screen and (max-width: 767px) {
+      .single_comment_area .comment-wrapper .comment-author {
+        margin-right: 10px; } }
+  .single_comment_area .comment-wrapper .comment-content .comment-meta a {
+    display: inline-block;
+    color: #081f3e;
+    font-size: 14px;
+    margin-bottom: 20px; }
+    .single_comment_area .comment-wrapper .comment-content .comment-meta a:hover {
+      color: #006cff; }
+    @media only screen and (max-width: 767px) {
+      .single_comment_area .comment-wrapper .comment-content .comment-meta a {
+        font-size: 12px; } }
+  .single_comment_area .comment-wrapper .comment-content p {
+    font-size: 14px;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 767px) {
+      .single_comment_area .comment-wrapper .comment-content p {
+        font-size: 13px; } }
+  .single_comment_area .children {
+    margin-top: 50px;
+    padding-left: 90px; }
+    @media only screen and (max-width: 767px) {
+      .single_comment_area .children {
+        padding-left: 30px; } }
+
+.leave-comment-area .comment-form h5,
+.leave-comment-area .contact-form h5,
+.medilife-contact-area .comment-form h5,
+.medilife-contact-area .contact-form h5 {
+  margin-bottom: 50px; }
+.leave-comment-area .comment-form .form-group,
+.leave-comment-area .contact-form .form-group,
+.medilife-contact-area .comment-form .form-group,
+.medilife-contact-area .contact-form .form-group {
+  margin-bottom: 10px; }
+.leave-comment-area .comment-form .form-control,
+.leave-comment-area .contact-form .form-control,
+.medilife-contact-area .comment-form .form-control,
+.medilife-contact-area .contact-form .form-control {
+  width: 100%;
+  height: 55px;
+  background-color: #f5f7f9;
+  padding: 15px;
+  border: none;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 0 !important; }
+.leave-comment-area .comment-form textarea.form-control,
+.leave-comment-area .contact-form textarea.form-control,
+.medilife-contact-area .comment-form textarea.form-control,
+.medilife-contact-area .contact-form textarea.form-control {
+  height: 250px !important; }
+.leave-comment-area .comment-form button[type=submit],
+.leave-comment-area .contact-form button[type=submit],
+.medilife-contact-area .comment-form button[type=submit],
+.medilife-contact-area .contact-form button[type=submit] {
+  margin-top: 40px; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .leave-comment-area .comment-form,
+  .leave-comment-area .contact-form,
+  .medilife-contact-area .comment-form,
+  .medilife-contact-area .contact-form {
+    margin-bottom: 100px; } }
+@media only screen and (max-width: 767px) {
+  .leave-comment-area .comment-form,
+  .leave-comment-area .contact-form,
+  .medilife-contact-area .comment-form,
+  .medilife-contact-area .contact-form {
+    margin-bottom: 100px; } }
+
+/* :: 20.0 Contact Area CSS */
+.single-contact {
+  margin-bottom: 20px; }
+  .single-contact .contact-icon i {
+    color: #006cff;
+    font-size: 20px; }
+  .single-contact .contact-meta p {
+    margin-bottom: 0; }
+
+.contact-social-area {
+  margin-top: 30px; }
+  .contact-social-area a {
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 15px;
+    color: #b4b4b4; }
+    .contact-social-area a:focus, .contact-social-area a:hover {
+      color: #006cff; }
+
+.googleMap {
+  width: 100%;
+  height: 600px;
+  border-bottom: 5px solid;
+  border-color: #006cff; }
+
+/* :: 21.0 Shortcode Area CSS */
+.elements-title h2 {
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 50px; }
+
+/* Accordians */
+.single-accordion.panel {
+  background-color: #ffffff;
+  border: 0 solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 0 0 transparent;
+  margin-bottom: 15px; }
+.single-accordion:last-of-type {
+  margin-bottom: 0; }
+.single-accordion h6 {
+  margin-bottom: 0;
+  text-transform: uppercase; }
+  .single-accordion h6 a {
+    background-color: #1d1d1d;
+    border-radius: 0;
+    color: #ffffff;
+    display: block;
+    margin: 0;
+    padding: 20px 60px 20px 20px;
+    position: relative;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500; }
+    .single-accordion h6 a span {
+      font-size: 10px;
+      position: absolute;
+      right: 20px;
+      text-align: center;
+      top: 24px; }
+      .single-accordion h6 a span.accor-open {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0); }
+    .single-accordion h6 a.collapsed {
+      background-color: #006cff;
+      color: #ffffff; }
+      .single-accordion h6 a.collapsed span.accor-close {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0); }
+      .single-accordion h6 a.collapsed span.accor-open {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100); }
+.single-accordion .accordion-content {
+  border-top: 0 solid transparent;
+  box-shadow: none; }
+  .single-accordion .accordion-content p {
+    padding: 20px 15px 5px;
+    margin-bottom: 0; }
+
+/* Cool Facts CSS */
+.single-cool-fact-area {
+  text-align: center; }
+  .single-cool-fact-area i {
+    font-size: 100px;
+    color: #006cff;
+    margin-bottom: 30px;
+    display: block; }
+  .single-cool-fact-area h2 {
+    font-size: 48px;
+    margin-bottom: 20px; }
+  .single-cool-fact-area h6 {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .single-cool-fact-area p {
+    margin-bottom: 0; }
+
+.all-icons-area {
+  position: relative;
+  z-index: 1; }
+  .all-icons-area .medilife-single-icon {
+    padding: 30px;
+    border: 1px solid #f5f7f9;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 30px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+    .all-icons-area .medilife-single-icon i {
+      font-size: 50px;
+      color: #006cff;
+      display: block;
+      margin-bottom: 15px;
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms; }
+    .all-icons-area .medilife-single-icon span {
+      display: block;
+      -webkit-transition-duration: 500ms;
+      transition-duration: 500ms; }
+    .all-icons-area .medilife-single-icon:hover, .all-icons-area .medilife-single-icon:focus {
+      background-color: #006cff; }
+    .all-icons-area .medilife-single-icon:hover i, .all-icons-area .medilife-single-icon:focus i {
+      color: #ffffff; }
+    .all-icons-area .medilife-single-icon:hover span, .all-icons-area .medilife-single-icon:focus span {
+      color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,139 @@
+.primary-btn {
+	line-height: 40px;
+	padding: 0 40px;
+	border-radius: 20px;
+	background: transparent;
+	border: 1px solid $primary-color;
+	color: $title-color;
+	display: inline-block;
+	font-weight: 600;
+	@include transition();
+	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
+	&.banner-btn {
+		color: $white;
+		margin-top: 60px;
+	}
+	span {
+		margin-left: 15px;
+	}
+	&:hover {
+		background: $primary-color;
+		color: $white;
+		box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
+	}
+}
+.section-title {
+	padding-bottom: 70px;
+	h3 {
+		font-weight: 300;
+		font-size: 24px;
+		color: $text-color;
+		b {
+			font-weight: 300;
+			color: $title-color;
+		}
+	}
+}
+
+//---------- Start Progress Bar ------------//
+.progressBar,
+.progressBar-contentCircle {
+  display: table;
+  height: 150px;
+  position: absolute;
+  width: 150px;
+}
+
+.progressBar-circle,
+.progressBar-background {
+  fill: none;
+  stroke: #777777;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  position: relative;
+  z-index: 10;
+  @include transition();
+}
+
+.progressBar-background {
+  stroke: #f9f9ff;
+  stroke-width: 4;
+  z-index: 0;
+}
+
+.progressBar-percentage {
+  color: $title-color;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  @include transition();
+}
+
+/************************/
+/* structure de la page */
+/************************/
+
+
+.list {
+  // @include flexbox();
+  list-style: none;
+  margin: 10px auto;
+  padding: 0px;
+  
+  &:hover {
+  	.progressBar-circle {
+  		stroke: $primary-color;
+  	}
+  	.progressBar-percentage {
+		color: $primary-color;
+  	}
+  }
+}
+
+.list-item {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+
+//----------- End Progress Bar ----------//
+
+.details-btn {
+	border: 1px solid $primary-color;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	@include flexbox();
+	overflow: hidden;
+	.details {
+		visibility: hidden;
+		opacity: 0;
+		margin-left: -53px;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include flexbox();
+	}
+	&:hover {
+		width: 140px;
+		.details {
+			margin-left: 0;
+			visibility: visible;
+			opacity: 1;
+			margin-right: 20px;
+		}
+		span {
+			color: $white;
+			font-weight: 600;
+		}
+		background: $primary-color;
+		box-shadow: 0px 10px 20px 0px rgba(60, 64, 143, 0.2);
+	}
+}

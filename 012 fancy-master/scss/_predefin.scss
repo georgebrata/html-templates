@@ -1,0 +1,126 @@
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration:none;
+    &:hover, &:focus{
+       text-decoration:none;
+       outline: none;
+    }
+}
+.row.m0{
+    margin: 0px;
+}
+.p0{
+    padding: 0px;   
+}
+body{
+    line-height: 26px;
+    font-size: 14px;
+    font-family: $pop;
+}
+body, p, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+}
+#success{
+    display: none;
+}
+#error{
+    display: none;
+}
+
+.display_table{
+    display: table;
+    width: 100%;
+}
+.display_table_row{
+    display: table-row;
+}
+.display_table_cell{
+    display: table-cell;
+    float: none !important;
+}
+.p_100{
+    padding: 100px 0px;
+}
+iframe{
+    border: none;
+}
+i{
+    &:before{
+        margin-left: 0px !important;
+    }
+}
+/* Container Custome Code css
+============================================================================================ */
+@media (min-width: 1200px){
+    .container {
+        max-width: 1200px;
+    }
+}
+/* End Container Custome Code css
+============================================================================================ */
+
+
+
+/* Main title css
+============================================================================================ */
+.main_title{
+    h2{
+        font-size: 40px;
+        line-height: 48px;
+        font-family: $pop;
+        color: $dip;
+        font-weight: 500;
+    }
+    p{
+        font-size: 16px;
+        color: $pfont;
+        font-family: $pop;
+        line-height: 26px;
+        padding-top: 15px;
+    }
+}
+.center_title{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 40px;
+    h2{
+        font-size: 40px;
+        font-family: $pop;
+        font-weight: 500;
+    }
+    p{
+        font-size: 16px;
+        color: #fff;
+        font-family: $pop;
+        line-height: 26px;
+        padding-top: 10px;
+    }
+}
+.b_center_title{
+    text-align: center;
+    padding-bottom: 50px;
+    h2{
+        font-size: 40px;
+        font-family: $pop;
+        font-weight: 500;
+        color: $dip;
+    }
+    p{
+        font-size: 16px;
+        color: #fff;
+        font-family: $pop;
+        line-height: 26px;
+        padding-top: 10px;
+        color: $pfont;
+    }
+}
+
+/* Main title css
+============================================================================================ */
+

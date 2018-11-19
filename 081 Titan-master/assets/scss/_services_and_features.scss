@@ -1,0 +1,57 @@
+.features-item {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.features-icon,
+.alt-features-icon {
+	line-height: 1.2;
+	font-size: 42px;
+	color: #111;
+}
+
+.features-title,
+.alt-features-title {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 400;
+	font-size: 14px;
+	color: #111;
+	margin: 16px 0 15px;
+}
+
+.alt-features-item {
+	position: relative;
+	padding-left: 55px;
+	margin: 65px 0 0 0;
+}
+
+.alt-features-icon {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 0;
+	top: 0;
+	text-align: center;
+	line-height: 40px;
+	font-size: 28px;
+}
+
+.alt-features-title {
+	font-size: 13px;
+	margin: 0 0 10px;
+}
+
+/* Content box */
+
+.content-box {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.content-box-title {
+	font-weight: 400;
+	font-size: 18px;
+	color: #111;
+	margin: 16px 0 15px;
+}

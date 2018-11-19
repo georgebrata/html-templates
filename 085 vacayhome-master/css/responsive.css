@@ -1,0 +1,257 @@
+/*
+Template Name: vacayhome
+File Name: responsive.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/
+*/
+
+/* Landscape phones and smaller */
+@media (max-width: 1199px) {
+    .remove-space{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .cl-effect-10 a span, .cl-effect-10 a::before, .cl-effect-10 a.active::before{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo > a span{
+        font-size: 40px;
+    }
+    #logo > a{
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-default {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .service-details h4, .overlay p{
+        font-size: 16px;
+    }
+    .overlay p {
+        left: 11%;
+    }
+    .gallery-image:hover p {
+        bottom: 30px;
+    }
+    .resort-overview-block .row > div:nth-child(1) {
+        margin-top: 0;
+    }
+    .resort-overview-block .row > div:nth-child(2n+1) {
+        margin-top: 20px;
+    }
+    .blog-box{
+        padding: 45px;
+    }
+    footer .row > div:nth-child(3) {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .service-block .row {
+        padding: 0 15px;
+    }
+    .service-block .row > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .vacation-offer-details h4{
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .vacation-offer-bgbanner::before{
+        left: -40%;
+    }
+    .vacation-offer-details > h1{
+        font-size: 23px;
+    }
+    .view-set-block {
+        width: 100%;
+    }
+    .side-in-image {
+        float: unset;
+        width: auto;
+    }
+    .about-left p{
+        font-size: 40px;
+    }
+    .about-right h3{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navigation .nav1 li{
+        display: block;
+    }
+    .cl-effect-10{
+        padding-left: 15px;
+    }
+    #myCarousel1 .carousel-inner img{
+        height: 280px !important;
+    }
+    #myCarousel1 .carousel-caption h1{
+        font-size: 40px;
+    }
+    .carousel-control img{
+        max-width: 24px;
+    }
+    .service-details h4 {
+        font-size: 14px;
+        letter-spacing: 0;
+        margin-top: 25px;
+    }
+    .mt-25 {
+        margin-top: 25px;
+    }
+    .gallery-front .gallery-image {
+        margin-left: auto;
+        margin-right: auto;
+        /*max-width: 278px;*/
+        position: relative;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .vacation-offer-bgbanner{
+        padding: 45px 0px;
+    }
+    .vacation-offer-details > h1{
+        font-size: 20px;
+    }
+    .vacation-offer-details h4 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .vacation-offer-details .btn.btn-default{
+        padding: 6px 9px;
+        font-size: 14px;
+    }
+    .side-A, .side-B{
+        float: none;
+        width: 100%;
+    }
+    .product-desc-side{
+        padding-left: 0;
+    }
+    .product-desc-side h3{
+        font-size: 18px;
+    }
+    .links > a, .event-blog-details button{
+        padding: 3px 6px;
+    }
+    .blog-box, .blog-view-box{
+        padding: 25px 15px;
+    }
+    .blog-box > p {
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 22px;
+        padding: 10px 30px;
+    }
+    #myCarousel2 .carousel-indicators li, #myCarousel2 .carousel-indicators .active{
+        width: 50px;
+    }
+    .event-blog-details > h4{
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+    .event-blog-image {
+        margin-bottom: 20px;
+    }
+    .event-blog-details h5 a i {
+        margin: 0 5px;
+    }
+    .event-blog-details h5 > a {
+        margin-left: 0;
+    }
+    .event-blog-details > p {
+        font-size: 13.5px;
+        line-height: 22px;
+        margin: 20px 0;
+    }
+    footer {
+        border-top: 1px dashed #ddd;
+        margin-top: 40px;
+        padding: 0px 0 20px;
+    }
+    .footer-details > h4{
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 35px;
+        margin-top: 35px;
+    }
+    .footer-contact-list li + li {
+        margin-top: 20px;
+    }
+    .footer-links li + li {
+        margin-top: 10px;
+    }
+    .copyright > a{
+        display: block;
+        margin-top: 8px;
+    }
+    .image-head-wrapper{
+        height: 240px;
+    }
+    .about-left p{
+        font-size: 30px;
+        line-height: 26px;
+    }
+    .about-right h3{
+        font-size: 21px;
+    }
+    .about-right span{
+        font-size: 18px;
+    }
+    .overlay .info > i{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    #myCarousel1 .carousel-inner img{
+        height: 360px !important;
+    }
+    #myCarousel1 .carousel-caption h1{
+        font-size: 55px;
+    }
+    .carousel-control img{
+        max-width: 28px;
+    }
+    .service-details h4 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .view-set-block .col-xs-12, .width-set-50 {
+        width: 50%;
+    }
+    .side-in-image {
+        width: auto !important;
+    }
+    .image-head-wrapper{
+        height: 300px;
+    }
+    .overlay .info > i{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .gallery-block .col-xs-12 {
+        width: 50%;
+    }
+}
+
+
+
+
+
+

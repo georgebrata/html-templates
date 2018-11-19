@@ -1,0 +1,1605 @@
+/* ----------------------------------------------------------
+:: Template Name: Medilife - Medical & Health Template
+:: Author: Colorlib
+:: Author URL: https://colorlib.com
+:: Version: 1.0.0
+:: Created: 28 Feb 2018
+:: Last Updated: 28 Feb 2018
+---------------------------------------------------------- */
+
+/* [ -- Master Stylesheet -- ] */
+
+/* ------------- Index of Stylesheet -------------
+
+------------------------------------------------ */
+
+/* :: 1.0 Import Web Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:400,500,700');
+
+/* :: 2.0 Import All CSS */
+
+@import '../css/bootstrap.min.css';
+@import '../css/owl.carousel.css';
+@import '../css/magnific-popup.css';
+@import '../css/animate.css';
+@import '../css/font-awesome.min.css';
+@import '../css/themify-icons.css';
+
+/* :: 3.0 Base CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #262626;
+    line-height: 1.2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    color: #7f7e7e;
+    font-size: 14px;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+a:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover,
+a:focus {
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+    color: #5f5f5f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#preloader {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f4f8;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+ul,
+ol {
+    margin: 0;
+}
+
+ol li,
+ul li {
+    list-style: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+#preloader {
+    overflow: hidden;
+    background-color: #f2f4f8;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+#preloader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    width: 30px;
+    height: 30px;
+    z-index: 8;
+    -webkit-animation: 2000ms linear 0s normal none infinite running medica-thumb;
+    animation: 2000ms linear 0s normal none infinite running medica-thumb;
+}
+
+.medica-load {
+    -webkit-animation: 2000ms linear 0s normal none infinite running medica-load;
+    animation: 2000ms linear 0s normal none infinite running medica-load;
+    background: transparent none repeat scroll 0 0;
+    border-color: #ffffff #ffffff #2f88fd;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+@-webkit-keyframes medica-load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes medica-load {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes medica-thumb {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+@keyframes medica-thumb {
+    0% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    50% {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    100% {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+.medica-table {
+    display: table;
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.medica-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-default {
+    background-color: #172538;
+}
+
+.bg-gray {
+    background-color: #e0f3f9;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-transparent-dark {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.bg-transparent-light {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.height-500 {
+    height: 500px !important;
+}
+
+.height-600 {
+    height: 600px !important;
+}
+
+.height-700 {
+    height: 700px !important;
+}
+
+.height-800 {
+    height: 800px !important;
+}
+
+#scrollUp {
+    background: #243eff;
+    background: -webkit-linear-gradient(to right, #3de6fa, #243eff);
+    background: -webkit-linear-gradient(left, #3de6fa, #243eff);
+    background: linear-gradient(to right, #3de6fa, #243eff);
+    border-radius: 0;
+    bottom: 100px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 24px;
+    height: 40px;
+    line-height: 38px;
+    right: 0;
+    text-align: center;
+    width: 40px;
+}
+
+.section_padding_100 {
+    padding: 100px 0;
+}
+
+.section_padding_50 {
+    padding: 50px 0;
+}
+
+.section_padding_50_0 {
+    padding: 50px 0 0 0;
+}
+
+.section_padding_100_70 {
+    padding: 100px 0 70px;
+}
+
+.section_padding_100_50 {
+    padding: 100px 0 50px;
+}
+
+.section_padding_100_0 {
+    padding: 100px 0 0;
+}
+
+.section_padding_0_100 {
+    padding: 0 0 100px;
+}
+
+.section_padding_100_20 {
+    padding: 100px 0 20px 0;
+}
+
+.section_heading {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.section_heading img {
+    margin-bottom: 10px;
+}
+
+.section_heading h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.section_heading.white-heading h2 {
+    color: #fff;
+}
+
+.section_heading p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.medica-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: transparent;
+    height: 60px;
+    padding: 0 30px;
+    line-height: 56px;
+    font-size: 14px;
+    min-width: 140px;
+    border: 2px solid #fff;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.medica-btn.btn-2 {
+    color: #fff;
+    background-color: #2f88fd;
+    border-color: #2f88fd;
+}
+
+.medica-btn.btn-3 {
+    color: #2f88fd;
+    background-color: #fff;
+    border-color: #2f88fd;
+}
+
+.medica-btn.btn-4 {
+    color: #262626;
+    background-color: #fff;
+    border-color: #262626;
+}
+
+.medica-btn.btn-5 {
+    color: #2f88fd;
+    background-color: #262626;
+    border-color: #262626;
+}
+
+.medica-btn:hover,
+.medica-btn:focus {
+    color: #fff;
+    background-color: #2f88fd;
+    border-color: #2f88fd;
+}
+
+.gradient-background {
+    background: #243eff;
+    background: -webkit-linear-gradient(to right, #3de6fa, #243eff);
+    background: -webkit-linear-gradient(left, #3de6fa, #243eff);
+    background: linear-gradient(to right, #3de6fa, #243eff);
+}
+
+.gradient-background-overlay,
+.background-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gradient-background-overlay:after,
+.background-overlay:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #243eff;
+    background: -webkit-linear-gradient(to right, #3de6fa, #243eff);
+    background: -webkit-linear-gradient(left, #3de6fa, #243eff);
+    background: linear-gradient(to right, #3de6fa, #243eff);
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.background-overlay:after {
+    background: rgba(36, 62, 255, 0.8);
+}
+
+.nicescroll-rails {
+    z-index: 999999 !important;
+}
+
+/* :: 4.0 Header Area CSS */
+
+.header-area {
+    position: relative;
+    z-index: 100;
+}
+
+.top-header-area {
+    position: relative;
+    height: 55px;
+    z-index: 1;
+}
+
+.top-header-social-info a {
+    font-size: 12px;
+    color: #fff;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.top-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.top-menu ul li a {
+    display: block;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.main-header-area {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.is-sticky .main-header-area {
+    width: 100%;
+    z-index: 10000 !important;
+    background-color: #f2f4f8;
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    padding: 0;
+}
+
+#searchbtn {
+    cursor: pointer;
+    margin-left: 15px;
+    color: #2f88fd;
+}
+
+.header-search-form,
+.search-form-on .navbar-nav {
+    display: none;
+}
+
+.search-form-on .header-search-form {
+    display: block;
+}
+
+.header-area .main-menu .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: #5f5f5f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.header-area .main-menu .nav-item.active .nav-link,
+.header-area .main-menu .nav-link:hover,
+.header-area .main-menu .nav-link:focus {
+    color: #2f88fd;
+}
+
+.dropdown-menu.show {
+    border: none;
+    padding: 15px 0;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 15px;
+}
+
+.dropdown-item {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #5f5f5f;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #2f88fd;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f4f8;
+}
+
+.header-search-form form input {
+    width: 550px;
+    height: 45px;
+    padding: 5px 15px;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #2f88fd;
+    border-radius: 4px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 0;
+}
+
+.header-search-form form input:focus {
+    box-shadow: none;
+    border-color: #2f88fd;
+    background-color: transparent;
+}
+
+/* :: 5.0 Welcome Area CSS */
+
+.hero-area,
+.single-hero-slide {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.hero-slides-content h2 {
+    color: #fff;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-slides-content h5 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.hero-area .owl-prev,
+.hero-area .owl-next,
+.medica-testimonials-area .owl-prev,
+.medica-testimonials-area .owl-next {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    border: 2px solid #fff;
+    top: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    left: 70px;
+    margin-top: -22px;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+
+.hero-area .owl-next,
+.medica-testimonials-area .owl-next {
+    left: auto;
+    right: 70px;
+}
+
+.hero-area .owl-dots {
+    width: 1110px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.hero-area .owl-dot {
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    border: 2px solid transparent;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 31px;
+    font-weight: 600;
+}
+
+.hero-area .owl-dot.active {
+    border: 2px solid #fff;
+}
+
+.hero-area:hover .owl-prev,
+.hero-area:hover .owl-next,
+.medica-testimonials-area:hover .owl-prev,
+.medica-testimonials-area:hover .owl-next {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+}
+
+.medica-about-us-area {
+    position: relative;
+    z-index: 1;
+}
+
+.medica-about-us-area:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 80px;
+    left: 0;
+    background-color: #e5f1f3;
+    content: '';
+    width: 100%;
+}
+
+.medica-contact-info-area {
+    padding: 50px 0 0;
+    background-color: #e5f1f3;
+}
+
+.single-contact-info {
+    margin-bottom: 50px;
+}
+
+.contact-meta p {
+    margin: 0;
+    color: #6c6c6c;
+}
+
+.medica-emergency-card,
+.medica-doctors-card,
+.medica-appointment-card,
+.medica-department-card,
+.medica-contact-card,
+.medica-catagories-card,
+.latest-news-widget-area {
+    padding: 50px 40px;
+    background-color: #38c3fb;
+    width: 100%;
+}
+
+.medica-card-area .col-12 {
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.medica-doctors-card,
+.medica-department-card {
+    background-color: #2f88fd;
+}
+
+.medica-appointment-card {
+    background-color: #1063cf;
+    padding-bottom: 30px;
+}
+
+.medica-contact-card {
+    background-color: #093f86;
+}
+
+.latest-news-widget-area,
+.medica-catagories-card {
+    background-color: transparent;
+}
+
+.medica-emergency-card h5,
+.medica-doctors-card h5,
+.medica-appointment-card h5,
+.medica-department-card h5,
+.medica-contact-card h5 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.latest-news-widget-area h5,
+.medica-catagories-card h5 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.medica-emergency-card h4 {
+    color: #093c80;
+    margin-bottom: 30px;
+}
+
+.medica-emergency-card p,
+.medica-doctors-card p {
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+.medica-emergency-card > a,
+.medica-doctors-card > a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.medica-appointment-card .form-control {
+    width: 100%;
+    height: 40px;
+    background-color: #2f88fd;
+    border: none;
+    border-radius: 0;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.medica-appointment-card .form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.medica-appointment-card .form-control::-moz-placeholder {
+    color: #fff;
+}
+
+.medica-appointment-card .form-control:-ms-input-placeholder {
+    color: #fff;
+}
+
+.medica-appointment-card .form-control::placeholder {
+    color: #fff;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 40px;
+}
+
+.medica-appointment-card select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.department-menu li a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #7badee;
+}
+
+.department-menu li a:hover,
+.department-menu li a:focus {
+    padding-left: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.medica-contact-card .single-contact-info {
+    margin-bottom: 30px;
+}
+
+.medica-contact-card .contact-meta p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.catagories-menu li a {
+    display: block;
+    color: #7f7e7e;
+    padding: 15px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.catagories-menu li a:hover,
+.catagories-menu li a:focus {
+    padding-left: 20px;
+    border-bottom: 1px solid #2f88fd;
+    color: #2f88fd;
+}
+
+.department-menu li:last-child a,
+.catagories-menu li:last-child a {
+    border-bottom: none;
+}
+
+/* :: 6.0 About Us Area CSS */
+
+.medica-about-text h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.medica-about-text h2 span {
+    background-color: #2f88fd;
+    color: #fff;
+    padding: 2px;
+}
+
+.medica-about-text p:last-of-type {
+    margin-bottom: 40px;
+}
+
+.medica-about-text ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.medica-about-text ul li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    z-index: 1;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.medica-about-text ul li:before {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #2f88fd;
+    border-radius: 50%;
+    content: '';
+}
+
+.medica-about-thumbnail {
+    text-align: center;
+}
+
+/* :: 7.0 Service Area CSS */
+
+.medica-services-area {
+    position: relative;
+    z-index: 1;
+}
+
+.single-service-area {
+    margin-bottom: 80px;
+}
+
+.single-service-area img {
+    margin-bottom: 30px;
+}
+
+.single-service-area h5 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.single-service-area p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/* :: 8.0 Doctor Area CSS */
+
+.single-doctor-area {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 80px;
+}
+
+.doctor-meta {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.doctor-meta h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.doctor-meta h6 {
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.doctor-social-info a {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    color: #2f88fd;
+    border-radius: 50%;
+    border: 2px solid #2f88fd;
+    line-height: 29px;
+    font-size: 13px;
+    margin: 0 5px;
+}
+
+.doctor-social-info a:hover,
+.doctor-social-info a:focus {
+    color: #fff;
+    border-color: #2f88fd;
+    background-color: #2f88fd;
+}
+
+.doctor-social-info {
+    margin-top: 20px;
+}
+
+.doctor-thumbnail {
+    text-align: center;
+}
+
+/* :: 9.0 Testimonials Area CSS */
+
+.medica-testimonials-area {
+    position: relative;
+    z-index: 1;
+}
+
+.single-testimonial-slide {
+    text-align: center;
+}
+
+.single-testimonial-slide .col-12 > h6 {
+    color: #fff;
+    line-height: 2.2;
+    margin-bottom: 40px;
+}
+
+.testimonial-given-author-info img {
+    width: 78px !important;
+    height: 78px !important;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.testimonial-given-author-info > h6 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.testimonial-given-author-info > p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* :: 10.0 Call to Action Area CSS */
+
+.medica-call-to-action {
+    position: relative;
+    z-index: 1;
+}
+
+.single-cool-fact {
+    padding-bottom: 50px;
+}
+
+.single-cool-fact .counter-area h2 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.single-cool-fact .counter-area h6 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/* :: 11.0 Book an appoinment Area CSS */
+
+.medica-book-an-appointment-area .medica-appointment-card {
+    padding: 50px 30px;
+}
+
+.medica-appointment-card .form-group {
+    position: relative;
+    z-index: 1;
+}
+
+.medica-appointment-card .form-group > i {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    line-height: 40px;
+    top: 0;
+    right: 10px;
+    color: #fff;
+}
+
+/* :: 12.0 Footer Area CSS */
+
+.footer-logo,
+.widget-title {
+    margin-bottom: 60px;
+}
+
+.widget-title {
+    margin-top: 40px;
+}
+
+.widget-title h6 {
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-widget-area p {
+    color: #fff;
+}
+
+.footer-social-info a {
+    font-size: 12px;
+    margin-right: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+.widget-post-content > a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.widget-single-blog-post {
+    margin-bottom: 20px;
+}
+
+.widget-post-content > p {
+    margin-bottom: 0;
+    font-size: 11px;
+    color: #2f88fd;
+}
+
+.footer-widget-area ul > li > a {
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.footer-widget-area ul > li > a:hover,
+.footer-widget-area ul > li > a:focus,
+.footer-social-info a:hover,
+.footer-social-info a:focus {
+    color: #2f88fd;
+}
+
+.bottom-footer-area {
+    background-color: #0b131e;
+    width: 100%;
+    height: 55px;
+    position: relative;
+    z-index: 1;
+}
+
+.copywrite-text p {
+    margin: 0;
+    color: #404b5a;
+}
+
+.copywrite-text p a {
+    color: #2f88fd;
+    font-weight: 600;
+}
+
+.footer-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.footer-menu li a {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #404b5a;
+    padding: 0 15px;
+}
+
+.footer-menu li a:hover,
+.footer-menu li a:focus {
+    color: #2f88fd;
+}
+
+/* :: 13.0 Breadcumb Area CSS */
+
+.breadcumb-area {
+    width: 100%;
+    height: 255px;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcumb-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item a,
+.breadcrumb-item {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+}
+
+.breadcrumb-item + .breadcrumb-item:before {
+    content: "|";
+    color: #fff;
+}
+
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* :: 14.0 CTA Area CSS */
+
+.cta-area {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content h2 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.cta-content h6 {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+/* :: 15.0 Department Area CSS */
+
+.single-department-area {
+    margin-bottom: 100px;
+}
+
+.single-department-area > img {
+    margin-bottom: 20px;
+    height: 50px;
+    width: auto;
+}
+
+.single-department-area > h6 {
+    font-weight: 600;
+    margin-bottom: 0;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.single-department-area:hover > h6,
+.single-department-area:focus > h6 {
+    color: #2f88fd;
+}
+
+/* :: 16.0 Services Area CSS */
+
+.single-service {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+}
+
+.single-service > img {
+    margin-bottom: 50px;
+}
+
+.single-service h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.single-service a {
+    color: #2f88fd;
+    display: block;
+    font-weight: 600;
+}
+
+.single-service a:hover,
+.single-service a:focus {
+    color: #7f7e7e;
+}
+
+/* :: 17.0 Blog Area CSS */
+
+.single-blog-area {
+    margin-bottom: 100px;
+}
+
+.single-blog-area,
+.single-blog-area .post-thumb {
+    position: relative;
+    z-index: 1;
+}
+
+.post-content {
+    margin-top: 40px;
+}
+
+.post-content h4 {
+    font-weight: 600;
+}
+
+.post-date > a {
+    width: 125px;
+    height: 38px;
+    background-color: #2f88fd;
+    display: block;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 3;
+}
+
+.post-content > p {
+    margin-bottom: 20px;
+}
+
+.post-meta p {
+    padding-right: 5px;
+}
+
+.post-meta p,
+.post-meta p a {
+    font-size: 12px;
+}
+
+.post-content > a,
+.post-meta p a {
+    color: #2f88fd;
+}
+
+.post-meta p:last-of-type a,
+.post-content > a:hover,
+.post-content > a:focus,
+.latest-news-widget-area .widget-post-content a {
+    color: #7f7e7e;
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.pagination .page-link {
+    padding: 0;
+    margin-left: 2px;
+    line-height: 31px;
+    color: #262626;
+    background-color: #fff;
+    border: 2px solid transparent;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+.pagination .active .page-link,
+.pagination .page-link:hover,
+.pagination .page-link:focus {
+    color: #2f88fd;
+    background-color: #fff;
+    border: 2px solid #2f88fd;
+}
+
+/* :: 18.0 Contact Area CSS */
+
+.form-control {
+    background-color: #e3e9f0;
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+    border: none;
+    font-size: 12px;
+    font-style: italic;
+    color: #a6a6a6;
+    margin-bottom: 25px;
+    font-weight: 300;
+    padding: 10px 20px;
+}
+
+.form-control:focus {
+    background-color: inherit;
+}
+
+textarea.form-control {
+    height: 240px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #a6a6a6;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.form-control::-moz-placeholder {
+    color: #a6a6a6;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.form-control:-ms-input-placeholder {
+    color: #a6a6a6;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.form-control::placeholder {
+    color: #a6a6a6;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.googleMap {
+    width: 100%;
+    height: 600px;
+}
+
+/* :: 19.0 Shortcode Area CSS */
+
+.elements-title h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+/* Accordians */
+
+.panel {
+    background-color: #fff;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 0 0 transparent;
+    margin-bottom: 15px;
+}
+
+.single-accordion:last-of-type {
+    margin-bottom: 0px;
+}
+
+.single-accordion h6 a {
+    background-color: #1d1d1d;
+    border-radius: 0;
+    color: #fff;
+    display: block;
+    margin: 0;
+    padding: 10px 60px 10px 20px;
+    position: relative;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.single-accordion h6 a.collapsed {
+    background-color: #2f88fd;
+    color: #fff;
+}
+
+.single-accordion h6 a span {
+    font-size: 10px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 14px;
+}
+
+.single-accordion h6 a.collapsed span.accor-close {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+span.accor-open {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+.single-accordion h6 a.collapsed span.accor-open {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+
+.single-accordion h6 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.single-accordion .accordion-content {
+    border-top: 0 solid transparent;
+    box-shadow: none;
+}
+
+.single-accordion .accordion-content p {
+    padding: 20px 15px 5px;
+    margin-bottom: 0;
+}
+
+/* barfiller */
+
+.single_progress_bar {
+    margin-bottom: 20px;
+}
+
+.single_progress_bar:last-of-type {
+    margin-bottom: 0;
+}
+
+.barfiller {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background-color: #2f88fd;
+    z-index: 1;
+}
+
+.barfiller .tipWrap {
+    display: none;
+}
+
+.barfiller .tip {
+    margin-top: -16px;
+    font-size: 14px;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+    background-color: #2f88fd;
+    color: #fff;
+    width: 60px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.single_progress_bar p {
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #262626;
+    font-weight: 600;
+}
+
+.single-pie-bar h6 {
+    margin-bottom: 0;
+}
+
+/* Cool Facts */
+
+.counter-area h2 {
+    font-size: 36px;
+}
+
+.counter-area h6 {
+    margin-bottom: 0;
+    color: #838383;
+}
+
+.single-cool-fact-area h2 {
+    color: #2f88fd;
+    font-size: 36px;
+}
+
+.counter-area h6 {
+    color: #262626;
+    margin-bottom: 0;
+}
+
+.single-icon-box img {
+    margin-bottom: 15px;
+}

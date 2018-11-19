@@ -1,0 +1,84 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+/*====================================================
+                   TESTIMONIALS-P1
+======================================================*/
+ 
+
+.testimonials-p1-bg {
+    background-image: url(../img/image-2.jpg);
+    background-repeat: none;
+}
+ 
+#testimonials-p1 .testimonials-p1-pos{
+	/*height: 600px;*/
+	width: 100%;
+	padding:100px 0;
+}
+
+.testimonial img {
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.testimonial blockquote {
+    border: 0;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 20px 35px;
+    position: relative;
+}
+
+.testimonial p {
+    color: #fff;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+    font-size: 50px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.testimonial blockquote::before {
+    content: "\201C";
+    top: 0;
+    left: 10px;
+}
+
+.testimonial blockquote::after {
+    content: "\201D";
+    bottom: 0;
+    right: 50px;
+}
+
+.testimonial-author p {
+    color: #fff;
+    font-size: 17px;
+}
+
+.testimonial-author p strong {
+    display: block;
+}
+
+
+/*====================================================
+                   TESTIMONIALS-P2
+======================================================*/
+.testimonials-p2{
+    padding: 0px 0 100px 0;
+}
+
+.testimonials-p2 .client-cont{
+    margin-top: 100px;
+    border-bottom: 5px solid #2196F3;
+}

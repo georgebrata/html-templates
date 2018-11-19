@@ -1,0 +1,14 @@
+<!doctype html>
+{% assign min-ext = '' %}{% if jekyll.environment == 'production' %}{% assign min-ext = '.min' %}{% endif %}
+<html lang="en" dir="{% if page.rtl %}rtl{% else %}ltr{% endif %}">
+<head>
+	{% include head.html %}
+</head>
+<body class="{{ page.body-class }}">
+
+<div class="page">
+	{{ content }}
+</div>
+
+</body>
+</html>

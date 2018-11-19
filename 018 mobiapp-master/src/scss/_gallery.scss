@@ -1,0 +1,19 @@
+// Styling for the gallery section
+
+/*====================================================
+                  		GALLERY
+======================================================*/
+
+.gallery {
+	background: $gray-200;
+	.gallery-img {
+		margin: 0 10px;
+
+		img {
+			margin-bottom: 10px;
+			box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+			border-radius: 7px;
+			height:500px;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+/*     Pagination     */
+
+.pagination {
+  > li {
+    > a, &:first-child > a, &:last-child > a, > span, &:first-child > span, &:last-child > span {
+      border-radius: 100px !important;
+      margin: 0 2px;
+      color: #777777;
+      border-color: #ddd;
+    }
+  }
+  &.pg-primary > li.active {
+    > a, &:first-child > a, &:last-child > a, > span, &:first-child > span, &:last-child > span {
+      background: $primary-color;
+      border-color: $primary-color;
+      color: $white-color;
+    }
+  }
+  &.pg-info > li.active {
+    > a, &:first-child > a, &:last-child > a, > span, &:first-child > span, &:last-child > span {
+      background: $info-color;
+      border-color: $info-color;
+      color: $white-color;
+    }
+  }
+  &.pg-success > li.active {
+    > a, &:first-child > a, &:last-child > a, > span, &:first-child > span, &:last-child > span {
+      background: $success-color;
+      border-color: $success-color;
+      color: $white-color;
+    }
+  }
+  &.pg-warning > li.active {
+    > a, &:first-child > a, &:last-child > a, > span, &:first-child > span, &:last-child > span {
+      background: $warning-color;
+      border-color: $warning-color;
+      color: $white-color;
+    }
+  }
+  &.pg-danger > li.active {
+    > a, &:first-child > a, &:last-child > a, > span, &:first-child > span, &:last-child > span {
+      background: $danger-color;
+      border-color: $danger-color;
+      color: $white-color;
+    }
+  }
+  &.pg-default > li.active {
+    > a, &:first-child > a, &:last-child > a, > span, &:first-child > span, &:last-child > span {
+      background: $default-color;
+      border-color: $default-color;
+      color: $white-color;
+    }
+  }
+}

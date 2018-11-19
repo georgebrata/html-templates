@@ -1,0 +1,189 @@
+/* Border Button Area css
+============================================================================================ */
+.read_btn{
+    height: 46px;
+    width: 160px;
+    line-height: 48px;
+    color: $dip;
+    font-family: $pop;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #744fff 0%, #21d397 51%, #744fff 100%);
+    text-align: center;
+    position: relative;
+    background-size: 200% auto;
+    z-index: 2;
+    display: block;
+    transition: all 400ms ease-out;
+    &:before{
+        content: "";
+        background: #f7f7f7;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        width: 98%;
+        height: 42px;
+        z-index: -1;
+        @include transition;
+    }
+    &:hover{
+        background-position: right center;
+        color: $dip;
+    }
+}
+
+.tp_btn{
+    height: 46px;
+    width: 165px;
+    text-align: center;
+    color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-image: -moz-linear-gradient( 180deg, rgb(32,212,151) 0%, rgb(116,79,255) 100%);
+    border-image: -webkit-linear-gradient( 180deg, rgb(32,212,151) 0%, rgb(116,79,255) 100%);
+    border-image: -ms-linear-gradient( 180deg, rgb(32,212,151) 0%, rgb(116,79,255) 100%);
+    border-image-slice: 1;
+    display: block;
+    line-height: 42px;
+    transition: all 400ms ease-out;
+    font-size: 13px;
+    font-family: $pop;
+    font-weight: 600;
+    position: relative;
+    z-index: 3;
+    margin: auto;
+    &:after{
+        content: "";
+        height: 46px;
+        width: 165px;
+        position: absolute;
+        left: -2px;
+        top: -2px;
+        border-width: 2px;
+        border-style: solid;
+        border-image: -moz-linear-gradient( 180deg, rgb(116,79,255) 0%, rgb(32,212,151) 100%);
+        border-image: -webkit-linear-gradient( 180deg, rgb(116,79,255) 0%, rgb(32,212,151) 100%);
+        border-image: -ms-linear-gradient( 180deg, rgb(116,79,255) 0%, rgb(32,212,151) 100%);
+        border-image-slice: 1;
+        transition: all 400ms ease-out;
+        z-index: -1;
+        opacity: 0;
+    }
+    &:hover{
+        color: #fff;
+        &:after{
+            opacity: 1;
+        }
+    }
+}
+.bg_btn{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: $pop;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    width: 160px;
+    height: 46px;
+    line-height: 46px; 
+    background-image: linear-gradient(to right, #744fff 0%, #21d397 51%, #744fff 100%);
+    transition: all 400ms ease-out !important;
+    background-size: 200% auto;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    &:hover{
+        background-position: right center;
+        color: #fff;
+    }
+    &:focus{
+        background-image: linear-gradient(to right, #744fff 0%, #21d397 51%, #744fff 100%) !important;
+        transition: all 400ms ease-out !important;
+        background-size: 200% auto;
+    }
+}
+
+.more_btn{
+    color: #2bc0a4;
+    font-size: 14px;
+    font-family: $pop;
+    text-decoration: underline;
+    line-height: 26px;
+    @include transition;
+    &:hover{
+        text-decoration: none;
+        color: #2bc0a4;
+    }
+}
+
+.submit_btn{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: $pop;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding: 0px 10px;
+    background-image: linear-gradient(to right, #744fff 0%, #21d397 51%, #744fff 100%);
+    transition: all 400ms ease-out;
+    background-size: 200% auto;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover{
+        background-position: right center;
+        color: #fff;
+    }
+    &:focus{
+        background-image: linear-gradient(to right, #744fff 0%, #21d397 51%, #744fff 100%) !important;
+        transition: all 400ms ease-out;
+        background-size: 200% auto;
+    }
+}
+
+.submit_btn2{
+    height: 46px;
+    width: 165px;
+    line-height: 46px;
+    color: $dip;
+    font-family: $pop;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #744fff 0%, #21d397 51%, #744fff 100%);
+    text-align: center;
+    position: relative;
+    background-size: 200% auto;
+    z-index: 2;
+    display: block;
+    transition: all 400ms ease-out;
+    padding: 0px;
+    border-radius: 2px;
+    outline: none !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    &:before{
+        content: "";
+        background: #f7f7f7;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        width: 97.5%;
+        height: 40px;
+        z-index: -1;
+        @include transition;
+    }
+    &:hover{
+        background-position: right center;
+        color: $dip;
+    }
+}
+
+/* End Border Button Area css
+============================================================================================ */

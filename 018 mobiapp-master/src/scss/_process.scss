@@ -1,0 +1,38 @@
+// Styling for the process section
+
+/*====================================================
+                      PROCESS
+======================================================*/
+
+.our-process {
+   
+      background: #f0f0f0;
+      
+      .servie-img {
+        margin:0 auto;
+        margin-bottom: 50px;
+      }
+
+      .service-desc-cont {
+        text-align: center;
+        margin-top: 50px;
+
+        i {
+          font-size: 25px;
+          color:$primary-col;
+          margin-bottom: 10px;
+        }
+
+        h5 {
+          font-size: 18px;
+          text-transform: none;
+          color:$gray-600;
+        }
+
+        p {
+          color:$gray-500;
+        }
+
+      } 
+
+  }

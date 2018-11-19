@@ -1,0 +1,93 @@
+.post {
+	margin: 0 0 80px;
+}
+
+.post-title {
+	line-height: 1.4;
+	font-size: 22px;
+	color: #111;
+	margin: 0;
+}
+
+.post-header {
+	margin: 0 0 15px;
+}
+
+.post-meta {
+	font-size: 11px;
+	color: #aaa;
+}
+
+.post-entry {
+	border-top: 1px dotted #c2c2c2;
+	padding-top: 20px;
+	margin-top: 10px;
+}
+
+.post-images-slider {
+	position: relative;
+}
+
+.post-images-slider .flex-control-nav {
+	bottom: 0;
+}
+
+.post-thumbnail,
+.post-images-slider,
+.post-video {
+	margin: 0 0 20px;
+}
+
+.post-quote {
+	background: #f5f5f5;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Post columns */
+
+.post-columns .post {
+	margin: 0 0 60px;
+}
+
+.post-columns .post-header {
+	margin: 0 0 10px;
+}
+
+.post-columns .post-title {
+	line-height: 1.8;
+	font-size: 14px;
+}
+
+.post-columns .post-entry {
+	padding: 10px 0 0;
+	margin: 0 0 10px;
+}
+
+.post-columns.wo-border .post-entry {
+	border: 0;
+	padding: 0;
+}
+
+.post-columns .post-entry p:last-child {
+	margin: 0;
+}
+
+.more-link:after {
+	content: "\00BB";
+	color: #666666;
+	padding-left: 5px;
+}
+
+.pagination a {
+	border: 1px solid #eaeaea;
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	color: #999;
+	padding: 4px 12px;
+}
+
+.pagination a.active {
+	border-color: #CACACA;
+}

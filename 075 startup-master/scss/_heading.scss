@@ -1,0 +1,29 @@
+// Styling for the section heading 
+
+/*====================================================
+                    	heading
+======================================================*/
+
+section {
+	.heading {
+		margin-bottom: 50px;
+		h1 {
+			color:$gray-600;
+			span {
+				color:$primary-y;
+			}
+		}
+		
+		.bord-bot {
+			width: 80px;
+			margin:0 auto;
+			border-bottom: 7px solid $primary-b;
+		}
+
+		p {
+			margin: 10px auto;
+			color:$gray-500;
+			max-width: 600px;
+		}
+	}
+}

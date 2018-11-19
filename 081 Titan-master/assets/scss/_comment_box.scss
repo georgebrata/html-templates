@@ -1,0 +1,42 @@
+.comments,
+.comment-form {
+	margin: 80px 0 0;
+}
+
+.comments .comment-title,
+.comment-form .comment-form-title {
+	border-bottom: 1px dotted #c2c2c2;
+	font-size: 16px;
+	color: #111;
+	padding-bottom: 15px;
+	margin: 0 0 20px;
+}
+
+.comment-author {
+	font-size: 14px;
+	margin: 0 0 10px;
+}
+
+.comment-avatar {
+	width: 55px;
+	float: left;
+	margin-top: 10px;
+}
+
+.comment-avatar img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.comment-content {
+	padding-top: 5px;
+	margin-left: 75px;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+	.comment .comment {
+		margin-left: 75px;
+	}
+}

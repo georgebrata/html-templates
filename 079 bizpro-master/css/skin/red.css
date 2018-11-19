@@ -1,0 +1,31 @@
+/* =====================================
+Template Name: Mizan
+Author Name: Shakil Hossain
+Author URL: http://codeglim.com
+Description: Mizan is a complete One Page Business and Corporate HTML Template. You can use this template for your any business & corporate purpose.
+Version:	1.1
+========================================*/     
+#header .social a:hover,#service .single-service:hover i,#our-skill .info-list li i,#team .team-info h4 span,#portfolio .portfolio-head i,#portfolio  .text h4,#portfolio  .text h4 a,#portfolio.single .features li i,#blog .blog-content h2:hover a,#blog  .blog-content .meta span i,#blog .blog-content .btn,#blog .single-sidebar h2,#blog .category ul li:hover a,#blog .latest .post-info h4:hover a,#j-slider .animate-text .info,#footer .logo span,#footer .nav li:hover a,#footer .copyright p i,#header .logo a span,#portfolio  .text h4,.section-title h2,#j-slider .animate-text .typed-cursor,#breadcrumbs li + li::before{
+	color: #C0392B;
+}
+
+.section-title h2::before,#j-slider .slide-button .button.primary,#header .nav li .sub-menu,#header .nav li .sub-menu,#j-slider .slide-button .button:hover,#header.sticky,#j-slider .slide-button .button:before,#j-slider .owl-nav div:hover,#j-slider .owl-dots .owl-dot:hover span,#j-slider .owl-dots .owl-dot.active span,#service .single-service:hover h2::before,#about-us .tabs-main .nav-tabs li.active a,#about-us .tabs-main .nav-tabs li:hover a,#about-us .single-tab i,#our-skill .single-skill .progress-bar,#why-choose .why-image .video a,#why-choose .single-choose,#team .team-social li a,#testimonial .testimonial-info h6:before,#testimonial .owl-nav div:hover,#portfolio .portfolio-head:before,#portfolio .owl-theme .owl-nav div,#portfolio .pagination li:hover a,#portfolio .pagination li.active a,#portfolio.single .features h2::before,#portfolio.single .portfolio-des .button,#statics .static-single,#blog  .single-blog .link,#blog .owl-theme .owl-nav div,#blog .pagination li:hover a,#blog .pagination li.active a,#blog .single-comments .body,#blog .form .search input[type="submit"],#blog .tags ul li a:hover,#contact .form-group .button,#location .single-address.active,#newslatter .newslatter form button,#mail .button,#footer .social li:hover a,#footer .social li.active a,#scrollUp,.k-bubble-1,
+.k-bubble-2,#j-slider .animate-text .slide-text .button,#portfolio.single .website .button,#blog .blog-comments h2::before,.mfp-counter,#j-slider .slide-text h1:before{
+	background:#C0392B;
+} 
+#about-us .about-img img,#about-us .single-tab,#our-skill .info-list li i,#why-choose .why-image:hover,#statics .static-image:hover,#contact .form-group input:hover,
+#contact .form-group input:focus,#contact .form-group textarea:hover,#contact .form-group textarea:focus{
+	border-color:#C0392B;
+}
+
+#our-skill .single-skill .progress-bar span::before{
+	border-left-color:#C0392B
+}
+
+#blog .single-comments .body::before{
+	border-right-color:#C0392B;
+}
+
+#footer:before{
+	border-bottom-color:#C0392B;
+}

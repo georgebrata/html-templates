@@ -1,0 +1,52 @@
+--------------------------------------------
+Resources Credits : 
+--------------------------------------------
+
+Bootstrap :
+	Website URL : http://getbootstrap.com/
+	License : The MIT License
+	License URL : https://github.com/twbs/bootstrap/blob/master/LICENSE
+
+HTML5 Shiv :
+	Website URL : https://github.com/aFarkas/html5shiv
+	License : The MIT License
+	License URL : https://github.com/aFarkas/html5shiv/blob/master/MIT%20and%20GPL2%20licenses.md
+
+
+Slick SLider :
+	Website URL : http://kenwheeler.github.io/slick/
+	License : The MIT License 
+	License URL : https://github.com/kenwheeler/slick/blob/master/LICENSE
+
+Ajax Contact Form :
+	Website URL : https://github.com/matt-west/ajax-contact-form
+	License : MIT 
+	License URL : https://github.com/matt-west/ajax-contact-form/blob/master/LICENSE.txt
+
+
+Font Awesome :
+	Website URL : http://fortawesome.github.io/Font-Awesome/
+	License : MIT 
+	License URL : http://fortawesome.github.io/Font-Awesome/license/
+
+Simple Animated Counter :
+	Website URL : https://codepen.io/dmcreis/pen/VLLYPo
+	License :  MIT
+	License URL : https://opensource.org/licenses/MIT
+
+
+
+Google Fonts : 
+
+	Open Sans Font:
+	Website URL : https://fonts.google.com/specimen/Open+Sans
+	License : Apache License, version 2.0
+	License URL : http://www.apache.org/licenses/LICENSE-2.0.html
+
+ 	Lato Font:
+	Website URL : https://fonts.google.com/specimen/Lato
+	License : SIL Open Font License, version 1.1
+	License URL : http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web		
+	
+
+

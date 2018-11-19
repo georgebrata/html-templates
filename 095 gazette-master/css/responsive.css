@@ -1,0 +1,237 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-stock-report .stock-values span {
+        padding-right: 10px;
+    }
+    .single-stock-report {
+        margin-right: 10px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide .single-blog-post-content {
+        top: 30px;
+        left: 30px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide {
+        height: 450px;
+    }
+    .dont-miss-post-thumb {
+        margin-right: 15px;
+    }
+    .single-blog-post-slide h3 a,
+    .editorial-post-content h2 a,
+    .gazette-welcome-post h2 {
+        font-size: 36px;
+    }
+    .comment_area ol li ol li .comment-wrapper {
+        margin-left: 80px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-stock-report .stock-values span {
+        padding-right: 5px;
+        font-size: 10px;
+    }
+    .single-stock-report {
+        margin-right: 5px;
+    }
+    #breakingNewsTicker.ticker ul li a {
+        font-size: 12px;
+    }
+    .navbar-toggler {
+        padding: 0;
+        font-size: 20px;
+        background-color: #ff0303;
+        border: none;
+        border-radius: 6px;
+        width: 120px;
+        height: 35px;
+        color: #fff;
+        line-height: 28px;
+        margin: 10px 0;
+    }
+    #gazetteMenu {
+        padding: 30px;
+        background-color: #f4f2f8;
+        z-index: 1002;
+    }
+    .header-search-form form input {
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide .single-blog-post-content {
+        top: 30px;
+        left: 30px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide {
+        height: 420px;
+    }
+    .todays-post-thumb,
+    .dont-miss-post-thumb {
+        margin-right: 15px;
+    }
+    .single-post-title-content h2,
+    .editorial-post-content h2 a,
+    .single-blog-post-slide h3 a,
+    .gazette-welcome-post h2 {
+        font-size: 30px;
+    }
+    .comment-author {
+        margin-right: 10px;
+    }
+    .comment_area ol li ol li .comment-wrapper {
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .top-header {
+        height: auto;
+        padding: 20px 0;
+    }
+    .single-stock-report .stock-values span {
+        padding-right: 2px;
+        font-size: 9px;
+    }
+    .single-stock-report {
+        margin-right: 2px;
+    }
+    #breakingNewsTicker.ticker ul li a {
+        font-size: 10px;
+    }
+    .single-stock-report .stock-index h4 {
+        font-size: 20px;
+    }
+    .stock-news-area {
+        margin-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        padding-top: 15px;
+    }
+    .navbar-toggler {
+        padding: 0;
+        font-size: 20px;
+        background-color: #ff0303;
+        border: none;
+        border-radius: 6px;
+        width: 120px;
+        height: 35px;
+        color: #fff;
+        line-height: 28px;
+        margin: 10px 0;
+    }
+    #gazetteMenu {
+        padding: 30px;
+        background-color: #f4f2f8;
+        z-index: 1002;
+    }
+    .header-search-form form input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo-area a img {
+        height: 20px;
+        width: auto;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide .single-blog-post-content {
+        top: 20px;
+        left: 20px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide {
+        height: 380px;
+    }
+    .single-blog-post-slide h3 a {
+        font-size: 24px;
+    }
+    .todays-post-thumb,
+    .dont-miss-post-thumb {
+        margin-right: 15px;
+    }
+    .single-post-title-content h2,
+    .editorial-post-content h2 a,
+    .single-blog-post-slide h3 a,
+    .gazette-welcome-post h2 {
+        font-size: 24px;
+    }
+    .gazette-welcome-post p {
+        font-size: 16px;
+    }
+    .post-share-btn-group,
+    .editorial-post-content {
+        margin-top: 30px;
+    }
+    .todays-post-thumb {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .gazette-heading h4 {
+        font-size: 20px;
+    }
+    .todays-post-content {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .catagory-welcome-post-area .col-12:last-child .gazette-welcome-post .blog-post-thumbnail,
+    .catagory-welcome-post-area .col-12:last-child .gazette-welcome-post .welcome-post-contents {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .catagory-welcome-post-area .col-12:last-child .gazette-welcome-post .welcome-post-contents {
+        margin-left: 0 !important;
+        margin-top: 30px;
+    }
+    .page-item .page-link {
+        margin-right: 10px;
+    }
+    .comment-author {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .comment-wrapper {
+        margin-bottom: 30px;
+    }
+    .comment_area ol li ol li .comment-wrapper {
+        margin-left: 30px;
+    }
+    .gazette-contact-area form {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .single-stock-report .stock-values span {
+        padding-right: 5px;
+        font-size: 10px;
+    }
+    .single-stock-report {
+        margin-right: 5px;
+    }
+    #breakingNewsTicker.ticker ul li a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .single-stock-report .stock-values span {
+        padding-right: 15px;
+        font-size: 10px;
+    }
+    .single-stock-report {
+        margin-right: 15px;
+    }
+    #breakingNewsTicker.ticker ul li a {
+        font-size: 12px;
+    }
+    .welcome-blog-post-slide .single-blog-post-slide .single-blog-post-content {
+        top: 30px;
+        left: 30px;
+    }
+    .post-share-btn-group {
+        margin-top: 0;
+    }
+}

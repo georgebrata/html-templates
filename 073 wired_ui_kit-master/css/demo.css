@@ -1,0 +1,33 @@
+/* 
+    Created on : Jul 22, 2017, 12:38:02 PM
+    Author     : Atta-Ur-Rehman Shah (http://attacomsian.com)
+*/
+.btn-twitter, .btn-facebook, .btn-google, .btn-linkedin, .btn-github{
+    margin-right: 10px;
+    font-size: 19px;
+}
+.btn-twitter, .btn-twitter:hover{
+    color:#00aced;
+}
+.btn-facebook, .btn-facebook:hover{
+    color: #3b5998;
+}
+.btn-google, .btn-google:hover{
+    color: #dd4b39;
+}
+.btn-linkedin, .btn-linkedin:hover{
+    color: #007bb6;
+}
+.btn-github, .btn-github:hover{
+    color: #000000;
+}
+.demo-section.hero-header{
+    height: 80vh;
+    background-image: url(../img/bg1.jpg);
+}
+.demo-section .brand{
+    margin-top: 20vh;
+}
+.img-team{
+    max-width: 150px;
+}

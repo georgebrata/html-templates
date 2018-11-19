@@ -1,0 +1,35 @@
+/*font Variables*/
+$pop: 'Poppins', sans-serif;
+$play: 'Playfair Display', serif;
+/*Color Variables*/
+
+$baseColor: #2bc0a4;
+$dip: #232d37;
+//$gray: #757575;
+$pfont: #51545f;
+
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1,.col-lg-offset-right-1{
+    margin-right: 8.33333333%;
+}
+// Font family link
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Poppins:300,400,500,600,700,800,900');
+
+//@font-face {
+//    font-family: "ralH";
+//    src: url(../fonts/theme-font/Arial.ttf.woff);
+//}

@@ -1,0 +1,60 @@
+
+
+/*=======================================
+Template Design By MarkUps	
+Author URI : http://www.markups.io/
+========================================*/
+
+
+.mu-service-icon-box,
+.mu-team-social-info a:hover,
+.mu-team-social-info a:focus,
+.mu-testimonial-slide .slick-dots li button::before,
+.mu-testimonial-slide .slick-dots li.slick-active button::before,
+.mu-footer-area a:hover,
+.mu-footer-area a:focus,
+.mu-hero-left .mu-primary-btn,
+.mu-hero-left .mu-primary-btn:hover,
+.mu-hero-left .mu-primary-btn:focus,
+.mu-single-counter i,
+.counter-value {
+	color: #ff871c;
+}
+
+.mu-send-msg-btn:hover,
+.mu-send-msg-btn:focus,
+.mu-book-overview-icon-box,
+.mu-social-media a, 
+.mu-social-media a:hover,
+.mu-social-media a:focus,
+.mu-order-btn:hover,
+.mu-order-btn:focus {
+	border: 1px solid #ff871c;
+	color: #ff871c;
+}
+
+.mu-send-msg-btn {
+	border: 1px solid #ff871c;
+	background-color: #ff871c;
+}
+
+
+#mu-hero,
+.mu-testimonial-slide .slick-dots li button:hover,
+.mu-testimonial-slide .slick-dots li button:focus,
+.mu-testimonial-slide .slick-dots li.slick-active button,
+.mu-header-dot,
+.mu-author-social a,
+.mu-pricing-content .mu-popular-price-tag,
+#mu-video-review:before  {
+	background-color: #ff871c;
+}
+
+.mu-contact-form .form-control:focus,
+.mu-testimonial-slide .slick-dots li button:hover,
+.mu-testimonial-slide .slick-dots li button:focus,
+.mu-testimonial-slide .slick-dots li.slick-active button{
+	border: 1px solid #ff871c;    
+} 
+
+

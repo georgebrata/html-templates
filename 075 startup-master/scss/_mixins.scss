@@ -1,0 +1,18 @@
+// Mixins
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Font Mixins
+@mixin text-font {
+  font-family: 'Ubuntu', sans-serif;
+} 
+
+@mixin text-roboto-font {
+  font-family: 'Roboto', sans-serif;
+}
+ 

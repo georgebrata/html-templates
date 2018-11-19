@@ -1,0 +1,117 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+
+/* General CSS */
+
+.btn-white {
+    border-color: #2196f3;
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color: transparent;
+    color: #2196f3;
+    cursor: pointer;
+}
+
+.btn-green {
+    border-color: #2196f3;
+    color: #2196f3;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*====================================================
+                   COMMING-SOON-2
+======================================================*/
+
+.bg-1 {
+    background-image: url("../img/comming-soon.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-area {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-area h1 {
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 19px;
+    margin-top: 30px;
+}
+
+.hero-area p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.hero-area .counter {
+    /*background: rgba(255, 255, 255, 0.2);*/
+    padding: 18px;
+}
+
+.hero-area .counter ul li {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    display: inline-block;
+    line-height: 25px;
+    padding: 25px 28px 20px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.hero-area .counter ul li span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero-area .counter ul li .digit {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 50px;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+}
+
+.btn-general {
+    background-color: transparent;
+    text-align: center;
+    border-width: 1px;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 10px 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+

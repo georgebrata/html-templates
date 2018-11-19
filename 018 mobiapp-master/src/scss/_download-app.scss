@@ -1,0 +1,51 @@
+// Styling for the download section
+
+/*====================================================
+                        DOWNLOAD
+======================================================*/
+
+    .download-app {
+        background: $primary-col;
+
+        h1, p {
+            color:$white;
+        }
+
+        .apple {
+            text-align: right;
+            img {
+                height: 63px;
+            }
+        } 
+
+        .android {
+            text-align: left;
+            img {
+                height: 63px;
+            }
+        }
+        
+        @media (max-width:767px) {
+           .apple {
+                text-align: center;
+                img {
+                    height: 63px;
+                    margin-bottom: 30px;
+                }
+            } 
+
+            .android {
+                text-align: center;
+                img {
+                    height: 63px;
+                }
+            }   
+        }
+
+        .device-container {
+            width: 300px;
+            max-height: 350px;
+            overflow: hidden;
+            margin:0 auto;
+        }
+    }

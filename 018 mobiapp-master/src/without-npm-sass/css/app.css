@@ -1,0 +1,670 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+/*====================================================
+                      GLOBAL STYLE
+======================================================*/
+
+    body {
+        overflow-x: hidden;
+        font-family: 'Lato', sans-serif;
+    }
+
+    p {
+        line-height: 1.75;
+    }
+
+    a {
+        color: #37dbf5;
+    }
+
+    a:hover {
+        color: #0cceed;
+    }
+
+    .text-primary {
+        color: #37dbf5 !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+    }
+
+    section {
+        padding: 100px 0;
+    }
+
+    section h2.section-heading {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    section h3.section-subheading {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 75px;
+        text-transform: none;
+        font-family: 'Lato', sans-serif;
+    }
+
+    @media (min-width: 768px) {
+        section {
+            padding: 150px 0;
+        }
+    }
+
+    .btn {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+    }
+
+    .btn-xl {
+        font-size: 18px;
+        padding: 20px 40px;
+    }
+
+    .btn-primary {
+        background-color: #37dbf5;
+        border-color: #37dbf5;
+    }
+
+    .btn-primary:active,
+    .btn-primary:focus,
+    .btn-primary:hover {
+        background-color: #13d4f3 !important;
+        border-color: #13d4f3 !important;
+        color: white;
+    }
+
+    .btn-primary:active,
+    .btn-primary:focus {
+        box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+    }
+
+    ::-moz-selection {
+        background: #37dbf5;
+        text-shadow: none;
+    }
+
+    ::selection {
+        background: #37dbf5;
+        text-shadow: none;
+    }
+
+    img::selection {
+        background: transparent;
+    }
+
+    img::-moz-selection {
+        background: transparent;
+    }
+
+    .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url("../img/loading.gif") 50% 50% no-repeat #f9f9f9;
+        opacity: .9;
+    }
+
+
+/*====================================================
+                  BUTTON (Generic)
+======================================================*/
+
+    .btn-general {
+        background-color: transparent;
+        text-align: center;
+        border-width: 1px;
+        font-size: 16px;
+        padding: 10px 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .btn-white {
+        border-color: #37dbf5;
+        background-color: #37dbf5;
+        color: #fff;
+    }
+
+    .btn-white:hover,
+    .btn-white:focus {
+        background-color: transparent;
+        color: #37dbf5;
+        cursor: pointer;
+    }
+
+    .btn-greenish-blue {
+        border-color: #37dbf5;
+        color: #37dbf5;
+    }
+
+    .btn-greenish-blue:hover,
+    .btn-greenish-blue:focus {
+        background-color: #37dbf5;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .heading-border {
+        width: 100px;
+        height: 5px;
+        background-color: #37dbf5;
+        margin: 0 auto 20px auto;
+    }
+
+    .heading-border-light {
+        width: 30px;
+        height: 5px;
+        background-color: #37dbf5;
+        margin: 0 0 20px 0;
+    }
+
+
+/*====================================================
+                      NAVBAR
+======================================================*/
+
+    #mainNav {
+        background-color: #212529;
+    }
+
+    #mainNav .navbar-toggler {
+        font-size: 12px;
+        right: 0;
+        padding: 13px;
+        text-transform: uppercase;
+        color: white;
+        border: 0;
+        background-color: #37dbf5;
+        font-family: 'Lato', sans-serif;
+    }
+
+    #mainNav .navbar-brand img {
+        max-height: 45px;
+    }
+
+    #mainNav .navbar-nav .nav-item .nav-link {
+        font-size: 90%;
+        font-weight: 400;
+        padding: 0.75em 0;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    @media (min-width: 992px) {
+        #mainNav {
+            padding-bottom: 25px;
+            -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+            -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+            transition: padding-top 0.3s, padding-bottom 0.3s;
+            border: none;
+            background-color: transparent;
+        }
+        #mainNav .navbar-brand {
+            font-size: 2.15em;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        #mainNav .navbar-nav .nav-item .nav-link {
+            padding: 1.1em 1em !important;
+            font-family: 'Roboto', sans-serif;
+        }
+        #mainNav.navbar-shrink {
+            padding-top: 0;
+            padding-bottom: 0;
+            background-color: #f8f9fa;
+            box-shadow: 0px 1px 5px 1px rgba(179, 174, 174, 0.5);
+        }
+        #mainNav.navbar-shrink .navbar-brand {
+            font-size: 1.55em;
+            padding: 12px 0;
+        }
+        #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+            font-size: 80%;
+            font-weight: 600;
+            padding: 0.75em 0;
+            letter-spacing: 0px;
+            color: #6c757d;
+            font-family: 'Roboto', sans-serif;
+        }
+        #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link a {
+            font-size: 14px;
+        }
+        #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link.active,
+        #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+            color: #37dbf5;
+        }
+    }
+
+
+/*====================================================
+                      heading
+======================================================*/
+
+    section .heading {
+        margin-bottom: 30px;
+    }
+
+    section .heading h1 {
+        color: #6c757d;
+    }
+
+    section .heading .bord-bot {
+        width: 80px;
+        margin: 0 auto;
+        border-bottom: 7px solid #37dbf5;
+    }
+
+    section .heading p {
+        margin-top: 10px;
+        color: #6c757d;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+
+/*====================================================
+                        MASTHEAD
+======================================================*/
+
+    section.masthead {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 150px;
+        padding-bottom: 100px;
+        color: white;
+        background: #087cf9;
+        background: -webkit-linear-gradient(to left, #087cf9, #37dbf5);
+        background: linear-gradient(to left, #087cf9, #37dbf5);
+    }
+
+    section.masthead .header-content {
+        max-width: 500px;
+        text-align: center;
+    }
+
+    section.masthead .device-mockup.iphone6_plus.portrait.white>.device,
+    section.masthead .device-mockup.iphone6_plus.white>.device {
+        margin: 90px 0 0 0;
+        width: 270px;
+        height: 550px;
+    }
+
+    section.masthead .header-content h1 {
+        font-size: 30px;
+    }
+
+    section.masthead .device-container {
+        max-width: 270px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    section.masthead .device-container .screen img {
+        border-radius: 3px;
+    }
+
+    .bg-banner-img img {
+        position: absolute;
+        width: 100%;
+        margin-top: -50%;
+    }
+
+    @media (min-width: 992px) {
+        section.masthead {
+            height: 100vh;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        section.masthead .header-content {
+            margin-bottom: 0;
+            text-align: left;
+        }
+        section.masthead .header-content h1 {
+            font-size: 40px;
+            font-weight: 700;
+            margin: auto;
+        }
+        section.masthead .device-container {
+            max-width: 325px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        section.masthead .device-mockup.iphone6_plus.portrait.white>.device,
+        section.masthead .device-mockup.iphone6_plus.white>.device {
+            margin: 50px 0 0 0;
+            width: 270px;
+            height: 550px;
+        }
+    }
+
+
+/*====================================================
+                        ABOUT
+======================================================*/
+
+    .app-about .row.first {
+        margin-bottom: 100px;
+    }
+
+    .app-about img.first {
+        margin-top: 50px;
+        box-shadow: 2px 3px 14px 0px rgba(70, 68, 68, 0.45);
+        margin-left: 150px;
+        opacity: 0.6;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .app-about img.second {
+        position: absolute;
+        top: 0;
+        width: 80%;
+        box-shadow: 4px 4px 10px 2px rgba(70, 68, 68, 0.58);
+        border-radius: 10px;
+    }
+
+    .app-about .app-about-cont {
+        margin-left: 150px;
+    }
+
+    .app-about .app-about-cont i {
+        font-size: 20px;
+        margin-bottom: 15px;
+        border: 1px solid #dee2e6;
+        border-radius: 50%;
+        height: 38px;
+        width: 38px;
+        line-height: 38px;
+        text-align: center;
+        box-shadow: 0px 0px 14px -1px rgba(101, 99, 99, 0.35);
+        color: #37dbf5;
+    }
+
+    .app-about .app-about-cont h3 {
+        color: #6c757d;
+    }
+
+    .app-about .app-about-cont p {
+        color: #adb5bd;
+    }
+
+    .app-about img.third {
+        margin-top: 50px;
+        box-shadow: 2px 3px 14px 0px rgba(70, 68, 68, 0.45);
+        margin-left: -100px;
+        opacity: 0.6;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .app-about img.fourth {
+        position: absolute;
+        top: 0;
+        margin-left: -150px;
+        width: 80%;
+        box-shadow: 4px 4px 10px 2px rgba(70, 68, 68, 0.58);
+        border-radius: 10px;
+    }
+
+    .app-about .app-about-cont.right {
+        margin-left: 0;
+        margin-right: 150px;
+        text-align: right;
+    }
+
+    @media (max-width: 767px) {
+        .app-about .row.first {
+            margin-bottom: 0px;
+        }
+        .app-about img.first {
+            margin-top: 30px;
+            margin-left: 35%;
+            box-shadow: 2px 3px 14px 0px rgba(70, 68, 68, 0.45);
+            opacity: 0.6;
+            width: 50%;
+            border-radius: 10px;
+        }
+        .app-about img.second {
+            position: absolute;
+            top: 0;
+            left: 15%;
+            width: 50%;
+            box-shadow: 4px 4px 10px 2px rgba(70, 68, 68, 0.58);
+            border-radius: 10px;
+        }
+        .app-about .app-about-cont {
+            margin: 80px auto;
+        }
+        .app-about .app-about-cont.right {
+            margin-left: 0;
+            margin: 50px auto;
+            text-align: right;
+        }
+        .app-about img.third {
+            margin-top: 50px;
+            box-shadow: 2px 3px 14px 0px rgba(70, 68, 68, 0.45);
+            margin-left: 20%;
+            opacity: 0.6;
+            width: 50%;
+            border-radius: 10px;
+        }
+        .app-about img.fourth {
+            position: absolute;
+            top: 0;
+            margin-left: -25%;
+            width: 50%;
+            box-shadow: 4px 4px 10px 2px rgba(70, 68, 68, 0.58);
+            border-radius: 10px;
+        }
+    }
+
+
+/*====================================================
+                      PROCESS
+======================================================*/
+
+    .our-process {
+        background: #f0f0f0;
+    }
+
+    .our-process .servie-img {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .our-process .service-desc-cont {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .our-process .service-desc-cont i {
+        font-size: 25px;
+        color: #37dbf5;
+        margin-bottom: 10px;
+    }
+
+    .our-process .service-desc-cont h5 {
+        font-size: 18px;
+        text-transform: none;
+        color: #6c757d;
+    }
+
+    .our-process .service-desc-cont p {
+        color: #adb5bd;
+    }
+
+
+/*====================================================
+                      FAQ
+======================================================*/
+
+    .faq .card {
+        background: transparent;
+    }
+
+    .faq .card .card-header {
+        background: #37dbf5;
+    }
+
+    .faq .card .card-header h5 button {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .faq .card .card-header h5 button i.fa-btc {
+        position: absolute;
+        right: 2px;
+        font-size: 25px;
+        padding: 4px 20px;
+        background: #fff;
+        line-height: 50px;
+        top: 2px;
+        color: #37dbf5;
+    }
+
+    .faq .card .card-body {
+        background: #e9ecef;
+        color: #adb5bd;
+    }
+
+    @media (min-width: 767px) and (max-width: 991px) {
+        .faq .container .row .col-md-6 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100% !important;
+        }
+    }
+
+
+/*====================================================
+                      GALLERY
+======================================================*/
+
+    .gallery {
+        background: #e9ecef;
+    }
+
+    .gallery .gallery-img {
+        margin: 0 10px;
+    }
+
+    .gallery .gallery-img img {
+        margin-bottom: 10px;
+        box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 7px;
+        height: 500px;
+    }
+
+
+/*====================================================
+                        DOWNLOAD
+======================================================*/
+
+    .download-app {
+        background: #37dbf5;
+    }
+
+    .download-app h1,
+    .download-app p {
+        color: #fff;
+    }
+
+    .download-app .apple {
+        text-align: right;
+    }
+
+    .download-app .apple img {
+        height: 63px;
+    }
+
+    .download-app .android {
+        text-align: left;
+    }
+
+    .download-app .android img {
+        height: 63px;
+    }
+
+    @media (max-width: 767px) {
+        .download-app .apple {
+            text-align: center;
+        }
+        .download-app .apple img {
+            height: 63px;
+            margin-bottom: 30px;
+        }
+        .download-app .android {
+            text-align: center;
+        }
+        .download-app .android img {
+            height: 63px;
+        }
+    }
+
+    .download-app .device-container {
+        width: 300px;
+        max-height: 350px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+
+/*====================================================
+                      CONTACT
+======================================================*/
+
+    .contact .contact-cont {
+        margin: 0 auto 60px auto;
+        text-align: center;
+    }
+
+    .contact .contact-cont a {
+        text-decoration: none;
+    }
+
+    .contact .contact-cont img {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .contact .contact-cont h5 {
+        text-align: center;
+        color: #adb5bd;
+    }
+
+
+/*====================================================
+                      FOOTER
+======================================================*/
+
+    .footer .top-footer {
+        padding: 20px 0;
+        background: #adb5bd;
+    }
+
+    .footer .top-footer p {
+        margin: 0;
+        color: #6c757d;
+    }

@@ -1,0 +1,287 @@
+/* Latest News Area css
+============================================================================================ */
+.latest_news_area{
+    
+}
+.l_news_inner{
+    
+}
+.l_news_item{
+    @include transition;
+    .l_news_img{
+        overflow: hidden;
+        a{
+            display: block;
+        }
+        img{
+            @include transition;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    .l_news_content{
+        border: 1px solid #ebebeb;
+        border-top: 0px;
+        padding: 30px 35px;
+        h4{
+            font-size: 18px;
+            color: $dip;
+            font-family: $pop;
+            font-weight: 500;
+            @include transition;
+            &:hover{
+                color: #2bc0a4;
+            }
+        }
+        p{
+            font-size: 14px;
+            line-height: 26px;
+            color: $pfont;
+            font-family: $pop;
+            font-weight: 400;
+            padding: 15px 0px 10px 0px;
+        }
+    }
+    &:hover{
+        box-shadow: 0px 25px 49px 0px rgba(58, 74, 88, 0.1);
+    }
+}
+/* Latest News Area css
+============================================================================================ */
+
+/* Static Area css
+============================================================================================ */
+.static_area{
+    padding: 100px 0px;
+}
+.static_inner{
+    
+}
+.static_main_content{
+    position: relative;
+    .static_social{
+        position: absolute;
+        left: -60px;
+        top: 0px;
+    }
+}
+.static_social{
+    ul{
+        li{
+            margin-bottom: 20px;
+            a{
+                height: 30px;
+                width: 30px;
+                text-align: center;
+                background: #4c65a8;
+                color: #fff;
+                display: block;
+                border-radius: 50%;
+                line-height: 30px;
+                
+            }
+            &:nth-child(2){
+                a{
+                    background: #41a1f6;
+                }
+            }
+            &:nth-child(3){
+                a{
+                    background: #f43535;
+                }
+            }
+            &:nth-child(4){
+                a{
+                    background: #8f6247;
+                }
+            }
+            &:nth-child(5){
+                margin-bottom: 0px;
+                a{
+                    background: #f0c605;
+                }
+            }
+        }
+    }
+}
+.static_text{
+    padding-top: 35px;
+    padding-bottom: 15px;
+    p{
+        font-size: 16px;
+        line-height: 26px;
+        color: $pfont;
+        font-family: $pop;
+        &:last-child{
+            padding-top: 15px;
+        }
+    }
+}
+.static_text2{
+    h3{
+        font-size: 24px;
+        color: #1e1e27;
+        font-family: $pop;
+        font-weight: 500;
+    }
+    p{
+        font-size: 16px;
+        line-height: 26px;
+        color: $pfont;
+        font-family: $pop;
+        padding-top: 13px;
+    }
+}
+.media{
+    margin: 30px 0px;
+    .d-flex{
+        h6{
+            font-family: $play;
+            font-size: 100px;
+            color: $baseColor;
+            line-height: 75px;
+        }
+    }
+    .media-body{
+        padding-left: 32px;
+        p{
+            font-size: 18px;
+            line-height: 26px;
+            color: #1e1e27;
+            font-family: $pop;
+        }
+        h5{
+            font-size: 14px;
+            color: #b5aec4;
+            font-family: $pop;
+            padding-top: 15px;
+            a{
+                font-size: 16px;
+                color: $dip;
+                font-family: $pop;
+                font-weight: 500;
+                @include transition;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+}
+
+.right_sidebar_area{
+    padding-left: 20px;
+}
+.right_widget{
+    margin-bottom: 45px;
+}
+.r_w_title{
+    padding-bottom: 20px;
+    h3{
+        font-size: 22px;
+        color: #1e1e27;
+        font-family: $pop;
+        font-weight: 500;
+    }    
+}
+.r_news_widget{
+    .news_inner{
+        .news_item{
+            border-bottom: 1px solid #eeeef0;
+            padding-bottom: 14px;
+            margin-bottom: 15px;
+            h4{
+                font-size: 16px;
+                line-height: 26px;
+                font-family: $pop;
+                font-weight: 500; 
+                color: #1e1e27;
+                padding-bottom: 7px;
+                @include transition;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+            h6{
+                font-size: 14px;
+                color: #b5aec4;
+                font-family: $pop;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.r_cat_widget{
+    ul{
+        li{
+            margin-bottom: 12px;
+            a{
+                font-size: 16px;
+                color: #1e1e27;
+                font-family: $pop;
+                @include transition;
+                padding-left: 20px;
+                position: relative;
+                &:before{
+                    content: "";
+                    height: 8px;
+                    width: 8px;
+                    border-radius: 50%;
+                    background: $baseColor;
+                    position: absolute;
+                    left: 0px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    @include transition;
+                }
+            }
+            &:hover{
+                a{
+                    color: $baseColor;
+                    &:before{
+                        left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.r_tag_widget{
+    ul{
+        margin-right: -9px;
+        li{
+            display: inline-block;
+            margin-bottom: 9px;
+            margin-right: 6px;
+            a{
+                font-size: 12px;
+                color: $pfont;
+                font-family: $pop;
+                background: #ebebeb;
+                display: inline-block;
+                padding: 0px 20px;
+                text-transform: uppercase;
+                line-height: 30px;
+                @include transition;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+                margin-right: 0px;
+            }
+            &:hover{
+                a{
+                    color: $baseColor;
+                }
+            }    
+        }
+    }
+}
+
+
+/* End Static Area css
+============================================================================================ */
+

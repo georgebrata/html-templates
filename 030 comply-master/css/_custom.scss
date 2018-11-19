@@ -1,0 +1,311 @@
+﻿/*!
+* Created by Kroplet (https://www.kroplet.com) 
+* The easiest way to create Bootstrap 4 themes. 
+*/
+
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background-color: #FAFAFA;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+b, strong{
+    font-weight: 500;
+}
+.brand-logo{
+    width: 180px;
+}
+.navbar{
+    min-height: 80px;
+}
+.navbar-nav .nav-item .nav-link{
+    font-weight: 500;
+}
+.navbar-brand {
+    font-weight: 700;
+}
+.navbar-inverse .navbar-nav .nav-link, .navbar .navbar-brand, .navbar-toggler span {
+    color: rgba(255,255,255,.8);
+}
+.navbar .nav-item .active, .navbar .nav-link:hover,.navbar .nav-link:focus, .navbar .navbar-brand:hover{
+    color: #fff !important;
+}
+.sticky-navigation{
+    top: 0px;
+    background-color: transparent;
+}
+.hero{
+    height: 100vh;
+    min-height: 500px;
+    padding: 100px 0;
+}
+.hero .brand{
+    margin-top: 100px;
+}
+@media (max-width: 768px){
+    .hero .brand {
+        margin-top: 0px; 
+    }
+}
+.store-img
+{
+    width: 170px;
+}
+.hero h1{
+    font-weight: 100;
+} 
+.hero h1 b{
+    font-weight: 700;
+} 
+a {
+    color: #d81b60;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+a:hover,
+a:focus {
+    color: #d81b60 !important;
+    outline: 0;
+    text-decoration: none !important;
+}
+section{
+    padding: 80px 0px;
+}
+.img-team{
+    width: 150px;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 350ms ease all;
+    transition: 350ms ease all;
+}
+.img-team:hover{
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+}
+.team h5{
+    padding: 35px 0 15px 0;
+    font-weight: 500;
+}
+.team p{
+    color: #999;
+}
+.card-outline-primary{
+    border: solid 1px #d81b60;
+}
+.small-xl{
+    font-size: 90%;
+}
+.small-xs{
+    font-size: 70%;
+}
+.badge {
+    color: #fff; 
+}
+/*===============================================
+* Background Colors
+================================================*/
+.bg-texture{
+    background: transparent -webkit-radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #d81b60 80%, #c2185b 98%) repeat scroll 0% 0%;
+    background: transparent -o-radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #d81b60 80%, #c2185b 98%) repeat scroll 0% 0%;
+    background: transparent -moz-radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #d81b60 80%, #c2185b 98%) repeat scroll 0% 0%;
+    background: transparent radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #d81b60 80%, #c2185b 98%) repeat scroll 0% 0%;
+}
+.bg-texture-collage{
+    background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+        linear-gradient(-45deg, #d81b60 67%, transparent 33%),
+        linear-gradient(-45deg, #ffb300 100%, transparent 67%);
+    background:-moz-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+        linear-gradient(-45deg, #d81b60 67%, transparent 33%),
+        linear-gradient(-45deg, #ffb300 100%, transparent 67%);
+    background:linear-gradient(-45deg, #ec407a 33%, transparent 0%),
+        linear-gradient(-45deg, #e91e63 67%, transparent 33%),
+        linear-gradient(-45deg, #ec407a 100%, transparent 67%);
+}
+.bg-alt {
+    background-color: #fff;
+}
+.bg-faded{
+    background-color: #FAFAFA;
+}
+.bg-primary{
+    background-color: #d81b60 !important;
+}
+.bg-footer{
+    background-color: #171717;
+}
+/*===============================================
+* Text Colors
+================================================*/
+.text-faded {
+    color: #FAFAFA;
+}
+.text-dark {
+    color: #37474F;
+}
+.text-muted{
+    color: #999 !important;
+}
+.text-white {
+    color: #fff;
+}
+.text-primary {
+    color: #d81b60 !important;
+}
+.text-primary-light{
+    color: #ff80ab;
+}
+
+/*===============================================
+* Icon Sizes
+================================================*/
+.icon-lg {
+    font-size: 60px;
+    line-height: 18px;
+}
+.icon-md {
+    font-size: 50px;
+    line-height: 14px;
+}
+.icon-sm {
+    font-size: 30px;
+    line-height: 14px;
+}
+/*===============================================
+* Colored Buttons
+================================================*/
+.btn{
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
+    -webkit-transition: 350ms ease all;
+    transition: 350ms ease all;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .6rem 1.5rem;
+}
+.btn:hover, .btn:focus {
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+}
+.btn-white {
+    color: #ff4081 !important;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-white:hover{
+    color: #ff4081;
+}
+.btn-primary{
+    background-color: #ff4081 !important;
+    border-color: #ff4081 !important;
+}
+.btn-primary:hover, .btn-primary:focus{
+    color: #fff !important;
+}
+.btn-radius{
+    border-radius: 50px;
+}
+/*===============================================
+* Borders Utilities
+================================================*/
+.border-none{
+    border: none !important;
+    border-color: transparent !important;
+}
+.border-all{
+    border: 1px solid #DEE5E5 !important;
+}
+.border-left{
+    border-left: 1px solid #DEE5E5 !important;
+}
+.border-right{
+    border-right: 1px solid #DEE5E5 !important;
+}
+.border-top{
+    border-top: 1px solid #DEE5E5 !important;
+}
+.border-bottom{
+    border-bottom: 1px solid #DEE5E5 !important;
+}
+/*===============================================
+* Social Icons
+================================================*/
+.text-twitter-alt, .text-facebook-alt, .text-linkedin-alt, .text-google-alt, .text-github-alt{
+    color:#d81b60;
+}
+.text-twitter, .text-twitter-alt:hover{
+    color:#00aced;
+}
+.text-facebook, .text-facebook-alt:hover{
+    color: #3b5998;
+}
+.text-google, .text-google-alt:hover{
+    color: #dd4b39;
+}
+.text-linkedin, .text-linkedin-alt:hover{
+    color: #007bb6;
+}
+.text-github, .text-github-alt:hover{
+    color: #000000;
+}
+/*===============================================
+* Cards
+================================================*/
+.card{
+    border: none;
+    margin-bottom: 30px;
+}
+.card .card-body .icon-box{
+    padding: 20px 0;
+    color: #d81b60;
+}
+.card .card-body h6{
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.card:hover{
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.15);
+}
+/*
+Pricing tables & lists
+*/
+.pricing-list{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.pricing-list li {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.list-default{
+    list-style: none;
+    padding-left: 25px;
+}
+.list-default>li {
+    position: relative;
+    padding: 6px 0;
+    line-height: 1.55em;
+    font-size: 0.94rem;
+}
+.list-default>li:before {
+    content: "\f21b";
+    position: absolute;
+    left: -25px;
+    top: 8px;
+    font-size: 10px;
+    color: #d81b60;
+    font-family: "Ionicons";
+}
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #d81b60;
+}

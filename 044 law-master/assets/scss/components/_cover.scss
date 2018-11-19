@@ -1,0 +1,423 @@
+.pb_sm_py_cover,
+.pb_md_py_cover,
+.pb_lg_py_cover,
+.pb_xl_py_cover {
+	@extend .bg_image;
+	position: relative;
+	padding: 6em 0;
+	@include media-breakpoint-down(sm) {
+		height: inherit;
+		text-align: center!important;
+		padding: 6em 0;
+	}
+	> .container {
+		position: relative;
+		> .row {
+			padding: 6em 0;
+			@include media-breakpoint-down(sm) {
+				height: inherit;
+				padding: 6em 0;
+			}
+		}
+	}
+	.heading {
+		font-size: 62px;
+		color: rgba(255,255,255,1);
+		font-weight: 300;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		@include media-breakpoint-down(sm) {
+			font-size: 42px;
+		}
+	}
+	.sub-heading {
+		font-size: 20px;
+		color: rgba(255,255,255,.8);
+		max-width: 600px;
+		float: left;
+	}
+	&.text-center {
+		.sub-heading {	
+			margin: 0 auto;
+			float: none;
+		}
+	}
+	
+	&.text-right {
+		.sub-heading {
+			float: right;
+		}
+	}
+	&.text-left {
+		.sub-heading {
+			float: left;
+		}
+	}
+}
+.pb_sm_py_cover {
+	padding: 3em 0;
+	@include media-breakpoint-down(sm) {
+		height: inherit;
+		text-align: center!important;
+		padding: 3em 0;
+	}
+	> .container {
+		position: relative;
+		> .row {
+			padding: 3em 0;
+			@include media-breakpoint-down(sm) {
+				height: inherit;
+				padding: 3em 0;
+			}
+		}
+	}
+}
+.pb_lg_py_cover {
+	padding: 8em 0;
+	@include media-breakpoint-down(sm) {
+		height: inherit;
+		text-align: center!important;
+		padding: 8em 0;
+	}
+	> .container {
+		position: relative;
+		> .row {
+			padding: 4em 0;
+			@include media-breakpoint-down(sm) {
+				height: inherit;
+				padding: 4em 0;
+			}
+		}
+	}
+}
+.pb_xl_py_cover {
+	padding: 10em 0;
+	@include media-breakpoint-down(sm) {
+		height: inherit;
+		text-align: center!important;
+		padding: 10em 0;
+	}
+	> .container {
+		position: relative;
+		> .row {
+			padding: 7em 0;
+			@include media-breakpoint-down(sm) {
+				height: inherit;
+				padding: 7em 0;
+			}
+		}
+	}
+}
+
+
+.pb_cover,
+.pb_cover_v1,
+.pb_cover_v2,
+.pb_cover_v3,
+.pb_cover_v4 {
+	@extend .bg_image;
+	position: relative;
+	height: 95vh;
+	@include media-breakpoint-down(sm) {
+		height: inherit;
+		text-align: center!important;
+		padding: 6em 0;
+	}
+	> .container {
+		position: relative;
+		> .row {
+			height: 95vh;
+			@include media-breakpoint-down(sm) {
+				height: inherit;
+				padding: 6em 0;
+			}
+		}
+	}
+	.play {
+		width: 80px;
+		height: 80px;
+		display: inline-block;
+		position: relative;
+		border: 2px solid rgba(255,255,255,.2);
+		border-radius: 50%;
+		color: rgba(255,255,255,1);
+		transition: .25s all ease-out;
+		&:hover {
+			transform: scale(1.2);
+			border: 2px solid rgba(255,255,255,1);
+		}
+		&:active, &:focus {
+			outline: none;
+		}
+		i {
+			font-size: 50px;
+			position: absolute;
+			top: 50%;
+			left: 55%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+	.heading {
+		font-size: 62px;
+		color: rgba(255,255,255,1);
+		font-weight: 300;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		@include media-breakpoint-down(sm) {
+			font-size: 42px;
+		}
+	}
+	.sub-heading {
+		font-size: 20px;
+		color: rgba(255,255,255,.8);
+		max-width: 600px;
+		float: left;
+	}
+	&.text-center {
+		.sub-heading {	
+			margin: 0 auto;
+			float: none;
+		}
+	}
+	
+	&.text-right {
+		.sub-heading {
+			float: right;
+		}
+	}
+	&.text-left {
+		.sub-heading {
+			float: left;
+		}
+	}
+}
+
+.pb_cover_v3 {
+	.device-1 {
+		margin-top: -40%;
+		max-width: 400px;
+		left: 50%;
+		transform: translateX(-50%);
+		@include media-breakpoint-down(md) {
+			max-width: 100%;
+		}
+		@include media-breakpoint-down(sm) {
+			max-width: 100%;
+			position: relative;
+			margin-top: 10%;
+			margin-bottom: -100%;
+		}
+	}
+	.device-2 {
+		position: absolute;
+		max-width: 400px;
+		left: 50%;
+		margin-top: -25%;
+		@include media-breakpoint-down(md) {
+			max-width: 100%;
+		}
+		@include media-breakpoint-down(sm) {
+			max-width: 100%;
+			position: absolute;
+			margin-top: 30%;
+			margin-bottom: -100%;
+		}
+	}
+	.device-3 {
+		z-index: 3;
+	}
+}
+
+.pb_cover_v4 {
+	height: inherit;
+	padding-bottom: 15em;
+	.devices {
+		margin-top: -12%;
+		@include media-breakpoint-down(md) {
+			margin-top: 35%;
+		}
+	}
+	.device-2,
+	.device-3 {
+		position: absolute;
+		max-width: 400px;
+		z-index: 1;
+	}
+	.device-2 {
+		left: 0;
+		@include media-breakpoint-down(sm) {
+			left: -20%;
+		}
+	}
+	.device-3 {
+		right: 0;
+		@include media-breakpoint-down(sm) {
+			right: -20%;
+		}
+	}
+	.device-1 {
+		z-index: 2;
+		max-width: 500px;
+		left: 50%;
+		margin-top: -100px;
+		margin-bottom: 200px;
+		transform: translateX(-50%);
+		@include media-breakpoint-down(sm) {
+			max-width: 300px;
+		}
+	}
+}
+
+
+
+
+.cover-bg-black,
+.cover-bg-white,
+.cover-bg-blue,
+.cover-bg-indigo,
+.cover-bg-purple,
+.cover-bg-pink,
+.cover-bg-red,
+.cover-bg-orange,
+.cover-bg-yellow,
+.cover-bg-green,
+.cover-bg-cyan {
+	position: relative;
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: "";
+	}
+}
+
+.cover-bg-opacity {
+	&:before {
+		opacity: 1;
+	}
+}
+.cover-bg-opacity-1 {
+	&:before {
+		opacity: .1;
+	}
+}
+.cover-bg-opacity-2 {
+	&:before {
+		opacity: .2;
+	}
+}
+.cover-bg-opacity-3 {
+	&:before {
+		opacity: .3;
+	}
+}
+.cover-bg-opacity-4 {
+	&:before {
+		opacity: .4;
+	}
+}
+.cover-bg-opacity-5 {
+	&:before {
+		opacity: .5;
+	}
+}
+.cover-bg-opacity-6 {
+	&:before {
+		opacity: .6;
+	}
+}
+.cover-bg-opacity-7 {
+	&:before {
+		opacity: .7;
+	}
+}
+.cover-bg-opacity-8 {
+	&:before {
+		opacity: .8;
+	}
+}
+.cover-bg-opacity-9 {
+	&:before {
+		opacity: .9;
+	}
+}
+
+.cover-bg-black {
+	&:before {
+		background: rgba($black, 1);
+	}
+}
+.cover-bg-white {
+	&:before {
+		background: rgba($white, 1);
+	}
+}
+.cover-bg-blue {
+	&:before {
+		background: rgba($blue, 1);
+	}
+}
+.cover-bg-indigo {
+	&:before {
+		background: rgba($indigo, 1);
+	}
+}
+.cover-bg-purple {
+	&:before {
+		background: rgba($purple, 1);
+	}
+}
+.cover-bg-pink {
+	&:before {
+		background: rgba($pink, 1);
+	}
+}
+.cover-bg-red {
+	&:before {
+		background: rgba($red, 1);
+	}
+}
+.cover-bg-orange {
+	&:before {
+		background: rgba($orange, 1);
+	}
+}
+.cover-bg-yellow {
+	&:before {
+		background: rgba($yellow, 1);
+	}
+}
+.cover-bg-green {
+	&:before {
+		background: rgba($green, 1);
+	}
+}
+.cover-bg-cyan {
+	&:before {
+		background: rgba($cyan, 1);
+	}
+}
+
+.pb_gradient_v1 {
+	&:before {
+		@include pb_gradient(#665fee, #27c2de, 45deg);
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba($black, .7);
+}

@@ -1,0 +1,1232 @@
+/*
+author: Boostraptheme
+author URL: https://boostraptheme.com
+License: Creative Commons Attribution 4.0 Unported
+License URL: https://creativecommons.org/licenses/by/4.0/
+*/ 
+
+/*===============================================
+					SOCIAL ICON
+=================================================*/
+a.btn-social,
+.btn-social
+{
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    webkit-transition: background-color .3s;
+    width: 54px;
+}
+
+.btn-social .fa,.btn-social i
+{
+    backface-visibility: hidden;
+    moz-backface-visibility: hidden;
+    ms-transform: scale(1);
+    o-transform: scale(1);
+    transform: scale(1);
+    transition: all .25s;
+    webkit-backface-visibility: hidden;
+    webkit-transform: scale(1);
+    webkit-transition: all .25s;
+}
+.btn-social:hover,.btn-social:focus
+{
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+.btn-social:hover .fa,.btn-social:focus .fa,.btn-social:hover i,.btn-social:focus i
+{
+    ms-transform: scale(1.3);
+    o-transform: scale(1.3);
+    transform: scale(1.3);
+    webkit-transform: scale(1.3);
+}
+.btn-social.btn-xs
+{
+    font-size: 9px;
+    height: 24px;
+    line-height: 13px;
+    margin: 6px 2px;
+    width: 24px;
+}
+.btn-social.btn-sm
+{
+    font-size: 13px;
+    height: 36px;
+    line-height: 18px;
+    margin: 6px 2px;
+    width: 36px;
+}
+.btn-social.btn-lg
+{
+    font-size: 22px;
+    height: 72px;
+    line-height: 40px;
+    margin: 10px 6px;
+    width: 72px;
+}
+
+.btn-behance
+{
+    background-color: #1769ff;
+}
+.btn-behance:hover
+{
+    background-color: #4a8aff;
+}
+.btn-bitbucket
+{
+    background-color: #205081;
+}
+.btn-bitbucket:hover
+{
+    background-color: #2a69aa;
+}
+.btn-codepen
+{
+    background-color: #76daff;
+}
+.btn-codepen:hover
+{
+    background-color: #a9e8ff;
+}
+.btn-deviantart
+{
+    background-color: #4e6252;
+}
+.btn-deviantart:hover
+{
+    background-color: #657e6a;
+}
+.btn-digg
+{
+    background-color: #000;
+}
+.btn-digg:hover
+{
+    background-color: #1a1a1a;
+}
+.btn-dribbble
+{
+    background-color: #ea4c89;
+}
+.btn-dribbble:hover
+{
+    background-color: #ef7aa7;
+}
+.btn-dropbox
+{
+    background-color: #007ee5;
+}
+.btn-dropbox:hover
+{
+    background-color: #1998ff;
+}
+.btn-facebook
+{
+    background-color: #3b5998;
+}
+.btn-facebook:hover
+{
+    background-color: #4c70ba;
+}
+.btn-flickr
+{
+    background-color: #0063dc;
+}
+.btn-flickr:hover
+{
+    background-color: #107cff;
+}
+.btn-foursquare
+{
+    background-color: #ef4b78;
+}
+.btn-foursquare:hover
+{
+    background-color: #f37a9b;
+}
+.btn-github
+{
+    background-color: #4183c4;
+}
+.btn-github:hover
+{
+    background-color: #689cd0;
+}
+.btn-google-plus
+{
+    background-color: #dd4b39;
+}
+.btn-google-plus:hover
+{
+    background-color: #e47365;
+}
+.btn-instagram
+{
+    background-color: #3f729b;
+}
+.btn-instagram:hover
+{
+    background-color: #548cb9;
+}
+.btn-jsfiddle
+{
+    background-color: #4679bd;
+}
+.btn-jsfiddle:hover
+{
+    background-color: #6c94ca;
+}
+.btn-lastfm
+{
+    background-color: #e31b23;
+}
+.btn-lastfm:hover
+{
+    background-color: #e9484e;
+}
+.btn-linkedin
+{
+    background-color: #0976b4;
+}
+.btn-linkedin:hover
+{
+    background-color: #0b96e5;
+}
+.btn-paypal
+{
+    background-color: #253b80;
+}
+.btn-paypal:hover
+{
+    background-color: #304da8;
+}
+.btn-pinterest
+{
+    background-color: #cc2127;
+}
+.btn-pinterest:hover
+{
+    background-color: #e04046;
+}
+.btn-reddit
+{
+    background-color: #ff4500;
+}
+.btn-reddit:hover
+{
+    background-color: #ff6a33;
+}
+.btn-skype
+{
+    background-color: #00aff0;
+}
+.btn-skype:hover
+{
+    background-color: #24c4ff;
+}
+.btn-soundcloud
+{
+    background-color: #f80;
+}
+.btn-soundcloud:hover
+{
+    background-color: #ffa033;
+}
+.btn-stack-overflow
+{
+    background-color: #fe7a15;
+}
+.btn-stack-overflow:hover
+{
+    background-color: #fe9748;
+}
+.btn-steam
+{
+    background-color: #7da10e;
+}
+.btn-steam:hover
+{
+    background-color: #a1d012;
+}
+.btn-stumbleupon
+{
+    background-color: #eb4924;
+}
+.btn-stumbleupon:hover
+{
+    background-color: #ef7053;
+}
+.btn-trello
+{
+    background-color: #256a92;
+}
+.btn-trello:hover
+{
+    background-color: #2f88bb;
+}
+.btn-tumblr
+{
+    background-color: #35465c;
+}
+.btn-tumblr:hover
+{
+    background-color: #485f7c;
+}
+.btn-twitch
+{
+    background-color: #6441a5;
+}
+.btn-twitch:hover
+{
+    background-color: #7e5bbe;
+}
+.btn-twitter
+{
+    background-color: #55acee;
+}
+.btn-twitter:hover
+{
+    background-color: #83c3f3;
+}
+.btn-vimeo
+{
+    background-color: #1ab7ea;
+}
+.btn-vimeo:hover
+{
+    background-color: #49c6ee;
+}
+.btn-vine
+{
+    background-color: #00b488;
+}
+.btn-vine:hover
+{
+    background-color: #00e7af;
+}
+.btn-vk
+{
+    background-color: #45668e;
+}
+.btn-vk:hover
+{
+    background-color: #587fae;
+}
+.btn-wechat
+{
+    background-color: #98d11c;
+}
+.btn-wechat:hover
+{
+    background-color: #afe53b;
+}
+.btn-wordpress
+{
+    background-color: #21759b;
+}
+.btn-wordpress:hover
+{
+    background-color: #2a95c5;
+}
+.btn-xing
+{
+    background-color: #026466;
+}
+.btn-xing:hover
+{
+    background-color: #039598;
+}
+.btn-yahoo
+{
+    background-color: #400191;
+}
+.btn-yahoo:hover
+{
+    background-color: #5601c4;
+}
+.btn-yelp
+{
+    background-color: #af0606;
+}
+.btn-yelp:hover
+{
+    background-color: #e00808;
+}
+.btn-youtube
+{
+    background-color: #e52d27;
+}
+.btn-youtube:hover
+{
+    background-color: #ea5955;
+}
+.btn-email
+{
+    background-color: #44c456;
+}
+.btn-email:hover
+{
+    background-color: #6bd079;
+}
+
+/*===============================================
+				SOCIAL ICONS 2
+=================================================*/
+
+a.btn-social,
+.btn-social
+{
+    border-radius: 50%;
+    color: #ffffff ;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    webkit-transition: background-color .3s;
+    width: 54px;
+}
+
+.btn-behance2
+{
+	border:1px solid #1769ff;
+	color:#1769ff !important;
+    background-color: transparent;
+}
+.btn-behance2:hover
+{
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #4a8aff;
+}
+.btn-bitbucket2
+{
+	border:1px solid #205081;
+	color:#205081 !important;
+    background-color: transparent;
+}
+.btn-bitbucket2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #2a69aa;
+}
+.btn-codepen2
+{
+	border:1px solid #76daff;
+	color:#76daff !important;
+    background-color: transparent;
+}
+.btn-codepen2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #a9e8ff;
+}
+.btn-deviantart2
+{
+	border:1px solid #4e6252;
+	color:#4e6252 !important;
+    background-color: transparent;
+}
+.btn-deviantart2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #657e6a;
+}
+.btn-digg2
+{
+	border:1px solid #000;
+	color:#000 !important;
+    background-color: transparent;
+}
+
+.btn-digg2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #1a1a1a;
+}
+.btn-dribbble2
+{
+	border:1px solid #ea4c89;
+	color:#ea4c89 !important;
+    background-color: transparent;
+}
+.btn-dribbble2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #ef7aa7;
+}
+.btn-dropbox2
+{
+	border:1px solid #007ee5;
+	color:#007ee5 !important;
+    background-color: transparent;
+}
+.btn-dropbox2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #1998ff;
+}
+.btn-facebook2
+{
+	border:1px solid #3b5998;
+	color:#3b5998 !important;
+    background-color: transparent;
+}
+.btn-facebook2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #4c70ba;
+}
+.btn-flickr2
+{
+	border:1px solid #0063dc;
+	color:#0063dc !important;
+    background-color: transparent;
+}
+.btn-flickr2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #107cff;
+}
+.btn-foursquare2
+{
+	border:1px solid #ef4b78;
+	color:#ef4b78 !important;
+    background-color: transparent;
+}
+.btn-foursquare2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #f37a9b;
+}
+.btn-github2
+{
+	border:1px solid #4183c4;
+	color:#4183c4 !important;
+    background-color: transparent;
+}
+.btn-github2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #689cd0;
+}
+.btn-google-plus2
+{
+	border:1px solid #dd4b39;
+	color:#dd4b39 !important;
+    background-color: transparent;
+}
+.btn-google-plus2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #e47365;
+}
+.btn-instagram2
+{
+	border:1px solid #3f729b;
+	color:#3f729b !important;
+    background-color: transparent;
+}
+.btn-instagram2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #548cb9;
+}
+.btn-jsfiddle2
+{
+	border:1px solid #4679bd;
+	color:#4679bd !important;
+    background-color: transparent;
+}
+.btn-jsfiddle2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #6c94ca;
+}
+.btn-lastfm2
+{
+	border:1px solid #e31b23;
+	color:#e31b23 !important;
+    background-color: transparent;
+}
+.btn-lastfm2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #e9484e;
+}
+.btn-linkedin2
+{
+	border:1px solid #0976b4;
+	color:#0976b4 !important;
+    background-color: transparent;
+}
+.btn-linkedin2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #0b96e5;
+}
+.btn-paypal2
+{
+	border:1px solid #253b80;
+	color:#253b80 !important;
+    background-color: transparent;
+}
+.btn-paypal2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #304da8;
+}
+.btn-pinterest2
+{
+	border:1px solid #cc2127;
+	color:#cc2127 !important;
+    background-color: transparent;
+}
+.btn-pinterest2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #e04046;
+}
+.btn-reddit2
+{
+	border:1px solid #ff4500;
+	color:#ff4500 !important;
+    background-color: transparent;
+}
+.btn-reddit2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #ff6a33;
+}
+.btn-skype2
+{
+	border:1px solid #00aff0;
+	color:#00aff0 !important;
+    background-color: transparent;
+}
+.btn-skype2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #24c4ff;
+}
+.btn-soundcloud2
+{
+	border:1px solid #f80;
+	color:#f80 !important;
+    background-color: transparent;
+}    
+.btn-soundcloud2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #ffa033;
+}
+.btn-stack-overflow2
+{
+	border:1px solid #fe7a15;
+	color:#fe7a15 !important;
+    background-color: transparent;
+}
+.btn-stack-overflow2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #fe9748;
+}
+.btn-steam2
+{
+	border:1px solid #7da10e;
+	color:#7da10e !important;
+    background-color: transparent;
+}
+.btn-steam2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #a1d012;
+}
+.btn-stumbleupon2
+{
+	border:1px solid #eb4924;
+	color:#eb4924 !important;
+    background-color: transparent;
+}
+.btn-stumbleupon2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #ef7053;
+}
+.btn-trello2
+{
+	border:1px solid #256a92;
+	color:#256a92 !important;
+    background-color: transparent;
+}
+.btn-trello2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #2f88bb;
+}
+.btn-tumblr2
+{
+	border:1px solid #35465c;
+	color:#35465c !important;
+    background-color: transparent;
+}
+.btn-tumblr2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #485f7c;
+}
+.btn-twitch2
+{
+	border:1px solid #6441a5;
+	color:#6441a5 !important;
+    background-color: transparent;
+}
+.btn-twitch2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #7e5bbe;
+}
+.btn-twitter2
+{
+	border:1px solid #55acee;
+	color:#55acee !important;
+    background-color: transparent;
+}
+.btn-twitter2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #83c3f3;
+}
+.btn-vimeo2
+{
+	border:1px solid #1ab7ea;
+	color:#1ab7ea !important;
+    background-color: transparent;
+}
+.btn-vimeo2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #49c6ee;
+}
+.btn-vine2
+{
+	border:1px solid #00b488;
+	color:#00b488 !important;
+    background-color: transparent;
+}
+.btn-vine2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #00e7af;
+}
+.btn-vk2
+{
+	border:1px solid #45668e;
+	color:#45668e !important;
+    background-color: transparent;
+}
+.btn-vk2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #587fae;
+}
+.btn-wechat2
+{
+	border:1px solid #98d11c;
+	color:#98d11c !important;
+    background-color: transparent;
+}
+.btn-wechat2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #afe53b;
+}
+.btn-wordpress2
+{
+	border:1px solid #21759b;
+	color:#21759b !important;
+    background-color: transparent;
+}
+.btn-wordpress2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #2a95c5;
+}
+.btn-xing2
+{
+	border:1px solid #026466;
+	color:#026466 !important;
+    background-color: transparent;
+}
+.btn-xing2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #039598;
+}
+.btn-yahoo2
+{
+	border:1px solid #400191;
+	color:#400191 !important;
+    background-color: transparent;
+}
+.btn-yahoo2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #5601c4;
+}
+.btn-yelp2
+{
+	border:1px solid #af0606;
+	color:#af0606 !important;
+    background-color: transparent;
+}
+.btn-yelp2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #e00808;
+}
+.btn-youtube2
+{
+	border:1px solid #ea5955;
+	color:#ea5955 !important;
+    background-color: transparent;
+}
+.btn-youtube2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #ea5955;
+}
+.btn-email2
+{
+	border:1px solid #44c456;
+	color:#44c456 !important;
+    background-color: transparent;
+}
+.btn-email2:hover
+{	
+	border:1px solid #fff;
+	color:#fff !important;
+    background-color: #6bd079;
+}
+
+/*===============================================
+				HOVER EFFECT 2
+=================================================*/
+
+.btn-boxs {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white !important;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+ 
+.btn-boxs:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+}
+
+.btn-3 {
+  background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+
+.btn-4 {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+.btn-5 {
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+}
+
+/* Magic Stuff End -> */
+
+ 
+/*===============================================
+				HOVER EFFECT 3
+=================================================*/
+
+.btn {
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 auto 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.eigth-button .btn {
+  color: #555;
+}
+
+@media (min-width: 400px) {
+  .btn {
+    display: inline-block;
+    margin-right: 2.5em;
+  }
+  .btn:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .btn:nth-of-type(even) {
+    margin-right: 2.5em;
+  }
+  .btn:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+.btn:hover {
+  text-decoration: none;
+} 
+
+.btn-21 {
+  letter-spacing: 0;
+  background: #fff;
+}
+
+.btn-21:hover,
+.btn-21:active {
+  letter-spacing: 5px;
+  color:#555;
+}
+
+.btn-21:after,
+.btn-21:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(29, 29, 29, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-21:hover:after,
+.btn-21:hover:before {
+  backface-visibility: hidden;
+  border-color: #555;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-21:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+.btn-22 {
+  background: #2196F3;
+  border: 1px solid #1275c3;
+  color: #fff;
+  box-shadow: 0px 2px 0 #126cb5, 2px 4px 6px #1082dd;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear;
+}
+
+.btn-22:hover {
+  background: #2789d6;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(29, 29, 29, 0.2);
+  color: #7eb9e7;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #116fb9;
+  transition: all 250ms linear;
+} 
+
+.btn-23 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(29, 29, 29, 0);
+  outline: 1px solid;
+  outline-color: rgba(29, 29, 29, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-23:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(29, 29, 29, 0.5), 0 0 20px rgba(29, 29, 29, 0.2);
+  outline-color: rgba(29, 29, 29, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
+}
+
+/*===============================================
+               HOVER EFFECT 4
+=================================================*/
+.ninth-button .btn {
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.ninth-button .btn span {
+    display: block;
+    border-radius: 0;
+    position: relative;
+}
+
+.ninth-button .btn:before,
+.ninth-button .btn:after,
+.ninth-button .btn span:before,
+.ninth-button .btn span:after {
+    content: "";
+    background: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.15s ease-in-out 0s;
+}
+
+.ninth-button .btn:before,
+.btn:after {
+    width: 2px;
+    height: 0;
+}
+
+.ninth-button .btn span:before,
+.ninth-button .btn span:after {
+    width: 0;
+    height: 2px;
+    transition-delay: 0.15s;
+}
+
+.ninth-button .btn:after {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.ninth-button .btn span:before {
+    right: 0;
+    left: auto;
+}
+
+.ninth-button .btn span:after {
+    top: auto;
+    bottom: 0;
+}
+
+.ninth-button .btn:hover:before,
+.ninth-button .btn:hover:after {
+    height: 100%;
+    transition-delay: 0.15s;
+}
+
+.ninth-button .btn:hover span:before,
+.ninth-button .btn:hover span:after {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+.ninth-button .btn.red,
+.ninth-button .btn.red:hover {
+    color: #fe6d6d;
+}
+
+.ninth-button .btn.red:before,
+.ninth-button .btn.red:after,
+.ninth-button .btn.red span:before,
+.ninth-button .btn.red span:after {
+    background: #fe6d6d;
+}
+
+.ninth-button .btn.blue,
+.ninth-button .btn.blue:hover {
+    color: #3bb4e5;
+}
+
+.ninth-button .btn.blue:before,
+.ninth-button .btn.blue:after,
+.ninth-button .btn.blue span:before,
+.ninth-button .btn.blue span:after {
+    background: #3bb4e5;
+}
+
+.ninth-button .btn.orange,
+.ninth-button .btn.orange:hover {
+    color: #ee955b;
+}
+
+.ninth-button .btn.orange:before,
+.ninth-button .btn.orange:after,
+.ninth-button .btn.orange span:before,
+.ninth-button .btn.orange span:after {
+    background: #ee955b;
+}
+
+.ninth-button .btn.green,
+.ninth-button .btn.green:hover {
+    color: #79d799;
+}
+
+.ninth-button .btn.green:before,
+.ninth-button .btn.green:after,
+.ninth-button .btn.green span:before,
+.ninth-button .btn.green span:after {
+    background: #79d799;
+}
+
+@media only screen and (max-width: 767px) {
+    .ninth-button .btn {
+        margin-bottom: 20px;
+    }
+}
+
+/*===============================================
+               HOVER EFFECT 5
+=================================================*/
+.tenth-button .btn {
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.08);
+    perspective: 300px;
+    z-index: 1;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.tenth-button .btn:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform-origin: left center 0;
+    transition: all 0.3s ease 0s;
+}
+
+.tenth-button .btn:hover:before {
+    transform: rotateY(90deg);
+}
+
+.tenth-button .btn.red {
+    border: 2px solid #fe6d6d;
+}
+
+.tenth-button .btn.red:hover {
+    color: #fe6d6d;
+}
+
+.tenth-button .btn.red:before {
+    background: #fe6d6d;
+}
+
+.tenth-button .btn.blue {
+    border: 2px solid #3bb4e5;
+}
+
+.tenth-button .btn.blue:hover {
+    color: #3bb4e5;
+}
+
+.tenth-button .btn.blue:before {
+    background: #3bb4e5;
+}
+
+.tenth-button .btn.orange {
+    border: 2px solid #ee955b;
+}
+
+.tenth-button .btn.orange:hover {
+    color: #ee955b;
+}
+
+.tenth-button .btn.orange:before {
+    background: #ee955b;
+}
+
+.tenth-button .btn.green {
+    border: 2px solid #79d799;
+}
+
+.tenth-button .btn.green:hover {
+    color: #79d799;
+}
+
+.tenth-button .btn.green:before {
+    background: #79d799;
+}
+
+@media only screen and (max-width: 767px) {
+    .tenth-button .btn {
+        margin-bottom: 20px;
+    }
+}

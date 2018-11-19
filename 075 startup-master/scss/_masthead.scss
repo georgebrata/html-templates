@@ -1,0 +1,93 @@
+
+header {
+  margin-top: 70px;
+  .carousel-inner {
+    
+    .img-caption-hide{
+        width: 100%;
+        height:100vh;
+        position: absolute;
+        z-index: 1000;
+        background:rgba(3, 6, 41, 0.31);
+    } 
+
+   .carousel-item { 
+       .carousel-caption {
+          z-index: 1001;
+          bottom: 35%;
+          top:42%;
+          color: $gray-100; 
+
+          h3 span {
+            color:$primary-y;
+          }
+        }
+
+        @media (min-width: 992px) {
+          img { 
+            height: 100vh;
+          }
+
+          .carousel-caption h3 {
+            font-size: 65px; 
+          }
+
+          .carousel-caption p {
+            font-size: 20px; 
+          }
+        }
+
+        @media (max-width: 991px) {
+          .carousel-caption h3 {
+            font-size: 45px; 
+          }          
+        }
+      }
+  }
+
+  .carousel-arrs {
+    span {
+      i {
+        border: 2px solid rgba(100,100,100,0.9);
+        width:50px;
+        height:50px;
+        line-height: 50px;
+        text-align: center;
+        color:$primary-y;
+        font-size:35px;
+        border-radius: 50%;
+        background:rgba(100,100,100,0.9);
+      }
+    }
+  }
+
+  &.header-cat {
+    background-image: url('../img/banner-bg-1.jpg');
+    @include background-cover;
+    height:50vh;
+    width:100%;
+    color:$white;
+
+    &.header-cat-2 {
+      background-image: url('../img/banner-bg-2.jpg');
+    }
+
+    h1 {
+      text-align:center;
+      margin-top: 20vh;
+      font-size:50px;
+    }
+
+    @media (max-width:575px) {
+      h1.testi-head {
+        margin-top: 15vh;
+        font-size:40px; 
+      }
+    }
+  } 
+
+  @media (max-width:575px) {
+    margin-top: 50px;
+  }
+
+}     

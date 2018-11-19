@@ -1,0 +1,50 @@
+/* Our Service Area css
+============================================================================================ */
+.service_area{
+    background: url(../img/service-bg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    padding: 115px 0px;
+    &:before{
+        content: "";
+        background: rgba(4, 8, 29, .70);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+}
+.service_item_inner{
+    
+}
+.service_item{
+    text-align: center;
+    color: #fff;
+    i{
+        background-image: -moz-linear-gradient( 180deg, rgb(32,212,151) 0%, rgb(116,79,255) 100%);
+        background-image: -webkit-linear-gradient( 180deg, rgb(32,212,151) 0%, rgb(116,79,255) 100%);
+        background-image: -ms-linear-gradient( 180deg, rgb(32,212,151) 0%, rgb(116,79,255) 100%);
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 40px;
+    } 
+    h4{
+        font-size: 20px;
+        font-family: $pop;
+        font-weight: 500;
+        padding: 18px 0px 12px 0px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 26px;
+        font-family: $pop;
+        max-width: 360px;
+        margin: auto;
+    }
+}
+/* End Our Service Area css
+============================================================================================ */

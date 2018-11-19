@@ -1,0 +1,18 @@
+/* Backgrounds  */
+@each $color, $value in $theme-gradient-colors {
+	.bg-gradient-#{$color} {
+		background: theme-gradient-color($color);
+	}
+}
+
+.sidebar-grdient-dark{
+  background: rgba(106,0,138,1);
+  background: -moz-linear-gradient(top, rgba(106,0,138,1) 0%, rgba(106,0,138,1) 20%, rgba(250,0,83,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(106,0,138,1)), color-stop(20%, rgba(106,0,138,1)), color-stop(100%, rgba(250,0,83,1)));
+  background: -webkit-linear-gradient(top, rgba(106,0,138,1) 0%, rgba(106,0,138,1) 20%, rgba(250,0,83,1) 100%);
+  background: -o-linear-gradient(top, rgba(106,0,138,1) 0%, rgba(106,0,138,1) 20%, rgba(250,0,83,1) 100%);
+  background: -ms-linear-gradient(top, rgba(106,0,138,1) 0%, rgba(106,0,138,1) 20%, rgba(250,0,83,1) 100%);
+  background: linear-gradient(to bottom, rgba(106,0,138,1) 0%, rgba(106,0,138,1) 20%, rgba(250,0,83,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a008a', endColorstr='#fa0053', GradientType=0 );
+  color: $white;
+}

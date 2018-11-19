@@ -1,0 +1,54 @@
+/* Lists */
+
+ul,
+ol,
+dl {
+  padding-left: 1rem;
+  font-size: $default-font-size;
+  li {
+    line-height: 1.8;
+  }
+}
+
+.list-ticked,
+.list-arrow,
+.list-star {
+  list-style: none;
+  padding: 0;
+  li {
+    padding-left: 1.5rem;
+    &:before {
+      font-family: "Material Design Icons";
+      margin-left: -1.5rem;
+      width: 1.5rem;
+      margin-right: .5rem;
+    }
+  }
+}
+
+.list-ticked {
+  li {
+    &:before {
+      content: '\F12D';
+      color: theme-color(danger);
+    }
+  }
+}
+
+.list-arrow {
+  li {
+    &:before {
+      content: '\F142';
+      color: theme-color(success);
+    }
+  }
+}
+
+.list-star {
+  li {
+    &:before {
+      content: '\F4CE';
+      color: theme-color(warning);
+    }
+  }
+}

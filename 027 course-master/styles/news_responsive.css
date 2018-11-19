@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. 1600px
+2. 1440px
+3. 1280px
+4. 1199px
+5. 1024px
+6. 991px
+7. 959px
+8. 880px
+9. 768px
+10. 767px
+11. 539px
+12. 479px
+13. 400px
+
+******************************/
+
+/************
+1. 1600px
+************/
+
+@media only screen and (max-width: 1600px)
+{
+	
+}
+
+/************
+2. 1440px
+************/
+
+@media only screen and (max-width: 1440px)
+{
+	
+}
+
+/************
+3. 1380px
+************/
+
+@media only screen and (max-width: 1380px)
+{
+	.header
+	{
+		width: 1200px;
+	}
+	.header_content
+	{
+		width: calc(100% - 219px);
+	}
+	.main_nav_container
+	{
+		padding-right: 63px;
+	}
+	.header_side
+	{
+		width: 219px;
+	}
+	.header_side span
+	{
+		font-size: 14px;
+	}
+	.header_side img
+	{
+		width: 20px;
+		height: 20px;
+	}
+}
+
+/************
+3. 1280px
+************/
+
+@media only screen and (max-width: 1280px)
+{
+	.header
+	{
+		width: 90%;
+	}
+	.header_content
+	{
+		width: 100%;
+	}
+	.header_side
+	{
+		display: none !important;
+	}
+	.main_nav_container
+	{
+		padding-right: 53px;
+	}
+}
+
+/************
+4. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+	
+}
+
+/************
+4. 1100px
+************/
+
+@media only screen and (max-width: 1100px)
+{
+	
+}
+
+/************
+5. 1024px
+************/
+
+@media only screen and (max-width: 1024px)
+{
+	.main_nav_item
+	{
+		margin-right: 33px;
+	}
+}
+
+/************
+6. 991px
+************/
+
+@media only screen and (max-width: 991px)
+{
+	.main_nav_container
+	{
+		display: none;
+	}
+	.logo_container
+	{
+		padding-left: 30px;
+	}
+	.hamburger_container
+	{
+		display: block;
+	}
+	.sidebar
+	{
+		margin-top: 120px;
+	}
+	.newsletter_form_container
+	{
+		width: 90%;
+	}
+	.footer_col
+	{
+		margin-bottom: 30px;
+	}
+	.footer_col:last-child
+	{
+		margin-bottom: 0px;
+	}
+}
+
+/************
+7. 959px
+************/
+
+@media only screen and (max-width: 959px)
+{
+	
+}
+
+/************
+8. 880px
+************/
+
+@media only screen and (max-width: 880px)
+{
+	
+}
+
+/************
+9. 768px
+************/
+
+@media only screen and (max-width: 768px)
+{
+	
+}
+
+/************
+10. 767px
+************/
+
+@media only screen and (max-width: 767px)
+{
+	.menu_container
+	{
+		right: -100vw;
+		width: 100vw;
+		height: 100vh;
+	}
+	.news_post_title_container
+	{
+		margin-top: -4px;
+		padding-left: 21px;
+	}
+	.news_post_title a
+	{
+		font-size: 27px;
+	}
+	.newsletter_email
+	{
+		width: 100%;
+	}
+	.newsletter_submit_btn
+	{
+		margin-top: 15px;
+	}
+}
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+	h1{font-size: 24px;}
+	p{font-size:13px;}
+	.header
+	{
+		height: 74px;
+	}
+	.logo_container
+	{
+		padding-left: 15px;
+	}
+	.logo img
+	{
+		width: 30px;
+	}
+	.logo span
+	{
+		font-size: 16px;
+	}
+	.hamburger_container
+	{
+		right: 5px;
+	}
+	.menu
+	{
+		top: 70px;
+	}
+	.menu_item
+	{
+		margin-bottom: 0px;
+	}
+	.menu_item a
+	{
+		font-size: 24px;
+	}
+	.menu_copyright
+	{
+		display: none;
+	}
+	.menu_social_container
+	{
+		margin-top: 50px;
+	}
+	.menu_close_container
+	{
+		right: 30px;
+		top: 34px;
+	}
+	.home
+	{
+		height: 372px;
+	}
+	.home_content
+	{
+		padding-top: 17px;
+	    padding-bottom: 11px;
+	    padding-left: 22px;
+	    padding-right: 24px;
+	}
+	.home_content h1
+	{
+		font-size: 30px;
+	}
+	.news_post_title_container
+	{
+		margin-top: 20px;
+		padding-left: 0px;
+	}
+	.news_post_date
+	{
+		width: 55px;
+		height: 55px;
+	}
+	.news_post_date div:first-child
+	{
+		font-size: 18px;
+	}
+	.news_post_date div:last-child
+	{
+		font-size: 11px;
+	}
+	.news_post_title a
+	{
+		font-size: 20px;
+	}
+	.news_post_text
+	{
+		margin-top: 20px;
+	}
+	.news_post_button
+	{
+		width: 138px;
+		height: 42px;
+	}
+	.news_post_button a
+	{
+		font-size: 14px;
+		line-height: 42px;
+	}
+	.tag
+	{
+		height: 35px;
+	}
+	.tag a
+	{
+		font-size: 14px;
+		line-height: 35px;
+		padding-left: 23px;
+    	padding-right: 23px;
+	}
+	.footer_bar
+	{
+		padding-top: 49px;
+		padding-bottom: 52px;
+	}
+	.footer_social
+	{
+		margin-top: 20px;
+	}
+	.footer_copyright span
+	{
+		font-size: 13px;
+	}
+}
+
+/************
+11. 539px
+************/
+
+@media only screen and (max-width: 539px)
+{
+	
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 480px)
+{
+	
+}
+
+/************
+13. 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+	.header
+	{
+		height: 60px;
+		top: 15px;
+	}
+}
+
+/************
+14. 400px
+************/
+
+@media only screen and (max-width: 400px)
+{
+	
+}

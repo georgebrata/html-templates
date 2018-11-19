@@ -1,0 +1,270 @@
+/* 
+    Created on : Jul 17, 2017, 12:31:12 AM
+    Author     : Atta-Ur-Rehman Shah (http://attacomsian.com)
+*/
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600|Catamaran:300,500,600,700,800,900');
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-size: 15px;
+}
+body, button, input, optgroup, select, textarea {
+    font-family: 'Hind';
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+.title {
+    margin-bottom: 35px;
+    min-height: 32px;
+    font-weight: 700;
+}
+.heading-light{
+    font-weight: 300 !important;
+}
+.heading-medium{
+    font-weight: 500 !important;
+}
+.heading-semi-bold{
+    font-weight: 600 !important;
+}
+.heading-bold{
+    font-weight: 700 !important;
+}
+.heading-semi-black{
+    font-weight: 800 !important;
+}
+.heading-black{
+    font-weight: 900 !important;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,
+.title, .heading-light, .heading-medium, .heading-semi-bold,
+.heading-bold, .heading-semi-black, .heading-black{
+    font-family: 'Catamaran';
+}
+/*----------------------------------------------
+* Sections
+----------------------------------------------*/
+.hero-header {
+    height: 100vh;
+    background-image: url(../img/bg2.jpg);
+    min-height: 300px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.colored-section.hero-header{
+    background-image: url(../img/bg3.jpg);
+}
+.hero-header .container{
+    z-index: 2;
+    position: relative;
+}
+.brand {
+    margin-top: 20vh;
+    color: #fff;
+    text-align: center;
+}
+.brand h1 {
+    font-size: 3.8em;
+    font-weight: 800;
+}
+@media (max-width: 768px){
+    .brand {
+        margin-top: 20vh; 
+    }
+    .brand h1{
+        font-size: 2.5em;
+    }
+}
+.raised-section {
+    margin: -60px 30px 0px;
+    border-radius: 6px;
+    background: #FFFFFF;
+    position: relative;
+    z-index: 3;
+}
+section {
+    padding: 80px 0px;
+}
+@media (max-width: 768px){
+    .raised-section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    section {
+        padding: 40px 10px;
+    }
+}
+/*----------------------------------------------
+* Navigation
+----------------------------------------------*/
+.navbar{
+    min-height: 70px;
+}
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.nav-brand-logo{
+    width: 60px;
+}
+.icon-togger{
+    width: 24px;
+    color: #fff;
+}
+.navbar-nav .nav-item .nav-link {
+    padding: .5rem 1rem !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 38px;
+}
+.navbar-nav .nav-link em, .navbar-nav .nav-link i{
+    font-size: 18px;
+}
+.navbar.navbar-transparent {
+    background-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    padding-bottom: 0;
+    padding-top: 25px;
+}
+@media (max-width: 992px){
+    .navbar.navbar-transparent {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 10px;
+        border-radius: 0;
+    }
+}
+.dropdown-menu .dropdown-item{
+    padding: 6px 1.5rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 25px;
+}
+/*.dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}*/
+.navbar-toggler {
+    font-size: 2rem;
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+.dropdown-toggle::after {
+    vertical-align: top;
+    content: "\f3d0";
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-family: "Ionicons";
+    font-size: 17px;
+    margin-top: -4px;
+}
+.navbar-nav .dropdown .dropdown-toggle:after {
+    margin-top: 0px;
+}
+.btn-group .dropdown-toggle:after{
+    font-size: 17px;
+}
+.btn+.dropdown-toggle-split {
+    padding-right: 1.5rem;
+}
+/*----------------------------------------------
+* Form Elements
+----------------------------------------------*/
+.form-control{
+    font-size: 15px;
+    padding: .65rem .75rem;
+    transition: background 0s ease-out;
+}
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    transition-duration: 0.3s;
+}
+.form-control-lg{
+    padding: .85rem 0.85rem;
+    font-size: 16px;
+}
+.form-control-sm{
+    padding: .45rem 0.55rem;
+    font-size: 12px;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + 4px);
+}
+.input-group .input-group-addon {
+    background: transparent;
+}
+.input-group .input-group-addon em{
+    font-size: 14px;
+}
+/*----------------------------------------------
+* Progress bars / Badges / Pagination
+----------------------------------------------*/
+.progress{
+    margin-bottom: 20px;
+}
+.progress-bar {
+    height: 4px;
+}
+.progress-bar-md{
+    height: 8px;
+}
+.progress-bar-lg{
+    height: 16px;
+}
+.badge{
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 6px 12px;
+}
+/*----------------------------------------------
+* Utilities
+----------------------------------------------*/
+.icon-xl {
+    font-size: 80px;
+}
+.icon-lg {
+    font-size: 60px;
+}
+.icon-md {
+    font-size: 45px;
+}
+.icon-sm {
+    font-size: 30px;
+}
+.border-none{
+    border: none !important;
+    border-color: transparent !important;
+}
+.border-all{
+    border: 1px solid #DEE5E5 !important;
+}
+.border-left{
+    border-left: 1px solid #DEE5E5 !important;
+}
+.border-right{
+    border-right: 1px solid #DEE5E5 !important;
+}
+.border-top{
+    border-top: 1px solid #DEE5E5 !important;
+}
+.border-bottom{
+    border-bottom: 1px solid #DEE5E5 !important;
+}

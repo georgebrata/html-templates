@@ -1,0 +1,19 @@
+.pb_team_v1 {
+	margin-bottom: 50px;
+	@include media-breakpoint-down(md) {
+		text-align: center;
+	}
+	img {
+		height: 200px;
+		@include media-breakpoint-down(md) {
+			margin: 0 auto;
+		}	
+	}
+	.heading {
+		color: $black;
+		font-size: 24px;
+	}
+	.subheading {
+		color: $gray-500;
+	}
+}

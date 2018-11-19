@@ -1,0 +1,46 @@
+
+.btn {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 15px 20px;
+    border: 2px solid $primary-y;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+
+    &:after {
+        position: absolute;
+        transition: .3s;
+        content: '';
+        width: 0;
+        left: 50%;
+        bottom: 0;
+        height: 3px;
+        background: $primary-b;
+    }
+
+    &.btn-white:after {
+        height: 120%;
+        left: -10%;
+        transform: skewX(15deg);
+        z-index: -1;
+    }
+
+    &:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    &.btn-white:hover {
+        cursor: pointer;
+        color: $primary-y;
+    }
+
+    &.btn-white:hover:after {
+        left: -10%;
+        width: 120%;
+    }
+}    
+ 

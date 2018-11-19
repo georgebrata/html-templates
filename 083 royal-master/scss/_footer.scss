@@ -1,0 +1,98 @@
+/*============== footer-area css ===============*/
+.footer-area{
+    background: #04091e;
+    padding: 142px 0px;
+}
+.single-footer-widget{
+    ul{
+        li{
+            a{
+                line-height: 25px;
+                display: inline-block;
+                color: #777;
+                transition: all 0.3s linear;
+                margin-bottom: 13px;
+                &:hover{
+                    color: $yellow;
+                }
+            }
+        }
+    }
+    .instafeed{
+        margin-left: -5px;
+        margin-right: -5px;
+        li{
+            margin: 5px;
+        }
+    }
+    .subscribe_form{
+        padding-top: 13px;
+    }
+	.input-group{
+		display: block !important;
+	}
+    input{
+        width: 100%;
+        border: 1px solid #333333;
+        font-size: 13px;
+        line-height: 30px;
+		padding-right: 40px;
+		height: 40px;
+        color: #999999;
+        background: transparent;
+        padding-left: 20px;
+        @include placeholder{
+            color: #999999;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    .sub-btn{
+        background: $yellow;
+        color: #fff;
+        font-weight: 300;
+        border-radius: 0;
+        line-height: 34px;
+        padding: 4px 11px 0px;
+        cursor: pointer;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+    }
+}
+.footer_title{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+.border_line{
+    width: 100%;
+    height: 1px;
+    background: #333333;
+    margin-top: 30px;
+}
+.footer-bottom{
+    padding-top: 46px;
+    .footer-text{
+        a{
+            color: $yellow;
+        }
+    }
+    .footer-social{
+        text-align: right;
+        a{
+            font-size: 18px;
+            line-height: 30px;
+            color: #82848f;
+            margin-left: 25px;
+            transition: all 0.3s linear;
+            &:hover{
+                color: $yellow;
+            }
+        }
+    }
+}

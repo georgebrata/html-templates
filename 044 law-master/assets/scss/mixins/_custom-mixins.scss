@@ -1,0 +1,27 @@
+@mixin pb_box-shadow($top, $left, $blur, $offset, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $offset $color;
+    -moz-box-shadow:inset $top $left $blur $offset $color;
+    box-shadow:inset $top $left $blur $offset $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $offset $color;
+    -moz-box-shadow: $top $left $blur $offset $color;
+    box-shadow: $top $left $blur $offset $color;
+  }
+}
+
+@mixin pb_gradient($from, $to, $deg) {
+  background: $from; /* Old browsers */
+	background: -moz-linear-gradient($deg, $from 0%, $to 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient($deg, $from 0%,$to 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient($deg, $from 0%,$to 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+@mixin pb_text-gradient($from, $to, $deg) {
+	background: $from; /* Old browsers */
+	background: -moz-linear-gradient($deg, $from 0%, $to 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient($deg, $from 0%,$to 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient($deg, $from 0%,$to 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

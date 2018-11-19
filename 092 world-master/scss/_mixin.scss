@@ -1,0 +1,80 @@
+/* mixin */
+
+@mixin trans-duration($time) {
+    -webkit-transition-duration: $time;
+    transition-duration: $time;
+}
+
+@mixin transform($value) {
+    -webkit-transform: $value;
+    transform: $value;
+}
+
+@mixin animation($value) {
+    -webkit-animation: $value;
+    animation: $value;
+}
+
+@mixin flex-direction-column($value) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $value;
+    flex-direction: $value;
+}
+
+@mixin flex-direction-column-reverse($value) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: $value;
+    flex-direction: $value;
+}
+
+@mixin flex-direction-row($value) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $value;
+    flex-direction: $value;
+}
+
+@mixin flex-direction-row-reverse($value) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: $value;
+    flex-direction: $value;
+}
+
+@mixin align-items($value) {
+    -webkit-box-align: $value;
+    -ms-flex-align: $value;
+    -ms-grid-row-align: $value;
+    align-items: $value;
+}
+
+@mixin display-flex($value) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: $value;
+}
+
+@mixin justify-content-between($value) {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: $value;
+}
+
+@mixin justify-content-center($value) {
+    -webkit-box-pack: $value;
+    -ms-flex-pack: $value;
+    justify-content: $value;
+}
+
+@mixin flex($value) {
+    -webkit-box-flex: 0;
+    -ms-flex: $value;
+    flex: $value;
+}
+
+@mixin flex-wrap($value) {
+    -ms-flex-wrap: $value;
+      flex-wrap: $value;
+}
