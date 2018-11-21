@@ -26,8 +26,20 @@
 				<h2 class="header-title text-white">
 					Alege-ți un website
 				</h2>
-				<h5 class="header-sub-title mt-2">
-					Dacă <b><i>încă</i></b> nu te-ai decis cum va arata website-ul perfect pentru afacerea ta, George te ajută cu 100 de idei moderne, responsive, seo-friendly si 100% customizabile. 
+				<h5 class="header-sub-title mt-2" style="height: 5vh;">
+					Dacă <b><i>încă</i></b> nu te-ai decis cum va arata website-ul perfect pentru afacerea ta, 
+					George te ajută cu 100 de idei 
+					<span id="typed-strings" class="header-sub-title">
+						<b>moderne</b>
+						<b>responsive</b>
+						<b>seo-friendly</b>
+						<b>customizabile</b>
+						<b>securizate</b>
+						<b>accesibile</b>
+						<b>rapide</b>
+						<b>social-media ready </b>
+					</span>
+					<span id="typed" class="header-sub-title"></span>
 				</h5>
 				<h1 class="site-name display-2 text-white font-weight-bold"><b>Fii îndrazneț!</b></h1>
 			</div>
@@ -999,22 +1011,19 @@
 <footer class="footer w-100">
 	<div class="container footer-content">
 		<div class="row">
-			<div class="col-md-8">
-				<h2 class="footer-caption text-primary mb-2 ">Te-ai hotarat?</h2>
-				<h3 class="footer-slogan">
-					Trimite-ne un mesaj acum!
-				</h3>
+			<div class="col-sm-8">
+				<h2 class="footer-caption text-primary mb-2 ">Te-ai hotarat deja? 😱</h2>
 			</div>
-			<div class="col-md-4 text-md-right">
-				<a href="" class="btn btn-download px-4 text-white my-3" target="_blank">
-					<i class="fas fa-cloud-download-alt"></i> Trimite
+			<div class="col-sm-4 text-md-right">
+				<a href="mailto:bratageorge@gmail.com" class="btn btn-download px-4 text-white" target="_blank">
+					<i class="fas fa-paper-plane"></i> Trimite un mesaj
 				</a>
 			</div>
 		</div>
 	</div>
 	<hr class="mt-5 mb-4">
 	<div class="text-center my-5 footer-bottom">
-		<p>Brought to you with love by <a href="https://georgebrata.ro">George Brata</a></p>
+		<p>Brought to you with ❤ by <a href="https://georgebrata.ro">George Brata</a></p>
 	</div>
 </footer>
 
@@ -1027,5 +1036,17 @@
 <script src="asset/js/bootstrap.min.js"></script>
 <script src="asset/js/isotope.pkgd.min.js"></script>
 <script src="asset/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script>
+	var typed = new Typed('#typed', {
+		stringsElement: '#typed-strings',
+		smartBackspace: true,
+		loop: true,
+		shuffle: true,
+		backSpeed: 40,
+		typeSpeed: 100,
+		startDelay: 200
+	});
+</script>  
 </body>
 </html>
