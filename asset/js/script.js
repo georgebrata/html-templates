@@ -21,9 +21,6 @@ $(document).ready(function(){
 					if(!$(this).hasClass("dropdown")){
 						$(this).hide();
 						var link = $(this).html();
-
-						console.log(link);
-
 						$(".category-list").append(link);
 					}
 				}
