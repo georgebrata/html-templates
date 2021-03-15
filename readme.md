@@ -25,6 +25,12 @@ cd html-templates
 
 Add your own modern HTML template by creating a pull request, following the existing project structure.
 
+
+## Stars over time
+
+[![Stargazers over time](https://starchart.cc/kyokidG/html-templates.svg)](https://starchart.cc/kyokidG/html-templates)
+
+
 ## LICENSE 
 
 This resource is free to use in both personal and commercial projects.
