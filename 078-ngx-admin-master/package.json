@@ -71,7 +71,7 @@
     "rxjs": "^5.4.2",
     "socicon": "^3.0.5",
     "tether": "1.4.0",
-    "tinymce": "4.5.7",
+    "tinymce": "5.9.0",
     "typeface-exo": "0.0.22",
     "web-animations-js": "2.2.5",
     "zone.js": "^0.8.14"
