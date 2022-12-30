@@ -77,10 +77,10 @@
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "1.4.9",
+    "@angular/cli": "15.0.4",
     "@angular/compiler-cli": "^4.4.6",
     "@angular/language-service": "^4.4.6",
-    "@compodoc/compodoc": "^1.0.1",
+    "@compodoc/compodoc": "^1.1.19",
     "@types/d3-color": "1.0.4",
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
