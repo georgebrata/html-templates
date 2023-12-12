@@ -129,7 +129,7 @@ body {
 	margin-left: -6px;
 }
 .grid .item{
-	width: 33.33%;
+	width: 100%;
 	display: block;
 	padding: 0 16px;
 	margin-bottom: 30px;
@@ -286,7 +286,7 @@ body {
 		margin: 0;
 	}
     .grid .item{
-    	width: 50%;
+    	width: 100%;
     	padding: 0 10px;
     }
     .content{
