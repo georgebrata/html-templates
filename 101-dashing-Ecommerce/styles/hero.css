@@ -1,0 +1,25 @@
+/* hero.css */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: black;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}

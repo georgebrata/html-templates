@@ -1,0 +1,21 @@
+/* products.css */
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 18px;
+    color: #ff6f61;
+}

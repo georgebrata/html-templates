@@ -1,0 +1,14 @@
+/* responsive.css */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+
+    .testimonial-slider {
+        flex-direction: column;
+    }
+}
