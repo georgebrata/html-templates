@@ -19,7 +19,7 @@ cd html-templates
 # open index.html in Chrome
 
 # Work And Design By Anas!
-zsh: Enjoy The App!
+#Enjoy The App!
 
 ```
 
