@@ -10,13 +10,16 @@ All templates beautifully handcrafted and built with attention to details. Their
 
 ```bash
 # clone the project
-git clone https://github.com/kyokidG/html-templates.git
+git clone git@github.com:annuaicoder/html-templates.git
 
 
 # navigate to project folder
 cd html-templates
 
 # open index.html in Chrome
+
+# Work And Design By Anas!
+zsh: Enjoy The App!
 
 ```
 
