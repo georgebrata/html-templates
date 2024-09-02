@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        /* Navbar styling */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        /* Sections styling */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Welcome to My Personal Website</h1>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>This is a brief introduction about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="https://via.placeholder.com/600x400" alt="About Image">
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="section" style="background-color: #f4f4f4;">
+        <h2>My Services</h2>
+        <p>Here are some services I offer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="https://via.placeholder.com/600x400" alt="Services Image">
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="section">
+        <h2>My Portfolio</h2>
+        <p>Take a look at some of my recent work. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="https://via.placeholder.com/600x400" alt="Portfolio Image">
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section" style="background-color: #f4f4f4;">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <img src="https://via.placeholder.com/600x400" alt="Contact Image">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Personal Website | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
