@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMW - Cloud Monitoring Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f4f4f4;
+        }
+
+        .section img {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            text-align: center;
+            color: #333;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        @media (min-width: 768px) {
+            .section {
+                display: flex;
+                align-items: center;
+            }
+
+            .section img {
+                width: 50%;
+            }
+
+            .section div {
+                width: 50%;
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to CMW - Cloud Monitoring Website</h1>
+    </header>
+
+    <div class="container">
+        <div class="section" id="section1">
+            <img src="https://via.placeholder.com/500" alt="Cloud Monitoring">
+            <div>
+                <h2>Real-time Monitoring</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+                    Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. 
+                    Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+                </p>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <img src="https://via.placeholder.com/500" alt="Data Analytics">
+            <div>
+                <h2>Advanced Data Analytics</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+                    Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. 
+                    Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+                </p>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <img src="https://via.placeholder.com/500" alt="Alerts and Notifications">
+            <div>
+                <h2>Alerts and Notifications</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+                    Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. 
+                    Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Basic JavaScript to display alert on section click
+        document.getElementById('section1').addEventListener('click', function() {
+            alert('Real-time Monitoring section clicked');
+        });
+
+        document.getElementById('section2').addEventListener('click', function() {
+            alert('Advanced Data Analytics section clicked');
+        });
+
+        document.getElementById('section3').addEventListener('click', function() {
+            alert('Alerts and Notifications section clicked');
+        });
+    </script>
+</body>
+</html>
