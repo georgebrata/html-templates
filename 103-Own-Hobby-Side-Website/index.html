@@ -1,96 +1,12 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        /* Navbar styling */
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Hero section */
-        .hero {
-            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
-            height: 400px;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-
-        /* Sections styling */
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-            .hero h1 {
-                font-size: 2em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
@@ -117,7 +33,7 @@
     </div>
 
     <!-- Services Section -->
-    <div id="services" class="section" style="background-color: #f4f4f4;">
+    <div id="services" class="section light-bg">
         <h2>My Services</h2>
         <p>Here are some services I offer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <img src="https://via.placeholder.com/600x400" alt="Services Image">
@@ -131,42 +47,17 @@
     </div>
 
     <!-- Contact Section -->
-    <div id="contact" class="section" style="background-color: #f4f4f4;">
+    <div id="contact" class="section light-bg">
         <h2>Contact Me</h2>
         <p>Feel free to reach out to me. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <img src="https://via.placeholder.com/600x400" alt="Contact Image">
     </div>
 
-    <!-- Youtube Section -->
-
-    <div id="youtube" class="section" style="background-color: #f4f4f4;">
-        <h2>My Youtube Channel</h2>
-        <p>Check Out My Youtube Channel. <a href="#">https://www.youtube.com/my-youtube-channel</a></p>
-        <img src="https://via.placeholder.com/600x400" alt="Contact Image">
-    </div>
-
-    <!-- Facebook Section -->
-
-    <div id="facebook" class="section" style="background-color: #f4f4f4;">
-        <h2>My Facebook Account</h2>
-        <p>Check Out My Facebook Account where i always make posts to keep fans updated!. <a href="#">https://www.facebook.com/my-facebook-posts</a></p>
-        <img src="https://via.placeholder.com/600x400" alt="Contact Image">
-    </div>
-
-    <!-- Instagram -->
-
-    <div id="instagram" class="section" style="background-color: #f4f4f4;">
-        <h2>My Instgram Account</h2>
-        <p>Check Out My Instagram Account where i always make posts to keep fans updated!. <a href="#">https://www.instagram.com/my-instagram-posts</a></p>
-        <img src="https://via.placeholder.com/600x400" alt="Contact Image">
-    </div>
-
-    <!-- Other -->
-
-    <div id="other" class="section" style="background-color: #f4f4f4;">
-        <h2>Other Ways We Can Connect!</h2>
-        <p> We Can Also Connect Through Gitlab, Github, Snapchat, Whatsapp And Messeges! <a href="#">https://www.external.com/my-external-links</a></p>
-        <img src="https://via.placeholder.com/600x400" alt="Contact Image">
+    <!-- YouTube Section -->
+    <div id="youtube" class="section light-bg">
+        <h2>My YouTube Channel</h2>
+        <p>Check out my YouTube channel. <a href="#">https://www.youtube.com/my-youtube-channel</a></p>
+        <img src="https://via.placeholder.com/600x400" alt="YouTube Image">
     </div>
 
     <!-- Footer -->
@@ -174,5 +65,7 @@
         <p>&copy; 2024 My Personal Website | All Rights Reserved</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
