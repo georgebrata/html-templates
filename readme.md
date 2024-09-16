@@ -1,8 +1,7 @@
-# HTML5 Template Collection 2019
+# HTML5 Template Collection 2019-2024
 
-## Demo 👉http://georgebrata.ro/alege-un-website
 
-## One Hundred Pre-build websites free for commercial use!
+## 200 Pre-build websites free for commercial use! (In Progress)
 
 
 All templates beautifully handcrafted and built with attention to details. Their professional and modern design with their great typography makes them ideal for agencies, startup businesses, portfolios, and other creative and innovative professionals. All of them are fully responsive and retina ready, they will look great and sharp no matter what device it is being viewed on. 
@@ -11,13 +10,16 @@ All templates beautifully handcrafted and built with attention to details. Their
 
 ```bash
 # clone the project
-git clone https://github.com/kyokidG/html-templates.git
+git clone git@github.com:annuaicoder/html-templates.git
 
 
 # navigate to project folder
 cd html-templates
 
 # open index.html in Chrome
+
+# Work And Design By Anas!
+# Enjoy The App!
 
 ```
 
