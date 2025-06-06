@@ -1,0 +1,18 @@
+/* grid.css */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+/* hero.css */
+
+:root {
+    --background-image: url('hero-bg.jpg');
+    --text-color: black;
+    --padding-y: 100px;
+    --h1-font-size: 48px;
+    --p-font-size: 24px;
+    --btn-bg-color: #ff6f61;
+    --btn-text-color: #fff;
+    --btn-padding: 10px 20px;
+    --btn-font-size: 18px;
+}
+
+.hero {
+    background: var(--background-image) no-repeat center center/cover;
+    color: var(--text-color);
+    padding: var(--padding-y) 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: var(--p-font-size);
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    padding: var(--btn-padding);
+    background: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    text-decoration: none;
+    font-size: var(--btn-font-size);
+}
